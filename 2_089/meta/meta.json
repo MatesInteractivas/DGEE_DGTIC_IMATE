@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La parábola"],
+	"titulo" : "La parábola a partir de algunos de sus elementos",
+	"descripcion" : "Obtener la ecuación general de una parábola conociendo dos elementos distintos al vértice.",
+	"resena" : "Ecuación general de una parábola conociendo dos elementos distintos al vértice",
+	"id" : "2_089"
+}

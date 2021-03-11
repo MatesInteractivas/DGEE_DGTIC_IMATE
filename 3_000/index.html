@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Cálculo Diferencial e Integral: Limites">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>La integral, la derivada y el teorema fundamental del Cálculo</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Introducción al Cálculo</div>
+  <div id="subtitulo">La integral, la derivada y el teorema fundamental del Cálculo</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>En esta lección se presentan los tres conceptos fundamentales del Cálculo: límite, derivada e integral; y el llamado Teorema fundamental del Cálculo que relaciona dichos conceptos y permite aplicarlos para dar solución a muchos problemas prácticos de la ciencia, la ingeniería y otras ramas del conocimiento.</p>
+
+<h1>¿Qué es el Cálculo?</h1>
+
+<p>Para encontrar el área de una figura rectangular, basta medir dos de sus lados y multiplicar los valores obtenidos. Para encontrar la velocidad de un cuerpo que se mueve con velocidad uniforme, basta medir la distancia que recorre en un tiempo determinado y dividirla entre el tiempo. Esto último equivale a calcular la pendiente de gráfica de la posición del cuerpo con respecto al tiempo, que es una línea recta. </p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:900px; height:200px;"></iframe></div>
+
+<p>Pero el área de una figura delimitada por curvas o la velocidad instantánea de un cuerpo que se mueve con velocidad variable, no se pueden obtener con procedimientos tan simples. </p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:900px; height:200px;"></iframe></div>
+
+<p>Esto requiere de realizar aproximaciones cada vez más parecidas a lo que se quiere calcular, mediante construcciones que podamos manejar, lo cual lleva a considerar no uno sino muchos cálculos, y además algo más complejo que es la obtención de un valor límite, aquel al que se acercan cada vez más los valores aproximados. </p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:900px; height:250px;"></iframe></div>
+
+<p>Por ejemplo, el área de la figura con frontera curva ilustrada arriba puede aproximarse mediante el área de polígonos de $N$ lados. El área de la figura será el límite de las áreas de esos polígonos. Análogamente, la velocidad en el tiempo $t$ del cuerpo cuya gráfica de movimiento se ilustra arriba, se calcula como el límite de las velocidades medias entre los tiempos $t$ y $t+h$, cuando $h$ tiende a cero.</p>
+
+<p>El Cálculo (llamado también Cálculo diferencial e integral o Cálculo infinitesimal) es la rama de las matemáticas que surge al considerar estos problemas. Para su desarrollo el Cálculo necesita crear los conceptos de límite, integral y derivada, y establecer la profunda relación que existe entre ellos. Dicha relación se conoce como el Teorema fundamental del Cálculo.</p>
+
+<p>La Historia del Cálculo se remonta a la antigua Grecia con trabajos de los mejores matemáticos griegos como fueron Eudoxo y Arquímedes, y llega a su culminación en el siglo XVIII con los trabajos de Leibniz y Newton. A continuación se explican los conceptos y la teoría creada por Newton y Leibniz.</p>
+
+<h1>La integral</h1>
+
+<p>La integral de una función $f(x)$ en un intervalo $[a,b]$, se define de manera que corresponda al área bajo la gráfica de la función entre los puntos $a$ y $b$ del eje horizontal y se denota por:</p>
+
+$$\int_{b}^{a}{f(x)dx}$$
+
+<div class="interactivo"><iframe src="escenas/escena04.html" style="width:450px; height:300px;"></iframe></div>
+
+<p>La definición formal se hace a través de un límite. Se considera una partición del intervalo $[a,b]$ que consiste de puntos $\{x_{0}, x_{1}, x_{2}, ..., x_{N}\}$ tales que $a=x_{0} < x_{1} < x_{2} < ... < x_{N}=b$. En cada intervalo $[x_{n-1}, x_{n}]$ se escoge un punto $s_{n}$. La integral se define como el límite de las sumas de los productos de los valores $f(s_{n})$ y las longitudes $x_{n}-x_{n-1}$ de los intervalos $[x_{n-1 }, x_{n}]$, cuando la partición se hace cada vez más fina, es decir, cuando el máximo de las longitudes $x_{n}-x_{n-1}$ tiende a cero. En símbolos,</p>
+
+$$\int_{b}^{a}{f(x)dx} =\lim_{0 \to ||P||}{\sum_{n=1}^{N}{f(s_{n})(x_{n}-x_{n-1})}}$$
+
+<h1>La derivada</h1>
+
+<p>La derivada de una función $f(x)$ en un punto $x$ se define de manera que coincida con la pendiente de la recta tangente a la gráfica de $f$ en $x$ y se denota por $\frac{df}{dx}$ o por $f'(x)$.</p>
+
+<div class="interactivo"><iframe src="escenas/escena05.html" style="width:450px; height:300px;"></iframe></div>
+
+<p>La definición formal se hace a través de un límite. Se consideran todas las rectas que pasan por los puntos $(x,f(x))$ y $(x+h,f(x+h))$ donde $h$ es un número distinto de cero. Se trata de rectas secantes a la gráfica de $f$. La recta tangente a la gráfica de $f$ en el punto $(x,f(x))$ es la que pasa por ese punto y tiene como pendiente a:</p>
+
+$$\frac{df}{dx}=f'(x)=\lim_{0 \to h}{\frac{f(x+h)-f(x)}{h}}$$
+
+<p>La velocidad instantánea de un cuerpo en movimiento se define como la derivada de la posición $x(t)$ del cuerpo como función del tiempo. En símbolos:</p>
+
+$$v(t)=\frac{dx}{dt}=\lim_{0 \to h}{\frac{x(t+h)-x(t)}{h}}$$
+
+<h1>El Teorema Fundamental del Cálculo</h1>
+
+<p>Si $F$ y $f$ son dos funciones tales que $f(x)=\frac{dF}{dx}(x)$ para toda $x$ en un intervalo $[a,b]$, entonces</p>
+
+$$\int_{b}^{a}{f(x)dx}=F(b)-F(a)$$
+
+<p>Otro enunciado equivalente de este teorema dice que si $f$ es una función definida en un intervalo $[a,b]$ y de define</p>
+
+$$F(x)=\int_{x}^{a}{f(t)dt}$$
+
+<p>entonces $\frac{dF}{dx}(x)=f(x)$ para $x$ en $[a,b]$.</p>
+
+<p>El teorema dice que, en cierto sentido, la integración y la derivación son operaciones inversas.</p>
+
+<p>Gracias a este teorema, el Cálculo permite obtener resultados importantes. Por ejemplo, si conocemos la velocidad de un cuerpo en todo momento, y su posición inicial, podemos saber su posición en todo momento. También podemos calcular fácilmente el área bajo la gráfica de una función $f(x)$ si encontramos una función $F(x)$ cuya derivada sea $f$.</p>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>: José Luis Abreu León</p>
+<p><b>Edición académica</b>: José Luis Abreu León</p>
+<p><b>Edición técnica</b>: José Luis Abreu León</p>
+<p></p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: José Luis Abreu León</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

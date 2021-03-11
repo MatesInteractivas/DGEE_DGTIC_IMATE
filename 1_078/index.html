@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Álgebra: Ecuaciones cuadráticas">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Identificación de la ecuación cuadrática que modela un problema</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Aplicaciones de las ecuaciones cuadráticas</div>
+  <div id="subtitulo">Identificación de la ecuación cuadrática que modela un problema</div>
+</div>
+<div id="contenido">
+
+
+
+<h1>Objetivo</h1>
+
+<p>Identificar la ecuación cuadrática que sirve para resolver un problema.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Diversos problemas, al ser traducidos al lenguaje algebraico, dan origen a ecuaciones cuadráticas. Hay que indicar que estas ecuaciones pueden no tener solución, tener una solución o dos soluciones. En el primer caso podemos afirmar que nuestro problema no se puede resolver, mientras que en los otros, sólo se aceptarán las soluciones que satisfagan las condiciones del problema y se rechazarán aquéllas que no lo hagan. En ocasiones, aunque la ecuación tenga dos soluciones, para el problema sólo una es utilizable. Otras veces las dos soluciones de la ecuación son válidas.</p>
+
+<p>Por ejemplo, se desea resolver el siguiente problema: </p>
+
+<p class="bloque">Se ha comprado cierto número de libros con $600$ pesos, todos al mismo precio. Si cada libro hubiera costado $5$ pesos más, se hubieran comprado $10$ libros menos con los mismos $600$. ¿Cuántos libros se compraron y cuánto costó cada uno?</p>
+
+<p>Aunque este problema tiene dos incógnitas, es posible resolverlo usando sólo una de ellas. Sea $x$ el número de libros que se compraron. Como todos los libros tienen el mismo precio, el precio de cada uno es igual al costo total entre el número de libros comprados, es decir $\frac{600}{x}$. </p>
+
+<p>Ahora, si cada libro hubiera costado $5$ pesos más $(\frac{600}{x}+5)$, se hubieran podido comprar $10$ libros menos, es decir, $(x-10)$ con los mismos $600$. Se puede expresar toda esta información en la ecuación:</p>
+
+$$\Big(\frac{600}{x}+5\Big)(x-10)=600$$
+
+<p>Al realizar la multiplicación indicada se tiene la ecuación:</p>
+
+$$\frac{600}{x} x -\frac{600}{x}(10)+5x-5(10)=600$$
+
+<p>Al simplificar esta última, se obtiene $-\frac{6000}{x}+5x-50=0$ que, al multiplicar por $x$, da origen a la ecuación cuadrática:</p>
+
+$$5x^{2}-50x-6000=0$$
+
+<p>Se puede simplificar la ecuación dividiendo todo entre $5$:</p>
+
+$$x^{2}-10x-1200=0$$
+
+<h1>Solución</h1>
+
+<p>Una vez que se ha traducido un problema a una ecuación cuadrática, basta con resolverla usando la fórmula general de la ecuación de segundo grado:</p>
+
+$$x= \frac{-b±\sqrt{b^{2}-4ac}}{2a}$$
+
+<p>Para aplicarla a la ecuación cuadrática del problema debemos sustituir los valores $a=1$, $b=-10$ y  $c=-1200$. Esto produce:</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:720px; height:420px;"></iframe></div>
+
+<p>Observa que en el paso $5$ se produce una solución negativa $x_{2}=-30$. Tenemos que rechazarla puesto que $x$ representa el número de libros comprados, y la solución no puede ser negativa. Tenemos entonces que se adquirieron $40$ libros y, el precio de cada uno de ellos fue $\frac{600}{40}=15$ pesos.</p>
+
+<h1>Ejercicios</h1>
+
+<p>En el siguiente recuadro interactivo traduce el problema propuesto al lenguaje algebraico, siguiendo los pasos que se indican para resolverlo, y contesta las preguntas planteadas en cada uno de ellos.</p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:900px; height:570px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>: Fernando René Martínez Ortiz</p>
+<p><b>Edición  académica</b>: José Luis Abreu León</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

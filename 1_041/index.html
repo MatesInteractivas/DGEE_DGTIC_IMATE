@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Aritmética: Los números y sus operaciones">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Potencias positivas, negativas y fraccionarias (continuación)</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Exponentes, potencias y radicales</div>
+  <div id="subtitulo">Potencias positivas, negativas y fraccionarias (continuación)</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Expresar $\frac{c}{a^{n}}$ como $ca^{-n}$.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Cuando un número se multiplica por otro elevado a una potencia negativa, en realidad significa que se va a dividir entre ese número elevado al exponente positivo (al valor absoluto): $ca^{-n}= \frac{c}{a^{n}}$. Inversamente, la división entre un número elevado a una potencia puede escribirse como el producto por el número elevado a la potencia pero con el signo cambiado: $\frac{c}{a^{n}} = ca^{-n}$.</p>
+
+<h1>Solución</h1>
+
+<p>Al utilizar un número elevado a una potencia positiva, lo que en realidad estamos haciendo es escribir el producto de un número por sí mismo varias veces (el número de veces indicado por la potencia). Ésta es una convención útil para escribir las expresiones de forma abreviada. Cuando hablamos de números elevados a potencias negativas, el significado no es tan inmediato porque no estamos acostumbrados a usarlo tanto como para las positivas. En el caso de una potencia negativa, lo que significa es que el número que estamos elevando a la potencia negativa se encuentra como divisor tantas veces como la potencia a la que lo estamos elevando pero con signo positivo. Por ejemplo: $a^{-3} = a^{-1}×a^{-1}×a^{-1} = \frac{1}{a}×\frac{1}{a}×\frac{1}{a} = \frac{1}{a×a×a} = \frac{1}{a^{3}}$.</p>
+
+<p>Usando este resultado podemos escribir la expresión $\frac{3}{2^{3}}$ como $3×\frac{1}{2^{3}} = 3×2^{−3}$. De forma general, si $c$ es cualquier número, $a$ es un número distinto de cero y $n$ es un número entero positivo, podemos escribir $\frac{c}{a^{n}} = c×a^{−n}$.</p>
+
+<p>Un ejemplo de esto sería:</p>
+
+$$\frac{7}{3^{6}}=7×3^{-6}$$
+
+<p>Para poder realizar esta operación es importante que $a$ sea distinta de cero, de lo contrario se tendría una división entre cero, lo cual no puede hacerse.</p>
+
+<p>En el siguiente ejemplo cambia los valores de $a$, $c$ y $n$ con los pulsadores, para ver como cambia la expresión.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:720px; height:160px;"></iframe></div>
+
+<p>Observa que el exponente no afecta a $c$. Si el exponente es uno, no se escribe.</p>
+
+<h1>Ejercicios</h1>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:720px; height:360px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>: Alberto Bravo García</p>
+<p><b>Edición académica</b>: José Luis Abreu León</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Geometría analítica: La línea recta">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Distancia de un punto a una recta</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Rectas y puntos notables de un triángulo</div>
+  <div id="subtitulo">Distancia de un punto a una recta</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Calcular la distancia de un punto a una recta.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Considerando una recta $L$ cualquiera y un punto $P$ en el plano, la distancia entre ellos se define como la distancia de $P$ al punto de $L$ que esté más cercano a él. Si $L$ tiene ecuación $Ax+By+C=0$ y $P$ presenta las coordenadas $(x_{0},y_{0})$, entonces, la distancia de $P$ a $L$ está dada por la fórmula:</p>
+
+$$d(P,L) = \frac{∣Ax_{0}+By_{0}+C ∣}{\sqrt{A^{2}+B^{2}}}$$
+
+<h1>Solución</h1>
+
+<p>Se sustituyen los coeficientes de la ecuación general de la recta ($A$, $B$ y $C$) y las coordenadas del punto $(x_{0},y_{0})$ en la fórmula anterior. Debido a que una distancia siempre es una cantidad positiva, se toma el valor absoluto del numerador antes de dividir entre el resultado de la raíz cuadrada.</p>
+
+<h1>Ejemplo</h1>
+
+<p>En el siguiente ejemplo, se describe el procedimiento para determinar la distancia de un punto a una recta conociendo su ecuación general. Arrastra los puntos azules de la recta y rojo del punto para asignarles los valores deseados. Después, presiona el botón <span class="btn">Continuar</span>.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01A.html" style="width:900px; height:570px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>En el siguiente ejercicio, se va a determinar la distancia de la recta $L$ al punto $P$. Primero, elige el segmento que representa la distancia a buscar. Posteriormente, introduce el valor de la distancia y presiona el botón <span class="btn">Verificar</span> para comprobar tu resultado. Puedes mover el plano arrastrándolo para visualizar correctamente la gráfica.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02A.html" style="width:900px; height:570px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autores</b>: Octavio Fonseca Ramos</p>
+<p><b>Edición académica</b>: Carlos Hernández Garciadiego y Fernando René Martínez Ortiz</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez y Fernando René Martínez Ortiz</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Octavio Fonseca Ramos</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

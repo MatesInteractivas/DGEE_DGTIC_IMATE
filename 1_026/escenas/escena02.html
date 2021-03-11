@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title></title>
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+<div align="center">
+<ajs name="Descartes" width="900" height="480" code="Descartes">
+   <param name="tamaño" value="900x480">
+   <param name="expand" value="fit">
+   <param name="editable" value="no">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.5">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no ancho_este=150 ancho_oeste=150 alto=40">
+   <param name="E_01" value="tipo='R2' id='E0' despl_imagen='arr-izq' fondo='ff000000' red='no' red10='no' ejes='405860' texto='no' eje-x='x' eje-y='y'">
+   <param name="C_01" value="id='nn' tipo='numérico' región='interior' espacio='E0' nombre='_nada_' expresión='(20,80,90,60)' valor='3' incr='1' min='1' max='100' decimales='0' fijo='sí' visible='sí'">
+   <param name="C_02" value="id='mm' tipo='numérico' región='interior' espacio='E0' nombre='_nada_' expresión='(20,10,90,60)' valor='7' incr='1' min='-99' max='99' decimales='0' fijo='sí' visible='sí'">
+   <param name="C_03" value="id='ND' tipo='numérico' región='interior' espacio='E0' nombre='_nada_' expresión='(20,180,90,60)' valor='12' incr='1' min='1' max='22' discreto='sí' decimales='0' fijo='sí' visible='sí'">
+   <param name="A_01" value="id='botX(d,x,w,t)' algoritmo='sí' expresión='val' algoritmo='sí' Local='val' inicio='val=x' hacer='val=((t==1)|(t==6))?x+d    :val;val=((t==2)|(t==5))?x+w-1-d:val;val=((t==3)|(t==4))?x+w-1  :val;'">
+   <param name="A_02" value="id='botY(d,y,h,t)' algoritmo='sí' expresión='val' algoritmo='sí' Local='val' inicio='val=y' hacer='val=((t%8==0)|(t==3))?y+d  :val;val=((t==4)|(t==7))?y+h-1-d:val;val=((t==5)|(t==6))?y+h-1  :val;'">
+   <param name="A_03" value="id='CT' vector='sí' matriz='sí' evaluar='una-sola-vez' columnas='24' filas='12' expresión='ix=0;name=1;middle=2;last=3;value=4;ctx=5;cty=6;ctw=7;cth=8;active=9;teclado=10;interfaz=10;boton=10;'">
+   <param name="A_04" value="id='CP(a,k)' algoritmo='sí' expresión='res' algoritmo='sí' Local='res,pad' inicio='pad=5' hacer='res=(a==ctx)?CT[k,ctx]+pad:res;res=(a==cty)?CT[k,cty]+pad:res;res=(a==ctw)?CT[k,ctw]-pad*2:res;res=(a==cth)?CT[k,cth]-pad*2:res;res=(a==active)?CT[k,active]:res;res=(a==interfaz)?(CT[k,interfaz]<4):res;'">
+   <param name="A_05" value="id='init()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='TCL.x=E2._w-TCL._w-5;TCL.y=E2._h-TCL._h-5;rd=3;editing=-1;Teclado.S=&amp;squot;&amp;squot;;Teclado.Sa=&amp;squot;&amp;squot;;texth=27;textp=10;;autorControls();;TIT.rojo= (11*16+ 8)/256;TIT.verde=( 0*16+ 8)/256;TIT.azul= ( 1*16+ 0)/256;;FONDO.rojo= ( 9*16+ 0)/256;FONDO.verde=( 9*16+ 8)/256;FONDO.azul= (10*16+ 8)/256;;E2.rojo= (14*16+ 8)/256;E2.verde=(15*16+ 0)/256;E2.azul= (15*16+ 0)/256;;E3.rojo= (0*16+ 0)/256;E3.verde=(0*16+ 0)/256;E3.azul= (0*16+ 0)/256;;TXT.rojo= ( 1*16+ 8)/256;TXT.verde=( 2*16+ 0)/256;TXT.azul= ( 2*16+ 8)/256;;CTR.rojo= ( 0*16+ 0)/256;CTR.verde=( 4*16+ 0)/256;CTR.azul= (15*16+15)/256;;CTI.rojo= (15*16+ 0)/256;CTI.verde=(15*16+ 0)/256;CTI.azul= (15*16+ 0)/256;;ARR.rojo= ( 4*16+ 0)/256;ARR.verde=( 8*16+ 0)/256;ARR.azul= ( 6*16+ 0)/256;;BORDER.rojo=CTR.rojo*0.90;BORDER.verde=CTR.verde*0.90;BORDER.azul=CTR.azul*0.90;'">
+   <param name="A_06" value="id='Str(s)' expresión='CT[s,name]+CT[s,middle]+CT[s,value]+CT[s,last]'">
+   <param name="A_07" value="id='editB(k)' algoritmo='sí' algoritmo='sí' Local='S,tipo' hacer='editing=k;tipo=CT[k,interfaz];tt=(tipo==0)?TCL.set(&amp;squot;columnas&amp;squot;,6):TCL.set(&amp;squot;columnas&amp;squot;,12);_ta=((tipo==1)|(tipo=0))?0:1;_tm=(tipo==3)?1:0;TCL.set(&amp;squot;ta&amp;squot;,_ta);TCL.set(&amp;squot;tm&amp;squot;,_tm);TCL.exec(&amp;squot;initTcl&amp;squot;,&amp;squot;&amp;squot;);S=CT[k,value];teclado.S=CT[k,value];TCL.set(&amp;squot;S&amp;squot;,teclado.S);TCL.set(&amp;squot;show_cursor&amp;squot;,1);TCL.update();'">
+   <param name="A_08" value="id='processKB()' algoritmo='sí' algoritmo='sí' hacer='CT[editing,value]=(Teclado.Sa!=Teclado.S)?Teclado.S:CT[editing,value];Teclado.Sa=Teclado.S;'">
+   <param name="A_09" value="id='autorControls()' algoritmo='sí' expresión='x' algoritmo='sí' inicio='NCT=0'">
+   <param name="A_10" value="id='D' vector='sí' evaluar='una-sola-vez' tamaño='1000'">
+   <param name="A_11" value="id='C' vector='sí' evaluar='una-sola-vez' tamaño='1000'">
+   <param name="A_12" value="id='R' vector='sí' evaluar='una-sola-vez' tamaño='1000'">
+   <param name="A_13" value="id='primeraOcurrencia(K,j)' algoritmo='sí' expresión='i' algoritmo='sí' inicio='i=j+1;found=0' hacer='found=(R[i]=K);i=(found)?i:i+1;;' mientras='(!found)&amp;(i<1000)'">
+   <param name="A_14" value="id='getPeriodo()' algoritmo='sí' expresión='x' algoritmo='sí' inicio='j=1;inicio=0;periodo=0' hacer='po=primeraOcurrencia(R[j],j);inicio=(po<100)?j:0;periodo=(po<100)?po-j:0;j=j+1' mientras='(po>=1000)&amp;(j<1000)'">
+   <param name="A_15" value="id='getDigitosP()' algoritmo='sí' algoritmo='sí' inicio='dP=&amp;squot;&amp;squot;;i=inicio' hacer='dP=dP+C[i];i=i+1' mientras='i<inicio+periodo'">
+   <param name="A_16" value="id='simplifica()' algoritmo='sí' expresión='x' algoritmo='sí' inicio='k=2;' hacer='div=(M%k=0)&amp;(N%k=0);M=(div)?M/k:M;N=(div)?N/k:N;k=(div)?k:k+1' mientras='(k<=M)|(k<=N)'">
+   <param name="A_17" value="id='digitos(j)' algoritmo='sí' expresión='dig' algoritmo='sí' inicio='dig=0;pow10=1' hacer='pow10=pow10*10;dig=dig+1' mientras='pow10<=j'">
+   <param name="A_18" value="id='division(num,den)' algoritmo='sí' algoritmo='sí' inicio='i=0;D[i]=num;C[i]=ent(D[i]/den);R[i]=D[i]-den*C[i]' hacer='i=i+1;D[i]=R[i-1]*10;C[i]=ent(D[i]/den);R[i]=D[i]-den*C[i]' mientras='i<999'">
+   <param name="A_19" value="id='reiniciar()' algoritmo='sí' algoritmo='sí' inicio='ND=0' hacer='rx=0'">
+   <param name="A_20" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='init();;void=&amp;squot;&amp;squot;;;dp=12;;reiniciar();;'">
+   <param name="A_21" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='rx=9*(digitos(mm)-1);rn=17+9*digitos(nn);division(mm,nn);getPeriodo();getDigitosP();reprCompleta=(R[ND]=0)|(inicio+periodo<=ND+1);NTD=(R[ND]=0)?inicio:inicio+periodo-1;'">
+   <param name="G_01" value="espacio='E0' tipo='curva' fondo='sí' color='(E2.rojo*0.8,E2.verde*0.8,E2.azul*0.8,ff)' coord_abs='sí' expresión='(botX(rd,0,E0._w,t),botY(rd,0,E0._h,t))' t.intervalo='[0,8]' relleno='(E2.rojo,E2.verde,E2.azul,00)' info='(PLANTILLA) fondo de la zona de texto'">
+   <param name="G_02" value="espacio='E0' tipo='texto' coord_abs='sí' dibujar-si='reprCompleta' expresión='[5,53]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}\f1\fs42\i{\*\mjaformula{\fraction{\num{\expr &amp;squot;                  &amp;squot;\decimals 0\fixed0}}{\den}}=}\f2\fs24\i0}' font_family='Serif' fuente puntos='21' decimales='16' fijo='no'">
+   <param name="G_03" value="espacio='E0' tipo='texto' coord_abs='sí' dibujar-si='reprCompleta' expresión='[130+(dp*(digitos(C[0])-1+s)+4)*(s>0),60]' familia='s' s.intervalo='[0,NTD]' s.pasos='NTD' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs34  \fs42{\*\mjaformula{\expr (s=0)?C[s]+&amp;squot;.&amp;squot;:C[s]\decimals 0\fixed0}}\f3\fs24\par \par }' font_family='SansSerif' fuente puntos='17' fijo='sí'">
+   <param name="G_04" value="espacio='E0' tipo='texto' coord_abs='sí' expresión='[404+rn+rx-dp*(digitos(C[0])-1)*(s=0)+dp*s+4*(s>0),15]' familia='s' s.intervalo='[0,ND]' s.pasos='ND' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs42\ul{\*\mjaformula{\expr (s=0)?C[s]+&amp;squot;.&amp;squot;:C[s]\decimals 0\fixed0}}\f2\fs24\ulnone\par \par }' font_family='SansSerif' fuente puntos='21' fijo='sí'">
+   <param name="G_05" value="espacio='E0' tipo='texto' coord_abs='sí' expresión='[400,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red231\green239\blue239;\red32\green48\blue58;}\f1\fs42{\*\mjaformula\cf0{\expr nn\decimals 2\fixed0} |\cf1}\fs34\par \fs42{\*\mjaformula{\expr nn\decimals 2\fixed0}  {\expr mm\decimals 2\fixed0}}\f3\fs24\par }' font_family='SansSerif' fuente puntos='21' fijo='sí'">
+   <param name="G_06" value="espacio='E0' tipo='texto' coord_abs='sí' expresión='[404+rn+rx+dp*s-dp*(digitos(R[s])-1),62+17*s]' familia='s' s.intervalo='[0,ND-1]' s.pasos='ND-1' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs42{\*\mjaformula{\expr R[s]*10\decimals 0\fixed0}}\f2\fs24\par }' font_family='SansSerif' fuente puntos='21' fijo='sí'">
+   <param name="G_07" value="espacio='E0' tipo='texto' coord_abs='sí' expresión='[404+rn+rx+dp*ND-dp*(digitos(R[ND])-1),62+17*ND]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs42{\*\mjaformula{\expr R[ND]\decimals 0\fixed0}}\f2\fs24\par }' font_family='SansSerif' fuente puntos='21' fijo='sí'">
+   <param name="G_08" value="espacio='E0' tipo='texto' coord_abs='sí' dibujar-si='ND>0' expresión='[20,260]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs42  {\*\mjaformula{\expr nn\decimals 2\fixed0}  por  {\expr C[ND]\decimals 2\fixed0} , {\expr nn*C[ND]\decimals 2\fixed0}; para  {\expr R[ND-1]*10\decimals 2\fixed0},  {\expr R[ND]\decimals 2\fixed0}  }\f2\fs24\par }' font_family='SansSerif' fuente puntos='21' fijo='sí'">
+   <param name="G_09" value="espacio='E0' tipo='texto' coord_abs='sí' dibujar-si='R[ND]=0' expresión='[20,300]' texto='El residuo es cero, por lo tanto\nla representación decimal está completa.' font_family='SansSerif' fuente puntos='21' fijo='sí'">
+   <param name="G_10" value="espacio='E0' tipo='texto' coord_abs='sí' dibujar-si='(R[ND]!=0)&amp;(inicio+periodo<=ND+1)' expresión='[20,300]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs42 La fracci\u243 n tiene expansi\u243 n decimal peri\u243 dica.\par de longitud {\*\mjaformula{\expr periodo\decimals 2\fixed0}} que consta de los d\u237 gitos: {\*\mjaformula{\expr dP\decimals 2\fixed0}}\par y comienza en el decimal {\*\mjaformula{\expr inicio\decimals 2\fixed0}}.\f2\fs24\par \par }' font_family='SansSerif' fuente puntos='21' fijo='sí'">
+   <param name="G_11" value="espacio='E0' tipo='segmento' dibujar-si='reprCompleta&amp;(R[ND]!=0)' coord_abs='sí' expresión='(150+(dp*(digitos(C[0])-1+inicio)+4),60)(150+(dp*(digitos(C[0])-1+inicio+periodo)+4),60)' fijo='sí' tamaño='0'">
+   <param name="G_12" value="espacio='E0' tipo='segmento' coord_abs='sí' expresión='(410+rn,38)(420+rn+rx,38)' font_family='Monospaced' fuente puntos='12' fijo='sí' tamaño='0'">
+   <param name="G_13" value="espacio='E0' tipo='segmento' coord_abs='sí' expresión='(410+rn,38)(410+rn,60)' font_family='Monospaced' fuente puntos='12' fijo='sí' tamaño='0'">
+</ajs>
+</div>
+</body>
+</html>

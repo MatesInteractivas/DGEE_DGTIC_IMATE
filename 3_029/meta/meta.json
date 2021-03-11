@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: La derivada"],
+	"titulo" : "Operaciones con funciones y sus derivadas",
+	"descripcion" : "En esta unidad se cubrirán los siguientes objetivos:",
+	"resena" : "Derivadas de productos de dos funciones",
+	"id" : "3_029"
+}

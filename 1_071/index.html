@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Álgebra: Ecuaciones cuadráticas">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Ecuaciones de la forma ax² + c = 0</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Ecuaciones cuadráticas especiales</div>
+  <div id="subtitulo">Ecuaciones de la forma $ax^{2}+c=0$</div>
+</div>
+<div id="contenido">
+
+
+
+<h1>Objetivo</h1>
+
+<p>Resolver ecuaciones cuadráticas del tipo $ax^{2}+c=0$.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Para resolver ecuaciones cuadráticas de la forma $ax^{2}+c$ basta despejar $x$ de la ecuación. Para ello se llevan a cabo los siguientes pasos:</p>
+
+<ol>
+  <li>Se pasa el término constante $c$ al lado derecho cambiándole el signo.</li>
+  <li>Se divide la ecuación entre $a$, es decir, $a$ se pasa como divisor del lado derecho.</li>
+  <li>Se saca la raíz cuadrada.</li>
+</ol>
+
+<h1>Solución</h1>
+
+<p>Las soluciones son $\sqrt{-\frac{c}{a}}$ y $-\sqrt{-\frac{c}{a}}$, lo que puede abreviarse escribiendo $±\;\sqrt{-\frac{c}{a}}$. Éstas se obtienen al realizar los pasos antes mencionados como se muestra a continuación:</p>
+
+$$ax^{2}+c=0$$
+
+<ol>
+  <li>
+    Pasar $c$ al lado derecho cambiando el signo.<br>
+    $ax^{2}=-c$
+  </li>
+  <li>
+    Pasar $a$ como divisor al lado derecho.<br>
+    $x^{2}=-\frac{c}{a}$
+  </li>
+  <li>
+    Sacar raíz cuadrada.<br>
+    $x=±\sqrt{-\frac{c}{a}}$
+  </li>
+</ol>
+
+<p>Para saber cuántas soluciones hay basta analizar el cociente $-\frac{c}{a}$. Si éste es positivo habrá dos soluciones; si es $0$, habrá una; y si es negativo, no habrá ninguna.</p>
+
+<h1>Representación gráfica</h1>
+
+<p>Las soluciones de la ecuación cuadrática $ax^{2}+c=0$ pueden interpretarse como las abscisas de los puntos donde la gráfica $y = ax^{2}+c$ corta al eje $x$. Con los pulsadores del siguiente recuadro interactivo cambia los valores de $a$ y $c$. Observa cómo se modifica la gráfica de $y = ax^{2}+c$ e identifica los casos en que la ecuación $ax^{2}+c=0$ tiene dos, una o ninguna solución.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:720px; height:480px;"></iframe></div></p>
+
+<h1>Ejemplos</h1>
+
+<p>Utiliza el recuadro interactivo que se presenta a continuación para repasar el método, resolviendo la ecuación planteada. Pulsa <span class="btn">Continuar</span> para desplegar el siguiente paso, y <span class="btn">Otro ejemplo</span> para ver otras ecuaciones.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:720px; height:480px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>Resuelve en tu cuaderno la siguiente ecuación. Después, en el menú del recuadro interactivo elige el número de soluciones de la ecuación, introduce tu respuesta con cuatro decimales en el campo de texto correspondiente y oprime <span class="btn">Verificar</span>. Si tu respuesta es incorrecta, trata de nuevo presionando <span class="btn">Otro intento</span>. Presiona <span class="btn">Otro ejercicio</span> para resolver más ecuaciones.</p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:720px; height:420px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autoras</b>: Valentina Muñoz Porras y Norma Patricia Apodaca Alvarez</p>
+<p><b>Edición académica</b>: José Luis Abreu León</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

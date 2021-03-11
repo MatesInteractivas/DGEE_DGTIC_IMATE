@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Funciones y sus gráficas: Funciones trascendentes">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Equivalencia entre las medidas de grados y radianes.</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Funciones trigonométricas</div>
+  <div id="subtitulo">Equivalencia entre las medidas de grados y radianes</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Convertir la medida de un ángulo de grados a radianes.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Si se divide una circunferencia con segmentos a partir de su centro, en $360$ partes iguales, el ángulo que forma cada una de estas partes en el centro de la circunferencia mide un grado. Esta manera tan usual de medir ángulos proviene de los antiguos babilonios.</p>
+
+<p>Al estudiar matemáticas más avanzadas, es preferible utilizar la medida de un ángulo en radianes ya que simplifica, de manera considerable, las fórmulas.</p>
+
+<p>Para medir un ángulo en radianes, se considera una circunferencia de radio $r$ y sobre ella se toma un arco de circunferencia que tenga longitud igual al radio, es decir, de longitud $r$. Entonces, el ángulo con vértice en el centro de la circunferencia, determinado por el arco mencionado, mide un radián.</p>
+
+<p>En el siguiente recuadro, cada uno de los arcos formados mide lo mismo que el radio r de la circunferencia, así cada uno de los ángulos que se crean mide un radián. Observa que para completar una vuelta, $360^{\circ}$, se necesita un poco más de $6$ radianes, en el siguiente párrafo se te explica cómo conocer con exactitud cuántos radianes se necesitan.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:500px; height:500px;"></iframe></div>
+
+<p>Debido a que el perímetro de una circunferencia de diámetro $d$ está dado por la fórmula $P=π·d$ y la circunferencia tiene diámetro igual a $2r$, entonces $P=2π·r$ lo que significa que caben exactamente $2π$ arcos de longitud $r$ en la circunferencia, aproximadamente $6.28$.</p>
+
+<p>Esta observación permite convertir la medida de un ángulo expresado en grados, a radianes. </p>
+
+<h1>Solución</h1>
+
+<p>Como un ángulo de $360^{\circ}$ equivale a $2π$ radianes, un ángulo de $180^{\circ}$ es igual a uno de $π$ radianes, lo cual significa que, si tienes un ángulo de $23^{\circ}$, por ejemplo, y deseas conocer cuál es su medida en radianes, basta con resolver la siguiente regla de tres:</p>
+
+$$\frac{180^{\circ}}{2}=\frac{π}{x}$$
+
+<p>De manera que $23^{\circ}$ corresponde a $x=\frac{23·π}{180}\;radianes ≈ 0.4014\;radianes$. De hecho, como los numeradores en la regla de tres nunca cambian, sólo debes multiplicar la medida del ángulo en grados por $\frac{π}{180}$ para obtener su medida en radianes. Por ejemplo:</p>
+
+$$36^{\circ}=36\Big(\frac{π}{180}\Big)\;radianes ≈ 0.6283\;radianes$$
+
+$$62^{\circ}=62\Big(\frac{π}{180}\Big)\;radianes ≈ 1.0821\;radianes$$
+
+<h1>Ejercicios</h1>
+
+<p>En el siguiente recuadro interactivo, se presentan ángulos medidos en grados, que debes transformar a radianes. Escribe tu respuesta con al menos dos decimales, y oprime el botón Verificar</span>, si contestas correctamente, se deshabilitará el campo de texto, y podrás pulsar el botón <span class="btn">Otro ejercicio</span> para seguir practicando. Recuerda que puedes utilizar este campo como calculadora y considera a $π=3.1416$.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:710px; height:200px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autores</b>: Fernando René Martínez Ortiz y Norma Patricia Apodaca Alvarez</p>
+<p><b>Edición académica</b>: José Luis Abreu León, Carlos Hernández Garciadiego y Joel Espinosa Longi</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez y Fernando René Martínez Ortiz</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Joel Espinosa Longi</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

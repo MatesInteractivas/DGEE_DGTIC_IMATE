@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Dominio de funciones racionales a partir de su regla de correspondencia.",
+	"descripcion" : "Determinar el dominio de una función del tipo $f(x)=$ $\frac{a}{(x+b)^{2}} +c$ con $a$, $b$ y $c$ reales.",
+	"resena" : "Dominio de una función racional con numerador constante y denominador cuadrático",
+	"id" : "2_136"
+}

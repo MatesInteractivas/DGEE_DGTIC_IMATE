@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title></title>
+  <style>
+    .btn {
+      border: 3px solid #ffff33;
+      box-sizing: content-box;
+      border-radius: 3px;
+      box-shadow: 0 0 0 1px black;
+    }
+  </style>
+  <script>
+    window.addEventListener("load", function() {
+      descartesJS.Parser.prototype.registerExternalValues = function() {
+        this.functions.cambiarColorBorde = function(id, color) {
+          document.getElementById(id).style.borderColor = "#" + color;
+        }
+      }
+    });
+  </script>
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+  <ajs name="Descartes" code="Descartes" width="720" height="460">
+    <param name="tamaño" value="720x460">
+    <param name="decimal_symbol" value=".">
+    <param name="expand" value="fit">
+    <param name="nombre" value="Descartes">
+    <param name="Versión" value="5.5">
+    <param name="editable" value="no">
+    <param name="Idioma" value="español">
+    <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
+    <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='e8efef' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+    <param name="E_02" value="tipo='R2' id='E3' x='20' y='90' ancho='350' alto='350' dibujar-si='1' fijo='no' escala='8' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='b8c4c8' red10='889498' ejes='405860' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='1' border_color='ee000000' border_radius='0' ">
+    <param name="E_03" value="tipo='HTMLIFrame' id='TCL' x='TCL.x' y='TCL.y' ancho='300' alto='240' dibujar-si='editing>=0' archivo='../tools/Teclado.html' ">
+    <param name="C_01" value="id='G1.x' tipo='numérico' interfaz='campo de texto' solo_texto='no' región='interior' espacio='E1' nombre='1' expresión='(450,18,20,25)' valor='xx1' discreto='no' decimales='0' fijo='sí' visible='sí' dibujar-si='P1.x=&squot;&squot;' activo-si='mal' evaluar='no' respuesta='krypto_u' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' ">
+    <param name="C_02" value="id='G1.y' tipo='numérico' interfaz='campo de texto' solo_texto='no' región='interior' espacio='E1' nombre='1' expresión='(475,18,20,25)' valor='yy1' discreto='no' decimales='0' fijo='sí' visible='sí' dibujar-si='P1.x=&squot;&squot;' activo-si='mal' evaluar='no' respuesta='krypto_m' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' ">
+    <param name="C_03" value="id='G2.x' tipo='numérico' interfaz='campo de texto' solo_texto='no' región='interior' espacio='E1' nombre='1' expresión='(525,18,20,25)' valor='xx2' discreto='no' decimales='0' fijo='sí' visible='sí' dibujar-si='P1.x=&squot;&squot;' activo-si='mal' evaluar='no' respuesta='krypto_9' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' ">
+    <param name="C_04" value="id='G2.y' tipo='numérico' interfaz='campo de texto' solo_texto='no' región='interior' espacio='E1' nombre='1' expresión='(555,18,20,25)' valor='yy2' discreto='no' decimales='0' fijo='sí' visible='sí' dibujar-si='P1.x=&squot;&squot;' activo-si='mal' evaluar='no' respuesta='krypto_b' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' ">
+    <param name="C_05" value="id='mm1' tipo='numérico' interfaz='campo de texto' solo_texto='no' región='interior' espacio='E1' expresión='(425,90,120,35)' valor='&squot;&squot;' discreto='no' decimales='6' fijo='no' visible='sí' acción='calcular' dibujar-si='0' evaluar='no' respuesta='krypto_j' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' ">
+    <param name="C_06" value="id='mm1_btn' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='\${α = [mm1]º}' expresión='(390,90,180,40)' valor='0' color='000000' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='sí' subrayada='no' font_family='Serif' fuente puntos='21' acción='calcular' parámetro='CT[0,value]=mm1;editB(0);cambiarColorBorde(&squot;mm1_btn&squot;,&squot;ff0000&squot;)' dibujar-si='(G1.x!=G2.x)&(M1!=M2)' extra_style='flat=1|class=btn|borderColor=000000|border=1' ">
+    <param name="C_07" value="id='Otro' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Otro ejercicio' expresión='(E1._w-180-20-3,E1._h-40-20-3,180,40)' valor='0' color='000000' borderColor='no' color-int='e8efef' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='21' acción='calcular' parámetro='otro()' dibujar-si='bien' extra_style='flat=1|class=btn|borderColor=000000|border=1' ">
+    <param name="C_08" value="id='E3.escala' tipo='numérico' interfaz='pulsador' región='interior' espacio='E3' expresión='(E3._w-35-10,E3._h-70-10,35,70)' valor='12' incr='0.1*E3.escala' min='1' discreto='no' decimales='2' fijo='sí' visible='no' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='img/zoom_in.svg' image_dec='img/zoom_out.svg' btn_pos='v_left' ">
+    <param name="C_09" value="id='G1' tipo='gráfico' espacio='E3' color='95a5a6' color-int='ecf0f1' tamaño='10' expresión='(G1.x,G1.y)' ">
+    <param name="C_10" value="id='G2' tipo='gráfico' espacio='E3' color='95a5a6' color-int='ecf0f1' tamaño='10' expresión='(G2.x,G2.y)' ">
+    <param name="A_01" value="id='botX(d,x,w,t)' algoritmo='sí' expresión='val' local='val' inicio='val=x' hacer='val=((t==1)|(t==6))?x+d    :val;val=((t==2)|(t==5))?x+w-1-d:val;val=((t==3)|(t==4))?x+w-1  :val;' tipo='función' ">
+    <param name="A_02" value="id='botY(d,y,h,t)' algoritmo='sí' expresión='val' local='val' inicio='val=y' hacer='val=((t%8==0)|(t==3))?y+d  :val;val=((t==4)|(t==7))?y+h-1-d:val;val=((t==5)|(t==6))?y+h-1  :val;' tipo='función' ">
+    <param name="A_03" value="id='CT' matriz='sí' evaluar='una-sola-vez' columnas='24' filas='12' expresión='ix=0;name=1;middle=2;last=3;value=4;ctx=5;cty=6;ctw=7;cth=8;active=9;teclado=10;interfaz=10;boton=10;' tipo='matriz' ">
+    <param name="A_04" value="id='CP(a,k)' algoritmo='sí' expresión='res' local='res,pad' inicio='pad=5' hacer='res=(a==ctx)?CT[k,ctx]+pad:res;res=(a==cty)?CT[k,cty]+pad:res;res=(a==ctw)?CT[k,ctw]-pad*2:res;res=(a==cth)?CT[k,cth]-pad*2:res;res=(a==active)?CT[k,active]:res;res=(a==interfaz)?(CT[k,interfaz]<4):res;' tipo='función' ">
+    <param name="A_05" value="id='init()' algoritmo='sí' expresión='x' hacer='TCL.x=E1._w-TCL._w-5;TCL.y=E1._h-TCL._h-5;rd=3;editing=-1;Teclado.S=&squot;&squot;;Teclado.Sa=&squot;&squot;;texth=27;textp=10;;autorControls();;TIT.rojo= (11*16+ 8)/256;TIT.verde=( 0*16+ 8)/256;TIT.azul= ( 1*16+ 0)/256;;FONDO.rojo= ( 9*16+ 0)/256;FONDO.verde=( 9*16+ 8)/256;FONDO.azul= (10*16+ 8)/256;;E2.rojo= (14*16+ 8)/256;E2.verde=(15*16+ 0)/256;E2.azul= (15*16+ 0)/256;;E3.rojo= (0*16+ 0)/256;E3.verde=(0*16+ 0)/256;E3.azul= (0*16+ 0)/256;;TXT.rojo= ( 1*16+ 8)/256;TXT.verde=( 2*16+ 0)/256;TXT.azul= ( 2*16+ 8)/256;;CTR.rojo= ( 0*16+ 0)/256;CTR.verde=( 4*16+ 0)/256;CTR.azul= (15*16+15)/256;;CTI.rojo= (15*16+ 0)/256;CTI.verde=(15*16+ 0)/256;CTI.azul= (15*16+ 0)/256;;ARR.rojo= ( 4*16+ 0)/256;ARR.verde=( 8*16+ 0)/256;ARR.azul= ( 6*16+ 0)/256;;BORDER.rojo=CTR.rojo*0.90;BORDER.verde=CTR.verde*0.90;BORDER.azul=CTR.azul*0.90;' tipo='función' ">
+    <param name="A_06" value="id='Str(s)' algoritmo='no' expresión='CT[s,name]+CT[s,middle]+CT[s,value]+CT[s,last]' tipo='función' ">
+    <param name="A_07" value="id='editB(k)' algoritmo='sí' expresión='x' local='S,tipo' hacer='editing=k;tipo=CT[k,interfaz];tt=(tipo==0)?TCL.set(&squot;columnas&squot;,6):TCL.set(&squot;columnas&squot;,12);_ta=((tipo==1)|(tipo==0))?0:1;_tm=(tipo==3)?1:0;TCL.set(&squot;ta&squot;,_ta);TCL.set(&squot;tm&squot;,_tm);TCL.exec(&squot;initTcl&squot;,&squot;&squot;);S=CT[k,value];teclado.S=CT[k,value];TCL.set(&squot;S&squot;,teclado.S);TCL.set(&squot;show_cursor&squot;,1);TCL.update();' tipo='función' ">
+    <param name="A_08" value="id='processKB()' algoritmo='sí' expresión='x' hacer='CT[editing,value]=(Teclado.Sa!=Teclado.S)?Teclado.S:CT[editing,value];Teclado.Sa=Teclado.S;' tipo='función' ">
+    <param name="A_09" value="id='autorControls()' algoritmo='sí' expresión='x' hacer='NCT=0;;CT[NCT,ix]=NCT;CT[NCT,name]=&squot;Arrojar dado&squot;;CT[NCT,middle]=&squot;&squot;;CT[NCT,last]=&squot;&squot;;CT[NCT,value]=&squot;&squot;;CT[NCT,ctx]=30;CT[NCT,cty]=380;CT[NCT,ctw]=360;CT[NCT,cth]=50;CT[NCT,active]=1;CT[NCT,interfaz]=0;NCT=NCT+1;' tipo='función' ">
+    <param name="A_10" value="id='autorLimpiar()' algoritmo='sí' expresión='x' inicio='editing=-1' hacer='CT[1,value]=&squot;&squot;;CT[2,value]=&squot;&squot;;CT[3,value]=&squot;&squot;;CT[4,value]=&squot;&squot;;;' tipo='función' ">
+    <param name="A_11" value="id='autorCalculos()' algoritmo='sí' expresión='x' hacer='// obtener el valor del teclado;mm1=CT[0,value];(editing<0)?cambiarColorBorde(&squot;mm1_btn&squot;,&squot;ffff33&squot;):NULL;;k=-0.1;h=-0.1;m=(P1.y-h)/(P1.x-k);mDista=m;a=atan(mDista);b=a*(180/3.1416);A=ind(P1.x>h)*(ind(P1.y>k)*b+ind(P1.y<k)*(b+360))+ind(P1.x<h)*(b+180);;m.1=((P.x!=0)?P.y/P.x:0);m.2=((Q.x!=0)?Q.y/Q.x:0);intx=(m1=m2?0:(b2-b1)/(m1-m2));inty=m1*(intx)+b1;res=abs(m2-m1);mul=m2*m1;op=res/(abs(1+mul));int0x1=-b1/m1;int0x2=-b2/m2;alpha1=atan(m1)*180/pi;alpha2=atan(m2)*180/pi;Alpha=abs(alpha1-alpha2);Alpha1=atan(op)*180/pi;;agudo=b;obtuso=180-agudo;theta1=atan(m.1)*180/pi;theta2=atan(m.2)*180/pi;alpha=abs(theta1-theta2);M1=ent(((G1.y-B1)/G1.x)*100)/100;M2=ent(((G2.y-B2)/G2.x)*100)/100;mm=atan(abs(M2-M1)/abs((M2*M1)+1))*180/pi;Theta1=atan(M1)*180/pi;Theta2=atan(M2)*180/pi;X=(B2-B1)/(M1-M2);Y=(M1*((B2-B1)/(M1-M2)))+B1;bien=(abs(mm1-mm)<=0.2);mal=(abs(mm1-mm)>0.2);' tipo='función' ">
+    <param name="A_12" value="id='otro()' algoritmo='sí' expresión='x' hacer='B1=ent(rnd*10)+1;B2=ent(rnd*10)+1;xx1=ent(8*rnd)+1;yy1=ent(8*rnd)+1;xx2=xx1+(1+ent(8*rnd))+1;yy2=ent(8*rnd)+1;G1.x=xx1;G2.y=yy1;G2.x=xx2;G2.y=yy2;mm1=&squot;&squot;;' tipo='función' ">
+    <param name="A_13" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='init();otro()' ">
+    <param name="A_14" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' inicio='aux=(editing>=0)?processKB():0' hacer='autorCalculos();;;' ">
+    <param name="G_01" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[20,20]' texto='Obtener el ángulo agudo formado por las rectas:\n\serif{\b{\${y = [M1] x + [B1]}}} y \serif{\b{\${y = [M2] x+ [B2]}}} ' decimales='2' fijo='no' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='20' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+    <param name="G_02" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='(mm1!=&squot;&squot;)&bien' coord_abs='sí' expresión='[600,100]' texto='Correcto' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='20' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+    <param name="G_03" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='(mm1!=&squot;&squot;)&mal' coord_abs='sí' expresión='[600,100]' texto='Incorrecto' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='20' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+    <param name="G_04" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='(mm1=&squot;&squot;)&((G1.x=G2.x)|(M1=M2))' coord_abs='sí' expresión='[390,180]' texto='Cambiar los valores de los puntos para obtener dos rectas diferentes.' decimales='2' fijo='sí' ancho='310' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='20' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+    <param name="G_05" value="espacio='E3' tipo='ecuación' fondo='no' color='000000' dibujar-si='(G1.x)!=(G2.x)' coord_abs='no' expresión='y=M1*x+B1' ancho='2' visible='no' editable='no' ">
+    <param name="G_06" value="espacio='E3' tipo='ecuación' fondo='no' color='000000' dibujar-si='(G1.x)!=(G2.x)' coord_abs='no' expresión='y=M2*x+B2' ancho='2' visible='no' editable='no' ">
+    <param name="G_07" value="espacio='E3' tipo='arco' fondo='no' color='000000' dibujar-si='(abs(Theta1-Theta2)<90)&bien' coord_abs='no' centro='(X,Y)' radio='3' inicio='Theta1' fin='Theta2' vectores='no' decimales='2' fijo='sí' relleno='ff0000' ancho='1' negrita='no' cursiva='no' font_family='Monospaced' fuente puntos='12' lineDash='solid' ">
+    <param name="G_08" value="espacio='E3' tipo='arco' fondo='no' color='000000' dibujar-si='(abs(Theta1-Theta2)>=90)&bien' coord_abs='no' centro='(X,Y)' radio='3' inicio='Theta1' fin='Theta2+180' vectores='no' decimales='2' fijo='sí' relleno='ff0000' ancho='1' negrita='no' cursiva='no' font_family='Monospaced' fuente puntos='12' lineDash='solid' ">
+    <param name="G_09" value="espacio='E3' tipo='ecuación' fondo='no' color='000000' dibujar-si='(G1.x)=(G2.x)' coord_abs='no' expresión='x=G1.x' ancho='2' visible='no' editable='no' ">
+  </ajs>
+
+
+
+</body>
+</html>

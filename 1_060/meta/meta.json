@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Álgebra: Productos notables y factorización"],
+	"titulo" : "Factor común",
+	"descripcion" : "Identificar el máximo factor común de un polinomio.",
+	"resena" : "Identificar el factor común en un binomio",
+	"id" : "1_060"
+}

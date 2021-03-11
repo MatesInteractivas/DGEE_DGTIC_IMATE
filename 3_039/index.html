@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Cálculo Diferencial e Integral: La derivada">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Derivadas de potencias de funciones (continuación)</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Operaciones con funciones y sus derivadas</div>
+  <div id="subtitulo">Derivadas de potencias de funciones (continuación)</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivos</h1>
+
+<ul>
+  <li>Obtener la derivada de potencias de funciones del tipo $f(x)=c(g(x))^{n}$, donde $g$ es una función algebraica, $n$ es un entero o racional y $c$ es una constante.</li>
+  <li>Obtener la derivada de potencias de funciones del tipo $f(x)=c(g(x))^{n}$, donde $g$ es una función trascendente, $n$ es un entero o racional y $c$ es una constante.</li>
+</ul>
+
+<h1>Procedimiento</h1>
+
+<p>Las funciones del tipo $f(x)=c(g(x))^{n}$ son el producto de una constante $c$ y una función compuesta $h(x)=g(x)^{n}$.</p>
+
+<p>Recordemos que la derivada del producto de una constante por una función es igual al producto de la constante por la derivada de la función; así, tenemos que</p>
+
+$$\tag{1} (c h(x))'=c(h'(x))$$
+
+<p>que con la notación de Leibniz es igual a:</p>
+
+$$\frac{d}{dx}ch(x)=c\frac{d}{dx}h(x)$$
+
+<p>Para calcular la derivada de una composición de funciones, se utiliza la regla de la cadena, que en el caso en el que la segunda función que se aplica es una potenciación:</p>
+
+$$\tag{2} (g^{n})'(x)=n(g^{n-1}(x))g'(x)$$
+
+<p>o bien, con la notación de Leibniz, al llamar $u=g(x)$, tenemos que:</p>
+
+$$\tag{3} \frac{du^{n}}{dx}=nu^{n-1}\frac{du}{dx}$$
+
+<p>Las fórmulas (2) y (3) son ciertas para cualquier número real $n$, aunque en esta lección nos limitaremos a valores de $n$ racionales.</p>
+
+<h1>Ejemplos</h1>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:900px; height:570px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:900px; height:400px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>: Carlos Hernández Garciadiego</p>
+<p><b>Edición académica</b>: José Luis Abreu León y Carlos Hernández Garciadiego</p>
+<p><b>Edición técnica</b>: Octavio Fonseca Ramos</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

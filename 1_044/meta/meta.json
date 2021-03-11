@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Álgebra: Ecuaciones lineales"],
+	"titulo" : "Ecuaciones lineales directas",
+	"descripcion" : "Resolver ecuaciones lineales del tipo $a x = b$, con $a$ y $b$ enteros.",
+	"resena" : "Ecuaciones lineales del tipo a x = b",
+	"id" : "1_044"
+}

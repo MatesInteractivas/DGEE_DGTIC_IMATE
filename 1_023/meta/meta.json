@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Aritmética: Los números y sus operaciones"],
+	"titulo" : "Números racionales: Operaciones básicas",
+	"descripcion" : "Resolver problemas que involucren operaciones básicas con números racionales en su expresión de fracción común.",
+	"resena" : "Resolución de problemas que involucran operaciones con fracciones",
+	"id" : "1_023"
+}

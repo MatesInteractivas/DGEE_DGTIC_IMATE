@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La línea recta"],
+	"titulo" : "Rectas y puntos notables de un triángulo",
+	"descripcion" : "Determinar la ecuación de la bisectriz del ángulo agudo de dos rectas que se cortan.",
+	"resena" : "Ecuación de la bisectriz de un ángulo",
+	"id" : "2_052"
+}

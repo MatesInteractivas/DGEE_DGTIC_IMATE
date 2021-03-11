@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: Limites"],
+	"titulo" : "Calculo de limites de funciones",
+	"descripcion" : "Calcular límites de funciones trigonométricas de las formas:",
+	"resena" : "Límites de funciones trigonométricas con indeterminación",
+	"id" : "3_010"
+}

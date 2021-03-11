@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones trascendentes"],
+	"titulo" : "Funciones exponenciales",
+	"descripcion" : "Determinar dominio y rango de funciones exponenciales del tipo $f(x)=ca^{x}$ con $a>1$ y $c≠0$.",
+	"resena" : "Dominio y rango de las funciones exponenciales del tipo ca^x",
+	"id" : "2_189"
+}

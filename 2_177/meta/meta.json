@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones trascendentes"],
+	"titulo" : "Funciones trigonométricas",
+	"descripcion" : "Identificar la gráfica de la función $f(x)=cos(x)$ en el intervalo $[-2π, 2π]$.",
+	"resena" : "Gráficas de las funciones seno, coseno y tangente.",
+	"id" : "2_177"
+}

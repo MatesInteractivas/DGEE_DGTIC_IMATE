@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La parábola"],
+	"titulo" : "La parábola a partir de algunos de sus elementos",
+	"descripcion" : "Obtener la ecuación general de una parábola con vértice en $(h, k)$ y un punto de la parábola conocidos.",
+	"resena" : "Ecuación general de la parábola dados el vértice y un punto",
+	"id" : "2_085"
+}

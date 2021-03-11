@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La parábola"],
+	"titulo" : "La parábola a partir de algunos de sus elementos",
+	"descripcion" : "Obtener la ecuación ordinaria de una parábola con vértice en $(h,k)$ y conociendo la ecuación de la directriz.",
+	"resena" : "Ecuación ordinaria de la parábola dados el vértice y la ecuación de la directriz",
+	"id" : "2_082"
+}

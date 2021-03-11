@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones trascendentes"],
+	"titulo" : "Funciones logaritmicas",
+	"descripcion" : "Identificar la gráfica de funciones logarítmicas del tipo $f(x)=c\;log_{a}x$.",
+	"resena" : "Gráficas de las funciones logarítmicas del tipo c log_a(x)",
+	"id" : "2_201"
+}

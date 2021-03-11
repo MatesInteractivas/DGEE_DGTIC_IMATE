@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Álgebra: Sistemas de ecuaciones lineales de 2 x 2">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Resolución de problemas mediante sistemas de ecuaciones</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Sistemas de ecuaciones lineales de $2×2$</div>
+  <div id="subtitulo">Resolución de problemas mediante sistemas de ecuaciones</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Resolver problemas mediante sistemas de ecuaciones lineales de $2×2$.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Un problema en el que se te pide que encuentres dos incógnitas, y al traducirlo obtienes un par de ecuaciones lineales, puedes resolverlo utilizando los métodos de solución de sistemas de ecuaciones lineales de $2×2$.</p>
+
+<h1>Solución</h1>
+
+<p>Por ejemplo, si traducimos al lenguaje algebraico el siguiente problema:</p>
+
+<p class="bloque">Un hombre hace testamento a favor de su mujer y de su hija dejando $28,000$ pesos a la  primera y $12,000$ a la segunda. Sin embargo, al momento de su muerte sólo dispone de  $14,800$. ¿Qué cantidad debe recibir cada una de las herederas respetando la proporción establecida en el testamento?</p>
+
+<p>Obtenemos el par de ecuaciones:</p>
+
+$$\tag{1} x+y=14 800$$
+$$\tag{2} \frac{x}{y}=\frac{7}{3}$$
+
+<p>porque $\frac{28 000}{12 000}=\frac{7}{3}$</p>
+
+<p>Al despejar la incógnita $x$ en la ecuación (2) obtenemos el siguiente sistema de ecuaciones lineales (equivalente al anterior):</p>
+
+$$\tag{3} x+y=14 800$$
+$$\tag{4} x=\frac{7}{3}y$$
+
+<p>Dado que la incógnita $x$ se encuentra despejada en la ecuación (4), conviene utilizar el método de sustitución. Así tenemos:</p>
+
+$$\frac{7}{3}y+y=14 800$$
+
+<p>Ésta es una ecuación lineal que al resolverse produce el resultado $y=4 440$, con lo que se tiene el valor de una de las incógnitas. Para encontrar el valor de la otra, basta con sustituir este valor en (4), y se obtiene el resultado $x=10 360$.</p>
+
+<h1>Ejercicios</h1>
+
+<p>En el siguiente recuadro interactivo puedes resolver los problemas propuestos. Usa el espacio en blanco para realizar operaciones con la calculadora. </p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:900px; height:570px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autores</b>: Fernando René Martínez Ortiz y Norma Patricia Apodaca Alvarez</p>
+<p><b>Edición académica</b>: José Luis Abreu León</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

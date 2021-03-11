@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La línea recta"],
+	"titulo" : "Rectas y puntos notables de un triángulo",
+	"descripcion" : "Determinar la ecuación de una de las bisectrices de un triángulo a partir de sus vértices.",
+	"resena" : "Ecuaciones de las bisectrices de un triángulo",
+	"id" : "2_053"
+}

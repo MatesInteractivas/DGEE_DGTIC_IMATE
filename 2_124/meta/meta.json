@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Ceros de funciones polinomiales de grado 2.",
+	"descripcion" : "Factoriza una función del tipo $f(x)=ax^{2}+bx+c$, con $a$, $b$ y $c$ enteros.",
+	"resena" : "Factorización de funciones polinomiales de grado $2$",
+	"id" : "2_124"
+}

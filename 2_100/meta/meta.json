@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La elipse"],
+	"titulo" : "La elipse a partir de algunos de sus elementos",
+	"descripcion" : "Obtener la ecuación ordinaria de una elipse con centro en $(h,k)$, conociendo un vértice y un foco.",
+	"resena" : "Ecuación ordinaria de la elipse con centro en el origen dados el centro  un vértice y un foco",
+	"id" : "2_100"
+}

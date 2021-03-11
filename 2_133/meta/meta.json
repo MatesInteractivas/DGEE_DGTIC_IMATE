@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Funciones continuas y discontinuas.",
+	"descripcion" : "Determinar para qué valores una función es discontinua.",
+	"resena" : "Puntos de discontinuidad de una función",
+	"id" : "2_133"
+}

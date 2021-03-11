@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Geometría analítica: La elipse">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Ecuación ordinaria de la elipse conocidos sus dos focos o sus dos vértices y algún otro dato</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">La elipse a partir de algunos de sus elementos</div>
+  <div id="subtitulo">Ecuación ordinaria de la elipse conocidos sus dos focos o sus dos vértices y algún otro dato</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Obtener la ecuación ordinaria de la elipse conocidos sus dos focos o sus dos vértices y algún otro dato.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01A.html" style="width:380px; height:570px;"></iframe></div>
+
+<h1>Procedimiento</h1>
+
+<p>Con los datos obtenemos la posición y orientación de la elipse. Si conocemos los vértices, obtenemos $a$, si son los focos, obtenemos $c$. Con el otro dato obtenemos el valor de la segunda literal, y si es necesario, determinamos el valor de la tercera literal ($b$ ó $a$) con el teorema de Pitágoras.</p>
+
+<h1>Solución</h1>
+
+<ol>
+  <li>
+    Ubicamos ambos focos o vértices en el plano para determinar la posición y orientación de la elipse. Criterios:<br>
+    <ul style="padding-top:0;">
+      <li>Si ambos están sobre la misma línea horizontal, esa es la orientación de la elipse.</li>
+      <li>Si ambos están sobre la misma línea vertical, esa es la orientación de la elipse.</li>
+    </ul>
+  </li>
+  <li>En cualquier caso, el centro es el punto medio de los dos puntos.</li>
+  <li>La mitad de la distancia entre ellos corresponde, para los vértices a la literal $a$, y para los focos a la literal $c$.</li>
+  <li>
+    Con el otro dato obtenemos el valor de la segunda literal:<br>
+    <ul style="padding-top:0;">
+      <li>Si es un extremo del eje menor, obtenemos directamente $b$.</li>
+      <li>Si es el eje menor, también obtenemos $b$ calculando la mitad de su distancia.</li>
+      <li>Si es excentricidad, $e$, empleamos la siguiente fórmula para obtener la segunda literal:</li>
+      $$e=\frac{c}{a}$$
+      <p>En este caso, empleamos el teorema de Pitágoras para calcular $b$.</p>
+    </ul>
+  </li>
+</ol>
+
+<h1>Ejemplo </h1>
+
+<p>A continuación se describe el procedimiento para obtener la ecuación ordinaria de una elipse a partir de diferentes datos. Con el primer menú selecciona como dato los vértices o los focos, y con el segundo menú selecciona como dato un extremo del eje menor, la longitud del eje menor o la excentricidad. Presiona <span class="btn">Continuar</span>.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02A.html" style="width:900px; height:570px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>Obtener la ecuación ordinaria de una elipse con centro en $(h,k)$, a partir de los datos dados.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02B.html" style="width:900px; height:570px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>: Octavio Fonseca Ramos</p>
+<p><b>Edición académica</b>: Fernando René Martínez Ortíz</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez y Fernando René Martínez Ortíz</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Octavio Fonseca Ramos</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

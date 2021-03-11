@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La circunferencia"],
+	"titulo" : "Ecuación general de la circunferencia",
+	"descripcion" : "Determinar las coordenadas del centro de una circunferencia a partir de su ecuación en forma general.",
+	"resena" : "El centro de una circunferencia a partir de su ecuación general",
+	"id" : "2_068"
+}

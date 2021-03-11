@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Cálculo Diferencial e Integral: La derivada">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Derivada de f(x) = h(g(x)), donde h es trascendente y g algebraica</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Composición de funciones y sus derivadas</div>
+  <div id="subtitulo">Derivada de $f(x)=h(g(x))$, donde $h$ es trascendente y $g$ algebraica</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Obtener la derivada de la composición de funciones del tipo $f(x)=h(g(x)$, donde $h$ es función trascendente y $g$ algebraica.</p>
+
+<h1>Conceptos básicos</h1>
+
+<p>Las funciones $(x^{2}+1)^{100}$, $cos(3x^{3}-2x)$, $3 sen^{5}(x)+2$ o $e^{tg(x)+x}$ son algunos ejemplos de lo que llamamos composición de funciones. La composición, $h \circ g$ de dos funciones es una función que evalúa $g(x)$ y al resultado de esta evaluación le aplica la función $h$. Así</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:900px; height:300px;"></iframe></div>
+
+<p>En la siguiente escena puedes observar el significado geométrico de la composición. Mueve el control $x$ en la primera gráfica, la flecha roja muestra el valor $g(x)$, en la segunda gráfica se evalúa $h$ en $u=g(x)$ y en la tercera gráfica ese valor, $h(u)=h(g(x))$ se asocia con $x$. Con los pulsadores puedes cambiar las funciones $g$ y $h$.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:740px; height:360px;"></iframe></div>
+
+<p>La derivada de la composición $h(g(x))$ en el punto $x_{0}$ es el límite del cociente</p>
+
+$$\frac{h(g(x))-h(g(x_{0}))}{x-x_{0}}=\frac{Δ(h \circ g))}{Δ x}$$
+
+<p>cuando $x$ tiende a $x_{0}$. Si pulsas <span class="btn">ver/cerrar</span> en la escena anterior, podrás observar la relación de ese cociente con </p>
+
+$$\frac{Δ(h \circ g))}{∆g}=\frac{h(g(x))-h(g(x_{0}))}{g(x)-g(x_{0})}$$
+
+<p>y</p>
+
+$$\frac{∆g}{Δ x}=\frac{g(x)-g(x_{0})}{x-x_{0}}$$
+
+<p>Si $Δg=g(x)-g(x_{0})≠0$</p>
+
+$$\frac{Δ(h \circ g)}{Δ x}=\frac{Δ(h \circ g)}{∆g}·\frac{∆g}{Δ x}$$
+
+<p>Entonces la derivada de la composición</p>
+
+$$\begin{aligned}
+\frac{d(h \circ g)}{dx}(x_{0}) &= \lim_{x \to x_{0}} \frac{Δ(h \circ g)}{Δ x} \\
+&= \lim_{x \to x_{0}} \frac{Δ(h \circ g)}{∆g}·\lim_{x \to x_{0}} \frac{∆g}{Δx} \\
+&= \lim_{x \to x_{0}} \frac{h(g(x))-h(g(x_{0})}{g(x)-g(x)}·\lim_{x \to x_{0}} \frac{g(x)-g(x_{0})}{x-x_{0}} 
+\end{aligned}$$
+
+<p>y, como $u=g(x)→u_{0}=g(x_{0})$ cuando $x→x_{0}$,</p>
+
+$$\begin{aligned}
+&=\lim_{u \to u_{0}} \frac{h(u)-h(u_{0})}{u-u_{0}}·\lim_{x \to x_{0}} \frac{g(x)-g(x_{0})}{x-x_{0}}\\
+&= \frac{dh}{du}(u_{0})·\frac{dg}{dx}(x_{0})\\
+&=\frac{dh}{du}(f(x_{0}))·\frac{dg}{dx}(x_{0})
+\end{aligned}$$
+
+<p>En resumen, para calcular la derivada de una composición se aplica la Regla de la Cadena</p>
+
+$$\frac{d(h \circ g)}{dx} x_{0}=\frac{dh}{du}(f(x_{0}))·\frac{dg}{dx}(x_{0})$$
+
+<p class="bloque"><b>Nota</b>: Cuando $g(x)$ es constante, $Δg=g(x)-g(x_{0})=c-c=0$, como no se puede dividir entre $0$, no podemos sustituir $\frac{Δ(h \circ g)}{Δx}$ por $\frac{Δ(h \circ g)}{Δg}$. $\frac{Δg}{Δx}$ para ninguna $x$. Pero, en ese caso, la composición $h \circ g(x)$ también es constante: $h(g(x))=h(c)$. De ahi que  $\frac{dh}{du}(f(x_{0}))·\frac{dg}{dx}(x_{0})=\frac{dh}{du}(f(x_{0}))·0=0$ y $\frac{d(h \circ g)}{dx}$ $(x_{0})$ $=0$</p>
+
+<p>y que también sea válida la Regla de la Cadena.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Así, para obtener la derivada de la composición de dos funciones $h(g(x))$ en un punto $x_{0}$:</p>
+
+<ol>
+  <li>Se determina quienes son las funciones $g$ y $h$,</li>
+  <li>Se obtiene la derivada $\frac{dh}{du}$ en el punto $u_{0}=g(x_{0})$,</li>
+  <li>Se obtiene la derivada $\frac{dg}{dx}$ en el punto $x_{0}$,</li>
+  <li>Se multiplican ambas para obtener $\frac{dh(g(x))}{dx}(x_{0})=\frac{dh}{du}(g(x_{0}))·\frac{dg}{dx}(x_{0})$.</li>
+</ol>
+
+<h1>Ejemplos</h1>
+
+<p>Con los pulsadores podrás ver paso a paso el procedimiento aplicado a ejemplos en los que la función $h$ es trascendente y la función $g$ es algebraica.</p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:720px; height:480px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<div class="interactivo"><iframe src="escenas/escena04.html" style="width:840px; height:480px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autora</b>:  María de Lourdes Velasco Arregui</p>
+<p><b>Editores académicos</b>: José Luis Abreu León y Carlos Hernández Garciadiego</p>
+<p><b>Editor técnico</b>: Carlos Alberto Serrato Hernández</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

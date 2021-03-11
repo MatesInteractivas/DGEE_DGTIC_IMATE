@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Funciones y sus gráficas: Funciones algebraicas">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Funciones continuas y discontinuas.</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Funciones: Monotonía, continuidad y discontinuidades</div>
+  <div id="subtitulo">Identificación gráfica de los puntos de discontinuidad de una función</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Identificar gráficamente los puntos donde una función sea discontinua.</p>
+
+<h1>Procedimiento</h1>
+
+<p>De manera informal, decimos que una función es discontinua si, para dibujar su gráfica, es necesario despegar el lápiz del papel.</p>
+
+<p>Decimos que la función es discontinua en un cierto punto si éste rompe la continuidad de la función. Estos puntos los podemos reconocer en la gráfica de la función como cambios drásticos de valor, saltos, o como valores sin definir, huecos.</p>
+
+<p>En el caso que nos interesa, las discontinuidades en las funciones racionales de la forma $f(x)=\frac{P(x)}{Q(x)}$ con $P(x)$ y $Q(x)$ lineales o cuadráticas, se encuentran en los ceros de $Q(x)$. Esto es, los valores de $x$ que satisfacen $Q(x) = 0$ son puntos donde $f$ es discontinua. Lo anterior se debe a que la división entre cero no está definida. Notemos que el número de discontinuidades será el número de soluciones de $Q(x)=0$.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:500px; height:300px;"></iframe></div>
+
+<h1>Ejemplos</h1>
+
+<p>Utiliza el siguiente cuadro interactivo para que observes varios ejemplos en los que se identifiquen los valores de $x$ donde $f$ es discontinua.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:750px; height:440px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>Observa la gráfica y determina para qué valores de $x$ la función es discontinua.</p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:960px; height:500px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autora</b>: Valentina Muñoz Porras</p>
+<p><b>Edición académica</b>: Carlos Hernández Garciadiego y Octavio Fonseca Ramos</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Joel Espinosa Longi</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

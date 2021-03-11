@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Coordenadas cartesianas y polares"],
+	"titulo" : "Puntos en el plano",
+	"descripcion" : "Calcular el perímetro de un polígono a partir de las coordenadas de sus vértices.",
+	"resena" : "Cálculo del perímetro de un polígono",
+	"id" : "2_013"
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Funciones y sus gráficas: Funciones algebraicas">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Asíntotas horizontales y verticales a partir de la regla de correspondencia de una función racional.</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Funciones racionales</div>
+  <div id="subtitulo">Asíntotas horizontales y verticales</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Encontrar la asíntota horizontal de la función $f(x)=\frac{P(x)}{Q(x)}$, con $P(x)$ y $Q(x)$ lineales o cuadráticas.</p>
+
+<h1>Procedimiento</h1>
+
+<p>La gráfica de $f(x)=\frac{P(x)}{Q(x)}$ con $P(x)$ y $Q(x)$, lineales o cuadráticas, tendrá a lo más una asíntota horizontal. Para encontrarla, hay que comparar los grados de los polinomios $P$ y $Q$. Llamaremos $m$ y $n$ a los grados de $P$ y $Q$, respectivamente. Notemos que en el caso de estudio, $m$ y $n$ pueden ser $0$, $1$ y $2$ dependiendo de si el polinomio es constante, lineal o cuadrático.</p>
+
+<h2>Casos:</h2>
+
+<ol>
+  <li>Si $m < n$, entonces la gráfica de $f$ tendrá la recta $y=0$ como asíntota horizontal. Es decir, en este caso, el eje $X$ es asíntota horizontal de la gráfica de $f$.</li>
+  <li>Si $m=n$, entonces la gráfica de $f$ tendrá la recta $y=\frac{A_{n}}{B_{m}}$ como su asíntota horizontal. $A_{n}$ y $B_{m}$ son los coeficientes del término de mayor grado de los polinomios $P$ y $Q$ respectivamente.</li>
+  <li>Si $m>n$, entonces la gráfica de $f$ no tendrá ninguna asíntota horizontal.</li>
+</ol>
+
+<h1>Solución</h1>
+
+<p>Realiza lo que se te indica en los siguientes pasos para encontrar la asíntota horizontal de $f$.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:960px; height:670px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>Encuentra la asíntota horizontal de la función dada. Verifica tu respuesta y resuelve más ejercicios.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:700px; height:450px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autora</b>: Valentina Muñoz Porras </p>
+<p><b>Edición académica</b>: José Luis Abreu León, Carlos Hernández Garciadiego y Joel Espinosa Longi</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez y Fernando René Martínez Ortiz</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Joel Espinosa Longi</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

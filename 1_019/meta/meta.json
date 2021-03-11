@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Aritmética: Los números y sus operaciones"],
+	"titulo" : "Números racionales: Operaciones básicas",
+	"descripcion" : "Realizar sumas con números racionales en su expresión de fracción común.",
+	"resena" : "Sumas con fracciones",
+	"id" : "1_019"
+}

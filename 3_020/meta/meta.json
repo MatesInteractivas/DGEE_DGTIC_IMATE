@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: La derivada"],
+	"titulo" : "Derivadas de las funciones básicas",
+	"descripcion" : "Obtener por fórmula la derivada de funciones del tipo:",
+	"resena" : "Derivadas de constantes, funciones lineales y potencias de x",
+	"id" : "3_020"
+}

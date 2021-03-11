@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: La integral"],
+	"titulo" : "La integral definida",
+	"descripcion" : "Interpretar geométricamente el concepto de integral definida.",
+	"resena" : "Interpretación geométrica de la integral definida",
+	"id" : "3_074"
+}

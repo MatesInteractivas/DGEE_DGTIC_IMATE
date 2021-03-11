@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Álgebra: Ecuaciones cuadráticas"],
+	"titulo" : "Ecuaciones cuadráticas especiales",
+	"descripcion" : "Resolver ecuaciones cuadráticas del tipo $a(x+m)^{2}=n$.",
+	"resena" : "Ecuaciones de la forma a(x + m)² = n",
+	"id" : "1_074"
+}

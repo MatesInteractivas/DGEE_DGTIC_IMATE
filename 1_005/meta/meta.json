@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Aritmética: Los números y sus operaciones"],
+	"titulo" : "Números naturales",
+	"descripcion" : "Calcula el máximo común divisor con números naturales (máximo 5 números diferentes).",
+	"resena" : "Algoritmo de Euclídes: máximo común divisor",
+	"id" : "1_005"
+}

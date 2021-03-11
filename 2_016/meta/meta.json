@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Coordenadas cartesianas y polares"],
+	"titulo" : "Puntos en el plano",
+	"descripcion" : "Encontrar las coordenadas del punto que divide a un segmento en una razón dada conocidos sus extremos.",
+	"resena" : "Coordenadas del punto que divide al segmento en una razón dada",
+	"id" : "2_016"
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Aritmética: Los números y sus operaciones">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Operaciones básicas con signos de agrupación</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Números naturales</div>
+  <div id="subtitulo">Operaciones básicas con signos de agrupación</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Realizar operaciones combinadas con números naturales que incluyan signos de agrupación.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Al escribir una expresión aritmética puedes utilizar los paréntesis para modificar el orden en el que se deben realizar las operaciones y también para reafirmar la jerarquía de las mismas. Los paréntesis indican que las operaciones que se encuentran dentro de ellos deben realizarse antes que aquellas que se encuentran fuera.</p>
+
+<p>Recuerda que en la expresión $3+7×5$ la jerarquía de las operaciones señala que se debe realizar primero la multiplicación $7×5$ y al resultado sumarle $3$. El uso de los paréntesis puede reafirmar esto escribiendo $3+(7×5)$ lo cual tiene el mismo valor que $3+7×5$.</p>
+
+<h1>Solución</h1>
+
+<p>En el siguiente recuadro interactivo debes decidir cuál de las expresiones con paréntesis reafirma la jerarquía de las operaciones aplicada a la primera expresión. Recuerda que cuando aparecen paréntesis anidados (uno dentro de otro) se debe realizar primero la operación señalada por los paréntesis más internos.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01A.html" style="width:720px; height:480px;"></iframe></div>
+
+<p>Los paréntesis también se utilizan para modificar el orden impuesto por la jerarquía de operaciones. Por ejemplo, se tiene que escribir $(8+5)×2$ si se quiere indicar que la suma debe realizarse antes que la multiplicación.</p>
+
+<p>En el recuadro interactivo que se presenta a continuación, decide cuál de las expresiones con paréntesis produce el resultado dado.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01B.html" style="width:720px; height:480px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>En el siguiente recuadro interactivo aparece una operación, a la que le faltan paréntesis, junto con un resultado. Determina el orden correcto en el que se deben realizar las operaciones para obtener dicho resultado. Para ello deberás presionar los botones de los operadores en el orden que has decidido.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01C.html" style="width:720px; height:570px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>: Fernando René Martínez Ortiz</p>
+<p><b>Edición académica</b>: José Luis Abreu León</p>
+<p><b>Edición técnica</b>:  Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Octavio Fonseca Ramos</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

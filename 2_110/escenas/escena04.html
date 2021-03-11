@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title></title>
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+<div align="center">
+<ajs name="Descartes" width="960" height="480" code="Descartes">
+   <param name="tamaño" value="960x480">
+   <param name="expand" value="fit">
+   <param name="editable" value="no">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.5">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no ancho_este=150 ancho_oeste=150 alto=40">
+   <param name="E_01" value="tipo='R2' id='E2' fijo='sí' O.y='-30' despl_imagen='arr-izq' fondo='(E2.rojo,E2.verde,E2.azul,ff)' red='no' red10='no' ejes='405860' texto='no'">
+   <param name="E_02" value="tipo='R2' id='GRAFICA_1' x='10' y='10' ancho='465' alto='405' fijo='sí' despl_imagen='arr-izq' red='no' red10='no' ejes='405860' texto='no'">
+   <param name="E_03" value="tipo='R2' id='GRAFICA_2' x='485' y='10' ancho='465' alto='405' fijo='sí' despl_imagen='arr-izq' red='no' red10='no' ejes='405860' texto='no'">
+   <param name="C_01" value="id='mn0' tipo='numérico' interfaz='menú' región='interior' espacio='E2' expresión='(CP(ctx,0),CP(cty,0),CP(ctw,0),CP(cth,0))' fijo='sí' visible='no' imagen='VACIO.GIF' opciones=' ,función,no es función' acción='calcular' parámetro='autorLimpiar()' dibujar-si='CP(dibujar_si,0)&amp;&amp;!CP(boton,0)'">
+   <param name="C_02" value="id='mn1' tipo='numérico' interfaz='menú' región='interior' espacio='E2' expresión='(CP(ctx,1),CP(cty,1),CP(ctw,1),CP(cth,1))' fijo='sí' visible='no' imagen='VACIO.GIF' opciones=' ,función,no es función' acción='calcular' parámetro='autorLimpiar()' dibujar-si='CP(dibujar_si,1)&amp;&amp;!CP(boton,1)' pos_mensajes='centro'">
+   <param name="C_03" value="id='mn2' tipo='numérico' interfaz='menú' región='interior' espacio='E2' expresión='(CP(ctx,2),CP(cty,2),CP(ctw,2),CP(cth,2))' fijo='sí' visible='no' imagen='VACIO.GIF' opciones=' ,opción 1,opción 2,opción 3' acción='calcular' parámetro='autorLimpiar()' dibujar-si='CP(dibujar_si,2)&amp;&amp;!CP(boton,2)' pos_mensajes='centro'">
+   <param name="C_04" value="id='tb0' tipo='numérico' interfaz='botón' región='interior' espacio='E2' expresión='(CP(ctx,0),CP(cty,0),CP(ctw,0),CP(cth,0))' fijo='sí' visible='sí' imagen='VACIO.GIF' acción='calcular' parámetro='editB(0)' dibujar-si='CP(dibujar_si,0)&amp;&amp;CP(active,0)&amp;&amp;CP(boton,0)' pos_mensajes='centro'">
+   <param name="C_05" value="id='tb1' tipo='numérico' interfaz='botón' región='interior' espacio='E2' expresión='(CP(ctx,1),CP(cty,1),CP(ctw,1),CP(cth,1))' fijo='sí' visible='sí' imagen='VACIO.GIF' acción='calcular' parámetro='editB(1)' dibujar-si='CP(dibujar_si,1)&amp;&amp;CP(active,1)&amp;&amp;CP(boton,1)' pos_mensajes='centro'">
+   <param name="C_06" value="id='tb2' tipo='numérico' interfaz='botón' región='interior' espacio='E2' expresión='(CP(ctx,2),CP(cty,2),CP(ctw,2),CP(cth,2))' fijo='sí' visible='sí' imagen='VACIO.GIF' acción='calcular' parámetro='verificar()' dibujar-si='CP(dibujar_si,2)&amp;&amp;CP(active,2)&amp;&amp;CP(boton,2)' pos_mensajes='centro'">
+   <param name="C_07" value="id='tb3' tipo='numérico' interfaz='botón' región='interior' espacio='E2' expresión='(CP(ctx,3),CP(cty,3),CP(ctw,3),CP(cth,3))' fijo='sí' visible='sí' imagen='VACIO.GIF' acción='calcular' parámetro='otroEjercicio()' dibujar-si='CP(dibujar_si,3)&amp;&amp;CP(active,3)&amp;&amp;CP(boton,3)' pos_mensajes='centro'">
+   <param name="C_08" value="id='tb4' tipo='numérico' interfaz='botón' región='interior' espacio='E2' expresión='(CP(ctx,4),CP(cty,4),CP(ctw,4),CP(cth,4))' fijo='sí' visible='sí' imagen='VACIO.GIF' acción='calcular' parámetro='editB(4)' dibujar-si='CP(dibujar_si,4)&amp;&amp;CP(active,4)&amp;&amp;CP(boton,4)' pos_mensajes='centro'">
+   <param name="C_09" value="id='tb5' tipo='numérico' interfaz='botón' región='interior' espacio='E2' expresión='(CP(ctx,5),CP(cty,5),CP(ctw,5),CP(cth,5))' fijo='sí' visible='sí' imagen='VACIO.GIF' acción='calcular' parámetro='editB(5)' dibujar-si='CP(dibujar_si,5)&amp;&amp;CP(active,5)&amp;&amp;CP(boton,5)' pos_mensajes='centro'">
+   <param name="C_10" value="id='__SEPARADOR__' tipo='numérico' región='interior' espacio='E2' nombre='__SEPARADOR__' fijo='sí' visible='sí' dibujar-si='0' pos_mensajes='centro'">
+   <param name="C_11" value="id='p1' tipo='gráfico' espacio='GRAFICA_1' tamaño='8' expresión='(-1,0)' fijo='sí'">
+   <param name="C_12" value="id='p2' tipo='gráfico' espacio='GRAFICA_2' tamaño='8' expresión='(-1,0)' fijo='sí'">
+   <param name="A_01" value="id='botX(d,x,w,t)' algoritmo='sí' expresión='val' algoritmo='sí' Local='val' inicio='val=x' hacer='val=((t==1)|(t==6))?x+d    :val;val=((t==2)|(t==5))?x+w-1-d:val;val=((t==3)|(t==4))?x+w-1  :val;'">
+   <param name="A_02" value="id='botY(d,y,h,t)' algoritmo='sí' expresión='val' algoritmo='sí' Local='val' inicio='val=y' hacer='val=((t%8==0)|(t==3))?y+d  :val;val=((t==4)|(t==7))?y+h-1-d:val;val=((t==5)|(t==6))?y+h-1  :val;'">
+   <param name="A_03" value="id='CT' vector='sí' matriz='sí' evaluar='una-sola-vez' columnas='24' filas='13' expresión='ix=0;name=1;middle=2;last=3;value=4;ctx=5;cty=6;ctw=7;cth=8;active=9;teclado=10;interfaz=10;boton=10;dibujar_si=12;'">
+   <param name="A_04" value="id='CP(a,k)' algoritmo='sí' expresión='res' algoritmo='sí' Local='res,pad' inicio='pad=5' hacer='res=(a==ctx)?CT[k,ctx]+pad:res;res=(a==cty)?CT[k,cty]+pad:res;res=(a==ctw)?CT[k,ctw]-pad*2:res;res=(a==cth)?CT[k,cth]-pad*2:res;res=(a==active)?CT[k,active]:res;res=(a==interfaz)?(CT[k,interfaz]<4):res;res=(a==dibujar_si)?CT[k,dibujar_si]:res;;'">
+   <param name="A_05" value="id='init()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='TCL.x=E2._w-TCL._w-5;TCL.y=E2._h-TCL._h-5;rd=3;editing=-1;Teclado.S=&amp;squot;&amp;squot;;Teclado.Sa=&amp;squot;&amp;squot;;texth=27;textp=10;;autorControls();;TIT.rojo= (11*16+ 8)/256;TIT.verde=( 0*16+ 8)/256;TIT.azul= ( 1*16+ 0)/256;;FONDO.rojo= ( 9*16+ 0)/256;FONDO.verde=( 9*16+ 8)/256;FONDO.azul= (10*16+ 8)/256;;E2.rojo= (14*16+ 8)/256;E2.verde=(15*16+ 0)/256;E2.azul= (15*16+ 0)/256;;E3.rojo= (0*16+ 0)/256;E3.verde=(0*16+ 0)/256;E3.azul= (0*16+ 0)/256;;TXT.rojo= ( 1*16+ 8)/256;TXT.verde=( 2*16+ 0)/256;TXT.azul= ( 2*16+ 8)/256;;CTR.rojo= ( 0*16+ 0)/256;CTR.verde=( 4*16+ 0)/256;CTR.azul= (15*16+15)/256;;CTI.rojo= (15*16+ 0)/256;CTI.verde=(15*16+ 0)/256;CTI.azul= (15*16+ 0)/256;;ARR.rojo= ( 4*16+ 0)/256;ARR.verde=( 8*16+ 0)/256;ARR.azul= ( 6*16+ 0)/256;;BORDER.rojo=CTR.rojo*0.90;BORDER.verde=CTR.verde*0.90;BORDER.azul=CTR.azul*0.90;'">
+   <param name="A_06" value="id='Str(s)' expresión='CT[s,name]+CT[s,middle]+CT[s,value]+CT[s,last]'">
+   <param name="A_07" value="id='editB(k)' algoritmo='sí' algoritmo='sí' Local='S,tipo' hacer='editing=k;tipo=CT[k,interfaz];tt=(tipo==0)?TCL.set(&amp;squot;columnas&amp;squot;,6):TCL.set(&amp;squot;columnas&amp;squot;,12);_ta=((tipo==1)|(tipo=0))?0:1;_tm=(tipo==3)?1:0;TCL.set(&amp;squot;ta&amp;squot;,_ta);TCL.set(&amp;squot;tm&amp;squot;,_tm);TCL.exec(&amp;squot;initTcl&amp;squot;,&amp;squot;&amp;squot;);S=CT[k,value];teclado.S=CT[k,value];TCL.set(&amp;squot;S&amp;squot;,teclado.S);TCL.set(&amp;squot;show_cursor&amp;squot;,1);TCL.update();'">
+   <param name="A_08" value="id='processKB()' algoritmo='sí' algoritmo='sí' hacer='CT[editing,value]=(Teclado.Sa!=Teclado.S)?Teclado.S:CT[editing,value];Teclado.Sa=Teclado.S;'">
+   <param name="A_09" value="id='autorControls()' algoritmo='sí' expresión='x' algoritmo='sí' inicio='NCT=0' hacer='CT[NCT,ix]=NCT;CT[NCT,name]=&amp;squot;&amp;squot;;CT[NCT,middle]=&amp;squot;&amp;squot;;CT[NCT,last]=&amp;squot;&amp;squot;;CT[NCT,value]=&amp;squot;&amp;squot;;CT[NCT,ctw]=180;CT[NCT,cth]=50;CT[NCT,ctx]=E2._w/4-CT[NCT,ctw]/2;CT[NCT,cty]=E2._h-CT[NCT,cth]-5;CT[NCT,active]=1;CT[NCT,interfaz]=4;CT[NCT,dibujar_si]=1;NCT=NCT+1;;CT[NCT,ix]=NCT;CT[NCT,name]=&amp;squot;&amp;squot;;CT[NCT,middle]=&amp;squot;&amp;squot;;CT[NCT,last]=&amp;squot;&amp;squot;;CT[NCT,value]=&amp;squot;&amp;squot;;CT[NCT,ctw]=180;CT[NCT,cth]=50;CT[NCT,ctx]=3*E2._w/4-CT[NCT,ctw]/2;CT[NCT,cty]=E2._h-CT[NCT,cth]-5;CT[NCT,active]=1;CT[NCT,interfaz]=4;CT[NCT,dibujar_si]=1;NCT=NCT+1;;CT[NCT,ix]=NCT;CT[NCT,name]=&amp;squot;Verificar&amp;squot;;CT[NCT,middle]=&amp;squot;&amp;squot;;CT[NCT,last]=&amp;squot;&amp;squot;;CT[NCT,value]=&amp;squot;&amp;squot;;CT[NCT,ctw]=180;CT[NCT,cth]=50;CT[NCT,ctx]=(E2._w-CT[NCT,ctw])/2;CT[NCT,cty]=E2._h-CT[NCT,cth]-5;CT[NCT,active]=1;CT[NCT,interfaz]=0;CT[NCT,dibujar_si]=1;NCT=NCT+1;;CT[NCT,ix]=NCT;CT[NCT,name]=&amp;squot;Otro ejercicio&amp;squot;;CT[NCT,middle]=&amp;squot;&amp;squot;;CT[NCT,last]=&amp;squot;&amp;squot;;CT[NCT,value]=&amp;squot;&amp;squot;;CT[NCT,ctw]=180;CT[NCT,cth]=50;CT[NCT,ctx]=(E2._w-CT[NCT,ctw])/2;CT[NCT,cty]=E2._h-CT[NCT,cth]-5;CT[NCT,active]=1;CT[NCT,interfaz]=0;CT[NCT,dibujar_si]=0;NCT=NCT+1;;'">
+   <param name="A_10" value="id='autorLimpiar()' algoritmo='sí' algoritmo='sí' inicio='editing=-1' hacer='CT[1,value]=&amp;squot;&amp;squot;;CT[2,value]=&amp;squot;&amp;squot;;CT[3,value]=&amp;squot;&amp;squot;;CT[4,value]=&amp;squot;&amp;squot;;;'">
+   <param name="A_11" value="id='autorCalculos()' algoritmo='sí' algoritmo='sí' hacer='expresion=((CT[1,value]!=&amp;squot;&amp;squot;)&amp;(CT[2,value]!=&amp;squot;&amp;squot;)&amp;(CT[3,value]!=&amp;squot;&amp;squot;))?CT[1,value]+&amp;squot;-&amp;squot;+CT[2,value]+&amp;squot;+&amp;squot;+CT[3,value]:&amp;squot;&amp;squot;;CT[4,value]=(expresion!=&amp;squot;&amp;squot;)?&amp;squot;&amp;squot;+_Eval_(expresion):CT[4,value];'">
+   <param name="A_12" value="id='set(btn,prop,val)' algoritmo='sí' algoritmo='sí' hacer='CT[btn,prop]=val'">
+   <param name="A_13" value="id='otroEjercicio()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='set(0,dibujar_si,1);set(1,dibujar_si,1);set(2,dibujar_si,1);set(3,dibujar_si,0);mn0=0;mn1=0;;p1.x=-1;aleato=ent(rnd*7);;p2.x=-1;aleaton=ent(rnd*7)'">
+   <param name="A_14" value="id='verificar()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='verificado=0;;set(0,dibujar_si,0);set(1,dibujar_si,0);set(2,dibujar_si,0);set(3,dibujar_si,1);;verifik1=(((mn0==1)&amp;&amp;((aleato==0)||(aleato==1)||(aleato==4)||(aleato==6)))||((mn0==2)&amp;&amp;((aleato==2)||(aleato==3)||(aleato==5))));verifik2=(((mn1==1)&amp;&amp;((aleaton==1)||(aleaton==2)||(aleaton==3)||(aleaton==4)||(aleaton==6)))||((mn1==2)&amp;&amp;((aleaton==0)||(aleaton==5))));'">
+   <param name="A_15" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='init();;otroEjercicio();;'">
+   <param name="A_16" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' inicio='aux=(editing>=0)?processKB():0' hacer='autorCalculos();;;'">
+   <param name="G_01" value="espacio='E2' tipo='curva' fondo='sí' color='(E2.rojo*0.8,E2.verde*0.8,E2.azul*0.8,00)' coord_abs='sí' expresión='(botX(rd,0,E2._w,t),botY(rd,0,E2._h,t))' t.intervalo='[0,8]' relleno='(E2.rojo,E2.verde,E2.azul,00)' info='(PLANTILLA) fondo de la zona de texto'">
+   <param name="G_02" value="espacio='E2' tipo='curva' color='negro' dibujar-si='CP(dibujar_si,s)' coord_abs='sí' expresión='(botX(rd,CP(ctx,s)-5,CP(ctw,s)+10,t),botY(rd,CP(cty,s)-5,CP(cth,s)+10,t))' familia='s' s.intervalo='[0,NCT-1]' s.pasos='NCT-1' t.intervalo='[0,8]' relleno='(CP(active,s)+0.70*(!CP(active,s)),CP(active,s)+0.75*(!CP(active,s)) -(s==editing)*0.8,0.2*CP(active,s)+0.80*(!CP(active,s)),0.0)' info='(PLANTILLA) borde exterior'">
+   <param name="G_03" value="espacio='E2' tipo='curva' color='negro' dibujar-si='CP(dibujar_si,s)' coord_abs='sí' expresión='(botX(rd,CP(ctx,s),CP(ctw,s),t),botY(rd,CP(cty,s),CP(cth,s),t))' familia='s' s.intervalo='[0,NCT-1]' s.pasos='NCT-1' t.intervalo='[0,8]' relleno='(CTI.rojo,CTI.verde,CTI.azul,00)' info='(PLANTILLA) borde interior'">
+   <param name="G_04" value="espacio='E2' tipo='texto' coord_abs='sí' color='(TXT.rojo,TXT.verde,TXT.azul,00)' dibujar-si='CP(dibujar_si,s)' expresión='[CT[s,ctx]+(CT[s,ctw]-_AnchoDeCadena_(Str(s),&amp;squot;SansSerif&amp;squot;,&amp;squot;PLAIN&amp;squot;,21))/2,CT[s,cty]+(CT[s,cth]-25)/2]' familia='s' s.intervalo='[0,NCT-1]' s.pasos='NCT-1' texto='[Str(s)]' font_family='SansSerif' fuente puntos='21' fijo='sí' ancho='380' info='(PLANTILLA) Contenidos de los campos de texto'">
+   <param name="G_05" value="espacio='E2' tipo='punto' dibujar-si='0' expresión='(__SEPARADOR__,__SEPARADOR__)' fijo='sí' info='separador de objetos graficos'">
+   <param name="G_06" value="espacio='GRAFICA_1' tipo='ecuación' dibujar-si='aleato==0' expresión='y=x^5-x^4+3x^2' ancho='2' info='(AUTOR)'">
+   <param name="G_07" value="espacio='GRAFICA_1' tipo='ecuación' dibujar-si='aleato==1' expresión='y=x^2-2' ancho='2' info='(AUTOR)'">
+   <param name="G_08" value="espacio='GRAFICA_1' tipo='ecuación' dibujar-si='aleato==2' expresión='y^3-y=x' ancho='2' info='(AUTOR)'">
+   <param name="G_09" value="espacio='GRAFICA_1' tipo='curva' dibujar-si='aleato==3' expresión='(0.5*t*cos(t),0.5*t*sen(t))' t.intervalo='[0,2*pi]' t.pasos='40' ancho='2' info='(AUTOR)'">
+   <param name="G_10" value="espacio='GRAFICA_1' tipo='ecuación' dibujar-si='aleato==4' expresión='y^3+y=x' ancho='2' info='(AUTOR)'">
+   <param name="G_11" value="espacio='GRAFICA_1' tipo='curva' dibujar-si='aleato==5' expresión='(cos(t)+2*cos(t/2),sen(t)-2*sen(t/2))' t.intervalo='[-4*pi,4*pi]' t.pasos='160' ancho='2' info='(AUTOR)'">
+   <param name="G_12" value="espacio='GRAFICA_1' tipo='ecuación' dibujar-si='aleato==6' expresión='y=0.25*x' ancho='2' info='(AUTOR)'">
+   <param name="G_13" value="espacio='GRAFICA_1' tipo='segmento' color='rojo' expresión='(p1.x,10)(p1.x,-10)' fijo='sí' ancho='2'">
+   <param name="G_14" value="espacio='GRAFICA_1' tipo='polígono' fondo='sí' color='d0d0d0' coord_abs='sí' expresión='(0,0)(GRAFICA_1._w-1,0)(GRAFICA_1._w-1,GRAFICA_1._h-1)(0,GRAFICA_1._h-1)(0,0)' ancho='2'">
+   <param name="G_15" value="espacio='GRAFICA_2' tipo='punto' dibujar-si='0' expresión='(__SEPARADOR__,__SEPARADOR__)' fijo='sí' info='separador de objetos graficos'">
+   <param name="G_16" value="espacio='GRAFICA_2' tipo='ecuación' dibujar-si='aleaton==0' expresión='y^2-x^2=1' ancho='2' info='(AUTOR)'">
+   <param name="G_17" value="espacio='GRAFICA_2' tipo='ecuación' dibujar-si='aleaton==1' expresión='y=x^4+x' ancho='2' info='(AUTOR)'">
+   <param name="G_18" value="espacio='GRAFICA_2' tipo='ecuación' dibujar-si='aleaton==2' expresión='y=abs(x-1)-1' ancho='2' info='(AUTOR)'">
+   <param name="G_19" value="espacio='GRAFICA_2' tipo='ecuación' dibujar-si='aleaton==3' expresión='y=(x^3)/3-x' ancho='2' info='(AUTOR)'">
+   <param name="G_20" value="espacio='GRAFICA_2' tipo='ecuación' dibujar-si='aleaton==4' expresión='y=x^4+2x^3-3*sqr(x)-4x+2' ancho='2' info='(AUTOR)'">
+   <param name="G_21" value="espacio='GRAFICA_2' tipo='curva' dibujar-si='aleaton==5' expresión='(3*cos(t),2*sen(t))' t.intervalo='[0,2*pi]' t.pasos='40' ancho='2' info='(AUTOR)'">
+   <param name="G_22" value="espacio='GRAFICA_2' tipo='curva' dibujar-si='aleaton==6' expresión='(t,sen(t))' t.intervalo='[-4,4]' t.pasos='40' ancho='2' info='(AUTOR)'">
+   <param name="G_23" value="espacio='GRAFICA_2' tipo='segmento' color='rojo' expresión='(p2.x,10)(p2.x,-10)' fijo='sí' ancho='2'">
+   <param name="G_24" value="espacio='GRAFICA_2' tipo='polígono' fondo='sí' color='d0d0d0' coord_abs='sí' expresión='(0,0)(GRAFICA_2._w-1,0)(GRAFICA_2._w-1,GRAFICA_2._h-1)(0,GRAFICA_2._h-1)(0,0)' ancho='2'">
+   <param name="G_25" value="espacio='E2' tipo='punto' dibujar-si='0' expresión='(__SEPARADOR__,__SEPARADOR__)' fijo='sí' info='separador de objetos graficos'">
+   <param name="G_26" value="espacio='E2' tipo='texto' coord_abs='sí' color='(TXT.rojo,TXT.verde,TXT.azul,00)' expresión='[150,435]' texto='[(verifik1)?&amp;squot;Correcto.&amp;squot;:&amp;squot;Incorrecto.&amp;squot;]' font_family='SansSerif' fuente puntos='21' fijo='sí' ancho='0' info='(AUTOR)'">
+   <param name="G_27" value="espacio='E2' tipo='texto' coord_abs='sí' color='(TXT.rojo,TXT.verde,TXT.azul,00)' expresión='[670,435]' texto='[(verifik2)?&amp;squot;Correcto.&amp;squot;:&amp;squot;Incorrecto.&amp;squot;]' font_family='SansSerif' fuente puntos='21' fijo='sí' ancho='0' info='(AUTOR)'">
+</ajs>
+</div>
+</body>
+</html>

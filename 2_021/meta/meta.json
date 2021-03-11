@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Coordenadas cartesianas y polares"],
+	"titulo" : "Poligonos en el plano",
+	"descripcion" : "Calcular la longitud de lados desconocidos de triángulos semejantes aplicando proporcionalidad.",
+	"resena" : "Semejanza de triángulos",
+	"id" : "2_021"
+}

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Aritmética: Los números y sus operaciones"],
+	"titulo" : "Exponentes, potencias y radicales",
+	"descripcion" : "Expresar potencias fraccionarias como radicales.",
+	"resena" : "Potencias fraccionarias como radicales",
+	"id" : "1_038"
+}

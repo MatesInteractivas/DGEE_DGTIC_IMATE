@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Ceros de funciones polinomiales de grado 2, 3 y 4 que sean factorizables.",
+	"descripcion" : "Determinar el número de ceros de una función polinomial.",
+	"resena" : "Ceros de funciones polinomiales factorizables",
+	"id" : "2_121"
+}

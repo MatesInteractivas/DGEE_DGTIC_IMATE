@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La línea recta"],
+	"titulo" : "Diversas formas de la ecuación de la recta",
+	"descripcion" : "Determinar la ordenada al origen de una recta a partir de su ecuación general.",
+	"resena" : "Ordenada al origen de la recta a partir de la ecuación general",
+	"id" : "2_036"
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Funciones y sus gráficas: Funciones algebraicas">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>División de polinomios.</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Funciones polinomiales</div>
+  <div id="subtitulo">Cociente de dos polinomios (continuación)</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Obtener el cociente de $\displaystyle \frac{P(x)}{Q(x)}$, con $P(x)$ y $Q(x)$ polinomios hasta de grado $4$.</p>
+
+<h1>Procedimiento</h1>
+
+<p>La división algebraica es la operación inversa de la multiplicación y tiene por objeto encontrar una expresión llamada cociente, a partir de dos expresiones llamadas dividendo y divisor.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:380px; height:180px;"></iframe></div>
+
+<p>Si el dividendo y el divisor tienen el mismo signo, el cociente es positivo; si tienen signos contrarios, el cociente es negativo.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:260px; height:280px;"></iframe></div>
+
+<p>Cuando se divide un número entero entre otro, algunas veces se obtiene un residuo distinto de cero, lo cual sucede cuando el dividendo no es múltiplo del divisor. En ese caso, el dividendo es igual al producto del divisor por el cociente más el residuo.</p>
+
+<p style="text-align:center;">dividendo = cociente ( divisor ) + residuo</p>
+
+<p>En la división de polinomios, se puede presentar el mismo tipo de situación, en cuyo caso el residuo será siempre un polinomio de grado menor que el divisor.</p>
+
+<p style="text-align:center;">grado del residuo < grado del divisor</p>
+
+<h1>Solución</h1>
+
+<p>Para dividir dos polinomios de la forma $\frac{P(x)}{Q(x)}$ hasta de grado $4$, se siguen estos pasos:</p>
+
+<ol>
+  <li>Se ordenan ambos polinomios de manera decreciente respecto al grado de la variable.</li>
+  <li>Se divide el primer término del dividendo entre el primer término del divisor, respetando la ley de los signos y de esta manera se obtiene el primer término del cociente.</li>
+  <li>Se resta del dividendo el producto del divisor por el primer término del cociente y se obtiene un primer residuo.</li>
+  <li>Se baja el siguiente término del dividendo y se le suma al residuo anterior.</li>
+  <li>Se divide el primer término de este residuo entre el primer término del divisor, con lo que se obtiene el segundo término del cociente.</li>
+  <li>Se procede de manera similar hasta obtener un residuo cero o de grado menor al del divisor.</li>
+  <li>Comprobar el resultado verificando que la suma del residuo con el producto del cociente por el divisor sea igual al dividendo.</li>
+</ol>
+
+<h1>Ejemplos</h1>
+
+<p>Observa la forma en que se efectúa la división de dos polinomios $P(x)$ y $Q(x)$, tratando de comprender cada uno de los pasos. Analiza otros ejemplos al dar clic en el botón <span class="btn">Otro ejemplo</span>.</p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:960px; height:1900px;"></iframe></div>
+
+<p>En muchas ocasiones, la división no es exacta; entonces se llega a un dividendo parcial, no nulo, cuyo grado es inferior al grado del divisor, por lo que no se puede continuar la resolución de la operación. El último dividendo parcial de grado inferior al del divisor recibe el nombre de residuo o resto.</p>
+
+<h1>Ejemplos</h1>
+
+<p>En los ejemplos del siguiente recuadro, se omitirán los pasos intermedios para la resolución. Supóngase así que los polinomios tanto del dividendo como del divisor se encuentran ordenados y se ha efectuado la división paso a paso como en los ejemplos de arriba. Presiona el pulsador paso a paso y observa qué ocurre con el residuo y a partir de qué momento no se puede continuar el proceso de división.</p>
+
+<div class="interactivo"><iframe src="escenas/escena04.html" style="width:960px; height:600px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>Resuelve los ejercicios que siguen en tu cuaderno y después introduce tu respuesta en el recuadro interactivo que se presenta abajo. Si tu respuesta es correcta, se inhabilitará el campo de texto; en caso contrario, deberás reintentarlo. Al terminar se desplegará el botón que te permitirá verificar tu respuesta.</p>
+
+<div class="interactivo"><iframe src="escenas/escena05.html" style="width:960px; height:600px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autora</b>: Eréndira Itzel Garcia Islas</p>
+<p><b>Edición académica</b>: Fernando René Martínez Ortíz y Octavio Fonseca Ramos</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Joel Espinosa Longi</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

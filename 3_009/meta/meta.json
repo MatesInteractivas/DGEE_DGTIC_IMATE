@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: Limites"],
+	"titulo" : "Calculo de limites de funciones",
+	"descripcion" : "Obtener el valor del límite de una función cuando $x$ tiende a infinito y presenta alguna indeterminación.",
+	"resena" : "Límites de funciones con indeterminación",
+	"id" : "3_009"
+}

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Álgebra: Ecuaciones cuadráticas"],
+	"titulo" : "Ecuaciones cuadráticas especiales",
+	"descripcion" : "Resolver ecuaciones cuadráticas del tipo $ax^{2}+c=0$.",
+	"resena" : "Ecuaciones de la forma ax² + c = 0",
+	"id" : "1_071"
+}

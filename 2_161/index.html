@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Trigonometría: Elementos de trigonometría">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Solución de triángulos rectángulos conociendo dos lados</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Aplicaciones</div>
+  <div id="subtitulo">Solución de triángulos rectángulos conociendo dos lados</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Determinar la medida de un ángulo o la longitud de un lado de un triángulo rectángulo, conociendo la longitud de dos de sus lados, usando razones trigonométricas.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Cuando se conocen dos de los lados de un triángulo rectángulo, se puede determinar el valor de alguna de las razones trigonométricas de los ángulos agudos del triángulo. Por ejemplo, si se tiene el cateto adyacente al ángulo $α$ y la hipotenusa, se puede obtener el valor de $cos(α)$.</p>
+
+<p>Una vez que se tiene el valor de alguna de las razones trigonométricas tienes que encontrar la medida del ángulo $α$. Para ello es necesario contar con una calculadora científica o utilizar una tabla trigonométrica. En una calculadora científica debes oprimir la tecla que calcula el arco coseno, que normalmente aparece como $cos^{-1}$, del valor obtenido de $cos(α)$ para obtener el valor del ángulo $α$. Usualmente coseno y arco coseno, $cos^{-1}$, comparten la misma tecla y para aplicar arco coseno es necesario presionar previamente la tecla que tiene el mismo color que el texto $cos^{-1}$ en la calculadora. Como un ejemplo, en algunas calculadoras aparecen las siguientes teclas:</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:600px; height:180px;"></iframe></div>
+
+<p>Cuando desees obtener el seno de $45^{\circ}$, basta con que escribas el ángulo y después oprimas la tecla $sen$. Sin embargo, si lo que tienes es el valor del seno de un ángulo, digamos $0.5$, y deseas saber de qué ángulo proviene ese valor de seno, debes obtener el arco seno, $sen^{-1}$, de dicho valor. Para ello escribe el valor $0.5$, oprime la tecla $2^{nd}F$ y, finalmente, la tecla $sen$. Con esto obtendrás como respuesta el ángulo de $30^{\circ}$. La tecla $2^{nd}F$ hace que en lugar de calcular el seno del valor introducido se calcule el arco seno, $sen^{-1}$. Cada calculadora es diferente y debes investigar cómo funciona la tuya. Además, asegúrate de que esté programada para utilizar grados como medida angular, usualmente aparece con la letra $D$, del inglés degrees, grados.</p>
+
+<h1>Solución</h1>
+
+<p>Es muy importante saber cuál de las tres opciones ($arcsen$, $arccos$ o $arctan$) se debe aplicar en una situación particular. En el siguiente recuadro interactivo podrás practicar este punto. Utiliza la calculadora para comprobar los resultados.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:720px; height:480px;"></iframe></div>
+
+<p>Una vez que has encontrado el valor de alguno de los ángulos agudos con el procedimiento descrito previamente, puedes encontrar el valor del lado desconocido fácilmente. Supón que tienes un triángulo cuya hipotenusa mide $20$ y que el cateto adyacente al ángulo $α$ mide $10$. Al aplicar arco coseno a $\frac{10}{20}$ se obtiene un ángulo $α=60^{\circ}$. Para obtener el lado desconocido, cateto opuesto, sólo necesitas aplicar al ángulo de $60^{\circ}$ cualquiera de las razones trigonométricas que relacionen este lado con alguno de los lados conocidos, seno o tangente sirven en este caso. Así, obtienes la ecuación:</p>
+
+$$sen(60^{o})=\frac{x}{20}$$ 
+
+<p>Si se encuentra el seno de $60^{\circ}$ usando una calculadora y se sustituye el valor obtenido en la anterior ecuación se tiene:</p>
+
+$$0.8660=\frac{x}{20}$$ 
+
+<p>Al despejar $x$ de esta última ecuación se obtiene el valor del cateto opuesto:</p>
+
+$$x=(20)(0.8660)=17.32$$
+
+<h1>Ejercicios</h1>
+
+<p>En el recuadro interactivo que se presenta a continuación, debes encontrar el valor del ángulo $α$ y la longitud del lado desconocido $x$ del triángulo rectángulo dado.</p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:720px; height:480px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>: Fernando René Martínez Ortiz</p>
+<p><b>Edición académica</b>: José Luis Abreu León, Fernando René Martínez Ortiz y Joel Espinosa Longi</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La línea recta"],
+	"titulo" : "Paralelismo y perpendicularidad",
+	"descripcion" : "Determinar si dos rectas son perpendiculares a partir de sus ecuaciones.",
+	"resena" : "Reconocer rectas perpendiculares a partir de sus ecuaciones",
+	"id" : "2_042"
+}

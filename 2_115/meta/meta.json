@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Concepto y notación de función y gráfica de una función",
+	"descripcion" : "Determinar dominio y rango de funciones lineales.",
+	"resena" : "Dominio y rango de una función lineal",
+	"id" : "2_115"
+}

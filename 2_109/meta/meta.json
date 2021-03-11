@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La elipse"],
+	"titulo" : "Elementos de la elipse a partir de su ecuación",
+	"descripcion" : "Obtener cualquiera de los elementos (centro, vértices, focos, extremos del eje menor, longitudes y ecuaciones de los ejes mayor y menor, distancia focal, lado recto o excentricidad) de una elipse a partir de su ecuación general.",
+	"resena" : "Elementos de la elipse a partir de su ecuación general",
+	"id" : "2_109"
+}

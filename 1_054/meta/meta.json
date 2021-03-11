@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Álgebra: Ecuaciones lineales"],
+	"titulo" : "Aplicaciones de las ecuaciones lineales",
+	"descripcion" : "Resolver problemas mediante ecuaciones lineales.",
+	"resena" : "Resolución de problemas mediante ecuaciones lineales",
+	"id" : "1_054"
+}

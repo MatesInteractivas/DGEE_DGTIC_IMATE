@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Concepto y notación de función y gráfica de una función",
+	"descripcion" : "Reconocer si una gráfica representa a una función.",
+	"resena" : "La función definida por una gráfica",
+	"id" : "2_110"
+}

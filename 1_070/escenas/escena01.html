@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title></title>
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+<div align="center">
+<ajs name="Descartes" width="900" height="570" code="Descartes">
+   <param name="tamaño" value="900x570">
+   <param name="expand" value="fit">
+   <param name="editable" value="no">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.5">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no ancho_este=150 ancho_oeste=150 alto=40">
+   <param name="E_01" value="tipo='R3' id='E0' escala='64' O.x='-10' O.y='45' despl_imagen='arr-izq' fondo='(E2.rojo,E2.verde,E2.azul,00)' despliegue='pintor' R3='sí'">
+   <param name="C_01" value="id='t' tipo='numérico' interfaz='barra' región='interior' espacio='E0' nombre='Partición de la diferencia de cubos en tres paralelepípedos' expresión='(0,520,900,50)' min='0' max='1' decimales='6' fijo='sí' visible='no'">
+   <param name="C_02" value="id='a' tipo='numérico' región='interior' espacio='E0' nombre='a' expresión='(10,10,59,60)' valor='3' min='b' max='4' fijo='sí' visible='no' pos_mensajes='centro'">
+   <param name="C_03" value="id='b' tipo='numérico' región='interior' espacio='E0' nombre='b' expresión='(80,10,59,60)' valor='1' min='0.5' max='1' fijo='sí' visible='no' pos_mensajes='centro'">
+   <param name="A_01" value="id='botX(d,x,w,t)' algoritmo='sí' expresión='val' algoritmo='sí' Local='val' inicio='val=x' hacer='val=((t==1)|(t==6))?x+d    :val;val=((t==2)|(t==5))?x+w-1-d:val;val=((t==3)|(t==4))?x+w-1  :val;'">
+   <param name="A_02" value="id='botY(d,y,h,t)' algoritmo='sí' expresión='val' algoritmo='sí' Local='val' inicio='val=y' hacer='val=((t%8==0)|(t==3))?y+d  :val;val=((t==4)|(t==7))?y+h-1-d:val;val=((t==5)|(t==6))?y+h-1  :val;'">
+   <param name="A_03" value="id='CT' vector='sí' matriz='sí' evaluar='una-sola-vez' columnas='24' filas='12' expresión='ix=0;name=1;middle=2;last=3;value=4;ctx=5;cty=6;ctw=7;cth=8;active=9;teclado=10;interfaz=10;boton=10;'">
+   <param name="A_04" value="id='CP(a,k)' algoritmo='sí' expresión='res' algoritmo='sí' Local='res,pad' inicio='pad=5' hacer='res=(a==ctx)?CT[k,ctx]+pad:res;res=(a==cty)?CT[k,cty]+pad:res;res=(a==ctw)?CT[k,ctw]-pad*2:res;res=(a==cth)?CT[k,cth]-pad*2:res;res=(a==active)?CT[k,active]:res;res=(a==interfaz)?(CT[k,interfaz]<4):res;'">
+   <param name="A_05" value="id='init()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='TCL.x=E2._w-TCL._w-5;TCL.y=E2._h-TCL._h-5;rd=3;editing=-1;Teclado.S=&amp;squot;&amp;squot;;Teclado.Sa=&amp;squot;&amp;squot;;texth=27;textp=10;;autorControls();;TIT.rojo= (11*16+ 8)/256;TIT.verde=( 0*16+ 8)/256;TIT.azul= ( 1*16+ 0)/256;;FONDO.rojo= ( 9*16+ 0)/256;FONDO.verde=( 9*16+ 8)/256;FONDO.azul= (10*16+ 8)/256;;E2.rojo= (14*16+ 8)/256;E2.verde=(15*16+ 0)/256;E2.azul= (15*16+ 0)/256;;E3.rojo= (0*16+ 0)/256;E3.verde=(0*16+ 0)/256;E3.azul= (0*16+ 0)/256;;TXT.rojo= ( 1*16+ 8)/256;TXT.verde=( 2*16+ 0)/256;TXT.azul= ( 2*16+ 8)/256;;CTR.rojo= ( 0*16+ 0)/256;CTR.verde=( 4*16+ 0)/256;CTR.azul= (15*16+15)/256;;CTI.rojo= (15*16+ 0)/256;CTI.verde=(15*16+ 0)/256;CTI.azul= (15*16+ 0)/256;;ARR.rojo= ( 4*16+ 0)/256;ARR.verde=( 8*16+ 0)/256;ARR.azul= ( 6*16+ 0)/256;;BORDER.rojo=CTR.rojo*0.90;BORDER.verde=CTR.verde*0.90;BORDER.azul=CTR.azul*0.90;'">
+   <param name="A_06" value="id='Str(s)' expresión='CT[s,name]+CT[s,middle]+CT[s,value]+CT[s,last]'">
+   <param name="A_07" value="id='editB(k)' algoritmo='sí' algoritmo='sí' Local='S,tipo' hacer='editing=k;tipo=CT[k,interfaz];tt=(tipo==0)?TCL.set(&amp;squot;columnas&amp;squot;,6):TCL.set(&amp;squot;columnas&amp;squot;,12);_ta=((tipo==1)|(tipo=0))?0:1;_tm=(tipo==3)?1:0;TCL.set(&amp;squot;ta&amp;squot;,_ta);TCL.set(&amp;squot;tm&amp;squot;,_tm);TCL.exec(&amp;squot;initTcl&amp;squot;,&amp;squot;&amp;squot;);S=CT[k,value];teclado.S=CT[k,value];TCL.set(&amp;squot;S&amp;squot;,teclado.S);TCL.set(&amp;squot;show_cursor&amp;squot;,1);TCL.update();'">
+   <param name="A_08" value="id='processKB()' algoritmo='sí' algoritmo='sí' hacer='CT[editing,value]=(Teclado.Sa!=Teclado.S)?Teclado.S:CT[editing,value];Teclado.Sa=Teclado.S;'">
+   <param name="A_09" value="id='autorControls()' algoritmo='sí' expresión='x' algoritmo='sí' inicio='NCT=0'">
+   <param name="A_10" value="id='t(x)' algoritmo='sí' expresión='x-1.5708' dominio='0<x<pi' algoritmo='sí' inicio='x=0' hacer='x=0' mientras='r<1.5708'">
+   <param name="A_11" value="id='inicia2()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='L=ent(rnd*10)+1;c1=ent(rnd*9)+2;c2=ent(rnd*9)+2;p1=ent(rnd*48)+2;p2=ent(rnd*48)+2;B1=&amp;squot;&amp;squot;;B2=&amp;squot;&amp;squot;;B3=&amp;squot;&amp;squot;;B4=&amp;squot;&amp;squot;'">
+   <param name="A_12" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='pi=3.1416;E0.rot.z=40;init();;;'">
+   <param name="A_13" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer=';;;'">
+   <param name="S_01" value="nombre='Azul ' espacio='E0' tipo='paralelepípedo' color='(1.0,1.0,0.33,0.33)' color_reverso='(1.0,1.0,0.33,0.33)' dibujar-si='t>0' expresión='Paralelepípedo' posini='(-(a-b)/2,0,a/2)' posfin='(b/2,0,0)' aristas='sí' modelo='luz' ancho='a-b' largo='a' alto='a'">
+   <param name="S_02" value="nombre='Rojo' espacio='E0' tipo='paralelepípedo' color='(1.0,1.0,0.33,0.33)' color_reverso='(1.0,1.0,0.33,0.33)' dibujar-si='t>0' expresión='Paralelepípedo' posini='(b/2+a*t/2,0,((a-b)/2)+b+b*t)' posfin='(b/2,0,0)' aristas='sí' modelo='luz' ancho='b' largo='a' alto='a-b'">
+   <param name="S_03" value="nombre='Verde' espacio='E0' tipo='paralelepípedo' color='(1.0,1.0,0.33,0.33)' color_reverso='(1.0,1.0,0.33,0.33)' dibujar-si='t>0' expresión='Paralelepípedo' posini='(b/2+a*t,b/2,b/2)' posfin='(b/2,0,0)' aristas='sí' modelo='luz' ancho='b' largo='a-b' alto='b'">
+   <param name="S_04" value="espacio='E0' tipo='texto' coord_abs='sí' color='negro' expresión='[180,480]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs42{\*\mjaformula a{\supix 3}-b{\supix 3}   = a{\supix 2}(a-b)+ab(a-b)+b{\supix 2}(a-b)}\fs34\par              \f3\fs24\par \par \par \par \par }' font_family='SansSerif' fuente puntos='21' fijo='sí'">
+   <param name="S_05" value="nombre='A3mB3' espacio='E0' tipo='punto' color='ff404040' color_reverso='ff404040' dibujar-si='t<0.1' expresión='(0,0,0)' posfin='(0,0,a/2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red64\green64\blue64;}\cf0\f1\fs42{\*\mjaformula a{\supix 3}-b{\supix 3}}\cf1\f2\fs24\par }' font_family='SansSerif' fuente puntos='21' fijo='sí'">
+   <param name="S_06" value="nombre='PA' espacio='E0' tipo='punto' color='ff0000ff' color_reverso='ff0000ff' dibujar-si='t>0.6' expresión='(0,0,0)' posini='(-(a-b)/2,0,a/2)' posfin='(0,-0.5,-a/6)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs42{\*\mjaformula a{\supix 2}(a-b)}\cf1\f2\fs24\par }' font_family='SansSerif' fuente puntos='21' fijo='sí'">
+   <param name="S_07" value="nombre='PR' espacio='E0' tipo='punto' color='ff0000ff' color_reverso='ff0000ff' dibujar-si='t>0.4' expresión='(0,0,0)' posini='(b/2+a*t/2,0,((a-b)/2)+b+b*t)' posfin='(b/4,-0.5,0.25)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs42{\*\mjaformula ab(a-b)}\cf1\f2\fs24\par }' font_family='SansSerif' fuente puntos='21' fijo='sí'">
+   <param name="S_08" value="nombre='PV' espacio='E0' tipo='punto' color='ff0000ff' color_reverso='ff0000ff' dibujar-si='t>0.2' expresión='(0,0,0)' posini='(b/2+a*t,b/2,b/2)' posfin='(b/4,-0.5,0.25)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs42{\*\mjaformula b{\supix 2}(a-b)}\cf1\f2\fs24\par }' font_family='SansSerif' fuente puntos='21' fijo='sí'">
+   <param name="S_09" value="espacio='E0' tipo='cara' color='(1.0,1.0,0.33,0.33)' color_reverso='(1.0,1.0,0.33,0.33)' dibujar-si='t=0' expresión='(-a/2,-a/2)(a/2,-a/2)(a/2,a/2-b)(a/2-b,a/2-b)(a/2-b,a/2)(-a/2,a/2)(-a/2,-a/2)' rotini='(0,0,-90)' aristas='sí' modelo='luz'">
+   <param name="S_10" value="espacio='E0' tipo='cara' color='(1.0,1.0,0.33,0.33)' color_reverso='(1.0,1.0,0.33,0.33)' dibujar-si='t=0' expresión='(-a/2,-a/2)(a/2,-a/2)(a/2,a/2-b)(a/2-b,a/2-b)(a/2-b,a/2)(-a/2,a/2)(-a/2,-a/2)' rotini='(0,90,-90)' posini='(0,-a/2,a/2)' aristas='sí' modelo='luz'">
+   <param name="S_11" value="espacio='E0' tipo='cara' color='(1.0,1.0,0.33,0.33)' color_reverso='(1.0,1.0,0.33,0.33)' dibujar-si='t=0' expresión='(-a/2,-a/2)(a/2,-a/2)(a/2,a/2-b)(a/2-b,a/2-b)(a/2-b,a/2)(-a/2,a/2)(-a/2,-a/2)' rotini='(90,90,-90)' posini='(a/2,0,a/2)' aristas='sí' modelo='luz'">
+   <param name="S_12" value="espacio='E0' tipo='cara' color='(1.0,1.0,0.33,0.33)' color_reverso='(1.0,1.0,0.33,0.33)' dibujar-si='t=0' expresión='(a/2,a/2)(a/2,-a/2)(-a/2,-a/2)(-a/2,a/2)(a/2,a/2)' posini='(0,0,a)' aristas='sí' modelo='luz'">
+   <param name="S_13" value="espacio='E0' tipo='cara' color='(1.0,1.0,0.33,0.33)' color_reverso='(1.0,1.0,0.33,0.33)' dibujar-si='t=0' expresión='(a/2,a/2)(a/2,-a/2)(-a/2,-a/2)(-a/2,a/2)(a/2,a/2)' rotini='(0,90,0)' posini='(-a/2,0,a/2)' aristas='sí' modelo='luz'">
+   <param name="S_14" value="espacio='E0' tipo='cara' color='(1.0,1.0,0.33,0.33)' color_reverso='(1.0,1.0,0.33,0.33)' dibujar-si='t=0' expresión='(a/2,a/2)(a/2,-a/2)(-a/2,-a/2)(-a/2,a/2)(a/2,a/2)' rotini='(90,0,0)' posini='(0,a/2,a/2)' aristas='sí' modelo='luz'">
+   <param name="S_15" value="espacio='E0' tipo='cara' color='(1.0,1.0,0.33,0.33)' color_reverso='(1.0,1.0,0.33,0.33)' dibujar-si='t=0' expresión='(b/2,b/2)(b/2,-b/2)(-b/2,-b/2)(-b/2,b/2)(b/2,b/2)' posini='((a-b)/2,-(a-b)/2,b)' aristas='sí' modelo='luz'">
+   <param name="S_16" value="espacio='E0' tipo='cara' color='(1.0,1.0,0.33,0.33)' color_reverso='(1.0,1.0,0.33,0.33)' dibujar-si='t=0' expresión='(b/2,b/2)(b/2,-b/2)(-b/2,-b/2)(-b/2,b/2)(b/2,b/2)' rotini='(0,90,0)' posini='(a/2-b,-(a-b)/2,b/2)' cortar='sí' aristas='sí' modelo='luz'">
+   <param name="S_17" value="espacio='E0' tipo='cara' color='(1.0,1.0,0.33,0.33)' color_reverso='(1.0,1.0,0.33,0.33)' dibujar-si='t=0' expresión='(b/2,b/2)(b/2,-b/2)(-b/2,-b/2)(-b/2,b/2)(b/2,b/2)' rotini='(90,0,0)' posini='((a-b)/2,-a/2+b,b/2)' aristas='sí' modelo='luz'">
+</ajs>
+</div>
+</body>
+</html>

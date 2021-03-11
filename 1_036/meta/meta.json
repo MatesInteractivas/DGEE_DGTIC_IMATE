@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Aritmética: Los números y sus operaciones"],
+	"titulo" : "Exponentes, potencias y radicales",
+	"descripcion" : "Utilizar las leyes de los exponentes para simplificar expresiones aritméticas.",
+	"resena" : "Uso de las leyes de los exponentes para simplificar expresiones aritméticas",
+	"id" : "1_036"
+}

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La parábola"],
+	"titulo" : "Propiedades de la parábola",
+	"descripcion" : "Identificar a la parábola como el lugar geométrico de los puntos del plano que equidistan de un punto fijo llamado foco y una recta fija llamada directriz.",
+	"resena" : "La parábola como lugar geométrico",
+	"id" : "2_070"
+}

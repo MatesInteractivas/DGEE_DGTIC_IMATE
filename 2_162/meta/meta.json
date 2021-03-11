@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Trigonometría: Elementos de trigonometría"],
+	"titulo" : "Aplicaciones",
+	"descripcion" : "Determinar la medida de un ángulo o la longitud de un lado de un triángulo rectángulo, conociendo la longitud de uno de sus lados y la medida de uno de sus ángulos, usando razones trigonométricas.",
+	"resena" : "Solución de triángulos rectángulos conociendo un ángulo y un lado",
+	"id" : "2_162"
+}

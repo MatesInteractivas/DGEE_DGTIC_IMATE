@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Funciones y sus gráficas: Funciones algebraicas">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Rango de funciones racionales a partir de su regla de correspondencia.</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Funciones racionales</div>
+  <div id="subtitulo">Rango de una función racional con numerador y denominador lineales o cuadráticos</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Determinar el rango de una función del tipo $f(x)=\frac{P(x)}{Q(x)}$ con $P(x)$ y $Q(x)$ lineales o cuadráticas.</p>
+
+<h1>Procedimiento</h1>
+
+<p>En general, para encontrar el rango de una función $f(x)$ debemos buscar los valores $y$ para los cuales existe $x$ tal que $y=f(x)$.</p>
+
+<p>En el caso que nos interesa, cuando $f(x)$ es el cociente de dos polinomios, el problema se traduce en encontrar las $y$'s para las cuales existe $x$ tal que $y=\frac{P(x)}{Q(x)}$. Si además suponemos que este cociente está reducido, que $P(x)$ y $Q(x)$ no comparten factores comunes, entonces el problema será equivalente a encontrar los valores de $y$ para los cuales la ecuación $yQ(x)-P(x)=0$ tiene solución.</p>
+
+<h1>Solución</h1>
+
+<p>Como ya vimos, para encontrar el rango de $f(x)=\frac{P(x)}{Q(x)}$, cuando $P(x)$ y $Q(x)$ no comparten factores comunes, hay que determinar los valores de $y$ que hacen que la ecuación  $yQ(x)-P(x)=0$ tenga solución. Como $P(x)$ y $Q(x)$ son lineales o cuadráticos, la ecuación $yQ(x)-P(x)=0$ deberá ser lineal o cuadrática en $x$, lo que vuelve nuestro problema soluble. Pues, debido a las siguientes dos afirmaciones, podemos encontrar las condiciones que debe satisfacer el valor de $y$ para que la ecuación $yQ(x)-P(x)=0$ tenga solución.</p>
+
+<ol>
+  <li>Ecuaciones lineales. Una ecuación lineal de la forma $Bx+C=0$ con $B$ distinto de cero siempre tiene solución.</li>
+  <li>Ecuaciones cuadráticas. Una ecuación cuadrática de la forma $Ax^{2}+Bx+C=0$ con $A$ distinto de cero, tiene solución, si y sólo si $B^{2}-4AC≥0$.</li>
+</ol>
+
+<p>Cabe destacar que las condiciones $B≠0$, en la primera afirmación; y $A≠0$, en la segunda, son necesarias, pues de lo contrario la ecuación no sería lineal en el primer caso, o cuadrática en el segundo. </p>
+
+<p>En el siguiente cuadro interactivo, cambia los valores de $A$, $B$ y $C$ de la ecuación $Ax^{2}+Bx+C=0$ y observa que la ecuación tiene solución cuando el discriminante es mayor o igual que cero.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:960px; height:480px;"></iframe></div>
+
+<h1>Ejemplos</h1>
+
+<p>A continuación se muestran cuatro ejemplos donde se calcula el rango de $f$. Puedes pasar al siguiente ejemplo haciendo clic en el botón <span class="btn">Siguiente</span>.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:960px; height:570px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>En el siguiente cuadro interactivo aparecen ejercicios para que practiques el cálculo de la ecuación $yQ(x)-P(x)=0$.</p>
+
+<p>Calcula la ecuación $yQ(x)-P(x)=0$ dónde $P$ y $Q$ son el numerador y denominador de la función dada respectivamente. Elige la respuesta correcta.</p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:700px; height:470px;"></iframe></div>
+
+<p>En el siguiente cuadro interactivo aparecen ecuaciones de la forma $Ax^{2}+Bx+C=0$ con $A$, $B$ y $C$, funciones que dependen de $y$. Usa la técnica que aquí se explicó para encontrar qué valores de $y$ hacen que la ecuación tenga soluciones reales.</p>
+
+<div class="interactivo"><iframe src="escenas/escena04.html" style="width:700px; height:470px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autora</b>: Valentina Muñoz Porras</p>
+<p><b>Edición académica</b>: Carlos Hernández Garciadiego y Fernando René Martínez Ortiz</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez y Fernando René Martínez Ortiz</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Joel Espinosa Longi</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

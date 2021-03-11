@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones trascendentes"],
+	"titulo" : "Funciones exponenciales",
+	"descripcion" : "Determinar el dominio y rango de funciones del tipo $f(x)=ce^{x}$.",
+	"resena" : "Dominio y rango de las funciones del tipo ce^x",
+	"id" : "2_193"
+}

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Funciones continuas y discontinuas.",
+	"descripcion" : "Identificar gráficamente los intervalos donde una función sea continua.",
+	"resena" : "Intervalos de continuidad de una función",
+	"id" : "2_132"
+}

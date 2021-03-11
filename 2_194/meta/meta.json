@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones trascendentes"],
+	"titulo" : "Funciones exponenciales",
+	"descripcion" : "Identificar la gráfica de funciones del tipo $f(x)=ce^{x}$.",
+	"resena" : "Gráficas de las funciones del tipo ce^x",
+	"id" : "2_194"
+}

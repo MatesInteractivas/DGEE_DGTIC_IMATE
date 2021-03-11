@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Aritmética: Los números y sus operaciones"],
+	"titulo" : "Números reales: Orden y operaciones",
+	"descripcion" : "Distinguir entre dos números reales cuál de ellos es mayor.",
+	"resena" : "Orden de los números reales",
+	"id" : "1_032"
+}

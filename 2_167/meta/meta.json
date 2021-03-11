@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Trigonometría: Elementos de trigonometría"],
+	"titulo" : "Identidades trigonométricas fundamentales",
+	"descripcion" : "Identificar las identidades trigonométricas de cociente: $tan(x)=\frac{sen(x)}{cos(x)}$, $cot(x)=\frac{cos(x)}{sen(x)}$.",
+	"resena" : "Identidades de cocientes",
+	"id" : "2_167"
+}

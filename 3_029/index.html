@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Cálculo Diferencial e Integral: La derivada">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Derivadas de productos de dos funciones</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Operaciones con funciones y sus derivadas</div>
+  <div id="subtitulo">Derivadas de productos de dos funciones</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivos</h1>
+
+<p>En esta unidad se cubrirán los siguientes objetivos: </p>
+
+<ul>
+  <li>Obtener por fórmula la derivada del producto de dos funciones algebraicas no compuestas.</li>
+  <li>Obtener por fórmula la derivada del producto de dos funciones trascendentes no compuestas.</li>
+  <li>Obtener por fórmula la derivada del producto de una función algebraica y una trascendente no compuestas.</li>
+</ul>
+
+<h1>Fórmulas</h1>
+
+<p>Para obtener la derivada del producto de dos funciones, se aplica la siguiente regla:</p>
+
+<p class="bloque">
+  el primer factor por la derivada del segundo más el segundo factor por la derivada del primero
+  $$(f·g)'(x)=f(x)g'(x)+g(x)f'(x)$$
+</p>
+
+<h1>Justificación</h1>
+
+<p>Veamos la demostración de la fórmula de la derivada de un producto de funciones:</p>
+
+$$(f·g)'(x)=f (x)·g'(x)+g(x)·f'(x)$$
+
+<p>Recuerda que, la definición de la derivada de una función es</p>
+
+$$f'(x)=\lim_{∆x \to 0}{\frac{f(x+∆x)-f(x)}{∆x}}$$
+
+<p>Al usar esta definición para obtener la derivada de la función $f(x)·g(x)$ escribimos</p>
+
+$$(f·g)'(x)=\lim_{∆x \to 0}{\frac{f(x+∆x)g(x+∆x)-f(x)g(x)}{∆x}}$$
+
+<p>Ahora, hay que sumar y restar el término $f(x+∆x)g(x)$. Esto no afectará a la expresión, pues un número, menos él mismo, es cero. Esto se hace con miras a factorizar $f(x+∆x)$ y $g(x)$.</p>
+
+$$=\lim_{∆x \to 0}{\frac{f(x+∆x)g(x+∆x)-f(x+∆x)g(x)+f(x+∆x)g(x)-f(x)g(x)}{∆x}}$$
+
+<p>Al factorizar $f(x+∆x)$ y $g(x)$ se obtiene</p>
+
+$$=\lim_{∆x \to 0}{\frac{f(x+∆x)(g(x+∆x)-g(x))+g(x)(f(x+∆x)-f(x))}{∆x}}$$
+
+<p>y, como el límite de una suma es la suma de los límites, entonces</p>
+
+$$=\lim_{∆x \to 0}{f(x+∆x)\frac{g(x+∆x)-g(x)}{∆x}+\lim_{∆x \to 0}{g(x)} \frac{f(x+∆x)-f(x)}{∆x}}$$
+
+<p>y el límite de un producto es el producto de los límites</p>
+
+$$=\lim_{∆x \to 0}{f(x+∆x)}\lim_{∆x \to 0}{\frac{g(x+∆x)-g(x)}{∆x}+\lim_{∆x \to 0}{g(x)}\lim_{∆x \to 0}{\frac{f(x+∆x)-f(x)}{∆x}}}$$
+
+<p>reescribimos como</p>
+
+$$=(\lim_{∆x \to 0}{f(x+∆x)})g'(x)+(\lim_{∆x \to 0}{g(x)})f'(x)$$
+
+<p>pero $\displaystyle \lim_{∆x \to 0}{f(x+∆x)}=f(x)$ y $\displaystyle \lim_{∆x \to 0}{g(x)}=g(x)$, entonces</p>
+
+$$(f·g)'(x)=f(x)·g'(x)+g(x)·f'(x)$$
+
+<p>Observación 1. Hay que notar que la regla de la derivada del producto de dos funciones se puede generalizar para el caso de más de dos funciones. Por ejemplo, para el producto de tres funciones se tiene</p>
+
+$$(f_{1}·f_{2}·f_{3})'(x)=f_{1}'(x)f_{2}(x)f_{3}(x)+f_{1}(x)f_{2}'(x)f_{3}(x)+f_{1}(x)f_{2}(x)f_{3}'(x)$$
+
+<p>Utiliza el siguiente cuadro interactivo para repasar la fórmula de la derivada de un producto de funciones. Arrastra y suelta las expresiones faltantes en el lugar correcto.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:780px; height:360px;"></iframe></div>
+
+<h1>Ejemplos</h1>
+
+<p>En el siguiente cuadro interactivo se muestran ejemplos de la derivada del producto de dos funciones.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:780px; height:480px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>Resuelve los siguientes ejercicios. Si deseas ver cómo se resuelve el ejercicio, pulsa el botón <span class="btn">Ver solución</span>.</p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:720px; height:480px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autora</b>: Valentina Muñoz Porras</p>
+<p><b>Editores académicos</b>: José Luis Abreu León y Carlos Hernández Garciadiego</p>
+<p><b>Editor técnico</b>: Carlos Alberto Serrato Hernández</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

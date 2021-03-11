@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Asíntotas horizontales y verticales a partir de la regla de correspondencia de una función racional.",
+	"descripcion" : "Encontrar la asíntota horizontal de la función $f(x)=\frac{P(x)}{Q(x)}$, con $P(x)$ y $Q(x)$ lineales o cuadráticas.",
+	"resena" : "Asíntotas horizontales y verticales",
+	"id" : "2_145"
+}

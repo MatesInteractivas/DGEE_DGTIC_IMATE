@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Funciones racionales",
+	"descripcion" : "Determinar el rango de una función del tipo $f(x)=\frac{P(x)}{Q(x)}$, con $P(x)$ y $Q(x)$ lineales o cuadráticas a partir de su gráfica.",
+	"resena" : "Rango de funciones racionales a partir de su gráfica",
+	"id" : "2_148"
+}

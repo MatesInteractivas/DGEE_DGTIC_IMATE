@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Geometría analítica: La línea recta">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Reconocer rectas paralelas a partir de sus ecuaciones</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Paralelismo y perpendicularidad</div>
+  <div id="subtitulo">Reconocer rectas paralelas a partir de sus ecuaciones</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Determinar si dos rectas son paralelas a partir de sus ecuaciones.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Dos rectas son paralelas, si tienen la misma pendiente.</p>
+
+<p>Es decir, dada la recta $y=mx+b$, una recta paralela a ésta sería $y=mx+c$ con $c≠b$.</p>
+
+<p>En general, dada una recta $y=mx+b$ todas las rectas paralelas a ésta son de la forma $y=mx+c$ con $c≠b$. Para el caso de dos rectas paralelas con $c=b$, ver nota al final de la sección.</p>
+
+<p>Si una recta es vertical, su ecuación tiene la forma $x=c$, y la pendiente no está definida. Todas las rectas verticales son paralelas entre sí.</p>
+
+<p>En el caso de que la ecuación de la recta se encuentre en forma general, es decir que sea de la forma $Ax+By+C=0$, podemos transformarla en una ecuación del tipo $y=mx+b$ si $B≠0$, como sigue:</p>
+
+$$y=-\frac{A}{B}x-\frac{C}{B}$$
+
+<p>Si $B = 0$, la recta es vertical y se puede escribir en la forma $x=c$.</p>
+
+<p class="bloque"><b>Nota</b>: Hay un caso especial de paralelismo que se da cuando las rectas son coincidentes, esto significa que todos sus puntos coinciden y se pueden considerar la misma recta. </p>
+
+<p>Las ecuaciones ordinarias de las rectas coincidentes son idénticas, pero sus ecuaciones generales pueden ser distintas. En este caso, los coeficientes de las ecuaciones generales son diferentes pero proporcionales.</p>
+
+<p>Tres rectas coincidentes son $2x-3y+8=0$, $-4x+6y-16=0$ y $4x-6y+16=0$. </p>
+
+<h1>Solución</h1>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:900px; height:360px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:900px; height:360px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autora</b>: Zinnya del Villar Islas</p>
+<p><b>Edición académica</b>: Fernando René Martínez Ortiz y Octavio Fonseca Ramos</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

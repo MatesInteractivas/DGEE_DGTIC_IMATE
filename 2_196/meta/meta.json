@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones trascendentes"],
+	"titulo" : "Funciones logaritmicas",
+	"descripcion" : "Identificar la equivalencia de las expresiones $y=a^{x}$ y $log_{a}(y)=x$.",
+	"resena" : "Relación entre las exponenciales y los logaritmos",
+	"id" : "2_196"
+}

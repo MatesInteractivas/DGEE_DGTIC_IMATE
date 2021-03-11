@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Cálculo Diferencial e Integral: La integral">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>La constante de integración</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">La integral como función primitiva o antiderivada</div>
+  <div id="subtitulo">La constante de integración</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<ul>
+  <li>Obtener el valor de la constante de integración bajo condiciones establecidas.</li>
+</ul>
+
+<h1>Conceptos básicos</h1>
+
+<p>Previamente se vio que la antiderivada $F(x)$ de una función es aquella tal que, al ser derivada, nos genera $f(x)$. Sin embargo, no necesariamente hay una sola función que al ser derivada nos genere $f(x)$.</p>
+
+<p>Tómese el siguiente ejemplo: $f(x)=2x$, $F_{1}(x)=x^{2}+0$, y $F_{2}(x)=x^{2}+3$. $F_{1}(x)$ y $F_{2}(x)$ son sólo dos distintas antiderivadas de $f(x)$, pero como puedes observar, a $x^{2}$ puede sumársele cualquier número real y seguirá siendo antiderivada de $f(x)$. Al conjunto de antiderivadas de la función $f(x)$ se le conoce como integral indefinida de $f(x)$ o, en notación de integral, como $\int{f(x)dx}$. Adicionalmente, se expresa muchas veces de forma explícita la constante mencionada. Para el ejemplo anterior, se tendría $\int{f(x)dx}=\int{2xdx}=x^{2}+c$. A esta $c$ se le conoce como constante de integración.</p>
+
+<h1>Ejemplos</h1>
+
+<p>Observa los siguientes ejemplos. Puedes escoger el del movimiento uniformemente acelerado (M. U. A.) en el tiro vertical (T. V.) u otros ejemplos generales. Puedes acercar o alejar el plano con el pulsador en la esquina inferior derecha del mismo. Para el ejemplo del M. U. A., prueba distintos valores de las condiciones iniciales (distancia y velocidad inicial) para ver su efecto en las gráficas.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:900px; height:530px;"></iframe></div>
+
+<p>Nota que en el ejemplo del M. U. A. obtuviste las ecuaciones del tiro vertical que seguramente ya conocías de la materia de física. Además, nota que la obtención de las ecuaciones de movimiento para el tiro vertical, es un caso particular de lo visto en los ejemplos generales.</p>
+
+<h1>Ejercicios</h1>
+
+<p>Resuelve los siguientes ejercicios. En caso de ser necesario, utiliza 2 decimales de precisión.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:900px; height:530px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>: Alejandro Radillo Díaz</p>
+<p><b>Edición académica</b>: José Luis Abreu León y Carlos Hernández Garciadiego</p>
+<p><b>Edición técnica</b>: Octavio Fonseca Ramos</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

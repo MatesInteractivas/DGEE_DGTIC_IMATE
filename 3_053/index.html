@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Cálculo Diferencial e Integral: La derivada">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Máximos y mínimos relativos e intervalos de crecimiento y decrecimiento</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Aplicaciones de la derivada</div>
+  <div id="subtitulo">Máximos y mínimos relativos e intervalos de crecimiento y decrecimiento</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivos</h1>
+
+<ul>
+  <li>Obtener el máximo relativo de una función polinomial hasta de grado tres.</li>
+  <li>Obtener el mínimo relativo de una función polinomial hasta de grado tres.</li>
+  <li>Determinar el intervalo donde es creciente una función polinomial hasta de grado tres.</li>
+  <li>Determinar el intervalo donde es decreciente una función polinomial hasta de grado tres.</li>
+</ul>
+
+<h1>Conceptos básicos</h1>
+
+<p>Un máximo (mínimo) relativo de una función $f$ es un punto de la gráfica de $f$ donde la función cambia de ser creciente (decreciente) a ser decreciente (creciente). Observa la siguiente animación, en ella se muestra algunos máximos y mínimos relativos.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:700px; height:240px;"></iframe></div>  </p>
+
+<p>Para encontrar los máximos y mínimos relativos hay que analizar la derivada de la función. En el siguiente cuadro interactivo mueve el punto rojo y observa la derivada de $f$ en cada punto $x$ (la pendiente de la recta dibujada). Pon especial atención en los casos en que $x$ corresponde a un máximo o a un mínimo relativo.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:700px; height:240px;"></iframe></div></p>
+
+<p>Los valores de $x$ en donde $f'(x)=0$ o $f'(x)$ no está definida son llamados valores críticos. Al punto de la gráfica $(x,f(x))$ asociado a cada valor crítico se le llama punto crítico.</p>
+
+<p>En el cuadro interactivo anterior se pueden notar dos cosas:</p>
+
+<ul>
+  <li>Los máximos y mínimos relativos son puntos críticos.</li>
+  <li>No todos los puntos críticos son máximos o mínimos relativos.</li>
+</ul>
+
+<h1>Procedimiento</h1>
+
+<p>En el caso de los polinomios, para determinar dónde es creciente o decreciente la función y cuáles son sus máximos y mínimos relativos, se puede proceder de la siguiente manera:</p>
+
+<ol>
+  <li>Se calcula la derivada de $f:f'(x)$.</li>
+  <li>Se calculan los números críticos. Para lograr esto se encuentran las raíces de $f'(x)=0$. Cuando el polinomio es de grado dos o tres, se tendrá que $f'(x)=0$ será una ecuación lineal o cuadrática. Esto permite usar un despeje o la fórmula general para encontrar las raíces.</li>
+  <li>Se especifican intervalos relevantes. Si los números críticos encontrados en el paso 2 son $p_{1}$, $p_{2}$, entonces los intervalos que será necesario analizar son: $(-∞,p_{1})$, $(p_{1},p_{2})$, $(p_{2},∞)$.</li>
+  <li>
+    Determinar si $f$ es creciente o decreciente en cada intervalo. Se determina el signo de $f'(x)$ en cada uno de los intervalos encontrados en el paso 3. Para esto se elige un valor $x_{0}$ en cada intervalo y se evalúa en la derivada $f'(x_{0})$:<br>
+    <ul style="padding-bottom:0;">
+      <li>Si $f'(x_{0}) > 0$, entonces $f$ es creciente en el intervalo.</li>
+      <li>Si $f'(x_{0}) < 0$, entonces $f$ es decreciente en el intervalo.</li>
+    </ul>
+  </li>
+  <li>Encontrar los máximos y mínimos relativos. Los máximos relativos serán aquellos puntos críticos donde $f$ cambie de creciente a decreciente; y los mínimos relativos, de decreciente a creciente.</li>
+</ol>
+
+<h1>Ejemplos</h1>
+
+<p>Utiliza el siguiente cuadro interactivo para observar diferentes ejemplos en los cuales se identifican los intervalos donde la función es creciente, decreciente y los máximos y mínimos relativos.</p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:900px; height:530px;"></iframe></div></p>
+
+<h1>Ejercicios</h1>
+
+<p>Resuelve cada uno de los siguientes ejercicios siguiendo los pasos que se indican. Cuando termines de contestar un paso, pulsa el botón <span class="btn">Verificar</span> para revisar si tu respuesta es correcta. De tener correcta tu respuesta, podrás pulsar el botón <span class="btn">Siguiente</span> para pasar al otro paso. Al completar los pasos podrás presionar el botón Otro para generar un nuevo ejercicio. </p>
+
+<div class="interactivo"><iframe src="escenas/escena04.html" style="width:900px; height:530px;"></iframe></div></p>
+
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autora</b>: Valentina Muñoz Porras</p>
+<p><b>Editores académicos</b>: José Luis Abreu León y Carlos Hernández Garciadiego</p>
+<p><b>Editor técnico</b>: Carlos Alberto Serrato Hernández</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

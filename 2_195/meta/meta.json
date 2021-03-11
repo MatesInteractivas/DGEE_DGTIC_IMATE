@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones trascendentes"],
+	"titulo" : "Funciones logaritmicas",
+	"descripcion" : "Identificar la correcta aplicación de las propiedades de los logaritmos (de un producto, de un cociente, de una potencia y de una raíz).",
+	"resena" : "Propiedades de los logaritmos",
+	"id" : "2_195"
+}

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La parábola"],
+	"titulo" : "La parábola a partir de algunos de sus elementos",
+	"descripcion" : "Obtener la ecuación ordinaria de una parábola con vértice en $(h,k)$ y foco conocido.",
+	"resena" : "Ecuación ordinaria de la parábola dados su vértice y el foco",
+	"id" : "2_080"
+}

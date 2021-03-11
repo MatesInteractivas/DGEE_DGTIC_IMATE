@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Geometría analítica: La elipse">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Elipse como lugar geométrico</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Propiedades de la elipse</div>
+  <div id="subtitulo">Elipse como lugar geométrico</div>
+</div>
+<div id="contenido">
+
+
+
+<h1>Objetivo</h1>
+
+<p>Identificar a la elipse como el lugar geométrico de los puntos del plano cuya suma de distancias a dos puntos fijos, llamados focos, es una constante.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01A.html" style="width:470px; height:360px;"></iframe></div>
+
+
+<h1>Procedimiento</h1>
+
+<p>Se determina la distancia de cada uno de los dos focos a uno de los puntos que forman la elipse, su suma es un número que permanece constante si repetimos este proceso de suma de las distancias a lo largo de todos los puntos del lugar geométrico.</p>
+
+<h1>Solución</h1>
+
+<p>Para encontrar la ecuación del lugar geométrico de los puntos tales que la suma de sus distancias a $F(x_{1},y_{1})$ y $F'(x_{2},y_{2})$ sea una constante $d$, se procede de la siguiente manera:</p>
+
+<ol>
+  <li>Se nombra como $P(x,y)$ a uno de los puntos del lugar geométrico, es decir, uno de los puntos que cumple la condición mencionada arriba.</li>
+  <li>Se suman la distancia de $P$ a $F$ con la de $P$ a $F'$ y se igualan a $d$.</li>
+  $$d(P,F)+d(P,F')=d$$
+  <li>Al sustituir en la fórmula de distancia, se obtiene la siguiente ecuación:</li>
+  $$\sqrt{(x-x_{1})^{2}+(y-y_{1})^{2}}+\sqrt{(x-x_{2})^{2}+(y-y_{2})^{2}}=d$$
+  <li>En la expresión anterior, la primera raíz corresponde a la distancia del punto $P$ a $F$, la  segunda raíz es la distancia del punto $P$ a $F'$, las cuales están sumadas e igualadas a la constante.</li>
+</ol>
+
+<p>Para obtener la ecuación del lugar geométrico, se lleva a cabo una simplificación algebraica, que se muestra en el siguiente ejemplo.</p>
+
+<h1>Ejemplo</h1>
+
+<p>En el siguiente ejemplo se mostrará todo el desarrollo matemático necesario para determinar la ecuación de una elipse. Arrastra el punto $F$ hasta las coordenadas deseadas y posteriormente presiona el botón <span class="btn">Continuar</span>.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02A.html" style="width:900px; height:570px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>1. En una elipse, la suma de las distancias de los focos a cualquier punto de la curva permanece constante. En cada ejercicio, se dan los valores de la suma constante y de uno de los segmentos rectos, escribe la medida del otro.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02B.html" style="width:720px; height:570px;"></iframe></div>
+
+<p>2. Determina la ecuación de la elipse que cumple con las condiciones dadas, selecciona la respuesta correcta.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02C.html" style="width:720px; height:420px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>: Octavio Fonseca Ramos</p>
+<p><b>Edición académica</b>: Fernando René Martínez Ortiz</p>
+<p><b>Edición técnica</b>: Jose Luis Abreu León, Norma Patricia Apodaca Alvarez y Fernando René Martínez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Octavio Fonseca Ramos</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

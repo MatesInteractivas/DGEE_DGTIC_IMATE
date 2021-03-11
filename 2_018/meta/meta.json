@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Coordenadas cartesianas y polares"],
+	"titulo" : "Poligonos en el plano",
+	"descripcion" : "Reconocer clases de triángulos con base en las longitudes de sus lados y/o las medidas de sus ángulos.",
+	"resena" : "Tipos de triángulos",
+	"id" : "2_018"
+}

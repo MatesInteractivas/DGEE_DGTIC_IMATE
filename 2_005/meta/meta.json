@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Álgebra: Sistemas de dos ecuaciones una lineal y otra cuadrática"],
+	"titulo" : "Sistemas de dos ecuaciones una lineal y otra cuadrática",
+	"descripcion" : "Resolver por el método de sustitución un sistema de dos ecuaciones, una ecuación lineal y otra cuadrática.",
+	"resena" : "Obtener la solución de un sistema de ecuaciones donde una es lineal y la otra cuadrática",
+	"id" : "2_005"
+}

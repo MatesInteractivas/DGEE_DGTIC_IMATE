@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La línea recta"],
+	"titulo" : "Rectas y puntos notables de un triángulo",
+	"descripcion" : "Calcular la distancia de un punto a una recta.",
+	"resena" : "Distancia de un punto a una recta",
+	"id" : "2_051"
+}

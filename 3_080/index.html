@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Cálculo Diferencial e Integral: La integral">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Área bajo la gráfica de una función</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">La integral y el cálculo de áreas</div>
+  <div id="subtitulo">Área bajo la gráfica de una función</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Calcular el área limitada por la gráfica de una función $f(x)$ en el intervalo $[a,c]$, donde $f(x)$ sea positiva en el intervalo $[a,b]$ y negativa en el intervalo $[b,c]$ y limitada por el eje horizontal. </p>
+
+<h1>Procedimiento</h1>
+
+<p>Para calcular el área bajo la gráfica de una función $f$, se utiliza la definición de la integral definida</p>
+
+$$\int_{a}^{b}{f(x)dx=F(b)-F(a)}$$
+
+<p>donde $f$ es continua en el intervalo $[a,b]$ y $F$ es una primitiva de $f$.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:720px; height:480px;"></iframe></div>
+
+<p>En este caso, como una sección de la gráfica es positiva y la otra negativa, éstas se integran por separado para obtener sus áreas. El área de la sección positiva de la gráfica es mayor que cero, y de la misma manera, el área de la sección negativa es menor que cero; al final, para determinar el área total, se suman sus valores absolutos.</p>
+
+<h1>Justificación</h1>
+
+<p>La interpretación geométrica de la integral definida es el área limitada por la gráfica de una función y el eje horizontal. En general, si $f$ es continua en $[a,b]$ y $f(x)≥0$ para todo $x$ en $[a,b]$, entonces la integral definida, $\int_{a}^{b}{f(x)dx}$, es el área limitada por la gráfica de $f$ y el eje $x$ entre $a$ y $b$.</p>
+
+<h1>Ejemplos</h1>
+
+<p>A continuación, se muestran ejemplos para el cálculo del área limitada por la gráfica de una función y el eje horizontal, cuando una sección es positiva y la otra negativa. El punto de intersección de la gráfica con el eje $x$ delimita, respectivamente, el extremo derecho e izquierdo de los dos intervalos de integración.</p>
+
+<p>Presiona el botón <span class="btn">Continuar</span> para observar paso a paso el procedimiento.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:900px; height:570px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>Calcula el área que se pide empleando la integral definida y anota el resultado en el espacio correspondiente. Pulsa ↵ antes de oprimir el botón <span class="btn">Verificar</span>.</p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:900px; height:570px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>: Octavio Fonseca Ramos</p>
+<p><b>Editores académicos</b>: José Luis Abreu León y Carlos Hernández Garciadiego</p>
+<p><b>Editor técnico</b>: Carlos Alberto Serrato Hernández</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

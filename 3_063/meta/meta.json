@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: La derivada"],
+	"titulo" : "Rapidez y aceleración",
+	"descripcion" : "Obtener la aceleración instantánea de un móvil a partir de su función de posición en un tiempo determinado.",
+	"resena" : "Cálculo de la aceleración de un móvil",
+	"id" : "3_063"
+}

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Aritmética: Los números y sus operaciones"],
+	"titulo" : "Números racionales: Orden",
+	"descripcion" : "Comparar dos números racionales mediante la representación gráfica.",
+	"resena" : "Comparación de números racionales mediante su representación gráfica",
+	"id" : "1_018"
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Coordenadas cartesianas y polares">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Semejanza de triángulos</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Polígonos en el plano</div>
+  <div id="subtitulo">Semejanza de triángulos</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Calcular la longitud de lados desconocidos de triángulos semejantes aplicando proporcionalidad.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Los triángulos son semejantes, si tienen los ángulos correspondientes iguales y los lados homólogos proporcionales. Debido a la rigidez del triángulo, para que los triángulos $T_{1}$ y $T_{2}$ sean semejantes, es suficiente que se cumpla cualquiera de las siguientes condiciones, todas ellas son equivalentes:</p>
+
+<ol>
+  <li>Los lados correspondientes de $T_{1}$ y $T_{2}$ son proporcionales.</li>
+  <li>Dos ángulos de $T_{1}$ y $T_{2}$ son respectivamente iguales.</li>
+  <li>Dos lados de $T_{1}$ y $T_{2}$ son proporcionales y los ángulos respectivos entre ellos, son iguales.</li>
+</ol>
+
+<p>Como los lados homólogos son proporcionales, entonces a la razón $R = \frac{A'B'}{AB}=\frac{A'C'}{AC}=\frac{B'C'}{BC}$ se le conoce como razón de proporcionalidad. </p>
+
+<p>Podemos experimentar de manera interactiva en la siguiente construcción:</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:720px; height:480px;"></iframe></div>
+
+<h1>Ejemplos</h1>
+
+<p>Al plantear la proporción, no importa si la incógnita está en el numerador o en el denominador de la razón, se forma lo que conocemos como regla de tres y se despeja de esa forma.</p>
+
+<p>Enseguida aparecen algunos casos muy típicos en la resolución de problemas. Observa que, con objeto de que el despeje sea sencillo, en los dos ejemplos se ha colocado la incógnita en el numerador de alguna de las razones:</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:800px; height:520px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>Dada la longitud, en metros, de los lados respectivos de dos triángulos, $T_{1}$ y $T_{2}$, contesta si son o no semejantes. </p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:720px; height:360px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autores</b>: Héctor de Jesús Argueta Villamar y María Juana Linares Altamirano</p>
+<p><b>Edición académica</b>: Fernando René Martínez Ortiz y Octavio Fonseca Ramos</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

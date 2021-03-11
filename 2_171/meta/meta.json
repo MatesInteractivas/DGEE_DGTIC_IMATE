@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Trigonometría: Elementos de trigonometría"],
+	"titulo" : "Resolución de triángulos oblicuángulos",
+	"descripcion" : "Resolver problemas utilizando la ley de senos o de cosenos.",
+	"resena" : "Aplicaciones de las leyes de los senos o los cosenos",
+	"id" : "2_171"
+}

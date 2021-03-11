@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Funciones polinomiales",
+	"descripcion" : "Identificar la gráfica de una función cuadrática entre otras que no lo sean.",
+	"resena" : "Gráficas de funciones cuadráticas",
+	"id" : "2_118"
+}

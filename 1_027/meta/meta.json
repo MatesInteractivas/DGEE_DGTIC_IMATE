@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Aritmética: Los números y sus operaciones"],
+	"titulo" : "Números racionales: Significados y representaciones",
+	"descripcion" : "Obtener fracciones equivalentes dado un número racional.",
+	"resena" : "Fracciones equivalentes",
+	"id" : "1_027"
+}

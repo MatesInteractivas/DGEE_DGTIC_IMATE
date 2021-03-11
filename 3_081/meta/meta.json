@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: La integral"],
+	"titulo" : "La integral y el cálculo de áreas",
+	"descripcion" : "Calcular el área limitada entre las gráficas de dos funciones.",
+	"resena" : "Área acotada por las gráficas de dos funciones",
+	"id" : "3_081"
+}

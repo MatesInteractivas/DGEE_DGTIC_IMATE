@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Aritmética: Los números y sus operaciones">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Algoritmo de Euclídes: mínimo común múltiplo</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Números naturales</div>
+  <div id="subtitulo">Algoritmo de Euclídes: mínimo común múltiplo</div>
+</div>
+<div id="contenido">
+
+
+
+<h1>Objetivo</h1>
+
+<p>Calcular el mínimo común múltiplo con números naturales (máximo 5 números diferentes).</p>
+
+<h1>Procedimiento</h1>
+
+<p>Los múltiplos de un número dado se obtienen multiplicando dicho número por todos los números naturales distintos de cero. Utiliza el siguiente recuadro interactivo para desplegar los múltiplos del número, entre $2$ y $20$, que elijas con el pulsador mostrado.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:720px; height:230px;"></iframe></div>
+
+<p>Estas listas son útiles solamente cuando deseamos saber si un número no muy grande es múltiplo de otro. Para números muy grandes no son muy prácticas. Por ejemplo, ¿será $4832$ múltiplo de $7$? Para responder este tipo de preguntas basta con dividir $4832$ entre $7$ y, si la división es exacta, puedes afirmar que $4832$ es múltiplo de $7$. En los siguientes dos campos que forman la pregunta escribe distintos números y al presionar el botón <span class="btn">Verificar</span> sabrás si el primer número es múltiplo del segundo.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02A.html" style="width:720px; height:320px;"></iframe></div>
+
+<p>Observa que algunos números aparecen tanto en la lista de múltiplos de $2$ como en la de múltiplos de $3$. Por ejemplo, $6$, $12$, $18$, etcétera. A estos números se les llama múltiplos comunes de los números $2$ y $3$. En general, un número es múltiplo común de dos (o más) si es múltiplo de cada uno de ellos. </p>
+
+<p>En el siguiente recuadro interactivo se despliegan dos copias de la recta numérica, en cada una de ellas aparece un número mostrado como punto verde. En la recta superior están los múltiplos del primer número y, en la inferior, los del segundo, todos en color azul. Los puntos en rojo y señalados con una flecha, representan los múltiplos comunes de ambos números, es decir, los que son múltiplos tanto del primer número como del segundo. Con los pulsadores de la parte superior puedes elegir otros números, con valores entre $2$ y $8$. Observa los cambios en los múltiplos de cada uno y en los múltiplos comunes a ambos. El pulsador ubicado en la esquina inferior derecha te permite modificar la escala de visualización para que puedas ver algunos múltiplos grandes.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02B.html" style="width:740px; height:430px;"></iframe></div>
+
+<p>El más importante de los múltiplos comunes es el más pequeño de ellos, y se le denomina mínimo común múltiplo. Para encontrar el mínimo común múltiplo de dos números no siempre es conveniente escribir las listas de múltiplos. Hay un método más eficaz que se llama el algoritmo de Euclídes.</p>
+
+<p>Este algoritmo se basa en el hecho de que al realizar la división de un número (dividendo) entre un número más pequeño (divisor), se obtiene un cociente y un residuo (este último debe ser un número menor que el divisor). Por ejemplo, al dividir $11$ (dividendo) entre $4$ (divisor) se obtiene como cociente $2$ y como residuo $3$; esto se puede escribir como $11=4×2+3$.</p>
+
+<p>El algoritmo de Euclídes consiste en realizar este proceso de división una y otra vez hasta que el residuo sea cero. En cada paso se debe tomar como dividendo al divisor del paso anterior y como divisor al residuo del paso anterior. Al final del proceso, el número importante es el último cociente obtenido, conocido como el máximo común divisor de los números con los que se inició el algoritmo.</p>
+
+<p>El recuadro interactivo de la parte inferior te permitirá seguir paso a paso la aplicación de este algoritmo. Oprimiendo <span class="btn">Siguiente</span> verás el paso que sigue. Al encontrar el máximo común divisor, pulsa <span class="btn">Otro ejemplo</span> para practicar con otro par de números generados al azar, o si lo deseas cambia estos números escribiendo otros en los botones <span class="btn">Primer número</span> o <span class="btn">Segundo número</span>.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02C.html" style="width:720px; height:570px;"></iframe></div>
+
+<p>Con el máximo común divisor de una pareja de números podemos obtener fácilmente el mínimo común múltiplo de dicha pareja. El mínimo común múltiplo de dos números es igual al producto de los números dividido entre su máximo común divisor. Por ejemplo, el máximo común divisor de $24$ y $36$ es $12$, por tanto el mínimo común múltiplo de $24$ y $36$ es $\frac{24×36}{12}=72$.</p>
+
+<h1>Solución</h1>
+
+<p>Para obtener el mínimo común múltiplo de varios números es necesario hacerlo por parejas, es decir, se halla primero el mínimo común múltiplo del primer par de números. Después el de la pareja integrada por el siguiente número y el mínimo común múltiplo encontrado. Posteriormente, el del par formado por el número que sigue y el segundo mínimo común múltiplo hallado y así sucesivamente hasta el último número.</p>
+
+<h1>Ejercicios</h1>
+
+<p>En el recuadro interactivo que se presenta a continuación, podrás calcular el mínimo común múltiplo de tres, cuatro o cinco números naturales entre $2$ y $50$.</p>
+
+<p>Especifica con el pulsador de cuántos números deseas obtener el mínimo común múltiplo y escribe los números en los cuadros de texto. Resuelve el ejercicio en tu cuaderno y luego oprime <span class="btn">Siguiente</span> para avanzar paso a paso y comparar tus resultados con los del programa. Observa las notas del recuadro inferior izquierdo.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02D.html" style="width:720px; height:570px;"></iframe></div></p>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autores</b>: Fernando René Martínez Ortiz, Norma Patricia Apodaca Alvarez y José Luis Abreu León </p>
+<p><b>Edición académica</b>: José Luis Abreu León</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Octavio Fonseca Ramos</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

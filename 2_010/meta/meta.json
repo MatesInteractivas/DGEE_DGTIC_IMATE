@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Coordenadas cartesianas y polares"],
+	"titulo" : "Sistemas de dos ecuaciones una lineal y otra cuadrática",
+	"descripcion" : "Identificar puntos $(x, y)$ en el plano cartesiano.",
+	"resena" : "Identificación de puntos en el plano cartesiano",
+	"id" : "2_010"
+}

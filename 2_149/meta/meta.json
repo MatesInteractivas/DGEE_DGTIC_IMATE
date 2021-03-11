@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Funciones racionales",
+	"descripcion" : "Identificar las asíntotas horizontales de una función del tipo $f(x)=\frac{P(x)}{Q(x)}$, con $P(x)$ y $Q(x)$ lineales o cuadráticas a partir de su gráfica.",
+	"resena" : "Asíntotas horizontales y verticales a partir de la gráfica de una función racional.",
+	"id" : "2_149"
+}

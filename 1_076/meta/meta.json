@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Álgebra: Ecuaciones cuadráticas"],
+	"titulo" : "La ecuación general de 2do. Grado",
+	"descripcion" : "Resolver ecuaciones de segundo grado completas por alguno de los siguientes métodos: factorización, completar el trinomio cuadrado perfecto o fórmula general.",
+	"resena" : "Ecuaciones cuadráticas completas: ax² + bx + c = 0",
+	"id" : "1_076"
+}

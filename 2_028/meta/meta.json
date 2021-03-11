@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La línea recta"],
+	"titulo" : "Ángulo de inclinación y pendiente de una recta",
+	"descripcion" : "Calcular el ángulo obtuso formado por dos rectas que se cortan conociendo sus pendientes.",
+	"resena" : "Calcular el ángulo obtuso formado por dos rectas que se cortan conociendo sus pendientes",
+	"id" : "2_028"
+}

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Aritmética: Los números y sus operaciones"],
+	"titulo" : "Números naturales",
+	"descripcion" : "Realizar operaciones combinadas con números naturales que incluyan signos de agrupación.",
+	"resena" : "Operaciones básicas con signos de agrupación",
+	"id" : "1_003"
+}

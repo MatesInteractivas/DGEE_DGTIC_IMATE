@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Álgebra: Ecuaciones lineales">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Ecuaciones del tipo (x + b)² = (x + c)(x + d)</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Ecuaciones lineales indirectas</div>
+  <div id="subtitulo">Ecuaciones del tipo $(x + b)^{2} = (x + c)(x + d)$</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Resolver ecuaciones lineales del tipo $(x + b)^{2} = (x + c)(x + d)$ con $b$, $c$ y $d$ racionales.</p>
+
+<p>Otra manera de expresar el objetivo es: resolver ecuaciones lineales del tipo $(x +\frac{a}{b})^{2} = (x +\frac{c}{d})(x +\frac{e}{f})$ con $a$, $b$, $c$, $d$, $e$ y $f$ enteros, donde $a$, $b$, $d$ y $f$ son positivos. Los casos con denominadores negativos se reducen a éste cambiando signo al numerador y al denominador simultáneamente, con lo cual no se altera la ecuación.</p>
+
+<h1>Solución</h1>
+
+<p>Resolver ecuaciones lineales del tipo $(x +\frac{a}{b})^{2} = (x +\frac{c}{d})(x +\frac{e}{f})$ con $a$, $b$, $c$, $d$, $e$ y $f$ enteros, donde $a$, $b$, $d$ y $f$ son distintos de cero, significa despejar la incógnita $x$.</p>
+
+<p>Analiza el siguiente procedimiento paso a paso para encontrar el o los valores de $x$. Al terminar verás un gráfico que corresponde al significado geométrico de la solución.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:900px; height:570px;"></iframe></div></p>
+
+<p>En la escena anterior, para generar otros valores de las variables presiona el botón <span class="btn">Otra ecuación</span>, o utiliza los pulsadores correspondientes. Para acercar o alejar la imagen usa el pulsador ubicado en el extremo inferior derecho del gráfico.</p>
+
+<h1>Ejercicio</h1>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:900px; height:420px;"></iframe></div>
+
+<h1>Idea gráfica</h1>
+
+<ul>
+  <li>Por un lado $y = \frac{2a}{b} x + (\frac{a}{b})^{2}$ es la ecuación de una recta con pendiente $\frac{2a}{b}$ y ordenada al origen igual a $(\frac{a}{b})^{2}$.</li>
+
+  <li>Por otro lado $y = (\frac{c}{d} + \frac{e}{f})x + \frac{c·e}{d·f}$ es la ecuación de una recta con pendiente $\frac{c}{d}+\frac{e}{f}$ y ordenada al origen igual a $\frac{c·e}{d·f}$.</li>
+
+  <li>Resolver la ecuación significa encontrar el o los valores de $x$, para los cuales se cumple que  $\frac{2a}{b} x + (\frac{a}{b})^{2} = (\frac{c}{d} + \frac{e}{f})x + \frac{c·e}{d·f}$. Es decir, encontrar el o los puntos de coincidencia de las rectas.</li>
+</ul>
+
+<h1>Casos especiales</h1>
+
+<ul>
+  <li>Si las rectas $y = \frac{2a}{b} x + (\frac{a}{b})^{2}$ y $y =(\frac{c}{d} + \frac{e}{f})x + \frac{c·e}{d·f}$ son la misma, entonces cualquier número $x$ es solución de la ecuación.</li>
+
+  <li>Si las rectas $y = \frac{2a}{b} x + (\frac{a}{b})^{2}$ y $y = (\frac{c}{d} + \frac{e}{f})x + \frac{c·e}{d·f}$ son paralelas, pero no la misma, entonces la ecuación no tiene solución.</li>
+
+  <li>Si las rectas $y = \frac{2a}{b} x + (\frac{a}{b})^{2}$ y $y = (\frac{c}{d} + \frac{e}{f})x + \frac{c·e}{d·f}$ no son paralelas, entonces se intersecan en un sólo punto. En este caso, la ecuación tiene solución única.</li>
+</ul>
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autores</b>: Héctor de Jesús Argueta Villamar y Norma Patricia Apodaca Alvarez</p>
+<p><b>Edición académica</b>: José Luis Abreu León</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

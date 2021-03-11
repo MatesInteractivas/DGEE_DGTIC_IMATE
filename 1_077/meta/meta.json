@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Álgebra: Ecuaciones cuadráticas"],
+	"titulo" : "La ecuación general de 2do. Grado",
+	"descripcion" : "Determinar la naturaleza de las soluciones de una ecuación de segundo grado cuando el discriminante $b$ sea igual, mayor o menor que cero.",
+	"resena" : "Análisis del discriminante b² - 4ac",
+	"id" : "1_077"
+}

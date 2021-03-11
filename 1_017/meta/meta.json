@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Aritmética: Los números y sus operaciones"],
+	"titulo" : "Números racionales: Orden",
+	"descripcion" : "Distinguir entre dos números racionales cuál de ellos es mayor.",
+	"resena" : "Comparación de dos números racionales positivos",
+	"id" : "1_017"
+}

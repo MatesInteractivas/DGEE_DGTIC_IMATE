@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Aritmética: Los números y sus operaciones"],
+	"titulo" : "Exponentes, potencias y radicales",
+	"descripcion" : "Expresar $ca^{-n}$ como $\frac{c}{a^{n}}$.",
+	"resena" : "Potencias positivas, negativas y fraccionarias",
+	"id" : "1_040"
+}

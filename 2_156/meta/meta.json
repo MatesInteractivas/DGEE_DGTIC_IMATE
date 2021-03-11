@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Trigonometría: Elementos de trigonometría"],
+	"titulo" : "Conceptos básicos",
+	"descripcion" : "Identificar la definición de las razones trigonométricas de un ángulo agudo en términos de los catetos y la hipotenusa.",
+	"resena" : "Identificar las razones trigonométricas para ángulos agudos",
+	"id" : "2_156"
+}

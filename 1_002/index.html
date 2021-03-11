@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Aritmética: Los números y sus operaciones">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Operaciones básicas por orden de prioridad</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Números naturales</div>
+  <div id="subtitulo">Operaciones básicas por orden de prioridad</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Realizar operaciones combinadas con números naturales considerando el orden de prioridad en las operaciones.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Para llevar a cabo una operación en la que aparecen sumas, restas, multiplicaciones y divisiones, hay que realizar primero las multiplicaciones y divisiones procediendo de izquierda a derecha y luego las sumas y las restas, en ese mismo orden. </p>
+
+<h1>Solución</h1>
+
+<p>Cuando en una operación sólo aparecen sumas y restas, la mejor manera de realizarla para no equivocarse es procediendo de izquierda a derecha. En el siguiente recuadro interactivo ensaya este tipo de operaciones, escribe tu respuesta con el botón <span class="btn">Resultado</span> y verifícala.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02A.html" style="width:720px; height:370px;"></iframe></div>
+
+<p>Se puede utilizar el mismo procedimiento para realizar operaciones en las que sólo aparecen multiplicaciones y divisiones. Escribe la respuesta de las operaciones propuestas con el botón <span class="btn">Resultado</span>, si es el caso, redondéalo a cuatro decimales y verifica tu respuesta.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02B.html" style="width:720px; height:370px;"></iframe></div>
+
+<p>Cuando se desea realizar una operación en la que aparecen sumas y/o restas combinadas con multiplicaciones y/o divisiones, la situación es más complicada. Por ejemplo, si para resolver la simple operación $5+8×3$ se realizaran las operaciones de izquierda a derecha, obtendríamos un resultado erróneo.</p>
+
+<p>Las computadoras ejecutan este tipo de operaciones combinadas utilizando una serie de reglas que les permiten decidir el orden en que deben efectuarse las operaciones. Puedes utilizar el siguiente ejercicio para practicar estas reglas. Escribe la respuesta de las operaciones propuestas con el botón <span class="btn">Resultado</span>, si es el caso, redondéalo a cuatro decimales y verifica tu respuesta. Luego indica la operación que se llevó a cabo primero para haber obtenido el resultado correcto. </p>
+
+<div class="interactivo"><iframe src="escenas/escena02C.html" style="width:720px; height:370px;"></iframe></div>
+
+<p>La jerarquía de las operaciones es el conjunto de reglas que permite decidir el orden en que deben realizarse las operaciones. La primera regla es:</p>
+
+<div class="bloque"><b>1.</b> Se deben realizar primero las operaciones de multiplicación y división y, al final, las de suma y resta.</div>
+
+<p>y la segunda:</p>
+
+<div class="bloque"><b>2.</b> El orden en que deben ejecutarse las operaciones es de izquierda a derecha.</div>
+
+<p>Estas reglas pueden resumirse en una sola:</p>
+
+<div class="bloque">Hay que efectuar primero las multiplicaciones y divisiones, operando de izquierda a derecha y luego las sumas y restas, también operando de izquierda a derecha.</div>
+
+<h1>Ejercicios</h1>
+
+<p>En los siguientes recuadros interactivos deberás utilizar la jerarquía de las operaciones para obtener el resultado correcto. El primer recuadro contiene tres operandos mientras que el segundo es de mayor dificultad pues tiene cuatro.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02D.html" style="width:720px; height:370px;"></iframe></div>
+
+<div class="interactivo"><iframe src="escenas/escena02E.html" style="width:720px; height:370px;"></iframe></div>
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autores</b>: Fernando René Martínez Ortiz y Norma Patricia Apodaca Alvarez</p>
+<p><b>Edción académica</b>: José Luis Abreu León</p>
+<p><b>Edición técnica</b>:  Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Octavio Fonseca Ramos</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

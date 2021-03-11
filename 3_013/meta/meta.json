@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: La derivada"],
+	"titulo" : "Definición de la derivada",
+	"descripcion" : "Introducción al concepto de derivada. Cálculo de la derivada usando el concepto de límite.",
+	"resena" : "Introducción",
+	"id" : "3_013"
+}

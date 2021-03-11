@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Funciones con radicales",
+	"descripcion" : "Predecir valores esperados a partir de una función (lineal, cuadrática, polinomial, racional o con radical) que modele una situación real.",
+	"resena" : "Resolución de problemas susceptibles de modelarse a través de funciones lineales, cuadráticas, polinomiales, racionales o con radicales.",
+	"id" : "2_155"
+}

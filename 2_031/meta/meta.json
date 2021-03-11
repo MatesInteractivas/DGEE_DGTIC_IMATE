@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La línea recta"],
+	"titulo" : "Diversas formas de la ecuación de la recta",
+	"descripcion" : "Determinar la ecuación de una recta en la forma $y=mx+b$ cuando se conocen las coordenadas de uno de sus puntos y su pendiente.",
+	"resena" : "Ecuación de la recta y=mx+b conociendo su pendiente y uno de sus puntos",
+	"id" : "2_031"
+}

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Trigonometría: Elementos de trigonometría"],
+	"titulo" : "Conceptos básicos",
+	"descripcion" : "Determinar la longitud de algún lado desconocido de un triángulo rectángulo aplicando el teorema de Pitágoras.",
+	"resena" : "Teorema de Pitágoras",
+	"id" : "2_160"
+}

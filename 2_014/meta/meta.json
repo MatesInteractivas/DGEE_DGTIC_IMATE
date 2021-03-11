@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Coordenadas cartesianas y polares"],
+	"titulo" : "Puntos en el plano",
+	"descripcion" : "Encontrar las coordenadas del punto medio de un segmento si se conocen sus extremos.",
+	"resena" : "Punto medio de un segmento en el plano cartesiano",
+	"id" : "2_014"
+}

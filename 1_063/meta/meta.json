@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Álgebra: Productos notables y factorización"],
+	"titulo" : "Factorización de trinomios",
+	"descripcion" : "Obtener el trinomio equivalente al producto de dos binomios con un término común.",
+	"resena" : "Producto de dos binomios con un término común",
+	"id" : "1_063"
+}

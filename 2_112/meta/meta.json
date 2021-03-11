@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Concepto y notación de función y gráfica de una función",
+	"descripcion" : "Sustituir el valor de una abscisa en la regla de correspondencia para obtener el valor de la ordenada.",
+	"resena" : "Notación funcional $f(x)$",
+	"id" : "2_112"
+}

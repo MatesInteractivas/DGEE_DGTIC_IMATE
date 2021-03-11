@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Geometría analítica: La parábola">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Ecuación ordinaria de la parábola con vértice en el origen y dados el eje focal y un punto</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">La parábola a partir de algunos de sus elementos</div>
+  <div id="subtitulo">Ecuación ordinaria de la parábola con vértice en el origen y dados el eje focal y un punto</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Obtener la ecuación ordinaria de una parábola con vértice en $(h,k)$, eje focal y un punto de la parábola conocidos.</p>
+
+<h1>Recordatorio</h1>
+
+<p>Las ecuaciones ordinarias de una parábola horizontal con vértice en un punto $(h,k)$ pueden ser:</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:900px; height:360px;"></iframe></div>
+
+<p style="text-align:center;font-size:80%;">$(y-k)^{2}=4p(x-h)$, si abre hacia la derecha, <span style="display:inline-block;width:4em;"></span> $(y-k)^{2}=-4p(x-h)$, si abre hacia la izquierda $(1)$</p>
+
+<p>en donde $p$ es la distancia del vértice al foco.</p>
+
+<p>Las ecuaciones ordinarias de una parábola vertical con vértice en un punto (h,k) pueden ser:</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:900px; height:360px;"></iframe></div>
+
+<p style="text-align:center;font-size:80%;"">$(x-h)^{2}=4p(y-k)$, si abre hacia arriba <span style="display:inline-block;width:8em;"></span> $(x-h)^{2}=-4p(y-k)$, si abre hacia abajo $(2)$</p>
+
+<p>en donde $p$ es la distancia del vértice al foco.</p>
+
+<h1>Solución</h1>
+
+<p>Utiliza los pulsadores que se encuentran en el siguiente recuadro interactivo y cambia el valor de las coordenadas del punto conocido. Observa cómo se modifica la ecuación ordinaria de la parábola cuando $x$ y $y$ asumen valores tanto negativos como positivos. Puedes mover el plano cartesiano si deseas colocar el vértice lejos del origen. Siempre puedes volver a centrar el plano en el origen y regresar a la escala original presionando el botón <span class="btn">Centrar al origen</span> situado debajo de cada plano.</p>
+
+<h2>Parábola horizontal</h2>
+
+<p>Ecuación ordinaria de la forma: $(y-k)^{2}=K(x-h)$</p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:900px; height:480px;"></iframe></div>
+
+<h2>Parábola vertical</h2>
+
+<p>Ecuación ordinaria de la forma: $(x-h)^{2}=K(y-k)$</p>
+
+<div class="interactivo"><iframe src="escenas/escena04.html" style="width:900px; height:480px;"></iframe></div>
+
+<h1>Detalle</h1>
+
+<p>Para obtener el resto de la información sobre la parábola:</p>
+
+<ol>
+  <li>Se calcula $p$ como el valor absoluto de $K/4$.</li>
+  <li>Si la parábola es horizontal, el foco está en $(h+K/4,k)$ y la directriz es $x = h-K/4$.</li>
+  <li>Si la parábola es vertical, el foco está en $(h, k+K/4)$ y la directriz es $y = k -K/4$.</li>
+</ol>
+
+<p>Para saber hacia dónde abre la parábola se considera:</p>
+
+<div class="interactivo"><iframe src="escenas/escena05.html" style="width:900px; height:380px;"></iframe></div>
+
+<h1>Ejemplos</h1>
+
+<p>En el siguiente recuadro interactivo, observa cómo se determina la ecuación general de la parábola con vértice en el punto $(h,k)$ y que pasa por un punto conocido. Presiona el pulsador que se sitúa en el extremo superior izquierdo del cuadro y avanza en la solución tratando de comprender cada uno de los pasos. Analiza otros ejemplos al dar clic sobre el botón que se ubica en el extremo superior derecho.</p>
+
+<div class="interactivo"><iframe src="escenas/escena06.html" style="width:900px; height:480px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>Determina lo que se te pida en cada caso. Escribe el resultado en los campos de texto del cuadro y a continuación presiona Intro. Si tu respuesta es correcta, se inhabilitará el campo de texto; en caso contrario, deberás reintentarlo. Al terminar se desplegará un botón que te permitirá acceder a otro ejercicio. Recuerda que al dar doble clic sobre un campo de texto se desplegará la calculadora.</p>
+
+<div class="interactivo"><iframe src="escenas/escena07.html" style="width:900px; height:540px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autores</b>: Carlos Hernández Garciadiego y Eréndira Itzel García Islas</p>
+<p><b>Edición académica</b>: José Luis Abreu León, Fernando René Martínez Ortiz y Alejandro Radillo Díaz</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Funciones y sus gráficas: Funciones algebraicas">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Ceros de funciones polinomiales de grado 2.</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Funciones polinomiales</div>
+  <div id="subtitulo">Ceros de funciones polinomiales de grado $2$</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Encuentra los ceros de la función $f(x)=ax^{2}+bx+c$, con $a$, $b$ y $c$ enteros.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Se llama cero de una función polinomial a aquellos valores de la variable para los cuales la función vale cero.</p>
+
+<p>Una ecuación cuadrática es una ecuación de la forma $ax^{2}+bx+c=0$, donde $a$, $b$ y $c$ son números reales. Si un número $n$ es una solución de una ecuación polinomial $P(x)=0$, entonces se dice que $n$ es una raíz de la ecuación.</p>
+
+<p>Existen tres métodos para hallar las raíces de una ecuación del tipo $ax^{2}+bx+c=0$, donde $a$, $b$ y $c$ son números enteros:</p>
+
+<ul>
+  <li>Factorización simple.</li>
+  <li>Completando el cuadrado.</li>
+  <li>Fórmula cuadrática.</li>
+</ul>
+
+<h1>Solución</h1>
+
+<h2>Factorización simple</h2>
+
+<p>Consiste en convertir la ecuación cuadrática en un producto de binomios, y luego se iguala a cero cada binomio y se encuentra el valor de $x$.</p>
+
+<p>Para convertir la ecuación de la forma $ax^{2}+bx+c=0$, con $a$, $b$ y $c$ enteros, en un producto de binomios, se requiere:</p>
+
+<ol>
+  <li>Determinar dos números cuyo producto sea $ac$ y cuya suma sea $b$.</li>
+  <li>Sustituir el coeficiente $b$ con la suma de los números encontrados en el paso anterior.</li>
+  <li>Factorizar por agrupamiento.</li>
+  <p>Para encontrar los ceros de la función, sólo se necesita:</p>
+  <li>Igualar a cero cada uno de los binomios y encontrar el valor de $x$.</li>
+</ol>
+
+<h2>Completando el cuadrado</h2>
+
+<p>Este método consiste en llevar la ecuación de la forma $ax^{2}+bx+c=0$ a la forma $x^{2}+bx=c$, con $a=1$ y luego completar el cuadrado. Para esto se requiere:</p>
+
+<ol>
+  <li>Dividir el polinomio entre el valor de $a$.</li>
+  <li>Pasar a $c$ del lado opuesto.</li>
+  <li>Completar el cuadrado de la función.</li>
+  <li>Factorizar.</li>
+  <li>Para encontrar los ceros de la función, se iguala a cero cada uno de los binomios y se encuentra el valor de $x$.</li>
+</ol>
+
+<h2>Fórmula cuadrática</h2>
+
+<p>En ocasiones, cuando se tiene que resolver una ecuación de segundo grado, la ecuación resultante no puede resolverse por alguno de los dos método anteriores, factorización o completar el cuadrado. Ademas, este último método resulta laborioso y se podrían cometer errores si no se procede con cuidado.</p>
+
+<p>Sin embargo, si se aplica éste método a la ecuación general de segundo grado se obtiene una fórmula que permite encontrar la solución de manera mucho más sencilla y directa. Esta fórmula llamada fórmula cuadrática se expresa como:</p>
+
+$$x=\frac{-b±\sqrt{b^{2}-4ac}}{2a}$$
+
+<p>A las expresiones resultantes se les conoce con el nombre de solución general de la ecuación general de segundo grado.</p>
+
+<p>El método consiste en sustituir los valores de $a$, $b$ y $c$ de la ecuación cuadrática en la fórmula y resolverla. Para que la fórmula pueda resolverse, la expresión $b$ que está dentro del radical, llamada discriminante, debe ser mayor o igual que cero, de otro modo no es posible extraer la raíz. Por lo tanto, cuando ocurre que $b^{2}-4ac < 0$ significa que la ecuación cuadrática no tiene solución.</p>
+
+<h1>Ejemplos</h1>
+
+<p>En el recuadro que se presenta a continuación, observa cómo se determinan los ceros de una función polinomial de grado $2$ mediante el uso de la fórmula cuadrática. Presiona el pulsador que se localiza en el extremo superior derecho y avanza en la solución tratando de comprender cada uno de los pasos. Analiza otros ejemplos al dar clic sobre el botón que se encuentra en el extremo inferior de la derecha.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:960px; height:650px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>Para los ejercicios siguientes, elige el método que prefieras y resuelve lo que se pide en tu cuaderno. Una vez hecho esto, escribe tus resultados sobre los campos de texto del cuadro y a continuación presiona Intro. Si tu respuesta es correcta, se inhabilitará el campo; en caso de que esto no ocurra, deberás reintentarlo. Recuerda que al dar doble clic sobre un campo de texto se desplegará la calculadora.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:960px; height:450px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autora</b>: Eréndira Itzel Garcia Islas</p>
+<p><b>Edición académica</b>: Fernando René Martínez Ortíz y Octavio Fonseca Ramos</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Joel Espinosa Longi</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

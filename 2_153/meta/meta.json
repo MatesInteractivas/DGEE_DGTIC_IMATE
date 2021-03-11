@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Funciones con radicales",
+	"descripcion" : "Determinar a partir de su gráfica el dominio de una función del tipo:",
+	"resena" : "Estudio gráfico del dominio de las funciones con radicales",
+	"id" : "2_153"
+}

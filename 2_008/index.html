@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Álgebra: Sistemas de dos ecuaciones una lineal y otra cuadrática">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Identificar el sistema de ecuaciones que permite resolver un problema</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+
+  window.addEventListener("DOMContentLoaded", function() {
+    let iframe = document.getElementById("E2");
+    window.addEventListener("message", function(evt) {
+      if (iframe && evt.data) {
+        if (evt.data.type == "set") { iframe.contentWindow.postMessage({ type: evt.data.type, name: evt.data.name, value: evt.data.value }, "*"); }
+        if (evt.data.type == "update") { iframe.contentWindow.postMessage({ type: "update" }, "*"); }
+      }
+    });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Sistemas de dos ecuaciones una lineal y otra cuadrática</div>
+  <div id="subtitulo">Identificar el sistema de ecuaciones que permite resolver un problema</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Identificar el modelo de sistemas de dos ecuaciones, una lineal y otra cuadrática, que permite resolver un problema.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Si se tiene un problema en el que intervienen dos cantidades desconocidas, incógnitas, y se traducen a lenguaje algebraico, queda un conjunto de ecuaciones donde los coeficientes $a$, $b$, $c$, $d$, $e$, $f$, $g$, $h$ y $r$, son números, mientras que $x$ y $y$ representan las incógnitas, como se muestra a continuación.</p>
+
+$$\begin{aligned}
+g x+h y + r &= 0 \\
+a x^{2} + b x y + c y^{2} + d x +e y + f &= 0
+\end{aligned}$$
+
+<p>entonces estamos ante un sistema de dos ecuaciones, una lineal y otra cuadrática.</p>
+
+<p>En esta lección trabajaremos el caso más sencillo:</p>
+
+$$\tag{1} g x + h y + r = 0$$
+$$\tag{2} a x^{2} + d x +e y + f = 0$$
+
+<p>donde, además, supondremos que los coeficientes $a$, $g$ y $h$ no son cero. Observa que si el coeficiente $a$ fuera igual a $0$, el sistema sería de dos ecuaciones lineales.</p>
+
+<p>Ver los siguientes ejemplos.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:900px; height:570px;"></iframe></div>
+
+<h1>Solución</h1>
+
+<p>Con los pulsadores, se pueden modelar los sistemas de los ejemplos anteriores y más abajo, ver su solución paso a paso. ¿Gustas intentarlo?</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:900px; height:150px;"></iframe></div>
+
+<div class="interactivo"><iframe id="E2" src="escenas/escena03.html" style="width:900px; height:570px;"></iframe></div>
+
+<h1>Ejercicio</h1>
+
+<p>En el siguiente simulador de sistemas de dos ecuaciones, con una lineal y una cuadrática, realiza el planteamiento del problema siguiente y comprueba tu respuesta pulsando el botón de <span class="btn">Verificar</span>.</p>
+
+<p>Se tienen dos compuestos químicos $p$ y $q$, con temperaturas $x$, $y$ respectivamente, que están sometidas a variaciones. En un momento dado, se sabe que:</p>
+
+<div class="interactivo"><iframe src="escenas/escena04.html" style="width:900px; height:570px;"></iframe></div>
+
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autores</b>: Héctor de Jesús Argueta Villamar y María Juana Linares Altamirano  </p>
+<p><b>Edición académica</b>: José Luis Abreu León, Carlos Hernández Garciadiego y Joel Espinosa Longi</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez y Fernando René Martínez Ortiz</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

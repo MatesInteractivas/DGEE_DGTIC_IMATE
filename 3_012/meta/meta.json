@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: Limites"],
+	"titulo" : "Continuidad",
+	"descripcion" : "Obtener algebráicamente el punto de discontinuidad de una función.",
+	"resena" : "Continuidad y puntos de discontinuidad de las funciones",
+	"id" : "3_012"
+}

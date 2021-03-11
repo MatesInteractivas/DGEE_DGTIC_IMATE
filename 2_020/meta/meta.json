@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Coordenadas cartesianas y polares"],
+	"titulo" : "Poligonos en el plano",
+	"descripcion" : "Reconocer polígonos regulares con base en el número de lados.",
+	"resena" : "Polígonos regulares",
+	"id" : "2_020"
+}

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones trascendentes"],
+	"titulo" : "Funciones trigonométricas",
+	"descripcion" : "Determinar la frecuencia en la función $f(x)=a·sen(bx+c)+d$.",
+	"resena" : "Análisis de la función f(x) = a sen(bx + c) + d.",
+	"id" : "2_185"
+}

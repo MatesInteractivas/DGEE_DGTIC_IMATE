@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La línea recta"],
+	"titulo" : "Ángulo de inclinación y pendiente de una recta",
+	"descripcion" : "Identificar que la pendiente de una recta es constante sin importar cuáles de sus puntos se elijan para calcularla.",
+	"resena" : "La pendiente de una recta como constante",
+	"id" : "2_204"
+}

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Trigonometría: Elementos de trigonometría"],
+	"titulo" : "Conceptos básicos",
+	"descripcion" : "Obtener el seno, coseno o tangente para un ángulo agudo de un triángulo rectángulo, conociendo sus tres lados.",
+	"resena" : "Obtener las razones trigonométricas de los ángulos de un triángulo rectángulo",
+	"id" : "2_157"
+}

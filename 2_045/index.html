@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Geometría analítica: La línea recta">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Ecuaciones de las medianas</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Rectas y puntos notables de un triángulo</div>
+  <div id="subtitulo">Ecuaciones de las medianas</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Determinar la ecuación de una de las medianas de un triángulo a partir de sus vértices.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Para determinar la ecuación de una mediana, se calcula el punto medio de alguno de los lados y después se obtiene la ecuación de la recta que va desde este punto hasta el vértice opuesto.</p>
+
+<h1>Solución</h1>
+
+<p>Una de las cuatro rectas notables de un triángulo es la mediana, que es un segmento trazado desde uno de los vértices hasta el punto medio del lado opuesto. En cualquier triángulo siempre se podrán trazar tres medianas.</p>
+
+<p>Para determinar la ecuación de una mediana, cuando conocemos las coordenadas de los tres vértices, se lleva a cabo el siguiente procedimiento:</p>
+
+<ol>
+  <li>Se escoge el vértice que será un extremo de la mediana.</li>
+  <li>Se calcula el punto medio de los otros dos vértices, que será el otro extremo de la mediana.</li>
+  <li>Se determina la ecuación de la mediana con estos dos puntos extremos.</li>
+</ol>
+
+<h1>Ejemplo</h1>
+
+<p>El siguiente procedimiento describe detalladamente los pasos para conocer la ecuación de una mediana a partir de las coordenadas de los tres vértices. Escribe las coordenadas de los vértices del triángulo o presiona el botón Mover vértices para arrastrarlos, después presiona <span class="btn">Continuar</span>. En todos los casos, la mediana se trazará desde el vértice $A$ hasta el punto medio de los vértices $B$ y $C$.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01A.html" style="width:900px; height:570px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>Determina la ecuación de una mediana del triángulo. Primero, selecciona la mediana haciendo un clic en el vértice; después, haz otro clic en el punto correspondiente a su segundo extremo, para visualizarlo; por último, introduce los coeficientes de la ecuación de la recta que la representa. Presiona el botón <span class="btn">Verificar</span> para comprobar el resultado.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02A.html" style="width:900px; height:570px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>: Octavio Fonseca Ramos</p>
+<p><b>Edición académica</b>: José Luis Abreu León, Fernando René Martínez Ortiz y Alejandro Radillo Díaz</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Octavio Fonseca Ramos</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

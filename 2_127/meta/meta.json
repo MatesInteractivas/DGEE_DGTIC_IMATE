@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Ceros de funciones polinomiales de grado 3 que sean factorizables.",
+	"descripcion" : "Encontrar los ceros de la función $ƒ(x)=x^{3}+ax^{2}+bx+c$ con $a$, $b$ y $c$ enteros.",
+	"resena" : "Ceros de funciones polinomiales factorizables de grado $3$",
+	"id" : "2_127"
+}

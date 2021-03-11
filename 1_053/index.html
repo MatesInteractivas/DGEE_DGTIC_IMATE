@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Álgebra: Ecuaciones lineales">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Identificación de la ecuación lineal que modela un problema</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Aplicaciones de las ecuaciones lineales</div>
+  <div id="subtitulo">Identificación de la ecuación lineal que modela un problema</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Seleccionar la ecuación lineal que permita resolver un problema.</p>
+
+<h1>Procedimiento</h1>
+
+<p>El álgebra es un método poderoso para resolver problemas. Sin embargo, para poder utilizarlo debes familiarizarte con la traducción de un problema al lenguaje algebraico.</p>
+
+<p>Por ejemplo, para traducir al lenguaje algebraico se tiene el siguiente problema: </p>
+
+<p class="bloque">Un cable de $42$ metros se corta en dos pedazos. Uno de los pedazos es $3$ metros más grande que el otro. ¿Cuál es la longitud de cada uno de los trozos?</p>
+
+<p>Lo primero que debes hacer es preguntarte ¿cuál es la incógnita? En este ejemplo tenemos dos incógnitas, la longitud del trozo pequeño y la longitud del trozo grande. Sin embargo, si conocieras la longitud del pedazo pequeño, la del grande la obtendrías fácilmente con sólo sumarle $3$ metros. Si usamos como incógnita la longitud del trozo pequeño y la llamamos $x$ entonces para expresar que la longitud del trozo pequeño más la del trozo grande es $42$ metros podemos utilizar la ecuación: $x+(x+3)=42$.</p>
+
+<h1>Solución</h1>
+
+<p>Una vez que el problema ha quedado expresado como una ecuación, basta con resolverla:</p>
+
+$$\begin{aligned}
+x+(x+3) &= 42 \\
+2x+3 &= 42 \\
+2x &= 39 \\
+x &= \frac{39}{2} \\
+x &= 19.5
+\end{aligned}$$
+
+<p>Podemos entonces concluir que uno de los trozos mide $19.5$ metros, mientras que el otro, $22.5$.</p>
+
+<h1>Ejercicios</h1>
+
+<p>En el siguiente recuadro interactivo traduce el problema propuesto al lenguaje algebraico y resuélvelo.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:900px; height:570px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autores</b>: Fernando René Martínez Ortiz y Norma Patricia Apodaca Alvarez</p>
+<p><b>Edición académica</b>: José Luis Abreu León</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

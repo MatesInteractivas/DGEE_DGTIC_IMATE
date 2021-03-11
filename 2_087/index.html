@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Geometría analítica: La parábola">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Ecuación general de la parábola dados el vértice  la concavidad y la longitud del lado recto</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">La parábola a partir de algunos de sus elementos</div>
+  <div id="subtitulo">Ecuación general de la parábola dados el vértice  la concavidad y la longitud del lado recto</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Obtener la ecuación general una parábola con vértice en un punto $(h, k)$, conociendo su concavidad y la longitud del lado recto.</p>
+
+<h1>Recordatorio</h1>
+
+<p>La concavidad de una parábola indica hacia qué lado abre. Las parábolas no inclinadas pueden abrir hacia: la derecha, izquierda, arriba o abajo.</p>
+
+<p>La ecuación ordinaria de una parábola horizontal con vértice en un punto (h, k) es de la forma:</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:900px; height:360px;"></iframe></div>
+
+<p style="text-align:center;font-size:80%;">$(y-k)^{2}=4p(x-h)$, si abre hacia la derecha <span style="display:inline-block;width:2em;"></span> $(y-k)^{2}=-4p(x-h)$, si abre hacia la izquierda $(1)$</p>
+
+<p>en donde $p$ es la distancia del vértice al foco.</p>
+
+<p>La ecuación ordinaria de una parábola vertical con vértice en un punto $(h, k)$ es de la forma:</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:900px; height:360px;"></iframe></div>
+
+<p style="text-align:center;font-size:80%;">$(x-h)^{2}=4p(y-k)$, si abre hacia arriba <span style="display:inline-block;width:6em;"></span> $(x-h)^{2}=-4p(y-k)$, si abre hacia abajo $(2)$</p>
+
+<p>en donde $p$ es la distancia del vértice al foco.</p>
+
+<p>La ecuación general de cualquier cónica es de la forma:</p>
+
+$$\tag{3} Ax^{2}+Bxy+Cy^{2}+Dx+Ey+F=0$$
+
+<p>Para pasar de la ecuación ordinaria (1) o (2) a la ecuación (3), hay que desarrollar el binomio al cuadrado que está del lado izquierdo, hacer la multiplicación que está del lado derecho, pasar todos los términos al lado izquierdo y simplificar.</p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:720px; height:480px;"></iframe></div>
+
+<p>El lado recto es el segmento perpendicular al eje de la parábola que pasa por el foco y cuyos extremos tocan la parábola. El lado recto mide $4$ veces la distancia del vértice al foco, es decir, $4p$, que es el coeficiente, sin tomar en cuenta el signo del término de la derecha en las ecuaciones (1) y (2).</p>
+
+<h1>Procedimiento</h1>
+
+<p>Para determinar la forma general de una parábola con vértice en $(h, k)$, concavidad y lado recto conocidos, primero hay que encontrar la forma ordinaria mediante los siguientes pasos:</p>
+
+<ol>
+  <li>Se determina $p$, la distancia del vértice al foco, que es la cuarta parte de la longitud del lado recto.</li>
+  <li>Se utiliza la ecuación (1) si la parábola abre hacia la derecha o hacia la izquierda.</li>
+  <li>Se utiliza la ecuación (2) si la parábola abre hacia arriba o hacia abajo.</li>
+  <li>Se elige el signo del término del segundo miembro de la ecuación de acuerdo con la siguiente tabla:</li>
+  <div class="interactivo"><iframe src="escenas/escena04.html" style="width:900px; height:360px;"></iframe></div>
+
+  <p>Una vez obtenida la ecuación ordinaria, se siguen los siguientes pasos para obtener la ecuación general:</p>
+
+  <li>Desarrollar el binomio al cuadrado que está del lado izquierdo.</li>
+  <li>Hacer la multiplicación que está del lado derecho.</li>
+  <li>Pasar todos los términos al lado izquierdo.</li>
+  <li>Simplificar.</li>
+</ol>
+
+<h1>Solución</h1>
+
+<p>Con los pulsadores que se encuentran en el recuadro interactivo que se presenta a continuación, cambia el valor de las coordenadas del vértice $(h, k)$, la longitud del lado recto y el sentido de la concavidad de la parábola y observa cómo se modifica tanto la gráfica, como las ecuaciones de ésta. Analiza cada caso y compara dichos resultados con los del cuadro anterior. Recuerda que puedes acercar o alejar la imagen, haciendo uso del pulsador situado en el extremo inferior derecho de la gráfica.</p>
+
+<div class="interactivo"><iframe src="escenas/escena05.html" style="width:900px; height:480px;"></iframe></div>
+
+<h1>Ejemplos</h1>
+
+<p>En el recuadro que sigue, observa cómo se determina la ecuación de la parábola con vértice en (h, k) conociendo su concavidad y la longitud del lado recto. Analiza otros ejemplos al dar clic sobre el botón que se localiza en el extremo inferior derecho del cuadro.</p>
+
+<div class="interactivo"><iframe src="escenas/escena06.html" style="width:900px; height:480px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>Determina lo que se te pida en cada caso. Escribe el resultado sobre los campos de texto del cuadro y a continuación presiona Intro. Si tu respuesta es correcta, se inhabilitará el campo de texto, en caso contrario, inténtalo nuevamente. Al terminar se desplegará el botón que te permitirá acceder a otro ejercicio. Recuerda que al dar doble clic sobre un campo de texto se desplegará la calculadora.</p>
+
+<div class="interactivo"><iframe src="escenas/escena07.html" style="width:900px; height:500px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autores</b>: Carlos Hernández Garciadiego y Eréndira Itzel García Islas</p>
+<p><b>Edición académica</b>: José Luis Abreu León, Carlos Hernández Garciadiego y Joel Espinosa Longi</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez y Fernando René Martínez Ortiz</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Geometría analítica: La elipse">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Elementos de la elipse a partir de su ecuación ordinaria</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Elementos de la elipse a partir de su ecuación</div>
+  <div id="subtitulo">Elementos de la elipse a partir de su ecuación ordinaria</div>
+</div>
+<div id="contenido">
+
+
+
+<h1>Objetivo</h1>
+
+<p>Obtener cualquiera de los elementos (centro, vértices, focos, extremos del eje menor, longitudes y ecuaciones de los ejes mayor y menor, distancia focal, lado recto o excentricidad) de una elipse a partir de su ecuación ordinaria.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01A.html" style="width:380px; height:318px;"></iframe></div>
+
+<div class="interactivo"><iframe src="escenas/escena01B.html" style="width:380px; height:344px;"></iframe></div>
+
+<h1>Procedimiento</h1>
+
+<p>A partir de la ecuación ordinaria de una elipse, se conoce inmediatamente su orientación, su centro, $a$ y $b$. Para calcular $c$, se aplica el teorema de Pitágoras $a^{2}=b^{2}+c^{2}$. Con estos cinco datos: orientación, centro, $a$, $b$ y $c$, podemos obtener cualquiera de los demás elementos de la elipse si aplicamos la fórmula correspondiente.</p>
+
+<h1>Solución</h1>
+
+<ol>
+  <li>
+    De la ecuación, determinamos la orientación de la elipse:<br>
+    <p style="text-align:center;">$\displaystyle \frac{(x-h)^{2}}{a^{2}}+\frac{(y-k)^{2}}{b^{2}}=1$ elipse horizontal.</p>
+    <p style="text-align:center;">$\displaystyle \frac{(x-h)^{2}}{b^{2}}+\frac{(y-k)^{2}}{a^{2}}=1$ elipse vertical.</p>
+  </li>
+  <li>La coordenada del centro es $C(h,k)$.</li>
+  <li>En la elipse, se cumple que $a^{2}>b^{2}$, por lo que el denominador mayor es $a^{2}$ y el menor es $b^{2}$. Con estos valores calculamos $a$ y $b$.</li>
+  <li>Aplicando el teorema de Pitágoras $a^{2}=b^{2}+c^{2}$, calculamos $c$.</li>
+  <li>Con estos cinco datos podemos obtener cualquiera de los demás elementos de la elipse si aplicamos la fórmula correspondiente, ver el ejemplo.</li>
+</ol>
+
+<h1>Ejemplos</h1>
+
+<p>En cada caso, se determinan los 4 datos que se obtienen directamente de la ecuación, después se calcula $c$. Posteriormente, elige el elemento que deseas calcular.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02A.html" style="width:900px; height:570px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>Obtener los elementos que se pidan, a partir de la ecuación ordinaria de la elipse mostrada.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02B.html" style="width:900px; height:570px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>: Octavio Fonseca Ramos</p>
+<p><b>Edición académica</b>: Fernando René Martínez Ortiz y Octavio Fonseca Ramos</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Octavio Fonseca Ramos</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

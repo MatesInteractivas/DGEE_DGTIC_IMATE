@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Álgebra: Ecuaciones lineales"],
+	"titulo" : "Ecuaciones lineales indirectas",
+	"descripcion" : "Resolver ecuaciones lineales del tipo $(x + b)^{2} = (x + c)(x + d)$ con $b$, $c$ y $d$ racionales.",
+	"resena" : "Ecuaciones del tipo (x + b)² = (x + c)(x + d)",
+	"id" : "1_051"
+}

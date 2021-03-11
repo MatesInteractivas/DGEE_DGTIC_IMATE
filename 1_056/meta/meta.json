@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Álgebra: Sistemas de ecuaciones lineales de 2 x 2"],
+	"titulo" : "Sistemas de ecuaciones lineales de 2 x 2",
+	"descripcion" : "Identificar la gráfica de un sistema de dos ecuaciones lineales con dos incógnitas.",
+	"resena" : "Gráfica de un sistema de ecuaciones lineales de 2 x 2",
+	"id" : "1_056"
+}

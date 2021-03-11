@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Aritmética: Los números y sus operaciones"],
+	"titulo" : "Números enteros",
+	"descripcion" : "Comparar dos números enteros mediante la representación gráfica.",
+	"resena" : "Comparación de números mediante enteros su representación gráfica",
+	"id" : "1_008"
+}

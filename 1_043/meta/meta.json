@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Aritmética: Los números y sus operaciones"],
+	"titulo" : "Exponentes, potencias y radicales",
+	"descripcion" : "Efectuar operaciones combinadas con radicales sin incluir racionalización.",
+	"resena" : "Operaciones con radicales",
+	"id" : "1_043"
+}

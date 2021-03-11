@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones trascendentes"],
+	"titulo" : "Funciones trigonométricas",
+	"descripcion" : "Determinar el dominio y rango de las funciones trigonométricas directas.",
+	"resena" : "Análisis del dominio y rango de las funciones trigonométricas directas.",
+	"id" : "2_179"
+}

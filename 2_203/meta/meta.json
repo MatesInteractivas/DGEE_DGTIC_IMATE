@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones trascendentes"],
+	"titulo" : "Funciones logaritmicas",
+	"descripcion" : "Identificar la gráfica de funciones logarítmicas del tipo $f(x)=c\;ln\;x$.",
+	"resena" : "Gráficas de las funciones logarítmicas del tipo f(x)=c ln x",
+	"id" : "2_203"
+}

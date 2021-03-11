@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La línea recta"],
+	"titulo" : "Diversas formas de la ecuación de la recta",
+	"descripcion" : "Determinar la ecuación de una recta de la forma $Ax+By+C=0$ cuando se conocen la ordenada al origen y su pendiente.",
+	"resena" : "Ecuación de la recta Ax+By+C=0 conocidas la ordenada al origen y su pendiente",
+	"id" : "2_034"
+}

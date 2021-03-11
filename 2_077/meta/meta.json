@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La parábola"],
+	"titulo" : "La parábola a partir de algunos de sus elementos",
+	"descripcion" : "Obtener la ecuación general de una parábola con vértice en el origen, eje focal y un punto conocido.",
+	"resena" : "Ecuación general de la parábola con vértice en el origen y dados el eje focal y un punto",
+	"id" : "2_077"
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Álgebra: Ecuaciones lineales">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Ecuaciones del tipo (x + b)² = (x + c)(x + d)</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Ecuaciones lineales indirectas</div>
+  <div id="subtitulo">Ecuaciones del tipo $(x + b)² = (x + c)(x + d)$</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Resolver ecuaciones lineales del tipo $(x + b)^{2} = (x + c)(x + d)$ con $b$, $c$ y $d$ enteros.</p>
+
+<h1>Solución</h1>
+
+<p>Resolver ecuaciones lineales del tipo $(x + b)^{2} = (x + c)(x + d)$ con $b$, $c$ y $d$ enteros, significa despejar la incógnita $x$.</p>
+
+<p>Analiza el siguiente procedimiento paso a paso, presionando el pulsador, para encontrar el o los valores de $x$. Al terminar verás un gráfico que corresponde al significado geométrico de la solución.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:900px; height:570px;"></iframe></div>
+
+<h1>Ejercicio</h1>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:900px; height:220px;"></iframe></div>
+
+<h1>Idea gráfica</h1>
+
+<ul>
+  <li>
+    <p>La ecuación $(x+b)^{2}=(x+c)(x+d)$ al desarrollarse queda:</p>
+    
+    $$x^{2} +2 b x + b^{2} = x^{2} + (c+d) x + cd$$
+    
+    <p>De donde, al cancelar $x^{2}$, nos deja la ecuación lineal:</p>
+
+    $$2 b x + b^{2} = (c+d) x + cd$$
+
+    <p>Así, a cada lado de la ecuación, nos quedan las rectas:</p>
+
+    <p style="text-align:center;">$y = 2 b x + b^{2} $ y $y = (c+d) x + cd$</p>
+  </li>
+
+  <li>Resolver la ecuación significa encontrar el o los valores de $x$, para los cuales se cumple que $2 b x + b^{2} = (c+d) x + cd$. Es decir, encontrar el punto o los puntos de coincidencia de las rectas.</li>
+</ul>
+
+<h1>Casos especiales</h1>
+
+<ul>
+  <li>Si las rectas $y = 2 b x + b^{2}$ y $y = (c+d)x + cd$ son la misma, entonces cualquier número $x$ es solución de la ecuación.</li>
+
+  <li>Si las rectas $y = 2 b x + b^{2}$ y $y = (c+d)x + cd$ son paralelas pero no la misma, entonces la ecuación no tiene solución.</li>
+
+  <li>Si las rectas $y = 2 b x + b^{2}$ y $y = (c+d)x + cd$ no son paralelas, entonces se intersecan en un solo punto. En este caso, la ecuación tiene solución única.</li>
+</ul>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autora</b>: María Juana Linares Altamirano</p>
+<p><b>Edición académica</b>: José Luis Abreu León</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

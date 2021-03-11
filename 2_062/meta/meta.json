@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La circunferencia"],
+	"titulo" : "La circunferencia a partir de algunos de sus puntos",
+	"descripcion" : "Obtener la ecuación ordinaria de una circunferencia con centro en $(h,k)$ y que pasa por un punto $(a,b)$.",
+	"resena" : "Ecuación ordinaria de la circunferencia dados su centro y un punto",
+	"id" : "2_062"
+}

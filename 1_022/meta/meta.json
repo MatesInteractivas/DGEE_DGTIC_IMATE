@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Aritmética: Los números y sus operaciones"],
+	"titulo" : "Números racionales: Operaciones básicas",
+	"descripcion" : "Realizar divisiones con números racionales en su expresión de fracción común.",
+	"resena" : "Divisiones con fracciones",
+	"id" : "1_022"
+}

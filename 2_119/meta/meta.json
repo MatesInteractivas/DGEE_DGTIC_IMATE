@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Funciones polinomiales",
+	"descripcion" : "Determinar el dominio y rango de funciones polinomiales de grado $3$ y $4$.",
+	"resena" : "Dominio y rango de las funciones polinomiales de grados $3$ y $4$",
+	"id" : "2_119"
+}

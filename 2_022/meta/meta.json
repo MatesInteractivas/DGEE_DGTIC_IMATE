@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Coordenadas cartesianas y polares"],
+	"titulo" : "Poligonos en el plano",
+	"descripcion" : "Calcular el área de un polígono dadas las coordenadas de sus vértices.",
+	"resena" : "Área de un polígono",
+	"id" : "2_022"
+}

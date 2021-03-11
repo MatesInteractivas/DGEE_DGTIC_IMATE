@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Cálculo Diferencial e Integral: La integral">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Teorema Fundamental del Cálculo</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">La integral definida</div>
+  <div id="subtitulo">Teorema Fundamental del Cálculo</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Identificar el Teorema Fundamental del Cálculo.</p>
+
+<h1>Nota histórica</h1>
+
+<p>Cabe recordar que los orígenes del cálculo están en los problemas de mecánica y de geometría. Pese a que éstos habían sido estudiados desde la Antigüedad, por Arquímedes entre otros, fue hasta la segunda mitad del siglo XVII que Newton y Leibniz establecieron las bases del cálculo diferencial e integral, al descubrir la relación que existe entre ambos tipos de problemas.</p>
+
+<p>Este descubrimiento les permitió formular un método general para resolverlos. El cálculo diferencial es esencialmente un método para solucionar problemas mecánicos. La derivación permite encontrar la velocidad de un movimiento. En cambio, el cálculo integral se ocupa de resolver problemas como encontrar el área bajo una curva y en algunos casos esa área representa la distancia recorrida por un móvil o el trabajo realizado por una fuerza.</p>
+
+<p>De lo anteriormente expuesto, puede notarse que el problema del cálculo diferencial es recíproco al del cálculo integral. De aquí surge el Teorema Fundamental del Cálculo.</p>
+
+<h1>Conceptos básicos </h1>
+
+<p>El Teorema Fundamental del Cálculo dice que la derivada de la integral de una función es la misma función. Es decir, si una función $f(x)$ es continua en el intervalo $[a,b]$, y $x$ es cualquier punto dentro del intervalo, se puede definir $F(x)$ como:</p>
+
+$$F(x)=\int_{a}^{x}{f(t)dt}$$
+
+<p>entonces:</p>
+
+$$F'(x)=f(x)$$
+
+<p>Así, la integral de $f(x)$ puede verse como la antiderivada o primitiva de esa función. La importancia de este Teorema, al que en ocasiones se denomina Primer Teorema Fundamental del Cálculo, reside en dos aspectos:</p>
+
+<ul>
+  <li>Relaciona las dos principales nociones del cálculo, derivación e integración, demostrando que son procesos inversos. Esto significa que si se integra una función continua, al derivarla después se recupera la función original.</li>
+  <li>Proporciona un método simple para resolver muchas de las integrales definidas.</li>
+</ul>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:980px; height:450px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>En el siguiente recuadro interactivo elige la respuesta correcta presionando el botón correspondiente.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:900px; height:530px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autora</b>:  Norma Patricia Apodaca Alvarez</p>
+<p><b>Edición académica</b>: José Luis Abreu León y Carlos Hernández Garciadiego</p>
+<p><b>Edición técnica</b>: Octavio Fonseca Ramos</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

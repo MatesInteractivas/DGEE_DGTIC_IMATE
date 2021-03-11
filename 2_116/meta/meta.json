@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Concepto y notación de función y gráfica de una función",
+	"descripcion" : "Identificar la gráfica de una función lineal entre otras que no sean lineales.",
+	"resena" : "Gráficas de las funciones lineales y de las no lineales",
+	"id" : "2_116"
+}

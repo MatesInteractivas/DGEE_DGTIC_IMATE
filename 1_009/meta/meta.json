@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Aritmética: Los números y sus operaciones"],
+	"titulo" : "Números enteros",
+	"descripcion" : "Realizar sumas con números enteros.",
+	"resena" : "Sumas con números enteros",
+	"id" : "1_009"
+}

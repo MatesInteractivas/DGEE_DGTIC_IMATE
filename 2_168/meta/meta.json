@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Trigonometría: Elementos de trigonometría"],
+	"titulo" : "Identidades trigonométricas fundamentales",
+	"descripcion" : "Identificar las identidades trigonométricas pitagóricas: $sen^{2}(x)+cos^{2}(x)=1$, $sec^{2}(x)=1+tan^{2}(x)$.",
+	"resena" : "Identidades pitagóricas",
+	"id" : "2_168"
+}

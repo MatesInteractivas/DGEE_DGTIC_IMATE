@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Aritmética: Los números y sus operaciones"],
+	"titulo" : "Números enteros",
+	"descripcion" : "Distinguir entre dos números enteros cuál de ellos es mayor.",
+	"resena" : "Comparación de dos números enteros por sus signos y valores absolutos",
+	"id" : "1_007"
+}
