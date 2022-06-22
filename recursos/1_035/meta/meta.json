@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Aritmética: Los números y sus operaciones"],
+	"titulo" : "Exponentes, potencias y radicales",
+	"descripcion" : "Identificar las cuatro leyes básicas de los exponentes.",
+	"resena" : "Las cuatro leyes básicas de los exponentes",
+	"id" : "1_035"
+}

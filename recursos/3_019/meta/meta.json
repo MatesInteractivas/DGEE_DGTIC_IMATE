@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: La derivada"],
+	"titulo" : "Definición de la derivada",
+	"descripcion" : "Identificar las notaciones para la derivada de una función.",
+	"resena" : "Definición de la derivada y sus diferentes notaciones",
+	"id" : "3_019"
+}

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La parábola"],
+	"titulo" : "La parábola a partir de algunos de sus elementos",
+	"descripcion" : "Obtener la ecuación general una parábola con vértice en el origen, conociendo su concavidad y la longitud del lado recto.",
+	"resena" : "Ecuación general de la parábola con vértice en el origen conociendo su concavidad y la longitud del lado recto",
+	"id" : "2_079"
+}

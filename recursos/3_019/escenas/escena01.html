@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title></title>
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+<div align="center">
+<ajs name="Descartes" width="720" height="480" code="Descartes">
+   <param name="tamaño" value="720x480">
+   <param name="expand" value="fit">
+   <param name="editable" value="no">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.5">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no ancho_este=150 ancho_oeste=150 alto=40">
+   <param name="E_01" value="tipo='R2' id='E0' fijo='sí' escala='30' O.x='-45' O.y='40' despl_imagen='arr-izq' fondo='e7efef' red='b8c4c8' red10='889498' ejes='405860' texto='no'">
+   <param name="C_01" value="id='P' tipo='gráfico' espacio='E0' tamaño='8' expresión='(-3,f(-3))' constricción='y=f(x)'">
+   <param name="A_01" value="id='f(x)' expresión='sen(x)-x+x^2/10'">
+   <param name="A_02" value="id='g(x)' expresión='cos(x)-1+x/5'">
+   <param name="A_03" value="id='t(x)' expresión='g(P.x)*(x-P.x)+f(P.x)'">
+   <param name="A_04" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer=';;;'">
+   <param name="A_05" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer=';;;'">
+   <param name="G_01" value="espacio='E0' tipo='ecuación' color='3366dd' expresión='y=f(x)'">
+   <param name="G_02" value="espacio='E0' tipo='ecuación' color='e80022' expresión='y=t(x)'">
+   <param name="G_03" value="espacio='E0' tipo='punto' expresión='(P.x,0)' texto='x' font_family='Serif' fuente puntos='21' fijo='sí'">
+   <param name="G_04" value="espacio='E0' tipo='segmento' expresión='(P.x,0)(P.x,P.y)' font_family='Monospaced' fuente puntos='12' fijo='sí'">
+   <param name="G_05" value="espacio='E0' tipo='texto' coord_abs='sí' expresión='[5,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Arial;}\f1\fs42\i{\*\mjaformula f({\expr P.x\decimals 2\fixed0})={\expr P.y\decimals 2\fixed0}}\f2\fs24\i0\par \f1\fs42\i{\*\mjaformula f &amp;squot;({\expr P.x\decimals 2\fixed0})={\expr g(P.x)\decimals 2\fixed0}}\f2\fs24\i0  }' font_family='Serif' fuente puntos='21' fijo='sí'">
+</ajs>
+</div>
+</body>
+</html>

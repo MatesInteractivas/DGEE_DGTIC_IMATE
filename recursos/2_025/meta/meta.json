@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La línea recta"],
+	"titulo" : "Ángulo de inclinación y pendiente de una recta",
+	"descripcion" : "Obtener el ángulo de inclinación de una recta conociendo su pendiente.",
+	"resena" : "El ángulo de inclinación de una recta a partir de su pendiente",
+	"id" : "2_025"
+}

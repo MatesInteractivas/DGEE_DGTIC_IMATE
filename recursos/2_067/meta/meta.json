@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La circunferencia"],
+	"titulo" : "Ecuación general de la circunferencia",
+	"descripcion" : "Determinar las coordenadas del centro y el radio de una circunferencia a partir de su ecuación en forma ordinaria.",
+	"resena" : "Centro y radio de una circunferencia a partir de su ecuación ordinaria",
+	"id" : "2_067"
+}

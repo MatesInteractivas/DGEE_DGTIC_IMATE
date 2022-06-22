@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: La derivada"],
+	"titulo" : "Operaciones con funciones y sus derivadas",
+	"descripcion" : "Obtener la derivada de potencias de funciones del tipo $f(x)=(g(x))^{n}$ donde $g$ es una función algebraica y $n$ es un entero o racional. Obtener la derivada de potencias de funciones del tipo $f(x)=(g(x))^{n}$ donde $g$ es una función trascendente y $n$ es un entero o racional.",
+	"resena" : "Derivadas de potencias de funciones",
+	"id" : "3_037"
+}

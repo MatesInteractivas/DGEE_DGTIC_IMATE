@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Trigonometría: Elementos de trigonometría"],
+	"titulo" : "Aplicaciones",
+	"descripcion" : "Calcular distancias inaccesibles en el contexto de un problema empleando razones trigonométricas.",
+	"resena" : "Cálculo de distancias inaccesibles",
+	"id" : "2_165"
+}

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La circunferencia"],
+	"titulo" : "La circunferencia dados el centro y el radio",
+	"descripcion" : "Identificar a la circunferencia como el lugar geométrico de los puntos del plano que equidistan de un punto fijo llamado centro.",
+	"resena" : "La circunferencia como lugar geométrico",
+	"id" : "2_055"
+}

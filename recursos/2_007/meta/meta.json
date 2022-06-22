@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Álgebra: Sistemas de dos ecuaciones una lineal y otra cuadrática"],
+	"titulo" : "Sistemas de dos ecuaciones una lineal y otra cuadrática",
+	"descripcion" : "Interpretar gráficamente la solución de sistemas de dos ecuaciones con dos variables, una lineal y otra cuadrática.",
+	"resena" : "Significado gráfico de la solución",
+	"id" : "2_007"
+}

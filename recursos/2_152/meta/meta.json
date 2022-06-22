@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Funciones con radicales",
+	"descripcion" : "Determinar analíticamente el rango de una función del tipo:",
+	"resena" : "Estudio analítico del rango de las funciones con radicales",
+	"id" : "2_152"
+}

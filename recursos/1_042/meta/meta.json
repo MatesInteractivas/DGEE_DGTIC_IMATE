@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Aritmética: Los números y sus operaciones"],
+	"titulo" : "Exponentes, potencias y radicales",
+	"descripcion" : "Efectuar operaciones combinadas que incluyan potencias.",
+	"resena" : "Operaciones con potencias",
+	"id" : "1_042"
+}

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Aritmética: Los números y sus operaciones"],
+	"titulo" : "Números reales: Los números irracionales",
+	"descripcion" : "Identificar que la parte decimal de un número irracional es infinita y no periódica.",
+	"resena" : "Los número irracionales como decimales infinitos y no periodicos",
+	"id" : "1_031"
+}

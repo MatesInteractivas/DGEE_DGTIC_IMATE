@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Aritmética: Los números y sus operaciones"],
+	"titulo" : "Números enteros",
+	"descripcion" : "Realizar restas con números enteros.",
+	"resena" : "Restas con números enteros",
+	"id" : "1_010"
+}

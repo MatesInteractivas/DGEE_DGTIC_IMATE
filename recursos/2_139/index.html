@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Funciones y sus gráficas: Funciones algebraicas">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Rango de funciones racionales a partir de su regla de correspondencia.</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Funciones racionales</div>
+  <div id="subtitulo">Rango de una función racional con numerador constante y denominador cuadrático</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Determinar el rango de una función del tipo $f(x)= \frac{a}{(x+b)^{2}} +c$, con $a$, $b$ y $c$ reales.</p>
+
+<h1>Solución</h1>
+
+<p>El rango de una función del tipo $f(x)= \frac{a}{(x+b)^{2}} +c$, con $a$, $b$ y $c$ reales es:</p>
+
+<p style="text-align:center;">$\{y∈R|y>c\}$ si, $a>0$ o bien,</p>
+<p style="text-align:center;">$\{y∈R|y < c\}$ si, $a < 0$.</p>
+
+<p>En la siguiente animación, se marca en rojo el rango de una función del tipo $f(x)= \frac{a}{(x+b)^{2}} +c$. Observa cómo el rango está por encima de $c$ cuando $a$ es positivo y, cuando es negativo, está por debajo. </p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:960px; height:400px;"></iframe></div>
+
+<h1>Explicación</h1>
+
+<p>Para entender por qué el rango de la función $f(x)=\frac{a}{(x+b)^{2}}+c$ es de la manera antes descrita, dividámosla como composición de funciones: $f(x)=k(h(g(x)))$ donde $g(x)=(x+b)^{2}$, $h(x)=\frac{a}{x}$ y $k(x)=x+c$. En efecto, $f$ es igual a la composición de $k$, $h$ y $g$ como se muestra en los siguientes cálculos:</p>
+
+$$k(h(g(x)))=k(h((x+b)^{2}))=k\Big(\frac{a}{(x+b)^{2}}\Big)=\frac{a}{(x+b)^{2}}+c=f(x)$$
+
+<p>Analicemos primero el rango de $g(x)=(x+b)^{2}$. </p>
+
+<p>Como se trata del cuadrado de un número, $g$ no puede tomar valores negativos y además, como $x+b$ puede ser cualquier número, $g(x)$ puede ser cualquier número no negativo. Esto es, el rango de $g$ son todos los números no negativos:</p>
+
+$$\{y ∈R | y ≥ 0\}$$
+
+<p>Cambia el valor de $b$ en el cuadro interactivo que se muestra a continuación y observa que el rango de $g(x)=(x+b)^{2}$ es el conjunto de los números reales no negativos, es decir, los positivos y el cero.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:500px; height:360px;"></iframe></div>
+
+<p>Analicemos ahora el rango de $h(x)=\frac{a}{x}$. Es claro que la función $h$ toma todos los valores excepto el cero. Es decir, el rango de $h$ es $\{y ∈ R | y ≠ 0\}$. ¿Pero qué pasa con $h(g(x))=\frac{a}{(x+b)^{2}}$? El rango de esta composición resulta ser el rango de $h(x)$ restringiendo $x$ al rango de $g$. En otras palabras, es el rango de $h$ cuando se restringe su dominio a los reales positivos.</p>
+
+<p>En el recuadro de abajo explora y observa qué pasa con el rango de $h$ al restringir su dominio a los reales positivos. No es muy difícil convencerse que el rango de $h(g(x))$ es el conjunto de los reales positivos, si $a>0$ y es el de los negativos, si $a < 0$.</p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:960px; height:480px;"></iframe></div>
+
+<p>Por último, el rango de la función $k(x) = x+c$ es el conjunto de los números reales. Pero al componerla con $h(g(x))$ su rango será el rango de la función $k$ restringiendo su dominio al rango de $h(g(x))$. Es por esto que el rango de $f(x)=k(h(g(x)))=\frac{a}{(x+b)^{2}}+c$ es:</p>
+
+<p style="text-align:center;">$\{y∈R|y>c\}$ si $a>0$ o bien,</p>
+<p style="text-align:center;">$\{y∈R|y < c\}$ si $a < 0$.</p>
+
+<p>Esto se puede reformular de la siguiente manera: cuando $a$ es positivo, la función $f(x)$ es el resultado de sumar un número positivo a $c$, por lo que su rango es el conjunto de los números reales mayores que $c$. Del mismo modo, cuando $a$ es negativo $f(x)$ es el resultado de sumar un número negativo a $c$ y por ende su rango es el conjunto de los números reales menores que $c$.</p>
+
+<h1>Ejemplo</h1>
+
+<p>En el siguiente cuadro interactivo cambia los valores de $a$, $b$ y $c$ y observa que el rango de $f$ es $\{y∈R|y>c\}$ o $\{y∈R|y < c\}$, dependiendo si a es positivo o negativo.</p>
+
+<div class="interactivo"><iframe src="escenas/escena04.html" style="width:960px; height:480px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<div class="interactivo"><iframe src="escenas/escena05.html" style="width:960px; height:630px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autora</b>: Valentina Muñoz Porras</p>
+<p><b>Edición académica</b>: Carlos Hernández Garciadiego y Fernando René Martínez Ortiz</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez y Fernando René Martínez Ortiz</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Joel Espinosa Longi</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: Limites"],
+	"titulo" : "Introducción al Cálculo",
+	"descripcion" : "En esta lección se presentan los tres conceptos fundamentales del Cálculo: límite, derivada e integral; y el llamado Teorema fundamental del Cálculo que relaciona dichos conceptos y permite aplicarlos para dar solución a muchos problemas prácticos de la ciencia, la ingeniería y otras ramas del conocimiento.",
+	"resena" : "La integral, la derivada y el teorema fundamental del Cálculo",
+	"id" : "3_000"
+}

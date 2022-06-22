@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Funciones y sus gráficas: Funciones algebraicas">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Funciones polinomiales de grado 3 y 4.</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Funciones polinomiales</div>
+  <div id="subtitulo">Dominio y rango de las funciones polinomiales de grados $3$ y $4$</div>
+</div>
+<div id="contenido">
+
+
+
+<h1>Objetivo</h1>
+
+<p>Determinar el dominio y rango de funciones polinomiales de grado $3$ y $4$.</p>
+
+<h1>Solución</h1>
+
+<p>La siguiente tabla muestra el dominio y el rango de las funciones polinomiales de grado $3$ y $4$. </p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:500px; height:190px;"></iframe></div>
+
+<p>donde $m$ y $M$ son el mínimo y el máximo de la función. A continuación se dará una breve explicación del por qué el dominio y el rango son los conjuntos mencionados en la tabla.</p>
+
+<h1>Polinomios de grado $3$</h1>
+
+<p>Es posible notar que, cuando el valor de $x$ se aproxima a infinito o menos infinito, el término $ax^{3}$ en valor absoluto, sin considerar el signo, es más grande que los otros términos del polinomio $f(x)=ax^{3}+bx^{2}+cx+d$ por lo que, el término $ax^{3}$ predominará en los extremos de la gráfica de $f(x)$, esto es, el valor de $f(x)$ será casi tan grande como el valor de $ax^{3}$, lo que pueda llegar a restar $bx^{2}+cx+d$ no será suficiente como para frenar el crecimiento de $ax^{3}$.</p>
+
+<p>Por otro lado, $ax^{3}$ crece al infinito en uno de sus extremos y a menos infinito en otro, pues cuando $x$ es negativo $x^{3}$ sigue siendo negativo. Finalmente, este comportamiento se mantiene en $f(x)$, pues es un comportamiento al infinito. En el siguiente plano podrás apreciar gráficamente la explicación anterior.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:600px; height:400px;"></iframe></div>
+
+<p>Debido a la continuidad de los polinomios, no importa mucho el comportamiento de $f$ en el recuadro azul, pues la gráfica abarcará todos los puntos que faltan por cubrir. De aquí que el rango es el conjunto de los números reales.</p>
+
+<h1>Polinomios de grado $4$</h1>
+
+<p>El dominio de un polinomio de grado $4$ es el conjunto de los números reales.</p>
+
+<p>Como se mencionó anteriormente, encontrar el rango de una función polinomial de grado $4$ se traduce a encontrar el mínimo o el máximo de la función $f$. Más adelante aprenderás a obtener el máximo y mínimo de una función, por lo pronto, nos enfocaremos en obtener una aproximación del máximo o del mínimo a partir de la gráfica de $f$. A continuación, se proporcionará una breve explicación de por qué el rango de una función polinomial de grado $4$, $f(x)=ax^{4} + bx^{3} +cx^{2}+dx+e$ es $[m,∞)$ cuando $a>0$, o bien, $(-∞,M]$ cuando $a < 0$, donde $m$ y $M$ son el mínimo y el máximo de $f$.</p>
+
+<p>El valor del término $ax^{4}$ en el polinomio $f(x)=ax^{4} + bx^{3} +cx^{2}+dx+e$ será mucho más grande que el resto de los términos cuando $x$ toma valores muy grandes. Esto significa que, cuando el valor de $x$ aumente al infinito el valor de la función será muy parecido al de $ax^{4}$. Si $a < 0$, el término $ax^{4}$ tiende a menos infinito en ambos extremos de la gráfica, al igual que la función. Por otro lado, si $a>0$, el término $ax^{4}$ tiende a infinito en ambos extremos de la gráfica, al igual que la función. La siguiente figura muestra cómo se comporta la gráfica de $f$ en los extremos, aunque falta saber qué pasa en medio:</p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:600px; height:400px;"></iframe></div>
+
+<p>Entonces, el problema de encontrar el rango de un polinomio de grado $4$, generalmente se traduce en encontrar el mínimo (si $a>0$) o máximo (si $a < 0$) de la función, como se puede ver en la siguiente animación:</p>
+
+<div class="interactivo"><iframe src="escenas/escena04.html" style="width:600px; height:400px;"></iframe></div>
+
+<p>La animación sugiere el siguiente método para encontrar el rango:</p>
+
+<ol>
+  <li>Identificar el coeficiente de $x^{4}$, literal $a$.</li>
+  <li>Si $a>0$, entonces se busca el mínimo de la función polinomial, el cual es la ordenada del punto más bajo en la gráfica; si $a < 0$, entonces se busca el máximo, el cual es la ordenada del punto más alto.</li>
+  <li>Trazar una línea horizontal por el máximo, o el mínimo, y ubicar la ordenada de la intersección de la horizontal con el eje $Y$.</li>
+  <li>Si $a < 0$ y $M$ es la ordenada encontrada en el paso 3, entonces el rango es $(-∞,M]$ ; si $a>0$ y $m$ es la ordenada encontrada en el paso 3, entonces el rango es $[m,∞)$.</li>
+</ol>
+
+<h1>Ejercicios</h1>
+
+<p>¿Cuál es el dominio y el rango de las siguientes funciones polinómicas?</p>
+
+<div class="interactivo"><iframe src="escenas/escena05.html" style="width:500px; height:400px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autora</b>: Valentina Muñoz Porras</p>
+<p><b>Edición académica</b>: Fernando René Martínez Ortíz y Octavio Fonseca Ramos</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Joel Espinosa Longi</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

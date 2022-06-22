@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Álgebra: Sistemas de ecuaciones lineales de 2 x 2"],
+	"titulo" : "Sistemas de ecuaciones lineales de 2 x 2",
+	"descripcion" : "Interpretar la solución de un sistema de dos ecuaciones con dos incógnitas mediante un punto, una recta o sin solución.",
+	"resena" : "Número de soluciones",
+	"id" : "1_057"
+}

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Coordenadas cartesianas y polares"],
+	"titulo" : "Sistemas de dos ecuaciones una lineal y otra cuadrática",
+	"descripcion" : "Identificar puntos $(r, q)$ en el plano polar.",
+	"resena" : "Identificación de puntos en el plano polar",
+	"id" : "2_011"
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Cálculo Diferencial e Integral: La derivada">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Problemas de optimización como aplicación de la derivada</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Aplicaciones de la derivada</div>
+  <div id="subtitulo">Problemas de optimización como aplicación de la derivada</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Encontrar valores que minimicen o maximicen funciones que modelen situaciones reales de áreas, volúmenes, costos o ganancias.</p>
+
+<h1>Antecedentes y conceptos básicos.</h1>
+
+<p>Una de las aplicaciones más frecuentes de la derivada es la determinación de la mejor opción en una situación dada. Por ejemplo, utilizar la menor cantidad de material para producir una lata cilíndrica, o maximizar los beneficios en la producción de un campo petrolero; minimizar los costos de producción de un bien, maximizar el área que puede cercarse con una cantidad fija de malla. En estos problemas habrá que encontrar el máximo o el mínimo de una función que describe a las cantidades que tenemos que optimizar.</p>
+
+<p>El máximo de una función $f$ es un valor $f(x_{M})$ mayor o igual al resto de los valores que toma la función en todos los otros puntos donde está definida y, análogamente, el mínimo $f(x_{m})$ es un valor menor o igual a todos los posibles valores de $f$. Estos máximos o mínimos globales de una función forman parte del conjunto de puntos conocidos como máximos o mínimos locales, los cuales son mayores o menores a aquellos que los que les rodean, respectivamente.</p>
+
+<p>Los puntos máximos o mínimos locales pueden encontrarse entre:</p>
+
+<ol>
+  <li>Los extremos del conjunto donde está definida la función.</li>
+  <li>Los puntos donde hay un pico, es decir donde la derivada no existe.</li>
+  <li>Los puntos donde la tangente es horizontal, es decir donde la derivada es cero.</li>
+</ol>
+
+<p>Como no todos los puntos que cumplen alguna de estas condiciones son máximos o mínimos locales se necesita algún método para distinguirlos. En particular, cuando se trata de un punto donde la derivada es cero, se puede usar alguno de los siguientes criterios:</p>
+
+<ol>
+  <li>Si $f$ crece antes del punto y decrece después, entonces en el punto hay un máximo, si por lo contrario decrece antes y crece después, en el punto hay un mínimo. O de manera equivalente:</li>
+  <li>Si la derivada de $f$ es positiva antes del punto y negativa después, en el punto hay un máximo, si por lo contrario la derivada es negativa antes y positiva después se trata de un mínimo.</li>
+  <li>Si en el punto mismo la segunda derivada es positiva, es un mínimo y si es negativa es un máximo.</li>
+  <li>Si la segunda derivada es cero la prueba no es concluyente.</li>
+</ol>
+
+<h1>Ejemplos</h1>
+
+<p>Analiza la solución paso a paso, avanzando con el pulsador de la esquina superior derecha.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:900px; height:530px;"></iframe></div>
+
+<h1>Procedimiento</h1>
+
+<p>Como has visto en los ejemplos anteriores, para plantear y resolver un problema de optimización:</p>
+
+<ol>
+  <li>Describimos la cantidad a maximizar o minimizar con una fórmula.</li>
+  <li>Describimos con una ecuación las condiciones del problema.</li>
+  <li>Utilizamos la ecuación de condiciones para que la cantidad a optimizar quede descrita como una función $f$ de una sola variable.</li>
+  <li>Encontramos los valores de la variable independiente para los que la función tiene sentido.</li>
+  <li>
+    Determinamos los puntos:
+    <ul>
+      <li>Extremos del conjunto de definición.</li>
+      <li>Donde la derivada no existe.</li>
+      <li>Donde la derivada es cero</li>
+    </ul>
+  </li>
+  <li>Determinamos en cuál de estos puntos la función es mayor o menor, según se necesite. Para ello hacemos uso de alguno de los criterios que mencionamos antes.</li>
+</ol>
+
+<h1>Ejercicios</h1>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:900px; height:530px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autora</b>:  María de Lourdes Velasco Arregui</p>
+<p><b>Editores académicos</b>: José Luis Abreu León y Carlos Hernández Garciadiego</p>
+<p><b>Editor técnico</b>: Carlos Alberto Serrato Hernández</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

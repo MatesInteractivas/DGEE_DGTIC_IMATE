@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Funciones continuas y discontinuas.",
+	"descripcion" : "Identificar gráficamente los puntos donde una función sea discontinua.",
+	"resena" : "Identificación gráfica de los puntos de discontinuidad de una función",
+	"id" : "2_134"
+}

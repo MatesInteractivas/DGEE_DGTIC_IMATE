@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Trigonometría: Elementos de trigonometría"],
+	"titulo" : "Identidades trigonométricas fundamentales",
+	"descripcion" : "Identificar las identidades trigonométricas recíprocas: $csc\;x=\frac{1}{sen\;x}$, $sec\;x=\frac{1}{cos\;x}$, $cot\;x =\frac{1}{tan\;x}$.",
+	"resena" : "Identidades recíprocas",
+	"id" : "2_166"
+}

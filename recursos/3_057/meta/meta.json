@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: La derivada"],
+	"titulo" : "Aplicaciones de la derivada",
+	"descripcion" : "Obtener el punto de inflexión de una función polinomial hasta de grado tres. Determinar algebraicamente el intervalo donde una función polinomial hasta de grado tres es cóncava hacia arriba. Determinar algebraicamente el intervalo donde una función polinomial hasta de grado tres es cóncava hacia abajo.",
+	"resena" : "Puntos de inflexión y concavidad de una curva en un intervalo",
+	"id" : "3_057"
+}

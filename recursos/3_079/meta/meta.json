@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: La integral"],
+	"titulo" : "La integral y el cálculo de áreas",
+	"descripcion" : "Calcular el área bajo la gráfica de una función $f(x)$, positiva en el intervalo $[a,b]$ limitada por el eje horizontal.",
+	"resena" : "Área bajo la gráfica de una función positiva",
+	"id" : "3_079"
+}

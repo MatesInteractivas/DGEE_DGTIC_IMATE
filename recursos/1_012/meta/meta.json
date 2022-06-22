@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Aritmética: Los números y sus operaciones"],
+	"titulo" : "Números enteros",
+	"descripcion" : "Realizar divisiones con números enteros.",
+	"resena" : "Divisiones con números enteros",
+	"id" : "1_012"
+}

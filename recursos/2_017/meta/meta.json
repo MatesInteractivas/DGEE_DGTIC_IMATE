@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Coordenadas cartesianas y polares"],
+	"titulo" : "Puntos en el plano",
+	"descripcion" : "Encontrar el extremo de un segmento conociendo la razón y el otro extremo.",
+	"resena" : "Punto extremo de un segmento a partir de la razón y el otro extremo",
+	"id" : "2_017"
+}

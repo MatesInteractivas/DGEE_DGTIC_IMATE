@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Álgebra: Ecuaciones cuadráticas">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Ecuaciones de la forma ax² + bx = 0</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Ecuaciones cuadráticas especiales</div>
+  <div id="subtitulo">Ecuaciones de la forma $ax^{2}+bx=0$</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Resolver ecuaciones cuadráticas del tipo $ax^{2}+bx=0$.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Para resolver ecuaciones cuadráticas de la forma $ax^{2}+bx=0$ se realizan los siguientes pasos:</p>
+
+<ol>
+  <li>Se factoriza $x$ en el lado izquierdo de la igualdad.</li>
+  <li>Se iguala cada factor a cero para obtener dos ecuaciones.</li>
+  <li>Se despeja $x$ de cada ecuación y se obtienen las dos soluciones.</li>
+</ol>
+
+<h1>Solución</h1>
+
+<p>Las soluciones son $x_{1}=0 $ y $x_{2}=\frac{-b}{a}$. Estas soluciones se obtienen al llevar a cabo los pasos antes mencionados como se muestra a continuación:</p>
+
+$$ax^{2}+bx=0$$
+
+<ol>
+  <li>
+    Se factoriza $x$ en el miembro izquierdo.<br>
+    $x(ax+b)=0$
+  </li>
+  <li>
+    Como tenemos el producto de dos factores igualado a cero<br>
+    $$\tag{1} x=0$$
+    entonces alguno de los dos debe ser cero. Por eso deben<br>
+    $$\tag{2} ax+b=0$$
+    igualarse los factores $x$ y $ax+b$ a $0$ para formar dos ecuaciones.
+  </li>
+  <li>
+    Entonces, de (1) obtenemos una de las soluciones $x_{1}=0$ y la otra,<br>
+    al despejar $x$ de (2). $x_{2}=\frac{-b}{a}$ $x_{1}=0$</li>
+</ol>
+
+<p>Las ecuaciones cuadráticas de la forma $ax^{2}+bx=0$ siempre tienen dos soluciones: $x_{1}=0 $ y $x_{2}=\frac{-b}{a}$, excepto en el caso en que $b$ sea $0$, cuya única solución es $x=0$.</p>
+
+<h1>Ejemplos</h1>
+
+<p>Utiliza el recuadro interactivo que se muestra a continuación para repasar el método. Pulsa <span class="btn">Continuar</span> para desplegar el siguiente paso, y <span class="btn">Otro ejemplo</span> para ver más ecuaciones. </p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:720px; height:480px;"></iframe></div></p>
+
+<h1>Ejercicios</h1>
+
+<p>Resuelve en tu cuaderno la siguiente ecuación. Después, indica en el menú del recuadro interactivo la opción que corresponda al número de soluciones que tiene la ecuación, y en su caso, introduce en el campo de texto el valor de las mismas. Verifica tu respuesta. Presiona <span class="btn">Otro ejercicio</span> para resolver más ecuaciones. Recuerda que puedes realizar operaciones para escribir los resultados.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:720px; height:420px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autoras</b>: Valentina Muñoz Porras y Norma Patricia Apodaca Alvarez</p>
+<p><b>Edición académica</b>: José Luis Abreu León</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Intersecciones con los ejes de funciones racionales a partir de su regla de correspondencia.",
+	"descripcion" : "Determinar el punto de intersección con el eje $Y$ de la función $f(x)=\frac{P(x)}{Q(x)}$ con $P(x)$ y $Q(x)$ lineales o cuadráticas.",
+	"resena" : "Intersección con el eje y de funciones racionales",
+	"id" : "2_141"
+}

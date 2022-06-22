@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Álgebra: Productos notables y factorización"],
+	"titulo" : "Factor común",
+	"descripcion" : "Factorizar un polinomio con factor común.",
+	"resena" : "Factorizar un binomio con factor común",
+	"id" : "1_061"
+}

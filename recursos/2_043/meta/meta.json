@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La línea recta"],
+	"titulo" : "Paralelismo y perpendicularidad",
+	"descripcion" : "Determinar la ecuación de la recta que pasa por un punto y es paralela a otra recta.",
+	"resena" : "Ecuación de la recta que pasa por un punto y es paralela a otra",
+	"id" : "2_043"
+}

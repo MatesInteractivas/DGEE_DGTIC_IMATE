@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La elipse"],
+	"titulo" : "Propiedades de la elipse",
+	"descripcion" : "Identificar a la elipse como el lugar geométrico de los puntos del plano cuya suma de distancias a dos puntos fijos, llamados focos, es una constante.",
+	"resena" : "Elipse como lugar geométrico",
+	"id" : "2_092"
+}

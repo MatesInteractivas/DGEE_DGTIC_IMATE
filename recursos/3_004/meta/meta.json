@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: Limites"],
+	"titulo" : "Concepto intuitivo de límite",
+	"descripcion" : "Obtener el valor de límites al infinito a partir de la observación de la gráfica de una función.",
+	"resena" : "Límites al infinito de una función a partir de su gráfica",
+	"id" : "3_004"
+}

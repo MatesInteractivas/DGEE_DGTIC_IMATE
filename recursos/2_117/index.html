@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Funciones y sus gráficas: Funciones algebraicas">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Concepto y notación de función y gráfica de una función</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Concepto y notación de función y gráfica de una función</div>
+  <div id="subtitulo">Dominio y rango de las funciones cuadráticas</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Determinar dominio y rango de funciones cuadráticas.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Al hablar de funciones cuadráticas nos referimos a las funciones que, de forma más general, tienen la ecuación $f(x)=ax^{2}+bx+c$, siendo $a$, $b$ y $c$ números, con $a≠0$, por ejemplo: $f(x)=3x^{2}+5x+1$.</p>
+
+<p>El dominio de cualquier función cuadrática es siempre el conjunto de los números reales, ya que tanto sumas como productos de números producen números reales y una función cuadrática sólo depende de estas dos operaciones.</p>
+
+<p>En siguiente gráfica se muestra una función cuadrática a la que le puedes modificar los valores de $a$, $b$ y $c$.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:480px; height:400px;"></iframe></div>
+
+
+<h1>Solución</h1>
+
+<p>El dominio de cualquier función cuadrática es el conjunto de todos los reales o, equivalentemente, el intervalo $(-∞,∞)$. Lo único variable en este tipo de funciones es su rango, el conjunto de todos los valores que toma cuando la variable recorre todo el dominio. Comencemos el análisis usando la forma más sencilla, $f(x)=ax^{2}+c$. En este caso se tienen dos opciones:</p>
+
+<ol>
+  <li>$a>0$</li>
+  <li>$a < 0$</li>
+</ol>
+
+<p>Utilizando la gráfica, observa los rangos correspondientes a los dos casos.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:960px; height:650px;"></iframe></div>
+
+<p>Para determinar el rango de funciones cuadráticas más generales, de la forma $f(x)=ax^{2}+bx+c$, se puede considerar la ecuación cuadrática $y=ax^{2}+bx+c$, la cual representa una parábola y encontrar su vértice $V(h,k)$. Así, si $a>0$, el rango de la función cuadrática será el intervalo $[k,∞)$. Si $a < 0$, el intervalo $(-∞,k)$. Para encontrar el valor de $k$ se siguen los siguientes pasos:</p>
+
+<ol>
+  <li>A partir de la ecuación cuadrática $y=ax^{2}+bx+c$, se pasa el término constante, $c$, hacia el lado izquierdo de la ecuación y se factoriza el coeficiente de $x^{2}$, $a$, en el lado derecho:</li>
+  $$y-c=a\Big(x^{2}+\frac{b}{a}x\Big)$$
+
+  <li>Se completa el trinomio cuadrado perfecto:</li>
+  $$y-c+a\Big(\frac{b}{2a}\Big)^{2}=a\Big(x^{2}+\frac{b}{a}x+\Big(\frac{b}{2a}\Big)^{2}\Big)$$
+
+  <li>
+    Se escribe el trinomio cuadrado perfecto como el cuadrado de un binomio:
+    $$y-\Big(c-\frac{b^{2}}{4a}\Big)=a\Big(x-\Big(-\frac{b}{2a}\Big)\Big)^{2}$$<br>
+    Esta última fórmula puede ser escrita como:
+    $$y-\Big(\frac{4ac-b^{2}}{4a}\Big)=a\Big(x-\Big(-\frac{b}{2a}\Big)\Big)^{2}$$
+  </li>
+
+  <li>Las coordenadas del vértice son: $V(-\frac{b}{2a},\frac{4ac-b^{2}}{4a})$ y, lo que es mas importante, $k=\frac{4ac-b^{2}}{4a}$. Puedes utilizar esta fórmula para encontrar el rango de las funciones cuadráticas en los siguientes ejercicios.</li>
+</ol>
+
+<h1>Ejercicios</h1>
+
+<p>Encuentra el dominio y el rango de la siguiente función: </p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:960px; height:400px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autores</b>: Alberto Bravo García y Fernando René Martínez Ortiz</p>
+<p><b>Edición académica</b>: Fernando René Martínez Ortiz y Octavio Fonseca Ramos</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Joel Espinosa Longi</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

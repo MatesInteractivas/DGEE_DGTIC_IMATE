@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Cálculo Diferencial e Integral: La derivada">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Derivadas de funciones logarítmicas y exponenciales</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Derivadas de las funciones básicas</div>
+  <div id="subtitulo">Derivadas de funciones logarítmicas y exponenciales</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivos</h1>
+
+<p>Obtener por fórmula, la derivada de alguna de las siguientes funciones:</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:900px; height:320px;"></iframe></div>
+
+<h1>Procedimiento</h1>
+
+<p>Para obtener las derivadas de funciones logarítmicas y exponenciales se sigue la fórmula correspondiente. Las fórmulas se muestran a continuación.</p>
+
+<p style="text-align: center;">$\frac{d}{dx}ln\;x=\frac{1}{x}$ <span style="padding-left:6em;"></span> $\frac{d}{dx}e^{x}=e^{x}$</p>
+<p style="text-align: center;">$\frac{d}{dx}log_{a} x=\frac{1}{x}log_{a} e$ <span style="padding-left:6em;"></span> $\frac{d}{dx}a^{x}=a^{x}ln\;a$</p>
+
+<p>La manera de emplearlas se muestra más adelante, en la sección de ejemplos.</p>
+
+<h1>Justificación</h1>
+
+<p>Obtención de la fórmula de la derivada de $\frac{d}{dx}a^{x}$, que en este caso se obtiene mediante derivación implícita.</p>
+
+$$y=a^{x}$$
+
+<p>Aplicando $ln$ en ambos miembros tenemos</p>
+
+$$\begin{aligned}
+ln\;y &= ln(a^{x})\\
+ln\;y &= x\;ln\;a
+\end{aligned}$$
+
+<p>y derivando implícitamente queda</p>
+
+$$\begin{aligned}
+\frac{1}{y} y' &= (1)ln\;a \\
+y' &= y\;ln\;a
+\end{aligned}$$
+
+<p>Sustituyendo la función inicial, obtenemos la fórmula buscada</p>
+
+$$\frac{d}{dx}a^{x}=a^{x}\;ln\;$$
+
+<p>La fórmula de $y=e^{x}$ se obtiene de manera similar, pero las que incluyen logaritmos se obtienen aplicando la definición con el límite y las propiedades de los logaritmos.</p>
+
+<h1>Ejemplos</h1>
+
+<p>Selecciona la fórmula que deseas observar en el ejemplo y después presiona el botón <span class="btn">Continuar</span> para ver el procedimiento de ésta.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:720px; height:480px;"></iframe></div></p>
+
+<h1>Ejercicios</h1>
+
+<p>Escribe el resultado que se obtiene al derivar la función planteada.</p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:720px; height:480px;"></iframe></div></p>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>: Octavio Fonseca Ramos</p>
+<p><b>Editores académicos</b>: José Luis Abreu León y Carlos Hernández Garciadiego</p>
+<p><b>Editor Técnico</b>: Carlos Alberto Serrato Hernández</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

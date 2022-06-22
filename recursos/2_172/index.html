@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Funciones y sus gráficas: Funciones trascendentes">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Generalización, en el plano cartesiano, de las razones trigonométricas para un ángulo cualquiera.</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Funciones trigonométricas</div>
+  <div id="subtitulo">Generalización, en el plano cartesiano, de las razones trigonométricas para un ángulo cualquiera</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Determinar los signos de las funciones trigonométricas en los cuatro cuadrantes.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Con apoyo del plano cartesiano se puede dar una definición de seno, coseno y tangente. Para ello, es necesario valerse del círculo unitario y de una circunferencia de radio $1$ centrada en el origen de coordenadas, como se muestra en la gráfica. Determinaremos un punto $P$ sobre el círculo unitario de la siguiente manera. Trazamos un angulo $α$, medido en sentido contrario a las manecillas del reloj, con vértice en el origen y en el que uno de sus lados es la parte positiva del eje $X$. El punto $P$ de coordenadas $(x,y)$ es la intersección del segundo lado del ángulo con el círculo unitario.</p>
+
+<p>Las funciones trigonométricas pueden entonces definirse como:  $sen(α)=y$ y $cos(α)=x$</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:390px; height:390px;"></iframe></div>
+
+<p>En el caso de ángulos positivos agudos, esta definición coincide con la original, pues al trazar una perpendicular al eje $X$ desde el punto $P(x,y)$, se forma un triángulo rectángulo con hipotenusa $1$, ya que el círculo es unitario, de manera que las funciones trigonométricas seno y coseno son:</p>
+
+$$sen\;α=\frac{cateto\;opuesto}{hipotenusa}=\frac{y}{1}=y$$
+$$cos\;α=\frac{cateto\;adyacente}{hipotenusa}=\frac{x}{1}=x$$
+
+<p>Esta definición es más útil porque permite considerar ángulos de más de $90^{\circ}$ y también ángulos negativos, cuando se gira el punto $P(x,y)$ en el sentido de las manecillas del reloj desde el punto $(1,0)$.</p>
+
+<p>En el siguiente recuadro interactivo, pulsa el botón <span class="btn">Animar</span> para comprobar que los valores de coseno y seno del ángulo dado son precisamente las coordenadas $x$ y $y$, respectivamente, del punto $P$ de intersección del círculo unitario con el lado final que determina el ángulo, considerando siempre como el lado inicial al segmento que va del origen al punto $(1,0)$. Oprime de nuevo el botón <span class="btn">Animar</span> para detener la generación de ángulos en el círculo unitario. Observa que si se da más de una vuelta al círculo unitario en sentido contrario a las manecillas del reloj, se pueden considerar ángulos mayores a $360^{\circ}$ y que, cuando los giros alrededor del círculo unitario se dan en el sentido de las manecillas del reloj, se pueden tener incluso ángulos negativos.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:800px; height:500px;"></iframe></div>
+
+<p>Además, observa que el plano cartesiano se encuentra dividido por los ejes de coordenadas en cuatro cuadrantes, marcados con números romanos, y que, cuando el segmento final del ángulo cruza de un cuadrante al siguiente, alguna de las razones trigonométricas cambia de signo, positivo a negativo o viceversa. Es importante determinar entonces el signo de cada función trigonométrica en cada uno de los cuatro cuadrantes.</p>
+
+<h1>Solución</h1>
+
+<p>Considera un punto $P(x,y)$ sobre el círculo unitario que determina un ángulo $α$. Como $cos(α)=x$, entonces $cos(α)$ es positivo siempre y cuando $x>0$, es decir, cuando $P(x,y)$ esté en los cuadrantes $I$ y $IV$, y es negativo cuando $x < 0$, es decir, si $P(x,y)$ se localiza en los cuadrantes $II$ y $III$.</p>
+
+<p>De manera similar, dado que $sen(α)=y$, se puede ver que $sen(α)$ es positivo cuando $y>0$, esto es si $P(x,y)$ se encuentra en los cuadrantes $I$ y $II$, y es negativo si $P(x,y)$ se halla en los cuadrantes $III$ y $IV$.</p>
+
+<p>Finalmente, como:</p>
+
+$$tan(α)=\frac{sen(α)}{cos(α)}$$
+
+<p>entonces por la regla de los signos, $tan(α)$ será positiva cuando $cos(α)$ y $sen(α)$ tengan el mismo signo, es decir, si $P(x,y)$ se localiza en los cuadrantes $I$ y $III$, y $tan(α)$ será negativa cuando $cos(α)$ y $sen(α)$ tengan signos contrarios, es decir, si $P(x,y)$ se ubica en los cuadrantes $II$ y $IV$.</p>
+
+<p>Por otro lado, las funciones trigonométricas recíprocas:</p>
+
+$$sec(α)=\frac{1}{cos(α)}$$
+$$csc(α)=\frac{1}{sen(α)}$$
+$$cot(α)=\frac{1}{tan(α)}$$
+
+<p>tienen, en cada cuadrante, el mismo signo que su correspondiente recíproca, así $sec(α)$ es positiva si $P(x,y)$ está en los cuadrantes $I$ y $IV$; $csc(α)$ es positiva cuando $P(x,y)$ se localice en los cuadrantes $I$ y $II$; y $cot(α)$, al ubicarse $P(x,y)$ en los cuadrantes $I$ y $III$.</p>
+
+<h1>Ejercicios</h1>
+
+<p>¿Cuál es el signo de la función trigonométrica que se proporciona en el cuadrante sombreado?</p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:550px; height:250px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autores</b>: Fernando René Martínez Ortiz y Norma Patricia Apodaca Alvarez</p>
+<p><b>Edición académica</b>: José Luis Abreu León, Carlos Hernández Garciadiego y Joel Espinosa Longi</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez y Fernando René Martínez Ortiz</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Joel Espinosa Longi</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

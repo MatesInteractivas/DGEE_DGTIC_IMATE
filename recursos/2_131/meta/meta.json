@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Funciones crecientes y decrecientes.",
+	"descripcion" : "Identificar los intervalos donde una función sea decreciente a partir de su gráfica.",
+	"resena" : "Intervalos de decrecimiento de una función a partir de su gráfica",
+	"id" : "2_131"
+}

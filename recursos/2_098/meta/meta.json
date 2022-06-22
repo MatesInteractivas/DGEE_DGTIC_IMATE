@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La elipse"],
+	"titulo" : "La elipse a partir de algunos de sus elementos",
+	"descripcion" : "Obtener la ecuación ordinaria de una elipse con centro en el origen, conociendo un foco y un extremo del eje menor.",
+	"resena" : "Ecuación ordinaria de la elipse con centro en el origen dados un foco y un extremo del eje menor",
+	"id" : "2_098"
+}

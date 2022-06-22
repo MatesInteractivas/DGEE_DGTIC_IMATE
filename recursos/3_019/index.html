@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Cálculo Diferencial e Integral: La derivada">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Definición de la derivada y sus diferentes notaciones</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Definición de la derivada</div>
+  <div id="subtitulo">Definición de la derivada y sus diferentes notaciones</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Identificar las notaciones para la derivada de una función.</p>
+
+<h1>Conceptos básicos</h1>
+
+<p>La derivada de una función en un punto $x$ indica qué tanto está cambiando la función en ese punto; así, por ejemplo, si la función indica la posición de un móvil en una carretera recta, la derivada indica la velocidad del móvil, es decir, expresa cómo está cambiando la posición en ese momento.</p>
+
+<p>Geométricamente, si representamos a la función $f$ mediante su gráfica en un plano, su derivada en un punto $x$ es la pendiente de la recta tangente a la gráfica en el punto $(x,f(x))$, y ésta indica qué tanto está creciendo o decreciendo la función en ese punto.</p>
+
+<p>En el plano de abajo, arrastra el punto rojo sobre la gráfica y observa el comportamiento de la recta tangente.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:720px; height:480px;"></iframe></div>
+
+<h1>Procedimiento</h1>
+
+<p>A lo largo de la historia del cálculo, diferentes autores han ideado diferentes notaciones para la derivada de una función en un punto, algunas de estas notaciones son:</p>
+
+<ul>
+  <li>La notación más simple es la de Lagrange, que consiste en poner una prima arriba a la derecha de la función, $f'(x)$, por ejemplo, $(x^{2}-3x+4)'$, $(sen\;x)'$</li>
+  
+  <li>La notación de Leibniz tiene la ventaja de sugerir a la derivada como un cociente entre dos cantidades muy pequeñas $\frac{df}{dx}$, y si escribimos $y=f(x)$, expresamos su derivada como $\frac{dy}{dx}$, por ejemplo $\frac{d}{dx}(x^{2}-3x+4)$ si se quiere indicar en qué punto se está evaluando, se escribe, por ejemplo, $\frac{df}{dx}(4)$.</li>
+  
+  <li>La notación de Cauchy es $D_{x}f$, $D_{x}(x^{2}-3x+4)$ y es útil cuando se quiere indicar que la derivada es un operador que actúa sobre las funciones.</li>
+
+  <li>Como una simplificación de la notación de Cauchy, en el tema de ecuaciones diferenciales, se suele escribir la derivada, poniendo a la $x$ como subíndice, $f_{x}$, por ejemplo $3f_{x}-4f=0$ significa $3\frac{df}{dx}-4f=0$.</p>
+</ul>
+
+<p>En diferentes libros, de acuerdo al tema o al gusto del autor, encontrarás cualquiera de estas notaciones, por lo que es conveniente que estés familiarizado con ellas.</p>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>: Carlos Hernández Garciadiego</p>
+<p><b>Edición académica</b>: José Luis Abreu León y Carlos Hernández Garciadiego</p>
+<p><b>Edición técnica</b>: Octavio Fonseca Ramos</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Aritmética: Los números y sus operaciones"],
+	"titulo" : "Números enteros",
+	"descripcion" : "Localizar números enteros en la recta numérica.",
+	"resena" : "Ubicación en la recta numérica",
+	"id" : "1_006"
+}

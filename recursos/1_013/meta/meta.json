@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Aritmética: Los números y sus operaciones"],
+	"titulo" : "Números enteros",
+	"descripcion" : "Resolver problemas que involucren operaciones básicas con números enteros.",
+	"resena" : "Resolución de problemas que involucran números enteros",
+	"id" : "1_013"
+}

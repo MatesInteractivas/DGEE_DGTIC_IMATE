@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La línea recta"],
+	"titulo" : "Ángulo de inclinación y pendiente de una recta",
+	"descripcion" : "Calcular la pendiente de una recta cuando se conocen dos de sus puntos.",
+	"resena" : "La pendiente de una recta a partir de dos de sus puntos",
+	"id" : "2_026"
+}

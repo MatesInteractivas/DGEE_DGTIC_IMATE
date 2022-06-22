@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Simetría con los ejes y el origen de funciones racionales a partir de su regla de correspondencia.",
+	"descripcion" : "Determinar si una función $f(x)=\frac{P(x)}{Q(x)}$ es simétrica respecto al eje $X$, respecto al eje $Y$ o respecto al origen. $P(x)$ y $Q(x)$ deben ser lineales o cuadráticas.",
+	"resena" : "Simetría con los ejes y el origen de las funciones racionales",
+	"id" : "2_143"
+}

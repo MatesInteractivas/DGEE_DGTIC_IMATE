@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Aritmética: Los números y sus operaciones"],
+	"titulo" : "Números racionales: Orden",
+	"descripcion" : "Localizar números racionales en la recta numérica en forma de fracción común o decimal.",
+	"resena" : "Ubicación en la recta numérica",
+	"id" : "1_016"
+}

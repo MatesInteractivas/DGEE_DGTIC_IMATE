@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: La derivada"],
+	"titulo" : "Operaciones con funciones y sus derivadas",
+	"descripcion" : "Obtener por fórmula, la derivada de funciones del tipo $f(x)=cg(x)$, donde $c$ es una constante y $g$ una función algebraica. Obtener por fórmula, la derivada de funciones del tipo $f(x)=cg(x)$, donde $c$ es una constante y $g$ una función trascendente.",
+	"resena" : "Derivadas de funciones del tipo f(x) = cg(x), con c constante",
+	"id" : "3_035"
+}

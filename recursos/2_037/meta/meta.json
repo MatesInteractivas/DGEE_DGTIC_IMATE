@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La línea recta"],
+	"titulo" : "Paralelismo y perpendicularidad",
+	"descripcion" : "Determinar la ecuación de una recta paralela al eje $X$ cuando se conocen las coordenadas de un punto de ella.",
+	"resena" : "Ecuación de una recta paralela al eje x",
+	"id" : "2_037"
+}

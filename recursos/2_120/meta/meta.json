@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Funciones polinomiales de grado 3 y 4.",
+	"descripcion" : "Identificar la gráfica de una función polinomial de grado $3$ o $4$ entre otras que no lo sean.",
+	"resena" : "Gráficas de las funciones polinomiales de grados $3$ y $4$",
+	"id" : "2_120"
+}

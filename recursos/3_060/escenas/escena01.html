@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title></title>
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+<div align="center">
+<ajs name="Descartes" width="720" height="480" code="Descartes">
+   <param name="tamaño" value="720x480">
+   <param name="expand" value="fit">
+   <param name="editable" value="no">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.5">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no ancho_este=150 ancho_oeste=150 alto=40">
+   <param name="E_01" value="tipo='R2' id='E0' fijo='sí' escala='26' despl_imagen='arr-izq' fondo='e7efef' red='b8c4c8' red10='889498' ejes='405860' texto='no'">
+   <param name="C_01" value="id='p1' tipo='gráfico' espacio='E0' tamaño='8' expresión='(1,1/3)' constricción='y=(1/3)*x^3'">
+   <param name="C_02" value="id='p1.x' tipo='numérico' región='exterior' espacio='E0' nombre='p1.x' valor='1' fijo='sí' visible='sí' parámetro.font_family='Monospaced' fuente puntos='12'">
+   <param name="C_03" value="id='p1.y' tipo='numérico' región='exterior' espacio='E0' nombre='p1.y' valor='1/3' fijo='sí' visible='sí' parámetro.font_family='Monospaced' fuente puntos='12'">
+   <param name="C_04" value="id='p2' tipo='gráfico' espacio='E0' color-int='20c030' tamaño='8' expresión='(p1.x+1,p1.y+1)' constricción='(x-p1.x)^2+(y-p1.y)^2=sqrt(2)'">
+   <param name="C_05" value="id='p2.x' tipo='numérico' región='exterior' espacio='E0' nombre='p2.x' valor='p1.x+1' fijo='sí' visible='sí' parámetro.font_family='Monospaced' fuente puntos='12'">
+   <param name="C_06" value="id='p2.y' tipo='numérico' región='exterior' espacio='E0' nombre='p2.y' valor='p1.y+1' fijo='sí' visible='sí' parámetro.font_family='Monospaced' fuente puntos='12'">
+   <param name="C_07" value="id='E0.escala' tipo='numérico' región='interior' espacio='E0' nombre='E0.escala' expresión='(E0._w-40,E0._h-70,30,60)' valor='48' incr='0.1*E0.escala' fijo='sí' visible='no' parámetro.font_family='Monospaced' fuente puntos='12'">
+   <param name="C_08" value="id='p4.x' tipo='numérico' región='exterior' espacio='E0' nombre='p4.x' valor='xQ' fijo='sí' visible='sí' parámetro.font_family='Monospaced' fuente puntos='12' dibujar-si='0' activo-si='0'">
+   <param name="C_09" value="id='p4.y' tipo='numérico' región='exterior' espacio='E0' nombre='p4.y' valor='yQ' fijo='sí' visible='sí' parámetro.font_family='Monospaced' fuente puntos='12'">
+   <param name="C_10" value="id='r' tipo='numérico' región='exterior' espacio='E0' nombre='r' valor='1.5' min='1.5' max='3' fijo='sí' visible='sí' parámetro.font_family='Monospaced' fuente puntos='12'">
+   <param name="C_11" value="id='theta' tipo='numérico' región='exterior' espacio='E0' nombre='theta' valor='pi*(1/6)' min='0' max='2*pi' fijo='sí' visible='sí' parámetro.font_family='Monospaced' fuente puntos='12'">
+   <param name="C_12" value="id='t' tipo='numérico' región='exterior' espacio='E0' nombre='t' fijo='sí' visible='sí' parámetro.font_family='Monospaced' fuente puntos='12'">
+   <param name="C_13" value="id='p3.x' tipo='numérico' región='exterior' espacio='E0' nombre='p3.x' valor='xP3' min='-3.6' max='3.6' fijo='sí' visible='sí'">
+   <param name="C_14" value="id='p5.x' tipo='numérico' región='exterior' espacio='E0' nombre='p5.x' valor='xP5' incr='0.01' decimales='1' fijo='sí' visible='sí' parámetro.font_family='Monospaced' fuente puntos='12'">
+   <param name="C_15" value="id='p5.y' tipo='numérico' región='exterior' espacio='E0' nombre='p5.y' valor='yP5' incr='0.01' decimales='1' fijo='sí' visible='sí' parámetro.font_family='Monospaced' fuente puntos='12'">
+   <param name="C_16" value="id='E5.siguiente' tipo='numérico' interfaz='botón' región='interior' espacio='E5' nombre='Siguiente  ►' expresión='(E5._w-105,E5._h-30,100,25)' fijo='sí' visible='sí' acción='calcular' parámetro='paso=paso+1' dibujar-si='paso=1' activo-si='paso=1'">
+   <param name="C_17" value="id='nprueba' tipo='numérico' región='exterior' espacio='E0' nombre='nprueba' incr='1' min='0' max='14' fijo='sí' visible='sí'">
+   <param name="C_18" value="id='n8' tipo='numérico' región='exterior' espacio='E0' nombre='n8' valor='10' incr='1' min='0' max='29' fijo='sí' visible='sí'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='aux=&amp;squot;calculos para primera escena (espacio 1)&amp;squot;;m=(abs(p2.x-p1.x)<0.001)?10000:(p2.y-p1.y)/(p2.x-p1.x);d=-3*p1.x^2+12*m;x1=((d=0)|(d>0))?(-p1.x+sqrt(d))/2:0;x2=(d>0)?(-p1.x-sqrt(d))/2:0;y1=(1/3)*x1^3;y2=(1/3)*x2^3'">
+   <param name="G_01" value="espacio='E0' tipo='ecuación' expresión='y=(1/3)*x^3' ancho='2'">
+   <param name="G_02" value="espacio='E0' tipo='curva' color='5050b0' expresión='(p1.x+(p2.x-p1.x)*t,p1.y+(p2.y-p1.y)*t)' t.intervalo='[-1000/E0.escala,1000/E0.escala]' t.pasos='1' ancho='2'">
+   <param name="G_03" value="espacio='E0' tipo='curva' color='rojo' dibujar-si='(d<0)' expresión='(p1.x+(p2.x-p1.x)*t,p1.y+(p2.y-p1.y)*t)' t.intervalo='[-1000/E0.escala,1000/E0.escala]' t.pasos='1' ancho='2'">
+   <param name="G_04" value="espacio='E0' tipo='texto' coord_abs='sí' expresión='[20,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red255\green0\blue0;\red32\green48\blue58;}\cf0\f1\fs42\b P\cf1   = ({\*\mjaformula{\expr p1.x}},{\*\mjaformula{\expr p1.y\decimals 2\fixed1}})\fs28\b0}' font_family='SansSerif' fuente puntos='21' fijo='sí'">
+   <param name="G_05" value="espacio='E0' tipo='texto' coord_abs='sí' dibujar-si='((d>0)|(d=0))&amp;(sqrt((x1-p1.x)^2+(y1-p1.y)^2)>0.01)' expresión='[20,50]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red23\green157\blue171;\red32\green48\blue58;}\cf0\f1\fs42\b Q{\*\mjaformula{\subix 1}}\cf1 = ({\*\mjaformula{\expr x1\decimals 2\fixed1}},{\*\mjaformula{\expr y1\decimals 2\fixed1}})\fs28\b0}' font_family='SansSerif' fuente puntos='21' fijo='sí'">
+   <param name="G_06" value="espacio='E0' tipo='texto' coord_abs='sí' dibujar-si='(d>0)&amp;(sqrt((x2-p1.x)^2+(y2-p1.y)^2)>0.01)' expresión='[20,80]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red160\green30\blue174;\red32\green48\blue58;}\cf0\f1\fs42\b Q{\*\mjaformula{\subix 2}}\cf1 = ({\*\mjaformula{\expr x2\decimals 2\fixed1}},{\*\mjaformula{\expr y2\decimals 2\fixed1}})\fs28\b0}' font_family='SansSerif' fuente puntos='21' fijo='sí'">
+   <param name="G_07" value="espacio='E0' tipo='punto' color='179dab' dibujar-si='((d>0)|(d=0))&amp;(sqrt((x1-p1.x)^2+(y1-p1.y)^2)>0.01)' expresión='(x1,y1)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;}\f1\fs24}' font_family='Serif' fuente puntos='12' fijo='sí' tamaño='6'">
+   <param name="G_08" value="espacio='E0' tipo='punto' color='a01eae' dibujar-si='(d>0)&amp;(sqrt((x2-p1.x)^2+(y2-p1.y)^2)>0.01)' expresión='(x2,y2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;}\f1\fs24}' font_family='Serif' fuente puntos='12' fijo='sí' tamaño='6'">
+   <param name="G_09" value="espacio='E0' tipo='texto' coord_abs='sí' color='rojo' expresión='[3+E0._w/2+p1.x*E0.escala,3+E0._h/2-p1.y*E0.escala]' texto='P' font_family='SansSerif' fuente puntos='21' fijo='sí'">
+</ajs>
+</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Rango de funciones racionales a partir de su regla de correspondencia.",
+	"descripcion" : "Determinar el rango de una función del tipo $f(x)=\frac{a}{x+b}+c$, con $a$, $b$ y $c$ reales.",
+	"resena" : "Rango de una función racional con numerador constante y denominador lineal",
+	"id" : "2_138"
+}

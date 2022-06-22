@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title></title>
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+<div align="center">
+<ajs name="Descartes" width="900" height="570" code="Descartes">
+   <param name="tamaño" value="900x570">
+   <param name="expand" value="fit">
+   <param name="editable" value="no">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.5">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no ancho_este=150 ancho_oeste=150 alto=40">
+   <param name="E_01" value="tipo='R2' id='E0' fijo='sí' despl_imagen='arr-izq' fondo='ff000000' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E1' x='E0._w-370' y='100' ancho='360' alto='360' dibujar-si='p>5' despl_imagen='arr-izq' red='no' red10='no' ejes='405860' texto='no' números='sí'">
+   <param name="C_01" value="id='OtraEc' tipo='numérico' interfaz='botón' región='interior' espacio='E0' expresión='(CP(ctx,0),CP(cty,0),CP(ctw,0),CP(cth,0))' fijo='sí' visible='sí' imagen='VACIO.GIF' acción='calcular' parámetro='reiniciar()'">
+   <param name="C_02" value="id='E1.escala' tipo='numérico' región='interior' espacio='E1' nombre='E1.escala' expresión='(E1._w-40,E1._h-70,30,60)' valor='30' incr='0.5*E1.escala' min='0.000001' decimales='(escala<0.1)+(escala<1)+(escala<10)+(escala<100)+(escala<1000)+(escala<10000)+(escala<100000)' fijo='sí' visible='no' parámetro.font_family='Monospaced' fuente puntos='12' pos_mensajes='centro'">
+   <param name="C_03" value="id='a' tipo='numérico' región='interior' espacio='E0' nombre='a' expresión='(10,E0._h-70,115,60)' valor='a1' incr='1' decimales='0' fijo='no' visible='sí'">
+   <param name="C_04" value="id='b' tipo='numérico' región='interior' espacio='E0' nombre='b' expresión='(125,E0._h-70,115,60)' valor='b1' incr='1' min='1' decimales='0' fijo='sí' visible='sí'">
+   <param name="C_05" value="id='c' tipo='numérico' región='interior' espacio='E0' nombre='c' expresión='(240,E0._h-70,115,60)' valor='c1' incr='1' decimales='0' fijo='sí' visible='sí'">
+   <param name="C_06" value="id='d' tipo='numérico' región='interior' espacio='E0' nombre='d' expresión='(355,E0._h-70,115,60)' valor='d1' incr='1' min='1' decimales='0' fijo='sí' visible='sí'">
+   <param name="C_07" value="id='p' tipo='numérico' región='interior' espacio='E0' nombre='_nada_' expresión='(E0._w-70,10,60,60)' incr='1' min='0' max='6' decimales='0' fijo='no' visible='sí' pos_mensajes='centro'">
+   <param name="A_01" value="id='botX(d,x,w,t)' algoritmo='sí' expresión='val' algoritmo='sí' Local='val' inicio='val=x' hacer='val=((t==1)|(t==6))?x+d    :val;val=((t==2)|(t==5))?x+w-1-d:val;val=((t==3)|(t==4))?x+w-1  :val;'">
+   <param name="A_02" value="id='botY(d,y,h,t)' algoritmo='sí' expresión='val' algoritmo='sí' Local='val' inicio='val=y' hacer='val=((t%8==0)|(t==3))?y+d  :val;val=((t==4)|(t==7))?y+h-1-d:val;val=((t==5)|(t==6))?y+h-1  :val;'">
+   <param name="A_03" value="id='CT' vector='sí' matriz='sí' evaluar='una-sola-vez' columnas='24' filas='12' expresión='ix=0;name=1;middle=2;last=3;value=4;ctx=5;cty=6;ctw=7;cth=8;active=9;teclado=10;interfaz=10;boton=10;'">
+   <param name="A_04" value="id='CP(a,k)' algoritmo='sí' expresión='res' algoritmo='sí' Local='res,pad' inicio='pad=5' hacer='res=(a==ctx)?CT[k,ctx]+pad:res;res=(a==cty)?CT[k,cty]+pad:res;res=(a==ctw)?CT[k,ctw]-pad*2:res;res=(a==cth)?CT[k,cth]-pad*2:res;res=(a==active)?CT[k,active]:res;res=(a==interfaz)?(CT[k,interfaz]<4):res;'">
+   <param name="A_05" value="id='init()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='TCL.x=E2._w-TCL._w-5;TCL.y=E2._h-TCL._h-5;rd=3;editing=-1;Teclado.S=&amp;squot;&amp;squot;;Teclado.Sa=&amp;squot;&amp;squot;;texth=27;textp=10;;autorControls();;TIT.rojo= (11*16+ 8)/256;TIT.verde=( 0*16+ 8)/256;TIT.azul= ( 1*16+ 0)/256;;FONDO.rojo= ( 9*16+ 0)/256;FONDO.verde=( 9*16+ 8)/256;FONDO.azul= (10*16+ 8)/256;;E2.rojo= (14*16+ 8)/256;E2.verde=(15*16+ 0)/256;E2.azul= (15*16+ 0)/256;;E3.rojo= (0*16+ 0)/256;E3.verde=(0*16+ 0)/256;E3.azul= (0*16+ 0)/256;;TXT.rojo= ( 1*16+ 8)/256;TXT.verde=( 2*16+ 0)/256;TXT.azul= ( 2*16+ 8)/256;;CTR.rojo= ( 0*16+ 0)/256;CTR.verde=( 4*16+ 0)/256;CTR.azul= (15*16+15)/256;;CTI.rojo= (15*16+ 0)/256;CTI.verde=(15*16+ 0)/256;CTI.azul= (15*16+ 0)/256;;ARR.rojo= ( 4*16+ 0)/256;ARR.verde=( 8*16+ 0)/256;ARR.azul= ( 6*16+ 0)/256;;BORDER.rojo=CTR.rojo*0.90;BORDER.verde=CTR.verde*0.90;BORDER.azul=CTR.azul*0.90;'">
+   <param name="A_06" value="id='Str(s)' expresión='CT[s,name]+CT[s,middle]+CT[s,value]+CT[s,last]'">
+   <param name="A_07" value="id='editB(k)' algoritmo='sí' algoritmo='sí' Local='S,tipo' hacer='editing=k;tipo=CT[k,interfaz];tt=(tipo==0)?TCL.set(&amp;squot;columnas&amp;squot;,6):TCL.set(&amp;squot;columnas&amp;squot;,12);_ta=((tipo==1)|(tipo=0))?0:1;_tm=(tipo==3)?1:0;TCL.set(&amp;squot;ta&amp;squot;,_ta);TCL.set(&amp;squot;tm&amp;squot;,_tm);TCL.exec(&amp;squot;initTcl&amp;squot;,&amp;squot;&amp;squot;);S=CT[k,value];teclado.S=CT[k,value];TCL.set(&amp;squot;S&amp;squot;,teclado.S);TCL.set(&amp;squot;show_cursor&amp;squot;,1);TCL.update();'">
+   <param name="A_08" value="id='processKB()' algoritmo='sí' algoritmo='sí' hacer='CT[editing,value]=(Teclado.Sa!=Teclado.S)?Teclado.S:CT[editing,value];Teclado.Sa=Teclado.S;'">
+   <param name="A_09" value="id='autorControls()' algoritmo='sí' expresión='x' algoritmo='sí' inicio='NCT=0' hacer='CT[NCT,ix]=NCT;CT[NCT,name]=&amp;squot;Otra ecuación&amp;squot;;CT[NCT,middle]=&amp;squot;&amp;squot;;CT[NCT,last]=&amp;squot;&amp;squot;;CT[NCT,value]=&amp;squot;&amp;squot;;CT[NCT,ctx]=E0._w-180;CT[NCT,cty]=E0._h-65;CT[NCT,ctw]=160;CT[NCT,cth]=50;CT[NCT,active]=1;CT[NCT,interfaz]=0;NCT=NCT+1;;'">
+   <param name="A_10" value="id='q' expresión='(b*c-a*d)'">
+   <param name="A_11" value="id='r' expresión='(a+d-b-c)'">
+   <param name="A_12" value="id='u0' expresión='q/r'">
+   <param name="A_13" value="id='simplificar(m,n)' algoritmo='sí' algoritmo='sí' inicio='numerador=m;denominador=n;k=2' hacer='div=((numerador%k)=0)&amp;((denominador%k)=0);numerador=(div)?numerador/k:numerador;denominador=(div)?denominador/k:denominador;k=(div)?k:k+1' mientras='(k<=abs(numerador))|(k<=abs(denominador))'">
+   <param name="A_14" value="id='Q1' expresión='u0!=ent(u0)'">
+   <param name="A_15" value="id='Q2' expresión='denominador!=2'">
+   <param name="A_16" value="id='Q3' expresión='denominador!=(2^2)'">
+   <param name="A_17" value="id='Q4' expresión='denominador!=(2*(2*2))'">
+   <param name="A_18" value="id='Q5' expresión='denominador!=(2^4)'">
+   <param name="A_19" value="id='Q6' expresión='denominador!=(2^5)'">
+   <param name="A_20" value="id='Q7' expresión='denominador!=(2^6)'">
+   <param name="A_21" value="id='Q8' expresión='denominador!=5'">
+   <param name="A_22" value="id='Q9' expresión='denominador!=(5*5)'">
+   <param name="A_23" value="id='Q10' expresión='denominador!=(2*5)'">
+   <param name="A_24" value="id='Q11' expresión='denominador!=(2*2)*5'">
+   <param name="A_25" value="id='Q12' expresión='denominador!=(2*(2*2))*5'">
+   <param name="A_26" value="id='Q13' expresión='denominador!=(2*(2*2))*5'">
+   <param name="A_27" value="id='Q14' expresión='denominador!=2*(5*5)'">
+   <param name="A_28" value="id='Q15' expresión='denominador!=(2*2)*(5*5)'">
+   <param name="A_29" value="id='Q16' expresión='denominador!=1'">
+   <param name="A_30" value="id='Q2n' expresión='denominador!=-2'">
+   <param name="A_31" value="id='Q3n' expresión='denominador!=-(2*2)'">
+   <param name="A_32" value="id='Q4n' expresión='denominador!=-(2*(2*2))'">
+   <param name="A_33" value="id='Q5n' expresión='denominador!=-(2*(2*(2*2)))'">
+   <param name="A_34" value="id='Q6n' expresión='denominador!=-(2*(2*(2*(2*2))))'">
+   <param name="A_35" value="id='Q7n' expresión='denominador!=-(2*(2*(2*(2*(2*2)))))'">
+   <param name="A_36" value="id='Q8n' expresión='denominador!=-5'">
+   <param name="A_37" value="id='Q9n' expresión='denominador!=-(5*5)'">
+   <param name="A_38" value="id='Q10n' expresión='denominador!=-(2*5)'">
+   <param name="A_39" value="id='Q11n' expresión='denominador!=-((2*2)*5)'">
+   <param name="A_40" value="id='Q12n' expresión='denominador!=-((2*(2*2))*5)'">
+   <param name="A_41" value="id='Q13n' expresión='denominador!=-((2*(2*(2*2)))*5)'">
+   <param name="A_42" value="id='Q14n' expresión='denominador!=-(2*(5*5))'">
+   <param name="A_43" value="id='Q15n' expresión='denominador!=-((2*2)*(5*5))'">
+   <param name="A_44" value="id='Q16n' expresión='denominador!=-1'">
+   <param name="A_45" value="id='Q' expresión='(Q1)&amp;(Q2)&amp;(Q3)&amp;(Q4)&amp;(Q5)&amp;(Q6)&amp;(Q7)&amp;(Q8)&amp;(Q9)&amp;(Q10)&amp;(Q11)&amp;(Q12)&amp;(Q13)&amp;(Q14)&amp;(Q15)&amp;(Q16)&amp;(Q2n)&amp;(Q3n)&amp;(Q4n)&amp;(Q5n)&amp;(Q6n)&amp;(Q7n)&amp;(Q8n)&amp;(Q9n)&amp;(Q10n)&amp;(Q11n)&amp;(Q12n)&amp;(Q13n)&amp;(Q14n)&amp;(Q15n)&amp;(Q16n)'">
+   <param name="A_46" value="id='reiniciar()' algoritmo='sí' algoritmo='sí' hacer='a=v;b=2+ent(rnd*11);c=w;d=2+ent(rnd*11);;;p=0;E1.escala=30;' mientras='abs(b)=abs(d)'">
+   <param name="A_47" value="id='daotro()' algoritmo='sí' algoritmo='sí' hacer='a1=v1;b1=2+ent(rnd*11);c1=w1;d1=2+ent(rnd*11);;E5.escala=30' mientras='abs(b1)=abs(d1)'">
+   <param name="A_48" value="id='n1' constante='sí' expresión='1-2*(ent(rnd+0.5))' evaluar='siempre'">
+   <param name="A_49" value="id='n2' constante='sí' expresión='1-2*(ent(rnd+0.5))' evaluar='siempre'">
+   <param name="A_50" value="id='n3' constante='sí' expresión='1-2*(ent(rnd+0.5))' evaluar='siempre'">
+   <param name="A_51" value="id='n4' constante='sí' expresión='1-2*(ent(rnd+0.5))' evaluar='siempre'">
+   <param name="A_52" value="id='v1' constante='sí' expresión='n1*ent(2+rnd*8)' evaluar='siempre'">
+   <param name="A_53" value="id='v1d' constante='sí' expresión='n3*ent(1+rnd*9)' evaluar='siempre'">
+   <param name="A_54" value="id='w1' constante='sí' expresión='n2*ent(rnd*10)' evaluar='siempre'">
+   <param name="A_55" value="id='w1d' constante='sí' expresión='n4*ent((rnd)*10)' evaluar='siempre'">
+   <param name="A_56" value="id='s1' constante='sí' expresión='n3*ent(rnd*10)' evaluar='siempre'">
+   <param name="A_57" value="id='s1d' constante='sí' expresión='ent((rnd+0.1)*10)' evaluar='siempre'">
+   <param name="A_58" value="id='m1' constante='sí' expresión='1-2*(ent(rnd+0.5))' evaluar='siempre'">
+   <param name="A_59" value="id='m2' constante='sí' expresión='1-2*(ent(rnd+0.5))' evaluar='siempre'">
+   <param name="A_60" value="id='m3' constante='sí' expresión='1-2*(ent(rnd+0.5))' evaluar='siempre'">
+   <param name="A_61" value="id='m4' constante='sí' expresión='1-2*(ent(rnd+0.5))' evaluar='siempre'">
+   <param name="A_62" value="id='v' constante='sí' expresión='m1*ent(rnd*10)' evaluar='siempre'">
+   <param name="A_63" value="id='vd' constante='sí' expresión='m3*ent((rnd)*10)' evaluar='siempre'">
+   <param name="A_64" value="id='w' constante='sí' expresión='m2*ent(rnd*10)' evaluar='siempre'">
+   <param name="A_65" value="id='wd' constante='sí' expresión='m3*ent((rnd)*10)' evaluar='siempre'">
+   <param name="A_66" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='init();reiniciar();daotro();'">
+   <param name="A_67" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' inicio='aux=(editing>=0)?processKB():0' hacer='simplificar(abs(q),abs(r));a1=4;b1=3;c1=3;d1=2'">
+   <param name="G_01" value="espacio='E0' tipo='curva' fondo='sí' color='(E2.rojo*0.8,E2.verde*0.8,E2.azul*0.8,ff)' coord_abs='sí' expresión='(botX(rd,0,E0._w,t),botY(rd,0,E0._h,t))' t.intervalo='[0,8]' relleno='(E2.rojo,E2.verde,E2.azul,00)' info='(PLANTILLA) fondo de la zona de texto'">
+   <param name="G_02" value="espacio='E0' tipo='curva' fondo='sí' color='negro' coord_abs='sí' expresión='(botX(rd,CP(ctx,s)-5,CP(ctw,s)+10,t),botY(rd,CP(cty,s)-5,CP(cth,s)+10,t))' familia='s' s.intervalo='[0,NCT-1]' s.pasos='NCT-1' t.intervalo='[0,8]' relleno='(CP(active,s)+0.70*(!CP(active,s)),CP(active,s)+0.75*(!CP(active,s)) -(s==editing)*0.8,0.2*CP(active,s)+0.80*(!CP(active,s)),0.0)' info='(PLANTILLA) borde exterior'">
+   <param name="G_03" value="espacio='E0' tipo='curva' fondo='sí' color='negro' coord_abs='sí' expresión='(botX(rd,CP(ctx,s),CP(ctw,s),t),botY(rd,CP(cty,s),CP(cth,s),t))' familia='s' s.intervalo='[0,NCT-1]' s.pasos='NCT-1' t.intervalo='[0,8]' relleno='(CTI.rojo,CTI.verde,CTI.azul,00)' info='(PLANTILLA) borde interior'">
+   <param name="G_04" value="espacio='E0' tipo='texto' coord_abs='sí' color='(TXT.rojo,TXT.verde,TXT.azul,00)' expresión='[CT[s,ctx]+(CT[s,ctw]-_AnchoDeCadena_(Str(s),&amp;squot;SansSerif&amp;squot;,&amp;squot;PLAIN&amp;squot;,21))/2,CT[s,cty]+(CT[s,cth]-25)/2]' familia='s' s.intervalo='[0,NCT-1]' s.pasos='NCT-1' texto='[Str(s)]' font_family='SansSerif' fuente puntos='21' fijo='sí' ancho='380' info='(PLANTILLA) Contenidos de los campos de texto'">
+   <param name="G_05" value="espacio='E0' tipo='texto' coord_abs='sí' expresión='[10,10]' texto='Resolver paso a paso la ecuación:' font_family='SansSerif' fuente puntos='21' decimales='0' fijo='no'">
+   <param name="G_06" value="espacio='E0' tipo='texto' coord_abs='sí' expresión='[10,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs42{\*\mjaformula{\fraction{\num x {\expr (a<0)?&amp;squot;-&amp;squot;:&amp;squot;+&amp;squot;\decimals 0\fixed0} {\expr abs(a)\decimals 0\fixed0}}{\den x {\expr (b<0)?&amp;squot;-&amp;squot;:&amp;squot;+&amp;squot;\decimals 0\fixed0} {\expr abs(b)\decimals 0\fixed0} }} = {\fraction{\num x {\expr (c<0)?&amp;squot;-&amp;squot;:&amp;squot;+&amp;squot;\decimals 0\fixed0} {\expr abs(c)\decimals 0\fixed0}}{\den x {\expr (d<0)?&amp;squot;-&amp;squot;:&amp;squot;+&amp;squot;\decimals 0\fixed0} {\expr abs(d)\decimals 0\fixed0}}}}\f2\fs24\par }' font_family='SansSerif' fuente puntos='21' decimales='0' fijo='no'">
+   <param name="G_07" value="espacio='E0' tipo='texto' coord_abs='sí' dibujar-si='p>=1' expresión='[10,90]' texto='Multiplicando en cruz, tenemos:' font_family='SansSerif' fuente puntos='21' decimales='0' fijo='no'">
+   <param name="G_08" value="espacio='E0' tipo='texto' coord_abs='sí' dibujar-si='p>=1' expresión='[10,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;}\f1\fs42{\*\mjaformula (x\f2\fs30  {\expr (a<0)?&amp;squot;-&amp;squot;:&amp;squot;+&amp;squot;\decimals 0\fixed0} {\expr abs(a)\decimals 0\fixed0}\fs34 )(x\fs30  {\expr (d<0)?&amp;squot;-&amp;squot;:&amp;squot;+&amp;squot;\decimals 0\fixed0} {\expr abs(d)\decimals 0\fixed0}\fs34 ) = (x \fs30{\expr (b<0)?&amp;squot;-&amp;squot;:&amp;squot;+&amp;squot;\decimals 0\fixed0} {\expr abs(b)\decimals 0\fixed0}\fs34 )(x\fs30  {\expr (c<0)?&amp;squot;-&amp;squot;:&amp;squot;+&amp;squot;\decimals 0\fixed0} {\expr abs(c)\decimals 0\fixed0}\fs34 )\f4\fs24}\f4\fs24\par }' font_family='SansSerif' fuente puntos='21' decimales='0' fijo='no'">
+   <param name="G_09" value="espacio='E0' tipo='texto' coord_abs='sí' dibujar-si='p>=2' expresión='[10,150]' texto='Desarrollando ambos términos, tenemos:' font_family='SansSerif' fuente puntos='21' decimales='0' fijo='no'">
+   <param name="G_10" value="espacio='E0' tipo='texto' coord_abs='sí' dibujar-si='p>=2' expresión='[10,180]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;}\f1\fs42{\*\mjaformula x\f2\fs30{\supix 2} {\expr (a<0)?&amp;squot;-&amp;squot;:&amp;squot;+&amp;squot;\decimals 0\fixed0} {\expr abs(a)\decimals 0\fixed0}\fs34  x  \fs30{\expr (d<0)?&amp;squot;-&amp;squot;:&amp;squot;+&amp;squot;\decimals 0\fixed0} {\expr abs(d)\decimals 0\fixed0} x {\expr (a*d<0)?&amp;squot;-&amp;squot;:&amp;squot;+&amp;squot;\decimals 0\fixed0} {\expr abs(a*d)\decimals 0\fixed0}\fs34  = x{\supix 2} \fs30{\expr (b<0)?&amp;squot;-&amp;squot;:&amp;squot;+&amp;squot;\decimals 0\fixed0} {\expr abs(b)\decimals 0\fixed0}\fs34  x\fs30  {\expr (c<0)?&amp;squot;-&amp;squot;:&amp;squot;+&amp;squot;\decimals 0\fixed0} {\expr abs(c)\decimals 0\fixed0}\fs34  x {\expr (b*c<0)?&amp;squot;-&amp;squot;:&amp;squot;+&amp;squot;\decimals 0\fixed0} {\expr abs(b*c)\decimals 0\fixed0}\f4\fs24}\f4\fs24\par }' font_family='SansSerif' fuente puntos='21' decimales='0' fijo='no'">
+   <param name="G_11" value="espacio='E0' tipo='texto' coord_abs='sí' dibujar-si='p>=3' expresión='[10,210]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs42 Cancelando el t\u233 rmino en {\*\mjaformula x{\supix 2}}, tenemos:\f2\fs24  \par }' font_family='SansSerif' fuente puntos='21' fijo='sí'">
+   <param name="G_12" value="espacio='E0' tipo='texto' coord_abs='sí' dibujar-si='p>=3' expresión='[10,240]' familia='s' s.intervalo='[0,1]' s.pasos='8' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red32\green48\blue58;}\f1\fs42{\*\mjaformula\f2\fs30{\expr (a<0)?&amp;squot;-&amp;squot;:&amp;squot; &amp;squot;\decimals 0\fixed0} {\expr abs(a)\decimals 0\fixed0}\fs34  x  \fs30{\expr (d<0)?&amp;squot;-&amp;squot;:&amp;squot;+&amp;squot;\decimals 0\fixed0} {\expr abs(d)\decimals 0\fixed0} x {\expr (a*d<0)?&amp;squot;-&amp;squot;:&amp;squot;+&amp;squot;\decimals 0\fixed0} {\expr abs(a*d)\decimals 0\fixed0}\fs34  = \fs30{\expr (b<0)?&amp;squot;-&amp;squot;:&amp;squot; &amp;squot;\decimals 0\fixed0} {\expr abs(b)\decimals 0\fixed0}\fs34  x\fs30  {\expr (c<0)?&amp;squot;-&amp;squot;:&amp;squot;+&amp;squot;\decimals 0\fixed0} {\expr abs(c)\decimals 0\fixed0}\fs34  x {\expr (b*c<0)?&amp;squot;-&amp;squot;:&amp;squot;+&amp;squot;\decimals 0\fixed0} {\expr abs(b*c)\decimals 0\fixed0}\f4\fs24}\f4\fs24  \par             \f3\fs34\cf0 una ecuaci\u243 n lineal\cf1\f4\fs24\par }' font_family='SansSerif' fuente puntos='21' decimales='0' fijo='no'">
+   <param name="G_13" value="espacio='E0' tipo='texto' coord_abs='sí' dibujar-si='p>=4' expresión='[10,290]' texto='Agrupando términos semejantes, tenemos:' font_family='SansSerif' fuente puntos='21' decimales='0' fijo='no'">
+   <param name="G_14" value="espacio='E0' tipo='texto' coord_abs='sí' dibujar-si='p>=4' expresión='[10,320]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;}\f1\fs42{\*\mjaformula\f2\fs30{\expr (a+d-b-c<0)?&amp;squot;-&amp;squot;:&amp;squot; &amp;squot;\decimals 0\fixed0} {\expr abs(a+d-b-c)\decimals 0\fixed0}\fs34  x  = {\expr (b*c-a*d<0)?&amp;squot;-&amp;squot;:&amp;squot; &amp;squot;\decimals 0\fixed0} {\expr abs(b*c-a*d)\decimals 0\fixed0}\f4\fs24}\f4\fs24   \par }' font_family='SansSerif' fuente puntos='21' decimales='0' fijo='no'">
+   <param name="G_15" value="espacio='E0' tipo='texto' coord_abs='sí' dibujar-si='(p>=5)&amp;(r!=0)' expresión='[10,350]' texto='Despejando x, tenemos:' font_family='SansSerif' fuente puntos='21' decimales='0' fijo='no'">
+   <param name="G_16" value="espacio='E0' tipo='texto' coord_abs='sí' dibujar-si='(p>=5)&amp;(r!=0)' expresión='[10,380]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs42{\*\mjaformula x = {\expr ((r*q)<0)?&amp;squot;-&amp;squot;:&amp;squot; &amp;squot;\decimals 0\fixed0}{\fraction{\num{\expr abs(b*c-a*d)\decimals 0\fixed0}}{\den{\expr abs(a+d-b-c)\decimals 0\fixed0}}} }\f2\fs24   \par }' font_family='SansSerif' fuente puntos='21' decimales='0' fijo='no'">
+   <param name="G_17" value="espacio='E0' tipo='texto' coord_abs='sí' dibujar-si='(p>=6)&amp;(r!=0)' expresión='[10,430]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs42 Simplificando, tenemos:  {\*\mjaformula x ={\expr ((q/r)<0)?&amp;squot;-&amp;squot;:&amp;squot; &amp;squot;\decimals 0\fixed0}{\expr abs(numerador)/abs(denominador)\decimals 12\fixed0}}\f2\fs24   \par }' font_family='SansSerif' fuente puntos='21' decimales='0' fijo='no'">
+   <param name="G_18" value="espacio='E0' tipo='texto' coord_abs='sí' dibujar-si='(p>=5)&amp;(r=0)&amp;(q!=0)' expresión='[10,350]' texto='Entonces, tenemos:' font_family='SansSerif' fuente puntos='21' decimales='0' fijo='no'">
+   <param name="G_19" value="espacio='E0' tipo='texto' coord_abs='sí' dibujar-si='(p>=5)&amp;(r=0)&amp;(q!=0)' expresión='[10,380]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red32\green48\blue58;}\f1\fs42{\*\mjaformula{\expr r\decimals 0\fixed0}x = {\expr q\decimals 0\fixed0}}\cf0       Una contradicci\u243 n\f2\fs24 .\cf1\par }' font_family='SansSerif' fuente puntos='21' decimales='0' fijo='no'">
+   <param name="G_20" value="espacio='E0' tipo='texto' coord_abs='sí' dibujar-si='(p>=6)&amp;(r=0)&amp;(q!=0)' expresión='[10,410]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red112\green0\blue112;\red32\green48\blue58;}\cf0\f1\fs42 Por tanto la ecuaci\u243 n no tiene soluci\u243 n.\cf1\par \par \cf0 Observa que se trata de dos rectas paralelas.\cf2\f2\fs24\par }' font_family='SansSerif' fuente puntos='21' decimales='0' fijo='no'">
+   <param name="G_21" value="espacio='E0' tipo='texto' coord_abs='sí' dibujar-si='(p>=5)&amp;(r=0)&amp;(q=0)' expresión='[10,350]' texto='Entonces, tenemos:' font_family='SansSerif' fuente puntos='21' decimales='0' fijo='no'">
+   <param name="G_22" value="espacio='E0' tipo='texto' coord_abs='sí' dibujar-si='(p>=5)&amp;(r=0)&amp;(q=0)' expresión='[10,380]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red32\green48\blue58;}\f1\fs42{\*\mjaformula{\expr r\decimals 0\fixed0}x = {\expr q\decimals 0\fixed0}}\cf0           Verdadero para toda x.\cf1\f2\fs24\par }' font_family='SansSerif' fuente puntos='21' decimales='0' fijo='no'">
+   <param name="G_23" value="espacio='E0' tipo='texto' coord_abs='sí' dibujar-si='(p>=6)&amp;(r=0)&amp;(q=0)' expresión='[10,410]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red112\green0\blue112;\red32\green48\blue58;}\cf0\f1\fs42 La ecuaci\u243 n tiene infinitas soluciones.\cf1\par \cf0\par Observa que se trata de la misma recta.\cf2\f2\fs24\par }' font_family='SansSerif' fuente puntos='21' decimales='0' fijo='no'">
+   <param name="G_24" value="espacio='E0' tipo='texto' coord_abs='sí' dibujar-si='(Q)&amp;(p>=6)&amp;(r!=0)' expresión='[460,430]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs42 ...\f2\fs24}' font_family='SansSerif' fuente puntos='21' fijo='sí'">
+   <param name="G_25" value="espacio='E1' tipo='ecuación' color='3366dd' expresión='y=(a+d)*x+(a*d)'">
+   <param name="G_26" value="espacio='E1' tipo='ecuación' color='e80022' expresión='y=(b+c)*x+(b*c)'">
+   <param name="G_27" value="espacio='E1' tipo='texto' coord_abs='sí' color='3366dd' expresión='[5,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs42  {\*\mjaformula y = {\expr ((a+d)<0)?&amp;squot;-&amp;squot;:&amp;squot; &amp;squot;\decimals 0\fixed0}{\expr abs(a+d)\decimals 0\fixed0} x {\expr ((a*d)<0)?&amp;squot;-&amp;squot;:&amp;squot;+&amp;squot;\decimals 0\fixed0} {\expr abs(a*d)\decimals 0\fixed0}}\f2\fs24\par }' font_family='SansSerif' fuente puntos='21' fijo='sí'">
+   <param name="G_28" value="espacio='E1' tipo='texto' coord_abs='sí' color='e80022' expresión='[5,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs42{\*\mjaformula y = {\expr ((b+c)<0)?&amp;squot;-&amp;squot;:&amp;squot; &amp;squot;\decimals 0\fixed0}{\expr abs(b+c)\decimals 0\fixed0} x {\expr ((b*c)<0)?&amp;squot;-&amp;squot;:&amp;squot;+&amp;squot;\decimals 0\fixed0} {\expr abs(b*c)\decimals 0\fixed0}}\f2\fs24\par }' font_family='SansSerif' fuente puntos='21' fijo='sí'">
+   <param name="G_29" value="espacio='E1' tipo='punto' color='00aa22' expresión='(u0,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28 x\f2\fs24\par}' font_family='Arial' fuente puntos='14' decimales='0' fijo='no' tamaño='4'">
+   <param name="G_30" value="espacio='E1' tipo='segmento' color='00aa22' expresión='(u0,0)(u0,((a+d)*u0+(a*d))/9)' font_family='Monospaced' fuente puntos='12' fijo='sí' tamaño='1'">
+   <param name="G_31" value="espacio='E1' tipo='segmento' color='00aa22' expresión='(u0,2*((a+d)*u0+(a*d))/9)(u0,3*((a+d)*u0+(a*d))/9)' font_family='Monospaced' fuente puntos='12' fijo='sí' tamaño='1'">
+   <param name="G_32" value="espacio='E1' tipo='segmento' color='00aa22' expresión='(u0,4*((a+d)*u0+(a*d))/9)(u0,5*((a+d)*u0+(a*d))/9)' font_family='Monospaced' fuente puntos='12' fijo='sí' tamaño='1'">
+   <param name="G_33" value="espacio='E1' tipo='segmento' color='00aa22' expresión='(u0,6*((a+d)*u0+(a*d))/9)(u0,7*((a+d)*u0+(a*d))/9)' font_family='Monospaced' fuente puntos='12' fijo='sí' tamaño='1'">
+   <param name="G_34" value="espacio='E1' tipo='segmento' color='00aa22' expresión='(u0,8*((a+d)*u0+(a*d))/9)(u0,9*((a+d)*u0+(a*d))/9)' font_family='Monospaced' fuente puntos='12' fijo='sí' tamaño='1'">
+</ajs>
+</div>
+</body>
+</html>

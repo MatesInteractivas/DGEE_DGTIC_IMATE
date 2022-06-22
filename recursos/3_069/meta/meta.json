@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: La integral"],
+	"titulo" : "La integral como función primitiva o antiderivada",
+	"descripcion" : "Obtener el valor de la constante de integración bajo condiciones establecidas.",
+	"resena" : "La constante de integración",
+	"id" : "3_069"
+}

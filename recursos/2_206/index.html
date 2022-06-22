@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Geometría analítica: La circunferencia">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Ecuación de la circunferencia conocidos tres de sus puntos</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">La circunferencia a partir de algunos de sus puntos</div>
+  <div id="subtitulo">Ecuación de la circunferencia conocidos tres de sus puntos</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Obtener la ecuación de una circunferencia que pasa por tres puntos conocidos.</p>
+
+<h1>Razonamiento</h1>
+
+<p>Con esta información debemos encontrar el centro y el radio para sustituirlos en la ecuación de la circunferencia.</p>
+
+<h1>Recordatorio</h1>
+
+<p>El centro de la circunferencia es el punto que equidista de los tres puntos dados. Dados dos puntos, los puntos equidistantes a ellos son los puntos que están en su mediatriz.</p>
+
+<h2 style="text-align: center;">Mediatriz de dos puntos:</h2>
+
+<div class="interactivo"><iframe src="escenas/escena01A.html" style="width:382px; height:307px;"></iframe></div>
+
+<h1>Procedimiento</h1>
+
+<ol>
+  <li>
+    <p>Si $P$, $Q$ y $R$ son los puntos conocidos, hay que encontrar la mediatriz de dos pares de ellos, por ejemplo, de $PQ$ y de $Q$R.</p>
+    <p>Los puntos que están en la mediatriz de $P$ y $Q$, equidistan de $P$ y $Q$.</p>
+    <p>Los puntos que están en la mediatriz de $Q$ y $R$, equidistan de $Q$ y $R$.</p>
+    <p>Por lo que la intersección de estas dos mediatrices equidista de $P$, $Q$ y $R$ y es el centro de la circunferencia.</p>
+  </li>
+  <li>La distancia del centro a cualquiera de los puntos dados es el radio.</li>
+</ol>
+
+<h1>Solución</h1>
+
+<p>Con los pulsadores del siguiente recuadro interactivo cambia los valores de las coordenadas de los tres puntos conocidos y observa cómo cambian el centro, el radio y las ecuaciones de la circunferencia.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:900px; height:570px;"></iframe></div>
+
+<h1>Detalle</h1>
+
+<ol>
+  <li>
+    <p>Si $P(x_{1},y_{1})$, $Q(x_{2},y_{2})$ y $R(x_{3},y_{3})$ son los puntos dados, la mediatriz de $P$ y $Q$ es el conjunto de puntos $M(x,y)$ que satisface:</p>
+    $$d(P,M)=d(Q,M)$$
+    <p>es decir:</p>
+    $$\sqrt{(x-x_{1})^{2}+(y-y_{1})^{2}}=\sqrt{(x-x_{2})^{2}+(y-y_{2})^{2}}$$
+    <p>elevando al cuadrado ambos miembros, se eliminan los radicales:</p>
+    $$(x-x_{1})^{2}+(y-y_{1})^{2}=(x-x_{2})^{2}+(y-y_{2})^{2}$$
+    <p>Ahora se desarrollan los binomios al cuadrado y se simplifica, el resultado es una ecuación de primer grado:</p>
+    $$A_{1}x+B_{1}y+C_{1}=0$$
+    <p>que es la ecuación de la mediatriz de $P$ y $Q$.</p>
+    <p>De manera similar, se obtiene la ecuación de la mediatriz de $Q$ y $R$:</p>
+    $$A_{2}x+B_{2}y+C_{2}=0$$
+    <p>Se resuelven simultáneamente y se obtiene el centro $C(h,k)$</p>
+    <p style="text-align: center;">Ver ecuaciones simultáneas</p>
+  </li>
+  
+  <li>
+    2. Se usa la fórmula de la distancia entre dos puntos para encontrar el radio:<br>
+    $$r=\sqrt{(x_{1}-h)^{2}+(y_{1}-k)^{2}}$$
+  </li>
+</ol>
+
+<h1>Ejemplos</h1>
+
+<p>En el siguiente recuadro observa cómo se determina la ecuación de la circunferencia cuando se conocen tres de sus puntos. Presiona el pulsador que se sitúa en el extremo inferior izquierdo del ejemplo propuesto y avanza en la solución, tratando de comprender cada uno de los pasos. Analiza otros ejemplos al dar clic en el botón ubicado en el extremo inferior derecho del cuadro. Si tienes dificultad para visualizar los tres puntos, puedes acercar o alejar la imagen con el pulsador que se sitúa en el extremo inferior derecho de la gráfica.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:900px; height:570px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>Determina lo que se te pida en cada caso. Escribe el resultado sobre los campos de texto del cuadro y a continuación presiona Intro. Si tu respuesta es correcta, se inhabilitará el campo de texto; en caso contrario, inténtalo de nuevo. Al terminar se desplegará el botón que te permitirá acceder a otro ejercicio.</p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:900px; height:570px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autores</b>: Carlos Hernández Garciadiego, Eréndira Itzel García Islas</p>
+<p><b>Edición académica</b>: Carlos Hernández Garciadiego y Fernando René Martínez Ortiz</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez y Fernando René Martínez Ortiz</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Octavio Fonseca Ramos</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

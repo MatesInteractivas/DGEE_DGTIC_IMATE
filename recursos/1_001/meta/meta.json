@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Aritmética: Los números y sus operaciones"],
+	"titulo" : "Números naturales",
+	"descripcion" : "Localizar números naturales en la recta numérica.",
+	"resena" : "Orden y representación en la recta numérica",
+	"id" : "1_001"
+}

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Aritmética: Los números y sus operaciones"],
+	"titulo" : "Números naturales",
+	"descripcion" : "Calcular el mínimo común múltiplo con números naturales (máximo 5 números diferentes).",
+	"resena" : "Algoritmo de Euclídes: mínimo común múltiplo",
+	"id" : "1_004"
+}

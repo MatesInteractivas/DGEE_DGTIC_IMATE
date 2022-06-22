@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Funciones y sus gráficas: Funciones trascendentes">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Análisis del dominio y rango de las funciones trigonométricas directas.</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Funciones trigonométricas</div>
+  <div id="subtitulo">Análisis del dominio y rango de las funciones trigonométricas directas</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Determinar el dominio y rango de las funciones trigonométricas directas.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Debido a que cualquier ángulo puede ser considerado en el círculo unitario, simplemente dando un mayor número de vueltas en el sentido contrario a las manecillas del reloj si el ángulo tiene medida mayor a $2π$, o dando vueltas en el sentido de las manecillas del reloj si el ángulo es negativo, y en todos ellos el valor de seno y coseno está bien definido, se tiene que el dominio de las funciones $sen(x)$ y $cos(x)$ comprende todos los números reales.</p>
+
+<p>Por otro lado, al hacer la gráfica de la función $tan(x)$ se suprimieron algunos valores de $x$ pues en ellos la función no está definida. La razón es que, como $tan(x)=\frac{sen(x)}{cos(x)}$, aquellos valores $x$ para los cuales $cos(x)=0$ no se encuentran en el dominio de la función $tan(x)$. Estos valores pertenecen al conjunto infinito:</p>
+
+$$A=\Big\{...,-\frac{5π}{2},-\frac{3π}{2},-\frac{π}{2},\frac{π}{2},\frac{3π}{2},\frac{5π}{2},...\Big\}$$
+
+<p>Así, el dominio de $tan(x)$ son todos los números reales excepto aquellos que pertenecen al conjunto $A$.</p>
+
+<p>Ya que la función $sec(x)$ es igual a $\frac{1}{cos(x)}$, tampoco se encuentra definida en aquellos valores de $x$ en los que $cos(x)=0$, es decir el dominio de $sec(x)$ también comprende a todos los números reales con excepción de aquéllos que se encuentran en el conjunto $A$.</p>
+
+<p>De la misma manera, como las funciones $cot(x)$ y $csc(x)$ se definen como $\frac{cos(x)}{sen(x)}$ y $\frac{1}{sen(x)}$, el dominio de ambas comprende a todos los números reales con excepción de aquellos para los cuales $sen(x)=0$, es decir, excepto aquéllos que se encuentran en el conjunto:</p>
+
+$$B=\{...,-2π, -π, 0, π, 2π,...\}$$
+
+<p>En el siguiente recuadro interactivo, observa el dominio de cada una de las seis funciones trigonométricas directas. Los puntos blancos son puntos que no se encuentran en el dominio de la función. Nota además que en estos puntos aparecen asíntotas verticales.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:960px; height:550px;"></iframe></div>
+
+<p>El rango de la función $sen(x)$ es fácil de determinar pues como $sen(x)$ es la ordenada de un punto en el círculo unitario, su valor máximo es $1$ y su valor mínimo es $-1$, además de que $sen(x)$ toma todos los valores intermedios. De esta manera, el rango de la función $sen(x)$ es el intervalo $[-1,1]$.</p>
+
+<p>De la misma forma, el rango de la función coseno es el intervalo $[-1,1]$ pues $cos(x)$ es la abscisa de un punto en el círculo unitario.</p>
+
+<p>Ya que desde cualquier punto $(1,u)$ sobre la recta tangente en $(1,0)$ al círculo unitario se puede trazar una recta que pase por el origen, formando un ángulo $x$ con la parte positiva del eje $X$, se tiene que cualquier número $u$ es la tangente de algún ángulo $x$, es decir el rango de $tan(x)$ es el conjunto de todos los números reales.</p>
+
+<p>En el siguiente recuadro interactivo puedes corroborar las afirmaciones anteriores. Mueve el control gráfico (punto rojo). Cambia la escala con el pulsador que aparece en la esquina inferior derecha. </p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:500px; height:350px;"></iframe></div>
+
+<p>Como el rango de $tan(x)$ es el conjunto de números reales y $cot(x)=\frac{1}{tan(x)}$, entonces el rango de la función $cot(x)$ también comprende a todos los números reales excepto, posiblemente el $0$ (el $0$ no es el recíproco de ningún número). Sin embargo $cot(\frac{π}{2})=0$, de donde el rango de $cot(x)$ es el conjunto de todos los números reales.</p>
+
+<p>Para obtener el rango de $csc(x)$, observa que, si $sen(x)$ es positivo, entonces, ya que $sen(x)≤1$, se tiene que $1≤\frac{1}{sen(x)}=csc(x)$, en cambio, si $sen(x)$ es negativo, como $-1≤sen(x)$ se tiene que $csc(x)=\frac{-1}{-sen(x)}≤-1$. De estas dos desigualdades se obtiene que el rango de $csc(x)$ es el conjunto $(-∞,-1]U[1,∞)$. El caso de secante es completamente análogo.</p>
+
+<p>Presiona el botón y regresa al primer recuadro interactivo para observar el rango (conjunto que se muestra en azul sobre el eje Y) de cada una de las funciones trigonométricas.</p>
+
+<h1>Ejercicios</h1>
+
+<p>¿A cuál de las funciones trigonométricas corresponde el dominio mostrado en azul?</p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:700px; height:400px;"></iframe></div>
+
+<p>¿A cuál de las funciones trigonométricas corresponde el rango que se muestra en azul?</p>
+
+<div class="interactivo"><iframe src="escenas/escena04.html" style="width:700px; height:350px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>: Fernando René Martínez Ortiz </p>
+<p><b>Edición académica</b>: José Luis Abreu León, Fernando René Martínez Ortiz y Joel Espinosa Longi</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Joel Espinosa Longi</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La parábola"],
+	"titulo" : "La parábola a partir de algunos de sus elementos",
+	"descripcion" : "Obtener la ecuación ordinaria de una parábola con vértice en un punto $(h, k)$, conociendo su concavidad y la longitud del lado recto.",
+	"resena" : "Ecuación ordinaria de la parábola dados el vértice  la concavidad y la longitud del lado recto",
+	"id" : "2_086"
+}

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Álgebra: Productos notables y factorización"],
+	"titulo" : "Sumas y diferencias de cuadrados y cubos",
+	"descripcion" : "Factorizar una diferencia de cubos.",
+	"resena" : "Factorización de la diferencia de dos cubos",
+	"id" : "1_070"
+}

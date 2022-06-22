@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: La derivada"],
+	"titulo" : "Gráfica de la derivada",
+	"descripcion" : "Identificar la gráfica de $f'(x)$ a partir de la gráfica de $f(x)$, donde $f$ es una función algebraica.   Identificar la gráfica de $f'(x)$ a partir de la gráfica de $f(x)$, donde $f$ es una función trascendente.",
+	"resena" : "Gráfica de f´(x) a partir de la gráfica de f(x)",
+	"id" : "3_045"
+}

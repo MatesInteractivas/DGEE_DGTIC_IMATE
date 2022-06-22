@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Aritmética: Los números y sus operaciones">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Ubicación de un número irracional entre dos racionales</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Números reales: Los números irracionales</div>
+  <div id="subtitulo">Ubicación de un número irracional entre dos racionales</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Ubicar en la recta numérica un número irracional entre dos racionales.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Dados dos números racionales se construirá un número irracional que se encuentre entre ellos, es decir, que sea mayor que el menor de los racionales y menor que el mayor. También se mostrará que dados un número irracional y una distancia $d$, por pequeña que sea, existen dos racionales entre los cuales se encuentra el irracional dado. En otras palabras, se puede aproximar un número irracional tanto como se quiera con números racionales.</p>
+
+<h1>Solución</h1>
+
+<p>En primer lugar veremos que al tener dos números racionales, podemos construir un irracional entre ellos. Lo haremos de forma geométrica, basándonos en que $\sqrt{2}$ es irracional.</p>
+
+<p>Sean $a$ y $b$ dos números racionales, colóquense $a$ y $b$ sobre el eje horizontal de un sistema de coordenadas en el plano. Supongamos que $a < b$.</p>
+
+<p>Constrúyase una circunferencia de radio $b-a$ con centro en $a$. Trácese una recta con una inclinación de $45^{\circ}$ que pase por $a$. Finalmente, trácese una vertical por la intersección de la circunferencia con la recta. Sea $i$ el número real que representa al punto de intersección de esa recta con el eje horizontal. El número $i$ es el que está entre $a$ y $b$, y es irracional porque:</p>
+
+$$i=a+\frac{b-a}{\sqrt[ ]{2}}$$
+
+<p>En efecto, si $i$ fuera racional también lo sería $\sqrt{2}$ pues podría expresarse como $\sqrt{2}=\frac{b-a}{i-a}$ que sería racional por serlo $i$, $a$ y $b$.</p>
+
+<p>Puedes cambiar los valores de $a$ y $b$ y observar la construcción del número $i$ para todos los casos que desees.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:720px; height:480px;"></iframe></div>
+
+<p>Para mostrar que un número irracional se puede aproximar tanto como se quiera por racionales, tomamos una distancia $d$ cualquiera. Podemos suponer que $d$ tiene la forma:</p>
+
+$$d = 0.000...01$$
+
+<p>(sólo ceros y un uno al final) pues siempre hay un número de esta forma menor que el dado. </p>
+
+<p>En el siguiente recuadro interactivo se ve cómo dado un número irracional $i$, y un número $d$ de la forma arriba indicada, se pueden construir dos racionales (de hecho dos racionales con expresiones decimales finitas) tales que la distancia entre ellos sea igual a $d$.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:900px; height:360px;"></iframe></div>
+
+<h1>Ejercicio</h1>
+
+<p>Encontrar un número irracional entre $2$ y $5$. Resuélvelo en tu cuaderno y comprueba tu resultado usando el primer recuadro interactivo con $a = 2$ y $b = 5$. Repite el ejercicio con otros números.</p>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autores</b>: José Luis Abreu y Alberto Bravo </p>
+<p><b>Edición académica</b>: José Luis Abreu León</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

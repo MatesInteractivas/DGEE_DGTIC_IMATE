@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La circunferencia"],
+	"titulo" : "La circunferencia a partir de algunos de sus puntos",
+	"descripcion" : "Obtener la ecuación de una circunferencia que pasa por tres puntos conocidos.",
+	"resena" : "Ecuación de la circunferencia conocidos tres de sus puntos",
+	"id" : "2_206"
+}

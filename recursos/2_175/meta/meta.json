@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones trascendentes"],
+	"titulo" : "Funciones trigonométricas",
+	"descripcion" : "Determinar el valor de seno, coseno y tangente de ángulos expresados en radianes.",
+	"resena" : "Funciones trigonométricas de ángulos expresados en radianes.",
+	"id" : "2_175"
+}

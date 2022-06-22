@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Cálculo Diferencial e Integral: Limites">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Continuidad y puntos de discontinuidad de las funciones</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Continuidad</div>
+  <div id="subtitulo">Continuidad y puntos de discontinuidad de las funciones</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Obtener algebráicamente el punto de discontinuidad de una función.</p>
+
+<h1>Conceptos básicos</h1>
+
+<p class="bloque"><b>Nota</b>: Debido a que es más natural el concepto de continuidad que el de límite, es conveniente estudiar primero las lecciones de continuidad y después las de límite.</p>
+
+<p>Si una función está definida en un punto $p$, decimos que es continua en ese punto si $f(x)$ es casi igual a $f(p)$ para toda $x$ que sea casi igual a $p$. En símbolos escribimos:</p>
+
+<p style="text-align: center;">Si $x≈p$ entonces $f(x)≈ f(p)$</p>
+
+<p>donde el símbolo $≈$ sirve para indicar que dos números son muy parecidos (casi iguales).</p>
+
+<p>La gran mayoría de las funciones que utilizamos cotidianamente son continuas en todos los números donde están definidas. </p>
+
+<ul>
+  <li>Las funciones polinomiales $f(x)=c_{n}x^{n}+c_{n-1}x^{n-1}+...+c_{1}x+c_{0}$ son continuas en todos los reales.</li>
+  <li>
+    <p>Las funciones racionales, es decir, los cocientes de funciones polinomiales</p>
+    $$h(x)= \frac{f(x)}{g(x)}$$
+    <p>son continuas en todos los números $p$ para los cuales $g(p)≠0$.</p>
+  </li>
+  <li>Las funciones trigonométricas: seno, coseno, tangente, cotangente, secante y cosecante son  continuas en todos los números donde están definidas.</li>
+  <li>Las funciones logarítmo y exponencial son continuas en todos los números donde están definidas.</li>
+  <li>La suma, el producto y el cociente de funciones continuas es continua en todos los puntos donde están definidas.</li>
+</ul>
+
+<h1>Justificación</h1>
+
+<p>Veamos una justificación de la última afirmación, lo haremos en un lenguaje coloquial: La prueba rigurosa, utilizando la definición estricta ($ε$, $δ$) sigue las mismas ideas.</p>
+
+<p>Si $f$ y $g$ son continuas en un punto $p$ y si $x$ está en el dominio de $f$ y de $g$ y es casi igual a $p$, entonces $f(x)$ es casi igual a $f(p)$ y $g(x)$ es casi igual a $g(p)$ así que:</p>
+
+<ul>
+  <li>$f(x)+g(x)$ es casi igual a $f(p)+g(p)$.</li>
+  <li>$f(x)g(x)$ es casi igual a $f(p)g(p)$.</li>
+  <li>$\frac{f(x)}{g(x)}$ es casi igual a $\frac{f(p)}{g(p)}$ si $g(x)$ y $g(p)$ son distintos de cero.</li>
+</ul>
+
+<p>De hecho, estas propiedades son las que utilizamos cuando hacemos operaciones con una calculadora ya que ellas trabajan con aproximaciones de 8 decimales de los números exactos, y los resultados obtenidos al sumar, restar, multiplicar o dividirlos están cercanos a los resultados exactos.</p>
+
+<p>En la siguiente escena elige un tipo de función y observa en la gráfica la cercanía entre $x$ y $p$ y entre $f(x)$ y $f(p)$.</p>
+
+<p>En la gráfica, puedes hacer zoom con las flechas de la esquina y arrastrar el plano para desplazarlo.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:800px; height:570px;"></iframe></div>
+
+<h1>Procedimiento</h1>
+
+<p>A continuación, identifiquemos algebráicamente los números donde una función es discontinua, es decir, donde no es continua.</p>
+
+<ul>
+  <li>Si una función no está definida en un número, ni siquiera tiene sentido preguntarse si es  continua.</li>
+  <li>Una función $f$ definida en un número $p$ es discontinua en $p$ si hay números $x$ muy cercanos a $p$ para los cuales el valor de la función ahí, $f(x)$ está lejos de $f(p)$.</li>
+</ul>
+
+<h1>Ejemplos</h1>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:900px; height:570px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>Intenta contestar los siguientes ejercicios sin ayuda de la gráfica, seleccionando la letra de la opción correcta. En caso de que lo necesites, oprime el botón <span class="btn">Ver gráfica</span>. Ubica en la gráfica el punto $x$ al que debes determinar su continuidad, posiblemente necesites hacer zoom en la gráfica con las flechas que están en la esquina inferior derecha o arrastrar el plano para desplazarlo. </p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:900px; height:480px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>: Carlos Hernández Garciadiego</p>
+<p><b>Edición académica</b>: Carlos Hernández Garciadiego y José Luis Abreu León</p>
+<p><b>Edición técnica</b>: Octavio Fonseca Ramos</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Cálculo Diferencial e Integral: La derivada">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Puntos de inflexión y concavidad de una curva en un intervalo</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Aplicaciones de la derivada</div>
+  <div id="subtitulo">Puntos de inflexión y concavidad de una curva en un intervalo</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<ul>
+  <li>Obtener el punto de inflexión de una función polinomial hasta de grado tres.</li>
+  <li>Determinar algebraicamente el intervalo donde una función polinomial hasta de grado tres es cóncava hacia arriba.</li>
+  <li>Determinar algebraicamente el intervalo donde una función polinomial hasta de grado tres es cóncava hacia abajo.</li>
+</ul>
+
+<h1>Conceptos básicos</h1>
+
+<p>En lecciones anteriores estudiaste como determinar los intervalos en los que una función crece o decrece. En esta lección determinaremos estos intervalos para la derivada de la función, y principalmente veremos que estos intervalos nos dicen algo de cómo se ve la gráfica de la función original.</p>
+
+<p>Nos interesa entonces saber cuándo las pendientes de las tangentes de una función crecen o decrecen, en particular necesitamos saber cuándo la pendiente de una recta es más grande que otra.</p>
+
+<p>Resuelve los siguientes ejercicios en los cuales se pide ordenar 4 gráficas en orden creciente según su pendiente.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:800px; height:480px;"></iframe></div>
+
+<p>Una vez que repasamos cuándo crece o decrece la pendiente de una recta podemos ahora abordar cuándo crece o decrece la derivada de una función. Esto es, cuándo la pendiente de la recta tangente a la gráfica de la función es creciente o decreciente al recorrer la gráfica de izquierda a derecha.</p>
+
+<p>Mueve el punto rojo de izquierda a derecha y determina si la pendiente de la recta tangente a la gráfica crece o decrece. Verifica tu respuesta y presiona <span class="btn">Siguiente</span>.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:800px; height:530px;"></iframe></div>
+
+<p>Como se puede observar en la escena anterior, la forma de la gráfica, cuando la derivada crece, se ve curvada hacia arriba y cuando decrece se ve curvada hacia abajo. Más precisamente, la gráfica es cóncava hacia arriba cuando la derivada crece y cóncava hacia abajo cuando la derivada decrece. </p>
+
+<p>Los puntos $x$, donde la gráfica de $f$ cambia de concavidad, se llaman puntos de inflexión. Es decir, son los puntos en los que la derivada de $f$ cambia de ser creciente a decreciente.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Como la derivada es la pendiente de la tangente, entonces sólo hay que determinar en qué intervalos $f'$ crece o decrece. Y, por lo tanto, usamos el método visto anteriormente para determinar los intervalos en los que una función crece o decrece:</p>
+
+<ol>
+  <li>Calcular la derivada de $f'$, esto es $f''$.</li>
+  <li>Encontrar los números críticos de $f'$, es decir, encontrar las $x$ tales que $f''(x)=0$.</li>
+  <li>Determinar los intervalos de prueba, es decir, los intervalos en los que los puntos críticos dividen a la recta real.</li>
+  <li>Analizar el signo de $f''$ en cada uno de los intervalos de prueba. Si $f''$ es positiva, entonces $f$ es cóncava hacia arriba y si $f''$ es negativa, entonces $f$ es cóncava hacia abajo.</li>
+  <li>Los valores críticos de $f'$, donde $f$ es cóncava hacia arriba de un lado y hacia abajo del otro, son los puntos de inflexión.</li>
+</ol>
+
+<h1>Ejercicios</h1>
+
+<p>Resuelve cada uno de los siguientes ejercicios siguiendo los pasos que se indican. Cuando termines de contestar un paso, pulsa el botón <span class="btn">Verificar</span> para revisar si tu respuesta es correcta. De tener correcta tu respuesta, podrás pulsar el botón <span class="btn">Siguiente</span> para avanzar otro paso. Al completar los pasos podrás presionar el botón <span class="btn">Otro</span> para generar un nuevo ejercicio.</p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:900px; height:530px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autora</b>:  Valentina Muñoz Porras</p>
+<p><b>Editores académicos</b>: José Luis Abreu León y Carlos Hernández Garciadiego</p>
+<p><b>Editor técnico</b>: Carlos Alberto Serrato Hernández</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

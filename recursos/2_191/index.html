@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Funciones y sus gráficas: Funciones trascendentes">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Dominio y rango de las funciones exponenciales del tipo c(1/a)^x</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Funciones exponenciales</div>
+  <div id="subtitulo">Dominio y rango de las funciones exponenciales del tipo $c(\frac{1}{a})^{x}$</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Determinar dominio y rango de funciones exponenciales del tipo $f(x)=c(\frac{1}{a})^{x}$ con $a>1$ y $c≠0$.</p>
+
+<h1>Antecedentes</h1>
+
+<p>Recordemos que una expresión como $(\frac{1}{2})^{4}$, nos indica que hay que multiplicar el número de la base (en este caso $\frac{1}{2}$) tantas veces como indica el exponente (en este caso $4$).</p>
+
+$$\Big(\frac{1}{2}\Big)^{4}=\frac{1}{2}×\frac{1}{2}×\frac{1}{2}×\frac{1}{2}=\frac{1}{2×2×2×2}=\frac{1}{2^{4}}$$
+
+<p>Las expresiones con exponentes negativos, como $(\frac{1}{2})^{-4}$, son equivalentes al inverso multiplicativo de la misma expresión con exponente positivo, por ejemplo $(\frac{1}{2})^{-4}=2^{4}$.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Observa la siguiente tabla. En el primer renglón se muestra la operación que eleva la base (de la forma $\frac{1}{a}$) al exponente indicado, y en el segundo renglón se muestra el resultado de dicha operación. Modifica el valor del denominador de la base y observa cómo son los resultados:</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:960px; height:200px;"></iframe></div>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:720px; height:180px;"></iframe></div>
+
+<p>Comparas este resultado con el obtenido al elevar una base mayor que $1$ en lugar de $\frac{1}{3}$.</p>
+
+<p>Como $a^{x}·a^{-x}=a^{0}=1$, tienes que $a^{-x}=(\frac{1}{a})^{x}$, es decir que la gráfica de $(\frac{1}{a})^{x}$ es igual a la de $a^{-x}$. Pero la gráfica de $a^{-x}$ es igual que la de $a^{x}$ reflejada en el eje $Y$.</p>
+
+<p>A continuación se muestra la gráfica de la función $f(x)=(\frac{1}{b})^{x}$, donde $b$ es el denominador de la base en la función exponencial. Modifica los valores de $b$ y observa cómo es la gráfica correspondiente.</p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:480px; height:400px;"></iframe></div>
+
+<p>Como puedes observar, la función toma valores entre $0$ y $1$ cuando la $x$ es positiva, y toma valores mayores que $1$ cuando la $x$ es negativa.</p>
+
+<p>De lo anterior se deduce que el rango de la función son los reales mayores que $0$.</p>
+
+<h1>Ejercicios</h1>
+
+<div class="interactivo"><iframe src="escenas/escena04.html" style="width:900px; height:230px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>: Claudio Francisco Nebbia Rubio</p>
+<p><b>Edición académica</b>: José Luis Abreu León, Fernando René Martínez Ortiz y Joel Espinosa Longi</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Joel Espinosa Longi</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

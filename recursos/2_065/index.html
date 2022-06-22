@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Geometría analítica: La circunferencia">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Ecuación de la recta tangente a una circunferencia en uno de sus puntos</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Rectas y circunferencias</div>
+  <div id="subtitulo">Ecuación de la recta tangente a una circunferencia en uno de sus puntos</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Obtener la ecuación de la recta tangente a una circunferencia en uno de sus puntos $(x,y)$.</p>
+
+<h1>Razonamiento</h1>
+
+<p>La recta tangente a una circunferencia desde un punto de ella es perpendicular al radio que une a dicho punto con el centro de la circunferencia.</p>
+
+<h1>Solución</h1>
+
+<ol>
+  <li>Se calcula la pendiente de la recta que une al punto dado con el centro de la circunferencia.</li>
+  <li>Se calcula la ecuación de la recta perpendicular a la anterior, que pasa por el punto dado.</li>
+  <li>Finalmente encontramos la ecuación de la tangente con la fórmula punto-pendiente:<br>
+  $$y-y_{1}=-\frac{1}{m}(x-x_{1})$$
+</ol>
+
+<p class="bloque"><b>Nota</b>: Si $m = 0$, entonces, la pendiente buscada es la recta vertical que pasa por el punto dado.</p>
+
+<p>Cambia las coordenadas del centro $C(h,k)$ y el valor del radio $r$ para modificar la circunferencia. Arrastra el punto $C$ y observa cómo cambia la tangente y su ecuación. También puedes mover al punto $P$ sobre la circunferencia.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:900px; height:570px;"></iframe></div>
+
+<h1>Detalle</h1>
+
+<p>Si $C(h,k)$ es el centro de la circunferencia y $P(x_{1},y_{1})$ el punto dado de la circunferencia, se utiliza la fórmula de pendiente de una recta que pasa por dos puntos.</p>
+
+$$m = \frac{y_{1}-k}{x_{1}-h}$$
+
+<p class="bloque"><b>Observación</b>: Si $x_{1}=h$, entonces $m$ no está definida y el radio es vertical, por lo que la tangente buscada es la recta horizontal que pasa por $P$:<br>
+$$y=y_{1}$$</p>
+
+
+
+<p>Una vez encontrada $m$, si $m$ no es cero, la pendiente de la recta tangente que se busca es: </p>
+
+$$m_{1}=-\frac{1}{m}$$
+
+<p>Si $m$ es cero, el radio que pasa por $P$ es horizontal, así que la recta tangente buscada es la recta vertical:</p>
+
+$$x=x_{1}$$
+
+<h1>Ejemplos</h1>
+
+<p>En el siguiente recuadro observa cómo se determina la ecuación de la recta tangente a una circunferencia desde un punto de ella. Presiona el pulsador que se sitúa en el extremo inferior izquierdo del ejemplo propuesto y avanza en la solución tratando de comprender cada uno de los pasos. Analiza otros ejemplos al dar clic en el botón que se ubica en el extremo inferior derecho del cuadro. Si tienes dificultad para visualizar la circunferencia, puedes acercar o alejar la imagen con el pulsador que está en el extremo inferior derecho de la gráfica.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:900px; height:570px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>Determina lo que se te pida en cada caso. Escribe el resultado sobre los campos de texto del cuadro y a continuación presiona Intro. Si tu respuesta es correcta, se inhabilitará el campo de texto; en caso contrario, inténtalo de nuevo. Al terminar se desplegará el botón que te permitirá acceder a otro ejercicio.</p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:900px; height:570px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autores</b>: Carlos Hernández Garciadiego, Eréndira Itzel García Islas</p>
+<p><b>Edición académica</b>: Carlos Hernández Garciadiego y Fernando René Martínez Ortiz</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez y Fernando René Martínez Ortiz</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Octavio Fonseca Ramos</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

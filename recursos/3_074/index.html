@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Cálculo Diferencial e Integral: La integral">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Interpretación geométrica de la integral definida</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">La integral definida</div>
+  <div id="subtitulo">Interpretación geométrica de la integral definida</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Interpretar geométricamente el concepto de integral definida.</p>
+
+<h1>Conceptos básicos</h1>
+
+<p>La integral definida se denota como:</p>
+
+$$\int_{a}^{b}{f(x)dx}$$
+
+<p>en donde:</p>
+
+<ul>
+  <li>$\int=$ signo de integración.</li>
+  <li>$a=$ límite inferior de la integración.</li>
+  <li>$b=$ límite superior de la integración.</li>
+  <li>$f(x)=$ función a integrar o integrando.</li>
+  <li>$dx=$ diferencial de la variable de la función que se va a integrar, en este caso $x$.</li>
+</ul>
+
+<h1>Procedimiento</h1>
+
+<p>La representación gráfica del resultado de una integral definida corresponde al área bajo la curva de la función, si ésta es continua en el intervalo de integración. Entonces, dada una función $f(x)$ de una variable real $x$ continua en un intervalo $[a,b]$, la integral definida</p>
+
+$$\int_{a}^{b}{f(x)dx}$$
+
+<p>es el área de la región del plano $XY$ limitada entre la gráfica de la función, el eje $X$, y las rectas $x=a$ y $x=b$. Esta área se muestra en color verde en el siguiente recuadro.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:720px; height:480px;"></iframe></div></p>
+
+<p>Como puede observarse, el área limitada por la gráfica de la función tiene signo positivo cuando, en el intervalo de integración, $f(x)$ toma valores positivos, y signo negativo cuando toma valores negativos. En este ejemplo, el valor del área es cero, porque la parte positiva y la parte negativa son iguales. Ahora bien, dependiendo del signo de la función en dicho intervalo, se tienen tres casos:</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:900px; height:480px;"></iframe></div>
+
+<p>Cabe hacer notar que no en todos los casos la integral definida representa un área. Esto obedece a que la interpretación física de su resultado depende de la naturaleza de las magnitudes que describan la abscisa y la ordenada. Suponiendo que ambas representan distancias, el resultado de la integral definida sí es un área. Pero, si la ordenada representa la velocidad de un punto móvil y la abscisa correspondiente, el tiempo cuando el punto tiene esa velocidad, la gráfica se refiere a la curva de la velocidad del movimiento y el área bajo ella, entre dos ordenadas, a la distancia que se ha recorrido en el intervalo de tiempo considerado.</p>
+
+<p>Las propiedades de la integral definida se pueden obtener a partir de su interpretación geométrica:</p>
+
+<ol>
+  <li>El valor de la integral definida cambia de signo si se permutan los límites de integración.</li>
+  <li>Si los límites de integración coinciden, la integral definida vale cero.</li>
+  <li>Si $d$ es un punto interior del intervalo $[a,b]$, la integral definida se descompone como una suma de dos integrales extendidas a los intervalos $[a,d]$ y $[d,b]$.</li>
+  <li>La integral definida de una suma de funciones es igual a la suma de integrales.</li>
+  <li>La integral del producto de una constante $c$ por una función es igual a la constante por la integral de la función.</li>
+</ol>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:720px; height:480px;"></iframe></div>
+
+<h1>Ejemplos</h1>
+
+<div class="interactivo"><iframe src="escenas/escena04.html" style="width:900px; height:480px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>En los siguientes ejercicios elige el botón que corresponda a la integral cuya interpretación geométrica se presenta en la figura de la derecha.</p>
+
+<div class="interactivo"><iframe src="escenas/escena05.html" style="width:900px; height:480px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autora</b>:  Norma Patricia Apodaca Alvarez</p>
+<p><b>Edición académica</b>: José Luis Abreu León y Carlos Hernández Garciadiego</p>
+<p><b>Edición técnica</b>: Octavio Fonseca Ramos</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

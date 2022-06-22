@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: La integral"],
+	"titulo" : "La integral como función primitiva o antiderivada",
+	"descripcion" : "Obtener de forma inmediata la función primitiva o antiderivada de una función algebraica. Obtener la integral indefinida inmediata de una función algebraica.",
+	"resena" : "Primitivas o antiderivadas de funciones algebraicas",
+	"id" : "3_065"
+}

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: La derivada"],
+	"titulo" : "Operaciones con funciones y sus derivadas",
+	"descripcion" : "Obtener por fórmula la derivada del cociente de dos funciones algebraicas no compuestas. Obtener por fórmula la derivada del cociente de dos funciones trascendentes no compuestas. Obtener por fórmula la derivada del cociente de una función algebraica y una trascendente no compuestas.",
+	"resena" : "Derivadas de cocientes de dos funciones",
+	"id" : "3_032"
+}

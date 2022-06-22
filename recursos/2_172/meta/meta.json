@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones trascendentes"],
+	"titulo" : "Funciones trigonométricas",
+	"descripcion" : "Determinar los signos de las funciones trigonométricas en los cuatro cuadrantes.",
+	"resena" : "Generalización, en el plano cartesiano, de las razones trigonométricas para un ángulo cualquiera.",
+	"id" : "2_172"
+}

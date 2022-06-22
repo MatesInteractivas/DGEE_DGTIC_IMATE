@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Aritmética: Los números y sus operaciones">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Resolución de problemas que involucran operaciones con fracciones</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Números racionales: Operaciones básicas</div>
+  <div id="subtitulo">Resolución de problemas que involucran operaciones con fracciones</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Resolver problemas que involucren operaciones básicas con números racionales en su expresión de fracción común.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Una gran cantidad de problemas aritméticos pueden resolverse utilizando fracciones, es decir, números racionales en su expresión de fracción común. Para ello, es importante conocer y utilizar en forma correcta los algoritmos que permiten realizar operaciones con este tipo de números.</p>
+
+<h1>Solución</h1>
+
+<p>Observa el siguiente problema.</p>
+
+<p>Antonio, Hilario y Benito compraron un refresco de $\frac{5}{2}$ litros ($2$ litros y medio) que piensan repartir en partes iguales. ¿Qué fracción de litro le corresponderá a cada uno? Una vez  repartido el refresco, pero sin haberlo bebido, llegó Benjamín a quien van a convidarle. ¿Cuánto debe convidarle cada uno para que los cuatro tengan la misma cantidad de refresco?</p>
+
+<p>Para responder la primera pregunta, sólo hay que dividir los $\frac{5}{2}$ litros entre $3$ personas. Por lo que hay que escribir $3$ como una fracción común $3=\frac{3}{1}$ y realizar la operación:</p>
+
+$$\frac{5}{2}÷\frac{3}{1}=\frac{(5)(1)}{(2)(3)}=\frac{5}{6}$$
+
+<p>En conclusión, a cada uno de los tres amigos le corresponden $\frac{5}{6}$ de litro.</p>
+
+<p>Para responder la segunda pregunta deben dividirse nuevamente los $\frac{5}{2}$ de litro, ahora entre cuatro personas.</p>
+
+$$\frac{5}{2}÷\frac{4}{1}=\frac{(5)(1)}{(2)(4)}=\frac{5}{8}$$
+
+<p>De manera que a cada uno de los amigos le corresponden $\frac{5}{8}$ de litro. Por lo tanto, Antonio, Hilario y Benito deben dejar en su vaso $\frac{5}{8}$ de litro y convidarle el resto a Benjamín. Ese resto se calcula sustrayendo a la cantidad de litros que hay en sus vasos $(\frac{5}{6})$ los $\frac{5}{8}$ de litro que deben quedarles al final:</p>
+
+$$\frac{5}{6}-\frac{5}{8}=\frac{(5)(8)-(5)(6)}{(6)(8)}=\frac{40-30}{48}=\frac{10}{48}=\frac{5}{24}$$
+
+<p>Es decir, Antonio, Hilario y Benito deben convidarle $\frac{5}{24}$ de litro a Benjamín para que todos tengan la misma cantidad: $\frac{5}{8}$ de litro.</p>
+
+<h1>Ejercicios</h1>
+
+<p>En el siguiente recuadro interactivo puedes resolver los problemas propuestos. Usa el botón <span class="btn">Calculadora</span> para realizar operaciones y oprime ↲ para salir.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:900px; height:570px;"></iframe></div>
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>: Fernando René Martínez Ortiz</p>
+<p><b>Edición académica</b>: José Luis abreu León</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

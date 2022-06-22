@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones trascendentes"],
+	"titulo" : "Funciones trigonométricas",
+	"descripcion" : "Convertir la medida de un ángulo de grados a radianes.",
+	"resena" : "Equivalencia entre las medidas de grados y radianes.",
+	"id" : "2_173"
+}

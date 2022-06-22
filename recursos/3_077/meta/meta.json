@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: La integral"],
+	"titulo" : "La integral definida",
+	"descripcion" : "Obtener la integral definida de una función algebraica por sustitución o cambio de variable. Obtener la integral definida de una función trascendente por sustitución o cambio de variable.",
+	"resena" : "Cálculo de integrales definidas por sustitución",
+	"id" : "3_077"
+}

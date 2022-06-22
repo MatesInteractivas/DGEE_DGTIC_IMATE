@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La línea recta"],
+	"titulo" : "Rectas y puntos notables de un triángulo",
+	"descripcion" : "Determinar las coordenadas del baricentro de un triángulo a partir de sus vértices.",
+	"resena" : "Coordenadas del baricentro",
+	"id" : "2_046"
+}

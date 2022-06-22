@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Aritmética: Los números y sus operaciones">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Operaciones básicas con signos de agrupación</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Números enteros</div>
+  <div id="subtitulo">Operaciones básicas con signos de agrupación</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Realizar operaciones combinadas con números enteros, que incluyan signos de agrupación.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Cuando se realizan operaciones con números enteros, se debe respetar el orden de prioridad en las operaciones. En el caso de que existan signos de agrupación como paréntesis, corchetes o llaves, se debe comenzar operando de adentro hacia afuera, quitando los signos de agrupación al terminar de realizar las operaciones indicadas dentro de ellos. Dentro de un par de paréntesis debe seguirse el orden establecido por las reglas de prioridad de las operaciones. Los signos de agrupación se usan para establecer un orden en la ejecución de las operaciones que es diferente al convencional. A veces se emplean también para reafirmar el orden convencional. Así, por ejemplo, $(3+4)×5$ nos indica que hay que realizar primero la suma y luego el producto, es decir, en este caso los paréntesis rompen el orden convencional. En cambio la expresión $(5-3)+2$ podría escribirse sin paréntesis pues ambas llevarían al mismo orden de ejecución y por tanto al mismo resultado.</p>
+
+<p>Cuando los operandos son números enteros, hay que tomar en cuenta también las reglas de los signos en todas las operaciones.</p>
+
+<p>En ocasiones se usan paréntesis alrededor de un número negativo para evitar confundir el signo menos del número con un operador. Por ejemplo, en lugar de $3×-2$ suele escribirse: $3×(-2)$.</p>
+
+<h1>Solución</h1>
+
+<p>Para realizar las operaciones en una expresión con paréntesis u otros signos de agrupación, primero se debe localizar el inicio y el final de cada signo de agrupación. Dentro de un paréntesis pueden existir otros paréntesis con operaciones y, en ese caso, primero se hacen las operaciones que se encuentran en el paréntesis que esté más adentro. Dentro de los paréntesis se realizan primero las multiplicaciones y las divisiones de izquierda a derecha, y después las sumas y restas, también en ese orden, es decir, se sigue el orden convencional.</p>
+
+<p>Por ejemplo, si se tiene $[60÷(2+5×(-6))]$ primero se realizan las operaciones dentro del paréntesis $(2+5×-6)$. Recordando el orden de las operaciones, primero se hace la multiplicación y después la resta. El resultado de este paréntesis, que vale $-28$, divide al $60$ que está afuera del paréntesis. El resultado de toda la operación es $-2.14$.</p>
+
+<h1>Ejemplos</h1>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:720px; height:400px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:720px; height:370px;"></iframe></div>
+
+<p>Introduce la respuesta con el botón <span class="btn">Resultado</span> y verifica tu respuesta.</p>
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>: Alberto Bravo García</p>
+<p><b>Edición académica</b>: José Luis Abreu León</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Octavio Fonseca Ramos</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

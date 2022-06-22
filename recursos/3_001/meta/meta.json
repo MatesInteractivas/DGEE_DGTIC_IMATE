@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: Limites"],
+	"titulo" : "Concepto intuitivo de límite",
+	"descripcion" : "Obtener el límite de convergencia de una sucesión simple.",
+	"resena" : "Límite de una sucesión",
+	"id" : "3_001"
+}

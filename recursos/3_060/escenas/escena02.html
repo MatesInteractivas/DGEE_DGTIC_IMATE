@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title></title>
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+<div align="center">
+<ajs name="Descartes" width="720" height="480" code="Descartes">
+   <param name="tamaño" value="720x480">
+   <param name="expand" value="fit">
+   <param name="editable" value="no">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.5">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no ancho_este=150 ancho_oeste=150 alto=40">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' escala='26' despl_imagen='arr-izq' fondo='e7efef' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='p4' tipo='gráfico' espacio='E1' tamaño='8' expresión='(xQ,yQ)' constricción='x^2+y^2=r^2'">
+   <param name="C_02" value="id='theta' tipo='numérico' región='exterior' espacio='E1' nombre='theta' valor='pi*(1/6)' min='0' max='2*pi' fijo='sí' visible='sí'">
+   <param name="C_03" value="id='r' tipo='numérico' región='exterior' espacio='E1' nombre='r' valor='6' fijo='sí' visible='sí'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='xP=r*cos(theta);yP=r*sen(theta);;xQ=r*cos(theta+3*pi/4);yQ=r*sen(theta+3*pi/4);;vT=(sen(theta),cos(theta));x5=p4.x+2*(x3-p4.x);y5=p4.y+2*(y3-p4.y);;;;;;'">
+   <param name="G_01" value="espacio='E1' tipo='punto' color='18b6bb' expresión='(xP,yP)' texto='P' font_family='SansSerif' fuente puntos='21' fijo='sí' tamaño='6'">
+   <param name="G_02" value="espacio='E1' tipo='arco' radio='r' fin='360' font_family='Monospaced' fuente puntos='12' fijo='sí' ancho='2'">
+   <param name="G_03" value="espacio='E1' tipo='curva' color='azul' dibujar-si='(abs(yP-p4.y)>0.01)|(((abs(xP-p4.x))>0.01) &amp; ((abs(yP-p4.y))<0.01))' expresión='(p4.x+t*(xP-p4.x),p4.y+t*(yP-p4.y))' t.intervalo='[-500,500]'">
+   <param name="G_04" value="espacio='E1' tipo='curva' color='rojo' dibujar-si='(abs(xP-p4.x)<0.01)&amp;(abs(yP-p4.y)<0.01)' expresión='(xP+t*sen(theta),yP-t*cos(theta))' t.intervalo='[-100,100]' ancho='2'">
+   <param name="G_05" value="espacio='E1' tipo='texto' coord_abs='sí' dibujar-si='(abs(yP-p4.y)>0.01)|(((abs(xP-p4.x))>0.01) &amp; ((abs(yP-p4.y))<0.01))' expresión='[30,410]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Arial;}{\colortbl\red24\green144\blue176;\red255\green0\blue0;\red32\green48\blue58;}\f1\fs42\b m{\*\mjaformula{\subix\cf0 P\cf1 Q\cf2}}  = \f2\fs42\b0\i{\*\mjaformula{\expr (yP-p4.y)/(xP-p4.x)\decimals 2\fixed1}}\f3\fs34\b\i0}' font_family='SansSerif' fuente puntos='21' fijo='sí'">
+   <param name="G_06" value="espacio='E1' tipo='texto' coord_abs='sí' dibujar-si='(abs(xP-p4.x)<0.01)&amp;(abs(yP-p4.y)<0.01)' expresión='[30,410]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Arial;}\f1\fs42\b m{\*\mjaformula{\subix tan}} = \f2\fs42\b0\i{\*\mjaformula{\expr -xP/yP\decimals 2\fixed1}}\f3\fs34\b\i0}' font_family='SansSerif' fuente puntos='21' fijo='sí'">
+   <param name="G_07" value="espacio='E1' tipo='texto' coord_abs='sí' color='rojo' expresión='[3+E1._w/2+p4.x*E1.escala,3+E1._h/2-p4.y*E1.escala]' texto='Q' font_family='SansSerif' fuente puntos='21' fijo='sí'">
+</ajs>
+</div>
+</body>
+</html>

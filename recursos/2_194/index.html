@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Funciones y sus gráficas: Funciones trascendentes">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Gráficas de las funciones del tipo ce^x</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Funciones exponenciales</div>
+  <div id="subtitulo">Gráficas de las funciones del tipo $ce^{x}$</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Identificar la gráfica de funciones del tipo $f(x)=ce^{x}$.</p>
+
+<h1>Antecedentes</h1>
+
+<p>Recordemos que el número e es el número cuyo logaritmo natural vale $1$ y equivale aproximadamente a $2.72$.</p>
+
+<p>El dominio de las funciones exponenciales del tipo $f(x)=ce^{x}$ con $c≠0$ es el conjunto de los números reales. Así mismo, el rango de estas funciones es el conjunto de todos los números reales sin el cero que tienen el mismo signo que $c$.</p>
+
+<p>Una asíntota es una recta a la cual se aproxima una curva, por ejemplo la gráfica de una función conforme avanzamos sobre ella en al menos una de sus direcciones. Las funciones exponenciales antes mencionadas tienen al eje $X$ como asíntota.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Las gráficas de las funciones exponenciales del tipo $f(x)=ce^{x}$ presentan las siguientes características:</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:960px; height:630px;"></iframe></div>
+
+<h1>Ejemplo 1</h1>
+
+<p>Si la gráfica de una función exponencial $f(x)=ce^{x}$ pasa por el punto $(0,2)$ ¿cuál es la expresión que le corresponde?</p>
+
+<p>Respuesta: Como pasa por el $(0,2)$, y cuando $x=0$ la función toma el valor de $c$, entonces $c=2$, por lo tanto, la expresión que buscamos es:</p>
+
+$$f(x)=2e^{x}$$
+
+<h1>Ejemplo 2</h1>
+
+<p>Si la gráfica de una función exponencial $f(x)=ce^{x}$ pasa por el punto $(1,1)$ ¿cuál es la expresión que le corresponde?</p>
+
+<p>Respuesta: Como pasa por el $(1,1)$, entonces tenemos que $f(1)=ce^{1}=ce=1$. De esta expresión podemos despejar $c$ dividiendo de ambos lados entre $e$ que es lo mismo que multiplicar de ambos lados por $e^{-1}$. Así obtenemos que $c=e^{-1}$, que es aproximadamente $0.369$, por lo que la expresión que se busca es:</p>
+
+$$f(x)=e^{-1}e^{x}=e^{x-1}$$
+
+<h1>Ejemplo 3 </h1>
+
+<p>Observa la siguiente gráfica:</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:960px; height:350px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:720px; height:300px;"></iframe></div>
+
+<div class="interactivo"><iframe src="escenas/escena04.html" style="width:720px; height:330px;"></iframe></div>
+
+<div class="interactivo"><iframe src="escenas/escena05.html" style="width:720px; height:300px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>: Claudio Francisco Nebbia Rubio</p>
+<p><b>Edición académica</b>: Carlos Hernández Garciadiego  y Fernando René Martínez Ortiz </p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez  y Fernando René Martínez Ortiz</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Joel Espinosa Longi</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

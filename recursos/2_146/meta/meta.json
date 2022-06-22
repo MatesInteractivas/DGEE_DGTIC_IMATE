@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Funciones racionales.",
+	"descripcion" : "Identificar la gráfica de una función del tipo $f(x)=\frac{P(x)}{Q(x)}$, con $P(x)$ y $Q(x)$ lineales o cuadráticas.",
+	"resena" : "Gráfica de una función racional",
+	"id" : "2_146"
+}

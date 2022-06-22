@@ -1,0 +1,15 @@
+{
+  "nivel": [
+    "Bachillerato"
+  ],
+  "titulo": "Recursos educativos interactivos de matemáticas para el bachillerato", 
+  "abreviacion": "Recursos de bachillerato",
+  "descripcion": "El proyecto consta de 79 unidades interactivas de matemáticas para el primer grado de bachillerato, 206 unidades para segundo grado y 51 para tercer grado. Los temas que se presentan son: Aritmética; Álgebra; Trigonometría; Coordenadas cartesianas y polares; Geometría analítica; Funciones y sus gráficas; y Cálculo.",
+  "resena": "Unidades interactivas de bachillerato desarrolladas en DGEE y adaptadas en DGTIC e IMATE",
+  "recursos_valores_omision": {
+    "tamano": {
+      "ancho":1024,
+      "alto":569
+    }
+  }
+}

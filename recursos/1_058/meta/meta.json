@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Álgebra: Sistemas de ecuaciones lineales de 2 x 2"],
+	"titulo" : "Sistemas de ecuaciones lineales de 2 x 2",
+	"descripcion" : "Identificar el sistema de ecuaciones lineales de $2×2$ que permite resolver un problema.",
+	"resena" : "Identifación del sistema de ecuaciones que modela un problema",
+	"id" : "1_058"
+}

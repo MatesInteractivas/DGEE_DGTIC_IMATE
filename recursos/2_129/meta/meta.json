@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Ceros de funciones polinomiales de grado 4 que sean factorizables.",
+	"descripcion" : "Encontrar los ceros de la función $ƒ(x)=x^{4}+ax^{3}+bx^{2}+cx+d$ con $a$, $b$, $c$ y $d$ enteros.",
+	"resena" : "Ceros de funciones polinomiales factorizables de grado $4$",
+	"id" : "2_129"
+}

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Aritmética: Los números y sus operaciones"],
+	"titulo" : "Números racionales: Significados y representaciones",
+	"descripcion" : "Representar números decimales mediante fracciones comunes.",
+	"resena" : "Notación decimal",
+	"id" : "1_029"
+}

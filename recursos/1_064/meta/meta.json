@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Álgebra: Productos notables y factorización"],
+	"titulo" : "Factorización de trinomios",
+	"descripcion" : "Expresar un trinomio de la forma $x^{2}+bx+c$ como el producto de dos binomios.",
+	"resena" : "Factorización de trinomios del tipo x² + bx + c",
+	"id" : "1_064"
+}

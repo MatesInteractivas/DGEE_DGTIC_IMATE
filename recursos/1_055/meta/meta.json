@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Álgebra: Sistemas de ecuaciones lineales de 2 x 2"],
+	"titulo" : "Sistemas de ecuaciones lineales de 2 x 2",
+	"descripcion" : "Resolver sistemas de ecuaciones lineales con dos incógnitas mediante cualquiera de los siguientes métodos: suma, resta, sustitución o igualación.",
+	"resena" : "Métodos algebraicos de solución",
+	"id" : "1_055"
+}

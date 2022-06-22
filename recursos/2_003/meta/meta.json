@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Álgebra: Sistemas de ecuaciones lineales de 3x3"],
+	"titulo" : "Sistemas de ecuaciones lineales de 3x3",
+	"descripcion" : "Identificar el modelo de sistemas de ecuaciones lineales de $3 × 3$ que permite resolver un problema.",
+	"resena" : "Identificar el sistema de ecuaciones lineales de 3 x 3 que permite resolver un problema",
+	"id" : "2_003"
+}

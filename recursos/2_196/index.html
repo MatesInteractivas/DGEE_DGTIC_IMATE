@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Funciones y sus gráficas: Funciones trascendentes">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Relación entre las exponenciales y los logaritmos</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Funciones logarítmicas</div>
+  <div id="subtitulo">Relación entre las exponenciales y los logaritmos</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Identificar la equivalencia de las expresiones $y=a^{x}$ y $log_{a}(y)=x$.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Los logaritmos se pueden definir por su útil propiedad de convertir las multiplicaciones en simples adiciones. De esta utilidad podemos deducir la siguiente ecuación de funciones:</p>
+
+$$f(xy)=f(x)+f(y)$$
+
+<p>donde $f$ es la función que buscamos definir.</p>
+
+<p>De esta ecuación de funciones podemos deducir que:</p>
+
+$$f(x^{2})=f(x x)=f(x)+f(x)=2f(x)$$
+
+<p>Análogamente podemos deducir que:</p>
+
+$$\begin{aligned}
+f(x^{p}) &= f(x·x·x ... x·x)\\
+&= f(x)+f(x)+f(x)...f(x)+f(x)=pf(x)\\
+&= pf(x)
+\end{aligned}$$
+
+<p>es decir, que $f(x^{p})=pf(x)$.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:450px; height:470px;"></iframe></div>
+
+<p>Si supieramos que $f(a)=1$ entonces tendríamos que $f(a^{p})=pf(a)=p·1=p$. Este hecho nos permite ver que la función que estamos buscando es justamente la función inversa de la función exponencial con base $a$, ya que $f(a^{p})=p$. Por lo tanto, $f(x)$ debe ser la función logarítmo base $a$.</p>
+
+<p>Resumiendo, el logaritmo base $a$ de un número $x$, es el exponente ($n$) al que hay que elevar la base a para que nos dé dicho número ($x$), tal como se muestra a continuación:</p>
+
+<p style="text-align: center;">$log_{a}x=n$ entonces $x=a^{n}$</p>
+
+<p>Esto quiere decir que el logaritmo es la función inversa de la función exponencial. </p>
+
+<h1>Ejemplos</h1>
+
+<ol>
+  <li>
+    ¿Cuánto vale $log_{3}81$?<br>
+    Si $3^{x}=81$, entonces $x=4$, ya que $3^{4}=3×3×3×3=9\times 9=81$. Por lo tanto $log_{3}81=4$.<br>
+    Una de las utilidades fundamentales del logaritmo es transformar multiplicaciones complicadas en simples sumas. Mediante tablas, antes de la invención de las calculadoras, se obtenían los valores de los logaritmos para realizar más fácilmente las multiplicaciones. Estos cálculos, por los errores de redondeo propios de las tablas de logaritmos, tenían un pequeño margen de error, como se muestra en el siguiente ejemplo.</p>
+  </li>
+  <li>
+    ¿Cuánto vale aproximadamente $1,345×2,456$?<br>
+    $ln(1,345)=7.204$ y $ln(2,456)=7.806$ entonces $ln(1,345×2,456)=ln(1.345)+ln(2.456)=7.204+7.806=15.010$ de lo que obtenemos que $1,345×2,456=e^{15.010}=3,301,871.54$ lo cual es un valor muy cercano del real, el cual es $3,303,320$.</p>
+</ol>
+
+<h1>Ejercicios</h1>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:960px; height:300px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>: Claudio Francisco Nebbia Rubio</p>
+<p><b>Edición académica</b>: Carlos Hernández Garciadiego y Octavio Fonseca Ramos</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Joel Espinosa Longi</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Álgebra: Sistemas de dos ecuaciones una lineal y otra cuadrática"],
+	"titulo" : "Sistemas de dos ecuaciones una lineal y otra cuadrática",
+	"descripcion" : "Identificar el modelo de sistemas de dos ecuaciones, una lineal y otra cuadrática, que permite resolver un problema.",
+	"resena" : "Identificar el sistema de ecuaciones que permite resolver un problema",
+	"id" : "2_008"
+}

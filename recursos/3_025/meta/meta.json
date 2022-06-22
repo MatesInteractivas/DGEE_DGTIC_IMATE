@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: La derivada"],
+	"titulo" : "Derivadas de las funciones básicas",
+	"descripcion" : "Obtener por fórmula, la derivada de alguna de las siguientes funciones:",
+	"resena" : "Derivadas de funciones logarítmicas y exponenciales",
+	"id" : "3_025"
+}

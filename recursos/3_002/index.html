@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Cálculo Diferencial e Integral: Limites">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>El límite de una función a partir de su gráfica</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Concepto intuitivo de límite</div>
+  <div id="subtitulo">El límite de una función a partir de su gráfica</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<ul>
+  <li>Identificar el valor de límites unilaterales a partir de la observación de la gráfica de una función.</li>
+  <li>Obtener el valor límite de una función a partir de la observación de la gráfica.</li>
+</ul>
+
+<h1>Conceptos básicos</h1>
+
+<p>El límite de una función $f(x)$ en un punto $x_{0}$ es el valor al que se acercan los valores de la función cuando la variable $x$ se acerca a $x_{0}$. Las funciones no siempre tienen límite en cualquier punto.</p>
+
+<p>Explora los distintos ejemplos que se dan en la escena más abajo para formarte una idea intuitiva de cuándo una función, en un punto $x$:</p>
+
+<ol>
+  <li>Tiene límite.</li>
+  <li>Tiene límite por la izquierda.</li>
+  <li>Tiene límite por la derecha.</li>
+  <li>No tiene límite.</li>
+  <li>Tiende a más o menos infinito.</li>
+</ol>
+
+<p>En cada ejemplo, mueve el punto $x$ para buscar los puntos en donde la función no tiene límite.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:720px; height:530px;"></iframe></div>
+
+<p>Cuando el límite de una función en un punto $x$ existe y es $L$, se escribe:</p>
+
+$$\lim_{x_{0} \to x}{f(x)=L}$$
+
+<p>y se lee así:</p>
+
+<p style="text-align: center;">El límite de $f$ cuando $x$ tiende a $x_{0}$ es $L$.</p>
+
+<p>Cuando los límites laterales por la izquierda y la derecha existen, pero no son iguales, se dice que la función no tiene límite. Así mismo, si la función tiende a $± ∞$ en un punto $x_{0}$, también se dice que no tiene límite; aunque en esos casos está permitido escribir:</p>
+
+$$\lim_{x \to x_{0}}{f(x)=±∞}$$
+
+<h1>Ejercicios</h1>
+
+<p>En el siguiente espacio aparecen las gráficas de unas funciones y un punto. En cada caso, deberás decidir si la función tiene límite en ese punto y cuáles son sus límites laterales.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:900px; height:570px;"></iframe></div></p>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>:  José Luis Abreu León</p>
+<p><b>Edición académica</b>: José Luis Abreu León y Carlos Hernández Garciadiego</p>
+<p><b>Edición técnica</b>: Octavio Fonseca Ramos</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

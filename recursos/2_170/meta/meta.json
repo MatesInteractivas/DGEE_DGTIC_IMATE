@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Trigonometría: Elementos de trigonometría"],
+	"titulo" : "Resolución de triángulos oblicuángulos",
+	"descripcion" : "Resolver triángulos oblicuángulos aplicando la ley de cosenos.",
+	"resena" : "Ley de los cosenos",
+	"id" : "2_170"
+}

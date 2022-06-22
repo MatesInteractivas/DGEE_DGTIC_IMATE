@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Cálculo Diferencial e Integral: La derivada">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Razón de cambio de una función y rapidez (media) promedio de un móvil</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Rapidez y aceleración</div>
+  <div id="subtitulo">Razón de cambio de una función y rapidez (media) promedio de un móvil</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Calcular la rapidez promedio de un móvil a partir de su función de posición en un intervalo de tiempo determinado.</p>
+
+<h1>Conceptos básicos</h1>
+
+<p>Cuando un objeto recorre una distancia $d$ en un lapso de tiempo $t$, llamamos rapidez promedio al cociente de la distancia recorrida entre tiempo transcurrido $\frac{d}{t}$.</p>
+
+<p>Cuando el objeto puede moverse en cualquier sentido a lo largo de una recta, llamamos velocidad promedio al cociente:</p>
+
+$$\frac{y_{1}-y_{0}}{t_{1}-t_{0}}$$
+
+<p>donde $y_{1}$, $y_{0}$ son las posiciones en los momentos $t_{1}$, $t_{0}$ respectivamente.</p>
+
+<p>Tanto la rapidez promedio como la velocidad promedio son razones de cambio. Expresan, respectivamente, la distancia o el cambio de posición que se produce por unidad de tiempo durante el lapso que va de $t_{0}$ a $t_{1}$ .</p>
+
+<p>¿Cuál es la diferencia entre rapidez promedio y velocidad promedio?</p>
+
+<p>La rapidez es el cociente de dos números positivos y es, por tanto, siempre una cantidad positiva. Pero, por ejemplo, si el móvil retrocede en un lapso de tiempo $∆t=t_{1}-t_{0}$ positivo, el desplazamiento $y_{1}-y_{0}$ será negativo y entonces la velocidad promedio también será negativa.</p>
+
+<p>Como a cada tiempo corresponde una posición, podemos hacer una gráfica de posición contra tiempo.</p>
+
+<p>En la siguiente escena elige un ejemplo y pulsa el botón <span class="btn">Animar</span>; observa el movimiento del punto rojo y la gráfica que genera.</p>
+
+<p>La velocidad promedio entre $t_{0}$ y $t_{1}$ </p>
+
+$$v_{prom}=\frac{y_{1}-y_{0}}{t_{1}-t_{0}}=\frac{y(t_{1})-y(t_{0})}{t_{1}-t_{0}}$$
+
+<p>es la pendiente de la secante, la recta que pasa por los puntos de la gráfica correspondientes a $t_{0}$ y $t_{1}$. Pulsa y mueve los puntos en el eje del tiempo $t$.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:720px; height:480px;"></iframe></div>
+
+<p>Sólo en el primer ejemplo, la velocidad promedio es la misma para cualquier intervalo de tiempo, es decir, la velocidad promedio es constante. En tal caso, el móvil realiza desplazamientos iguales en tiempos iguales y la proporción recorrido/tiempo es siempre la misma. En los otros ejemplos, la velocidad promedio cambia, incluso dejando fijo el momento inicial.</p>
+
+<h1>Ejemplos</h1>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:720px; height:480px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:720px; height:480px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>:  Ma. Lourdes  Velasco</p>
+<p><b>Edición académica</b>: José Luis Abreu León y Carlos Hernández Garciadiego</p>
+<p><b>Edición técnica</b>: Octavio Fonseca Ramos</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

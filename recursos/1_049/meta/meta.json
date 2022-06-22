@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Álgebra: Ecuaciones lineales"],
+	"titulo" : "Ecuaciones lineales directas",
+	"descripcion" : "Resolver ecuaciones lineales del tipo $a(x + b) = c(x + d)$ con $a$, $b$, $c$ y $d$ racionales.",
+	"resena" : "Ecuaciones lineales del tipo a(x + b) = c(x + d)",
+	"id" : "1_049"
+}

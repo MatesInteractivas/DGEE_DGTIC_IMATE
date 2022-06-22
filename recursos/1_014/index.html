@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Aritmética: Los números y sus operaciones">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Operaciones básicas por orden de prioridad</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Números enteros</div>
+  <div id="subtitulo">Operaciones básicas por orden de prioridad</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Realizar operaciones combinadas con números enteros, considerando el orden de prioridad en las operaciones.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Cuando se realizan operaciones con números enteros, es necesario respetar el orden establecido, al que se le suele denominar la prioridad de las operaciones. Se trata de unas convenciones universales que aclaran el significado de las operaciones básicas y que si no las respetamos nos llevan a resultados diferentes de los esperados. Este orden o reglas de prioridad, se establecieron para que todos hagamos lo mismo al realizar las operaciones indicadas en una expresión aritmética y así obtengamos los mismos resutados.</p>
+
+<p>El orden establecido es el siguiente: primero se deben realizar todas las multiplicaciones y divisiones de izquierda a derecha y, ya que no haya ninguna multiplicación o división, se pueden realizar las sumas y restas, siguiendo el orden de izquierda a derecha. Una forma simplificada es:</p>
+
+<div class="bloque">
+Prioridad de las operaciones: de izquierda a derecha, primero $×$ y $÷$, luego $+$ y $-$.
+</div>
+
+<h1>Solución</h1>
+
+<p>El siguiente ejemplo ilustra las dos reglas de prioridad en las operaciones.</p>
+
+<p>$$4-6÷3×5+2$$</p>
+
+<p>Primero, se hacen las multiplicaciones y divisiones de izquierda a derecha, obteniendo:</p>
+
+<p>$$4-2×5+2$$
+$$4-10+2$$</p>
+
+<p>Luego, se hacen las sumas y restas, también de izquierda a derecha.</p>
+
+<p>$$-6+2$$
+$$-4$$</p>
+
+<p>En este caso particular, cualquier cambio de orden en la realización de las operaciones nos lleva a un resultado diferente. Para verlo, utiliza el siguiente recuadro interactivo en el que puedes elegir en cada paso qué operación realizar.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:720px; height:570px;"></iframe></div>
+
+<p>Comprueba que la única manera de obtener el resultado correcto $-4$ es hacer las operaciones en el único orden correcto ( $÷$ , $×$ , $-$ , $+$ ) que es el determinado por las reglas de prioridad (de izquierda a derecha, primero multiplicaciones y divisiones, luego sumas y restas).</p>
+
+<h1>Ejemplos</h1>
+
+<p>Si se desea resolver $21+3×(−5)$, primero se debe calcular $3×(−5)$ y posteriormente sumar $21$. Observa que al realizar la operación se incluye el signo negativo del número. Si no se respeta este orden y se realiza primero la suma y después el producto se obtendría $-120$, que es un resultado diferente al determinado por la convención de prioridades y por tanto es erróneo.</p>
+
+<p>Observa que no toda división entre dos números enteros da como resultado un número entero, por ejemplo $1 ÷ 2 = 0.5$ y $1 ÷ 3 = 0.333333...$</p>
+
+<p>Para familiarizarte con el orden en el que se llevan a cabo las operaciones, realiza el siguiente ejemplo paso por paso y repítelo varias veces pero con otros valores.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:720px; height:480px;"></iframe></div></p>
+
+<h1>Ejercicios</h1>
+
+<p>Realiza en un cuaderno las operaciones en el orden correcto definido por la regla de prioridad de las operaciones y escribe tu resultado en el cuadro de texto.</p>
+
+<p>Para revisar si está bien tu resultado, oprime el botón <span class="btn">Verificar</span>.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02B.html" style="width:720px; height:370px;"></iframe></div>
+
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autores</b>: José Luis Abreu y Alberto Bravo García</p>
+<p><b>Edición académica</b>: José Luis Abreu León</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Octavio Fonseca Ramos</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: Limites"],
+	"titulo" : "Continuidad",
+	"descripcion" : "Obtener, a partir de su gráfica, el punto de discontinuidad de una función.",
+	"resena" : "Puntos de discontinuidad de una función",
+	"id" : "3_011"
+}

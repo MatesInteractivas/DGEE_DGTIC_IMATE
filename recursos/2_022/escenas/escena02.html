@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title></title>
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+<div align="center">
+<ajs name="Descartes" width="900" height="570" code="Descartes">
+   <param name="tamaño" value="900x570">
+   <param name="expand" value="fit">
+   <param name="editable" value="no">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.5">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no ancho_este=150 ancho_oeste=150 alto=40">
+   <param name="E_01" value="tipo='R2' id='E0' escala='24' despl_imagen='arr-izq' fondo='ff000000' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E1' x='5' y='205' ancho='360' alto='360' fijo='sí' escala='27' despl_imagen='arr-izq' fondo='blanco' red='b8c4c8' red10='889498' ejes='405860' texto='no'">
+   <param name="E_03" value="tipo='R2' id='E2' x='370' y='205' ancho='525' alto='360' despl_imagen='arr-izq' fondo='e7efef' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='r' tipo='numérico' región='exterior' espacio='E0' nombre='r' valor='1' incr='0' fijo='no' visible='sí' parámetro.font_family='Monospaced' fuente puntos='12'">
+   <param name="C_02" value="id='Verif' tipo='numérico' interfaz='botón' región='interior' espacio='E0' nombre='_nada_' expresión='(CP(ctx,0),CP(cty,0),CP(ctw,0),CP(cth,0))' fijo='sí' visible='sí' imagen='VACIO.GIF' acción='calcular' parámetro='oexada=1' parámetro.font_family='Monospaced' fuente puntos='12' activo-si='oexada=0'">
+   <param name="C_03" value="id='a' tipo='gráfico' espacio='E1' tamaño='8' fijo='sí' dibujar-si='(a.x<0)&amp;(a.x>0)'">
+   <param name="C_04" value="id='a.x' tipo='numérico' región='exterior' espacio='E5' nombre='a.x' valor='-3' fijo='no' visible='sí' parámetro.font_family='Monospaced' fuente puntos='12' pos_mensajes='centro'">
+   <param name="C_05" value="id='a.y' tipo='numérico' región='exterior' espacio='E0' nombre='a.y' valor='2' fijo='no' visible='sí' parámetro.font_family='Monospaced' fuente puntos='12' pos_mensajes='centro'">
+   <param name="C_06" value="id='b' tipo='gráfico' espacio='E1' tamaño='8' fijo='sí' dibujar-si='(b.x<0)&amp;(b.x>0)'">
+   <param name="C_07" value="id='b.x' tipo='numérico' región='exterior' espacio='E5' nombre='b.x' valor='2' fijo='no' visible='sí' parámetro.font_family='Monospaced' fuente puntos='12' pos_mensajes='centro'">
+   <param name="C_08" value="id='b.y' tipo='numérico' región='exterior' espacio='E5' nombre='b.y' valor='3' fijo='no' visible='sí' parámetro.font_family='Monospaced' fuente puntos='12' pos_mensajes='centro'">
+   <param name="C_09" value="id='c' tipo='gráfico' espacio='E1' tamaño='8' fijo='sí' dibujar-si='(c.x<0)&amp;(c.x>0)'">
+   <param name="C_10" value="id='c.x' tipo='numérico' región='exterior' espacio='E5' nombre='c.x' valor='3' fijo='sí' visible='sí' parámetro.font_family='Monospaced' fuente puntos='12' pos_mensajes='centro'">
+   <param name="C_11" value="id='c.y' tipo='numérico' región='exterior' espacio='E5' nombre='c.y' fijo='no' visible='sí' parámetro.font_family='Monospaced' fuente puntos='12' pos_mensajes='centro'">
+   <param name="C_12" value="id='d' tipo='gráfico' espacio='E1' tamaño='8' fijo='sí' dibujar-si='(d.x<0)&amp;(dx>0)'">
+   <param name="C_13" value="id='d.x' tipo='numérico' región='exterior' espacio='E5' nombre='d.x' valor='3' fijo='no' visible='sí' parámetro.font_family='Monospaced' fuente puntos='12' pos_mensajes='centro'">
+   <param name="C_14" value="id='d.y' tipo='numérico' región='exterior' espacio='E5' nombre='d.y' valor='-3' fijo='sí' visible='sí' parámetro.font_family='Monospaced' fuente puntos='12' pos_mensajes='centro'">
+   <param name="C_15" value="id='e' tipo='gráfico' espacio='E1' tamaño='8' fijo='sí' dibujar-si='(e.x<0)&amp;(e.x>0)'">
+   <param name="C_16" value="id='e.x' tipo='numérico' región='exterior' espacio='E5' nombre='e.x' fijo='no' visible='sí' parámetro.font_family='Monospaced' fuente puntos='12' pos_mensajes='centro'">
+   <param name="C_17" value="id='e.y' tipo='numérico' región='exterior' espacio='E5' nombre='e.y' valor='-3' fijo='no' visible='sí' parámetro.font_family='Monospaced' fuente puntos='12' pos_mensajes='centro'">
+   <param name="C_18" value="id='f' tipo='gráfico' espacio='E5' fijo='sí' dibujar-si='(f.x<0)&amp;(f.x>0)'">
+   <param name="C_19" value="id='f.x' tipo='numérico' región='exterior' espacio='E5' nombre='f.x' valor='-4' fijo='no' visible='sí' parámetro.font_family='Monospaced' fuente puntos='12' pos_mensajes='centro'">
+   <param name="C_20" value="id='f.y' tipo='numérico' región='exterior' espacio='E5' nombre='f.y' valor='-2' fijo='no' visible='sí' parámetro.font_family='Monospaced' fuente puntos='12' pos_mensajes='centro'">
+   <param name="C_21" value="id='R' tipo='gráfico' espacio='E1' tamaño='8' expresión='(a.x+r,a.y)' constricción='(x-a.x)^2+(y-a.y)^2=r^2' fijo='sí' activo-si='oexada=0'">
+   <param name="C_22" value="id='R.x' tipo='numérico' región='exterior' espacio='E5' nombre='R.x' valor='a.x+r' decimales='1' fijo='no' visible='sí' acción='calcular' parámetro.font_family='Monospaced' fuente puntos='12' pos_mensajes='centro'">
+   <param name="C_23" value="id='R.y' tipo='numérico' región='exterior' espacio='E5' nombre='R.y' valor='a.y' decimales='1' fijo='no' visible='sí' parámetro.font_family='Monospaced' fuente puntos='12' pos_mensajes='centro'">
+   <param name="C_24" value="id='S' tipo='gráfico' espacio='E1' tamaño='8' expresión='(b.x+r,b.y)' constricción='(x-b.x)^2+(y-b.y)^2=r^2' fijo='sí' activo-si='oexada=0'">
+   <param name="C_25" value="id='S.x' tipo='numérico' región='exterior' espacio='E0' nombre='S.x' valor='b.x+r' decimales='1' fijo='sí' visible='sí' acción='calcular' parámetro.font_family='Monospaced' fuente puntos='12' pos_mensajes='centro'">
+   <param name="C_26" value="id='S.y' tipo='numérico' región='exterior' espacio='E0' nombre='S.y' valor='b.y' decimales='1' fijo='sí' visible='sí' parámetro.font_family='Monospaced' fuente puntos='12' pos_mensajes='centro'">
+   <param name="C_27" value="id='T' tipo='gráfico' espacio='E1' tamaño='8' expresión='(c.x+r,c.y)' constricción='(x-c.x)^2+(y-c.y)^2=r^2' fijo='sí' activo-si='oexada=0'">
+   <param name="C_28" value="id='T.x' tipo='numérico' región='exterior' espacio='E0' nombre='T.x' valor='c.x+r' decimales='1' fijo='no' visible='sí' acción='calcular' parámetro.font_family='Monospaced' fuente puntos='12' pos_mensajes='centro'">
+   <param name="C_29" value="id='T.y' tipo='numérico' región='exterior' espacio='E0' nombre='T.y' valor='c.y' decimales='1' fijo='no' visible='sí' parámetro.font_family='Monospaced' fuente puntos='12' pos_mensajes='centro'">
+   <param name="C_30" value="id='U' tipo='gráfico' espacio='E1' tamaño='8' expresión='(d.x+r,d.y)' constricción='(x-d.x)^2+(y-d.y)^2=r^2' fijo='sí' activo-si='oexada=0'">
+   <param name="C_31" value="id='U.x' tipo='numérico' región='exterior' espacio='E5' nombre='U.x' valor='d.x+r' decimales='1' fijo='no' visible='sí' acción='calcular' parámetro.font_family='Monospaced' fuente puntos='12' pos_mensajes='centro'">
+   <param name="C_32" value="id='U.y' tipo='numérico' región='exterior' espacio='E5' nombre='U.y' valor='d.y' decimales='1' fijo='no' visible='sí' parámetro.font_family='Monospaced' fuente puntos='12' pos_mensajes='centro'">
+   <param name="C_33" value="id='V' tipo='gráfico' espacio='E1' tamaño='8' expresión='(e.x+r,e.y)' constricción='(x-e.x)^2+(y-e.y)^2=r^2' fijo='sí' activo-si='oexada=0'">
+   <param name="C_34" value="id='V.x' tipo='numérico' región='exterior' espacio='E5' nombre='V.x' valor='e.x+r' decimales='1' fijo='sí' visible='sí' acción='calcular' parámetro.font_family='Monospaced' fuente puntos='12' pos_mensajes='centro'">
+   <param name="C_35" value="id='V.y' tipo='numérico' región='exterior' espacio='E5' nombre='V.y' valor='e.y' decimales='1' fijo='no' visible='sí' parámetro.font_family='Monospaced' fuente puntos='12' pos_mensajes='centro'">
+   <param name="C_36" value="id='W' tipo='gráfico' espacio='E1' tamaño='8' expresión='(f.x+r,f.y)' constricción='(x-f.x)^2+(y-f.y)^2=r^2' fijo='sí' activo-si='oexada=0'">
+   <param name="C_37" value="id='W.x' tipo='numérico' región='exterior' espacio='E5' nombre='W.x' valor='f.x+r' decimales='1' fijo='sí' visible='sí' acción='calcular' parámetro.font_family='Monospaced' fuente puntos='12' pos_mensajes='centro'">
+   <param name="C_38" value="id='W.y' tipo='numérico' región='exterior' espacio='E5' nombre='W.y' valor='f.y' decimales='1' fijo='sí' visible='sí' parámetro.font_family='Monospaced' fuente puntos='12' pos_mensajes='centro'">
+   <param name="C_39" value="id='Limpiar' tipo='numérico' interfaz='botón' región='interior' espacio='E0' expresión='(CP(ctx,1),CP(cty,1),CP(ctw,1),CP(cth,1))' fijo='sí' visible='sí' imagen='VACIO.GIF' acción='calcular' parámetro='oexada=0' parámetro.font_family='Monospaced' fuente puntos='12' activo-si='oexada=1'">
+   <param name="A_01" value="id='botX(d,x,w,t)' algoritmo='sí' expresión='val' algoritmo='sí' Local='val' inicio='val=x' hacer='val=((t==1)|(t==6))?x+d    :val;val=((t==2)|(t==5))?x+w-1-d:val;val=((t==3)|(t==4))?x+w-1  :val;'">
+   <param name="A_02" value="id='botY(d,y,h,t)' algoritmo='sí' expresión='val' algoritmo='sí' Local='val' inicio='val=y' hacer='val=((t%8==0)|(t==3))?y+d  :val;val=((t==4)|(t==7))?y+h-1-d:val;val=((t==5)|(t==6))?y+h-1  :val;'">
+   <param name="A_03" value="id='CT' vector='sí' matriz='sí' evaluar='una-sola-vez' columnas='24' filas='12' expresión='ix=0;name=1;middle=2;last=3;value=4;ctx=5;cty=6;ctw=7;cth=8;active=9;teclado=10;interfaz=10;boton=10;'">
+   <param name="A_04" value="id='CP(a,k)' algoritmo='sí' expresión='res' algoritmo='sí' Local='res,pad' inicio='pad=5' hacer='res=(a==ctx)?CT[k,ctx]+pad:res;res=(a==cty)?CT[k,cty]+pad:res;res=(a==ctw)?CT[k,ctw]-pad*2:res;res=(a==cth)?CT[k,cth]-pad*2:res;res=(a==active)?CT[k,active]:res;res=(a==interfaz)?(CT[k,interfaz]<4):res;'">
+   <param name="A_05" value="id='init()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='TCL.x=E2._w-TCL._w-5;TCL.y=E2._h-TCL._h-5;rd=3;editing=-1;Teclado.S=&amp;squot;&amp;squot;;Teclado.Sa=&amp;squot;&amp;squot;;texth=27;textp=10;;autorControls();;TIT.rojo= (11*16+ 8)/256;TIT.verde=( 0*16+ 8)/256;TIT.azul= ( 1*16+ 0)/256;;FONDO.rojo= ( 9*16+ 0)/256;FONDO.verde=( 9*16+ 8)/256;FONDO.azul= (10*16+ 8)/256;;E2.rojo= (14*16+ 8)/256;E2.verde=(15*16+ 0)/256;E2.azul= (15*16+ 0)/256;;E3.rojo= (0*16+ 0)/256;E3.verde=(0*16+ 0)/256;E3.azul= (0*16+ 0)/256;;TXT.rojo= ( 1*16+ 8)/256;TXT.verde=( 2*16+ 0)/256;TXT.azul= ( 2*16+ 8)/256;;CTR.rojo= ( 0*16+ 0)/256;CTR.verde=( 4*16+ 0)/256;CTR.azul= (15*16+15)/256;;CTI.rojo= (15*16+ 0)/256;CTI.verde=(15*16+ 0)/256;CTI.azul= (15*16+ 0)/256;;ARR.rojo= ( 4*16+ 0)/256;ARR.verde=( 8*16+ 0)/256;ARR.azul= ( 6*16+ 0)/256;;BORDER.rojo=CTR.rojo*0.90;BORDER.verde=CTR.verde*0.90;BORDER.azul=CTR.azul*0.90;'">
+   <param name="A_06" value="id='Str(s)' expresión='CT[s,name]+CT[s,middle]+CT[s,value]+CT[s,last]'">
+   <param name="A_07" value="id='editB(k)' algoritmo='sí' algoritmo='sí' Local='S,tipo' hacer='editing=k;tipo=CT[k,interfaz];tt=(tipo==0)?TCL.set(&amp;squot;columnas&amp;squot;,6):TCL.set(&amp;squot;columnas&amp;squot;,12);_ta=((tipo==1)|(tipo=0))?0:1;_tm=(tipo==3)?1:0;TCL.set(&amp;squot;ta&amp;squot;,_ta);TCL.set(&amp;squot;tm&amp;squot;,_tm);TCL.exec(&amp;squot;initTcl&amp;squot;,&amp;squot;&amp;squot;);S=CT[k,value];teclado.S=CT[k,value];TCL.set(&amp;squot;S&amp;squot;,teclado.S);TCL.set(&amp;squot;show_cursor&amp;squot;,1);TCL.update();'">
+   <param name="A_08" value="id='processKB()' algoritmo='sí' algoritmo='sí' hacer='CT[editing,value]=(Teclado.Sa!=Teclado.S)?Teclado.S:CT[editing,value];Teclado.Sa=Teclado.S;'">
+   <param name="A_09" value="id='autorControls()' algoritmo='sí' expresión='x' algoritmo='sí' inicio='NCT=0' hacer='CT[NCT,ix]=NCT;CT[NCT,name]=&amp;squot;Verificar&amp;squot;;CT[NCT,middle]=&amp;squot;&amp;squot;;CT[NCT,last]=&amp;squot;&amp;squot;;CT[NCT,value]=&amp;squot;&amp;squot;;CT[NCT,ctx]=E0._w-120;CT[NCT,cty]=70;CT[NCT,ctw]=100;CT[NCT,cth]=50;CT[NCT,active]=1;CT[NCT,interfaz]=1;NCT=NCT+1;;CT[NCT,ix]=NCT;CT[NCT,name]=&amp;squot;Limpiar&amp;squot;;CT[NCT,middle]=&amp;squot;&amp;squot;;CT[NCT,last]=&amp;squot;&amp;squot;;CT[NCT,value]=&amp;squot;&amp;squot;;CT[NCT,ctx]=E0._w-120;CT[NCT,cty]=70;CT[NCT,ctw]=100;CT[NCT,cth]=50;CT[NCT,active]=1;CT[NCT,interfaz]=1;NCT=NCT+1;'">
+   <param name="A_10" value="id='hide(x,y)' algoritmo='sí' expresión='1' algoritmo='sí' Local='xreal' hacer='xreal=(CT[x,ctx]>1000)?CT[x,ctx]-1000:CT[x,ctx];CT[x,ctx]=xreal+1000*y;CT[x,value]=(y=1)?&amp;squot;&amp;squot;:CT[x,value]'">
+   <param name="A_11" value="id='putelem()' algoritmo='sí' expresión='1' algoritmo='sí' hacer='aux=(oexada=0)?hide(0,0):hide(0,1);aux=(oexada=1)?hide(1,0):hide(1,1);'">
+   <param name="A_12" value="id='hideall()' algoritmo='sí' expresión='1' algoritmo='sí' hacer='hide(0,1);hide(1,1)'">
+   <param name="A_13" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='init();r=1;hideall()'">
+   <param name="A_14" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='putelem();'">
+   <param name="A_15" value="id='AB' constante='sí' expresión='sqrt((B1.x-A1.x)^2+(B1.y-A1.y)^2)' evaluar='siempre'">
+   <param name="A_16" value="id='BC' constante='sí' expresión='sqrt((C1.x-B1.x)^2+(C1.y-B1.y)^2)' evaluar='siempre'">
+   <param name="A_17" value="id='CA' constante='sí' expresión='sqrt((A1.x-C1.x)^2+(A1.y-C1.y)^2)' evaluar='siempre'">
+   <param name="A_18" value="id='s1' constante='sí' expresión='0.5*(AB+BC+CA)' evaluar='siempre'">
+   <param name="A_19" value="id='areaABC' constante='sí' expresión='sqrt(s1*(s1-AB)*(s1-BC)*(s1-CA))' evaluar='siempre'">
+   <param name="A_20" value="id='CD' constante='sí' expresión='sqrt((D1.x-C1.x)^2+(D1.y-C1.y)^2)' evaluar='siempre'">
+   <param name="A_21" value="id='DA' constante='sí' expresión='sqrt((A1.x-D1.x)^2+(A1.y-D1.y)^2)' evaluar='siempre'">
+   <param name="A_22" value="id='DE' constante='sí' expresión='sqrt((E1.x-D1.x)^2+(E1.y-D1.y)^2)' evaluar='siempre'">
+   <param name="A_23" value="id='EA' constante='sí' expresión='sqrt((A1.x-E1.x)^2+(A1.y-E1.y)^2)' evaluar='siempre'">
+   <param name="A_24" value="id='s2' constante='sí' expresión='0.5*(CA+CD+DA)' evaluar='siempre'">
+   <param name="A_25" value="id='areaACD' constante='sí' expresión='sqrt(s2*(s2-CA)*(s2-CD)*(s2-DA))' evaluar='siempre'">
+   <param name="A_26" value="id='s3' constante='sí' expresión='0.5*(DA+DE+EA)' evaluar='siempre'">
+   <param name="A_27" value="id='areaADE' constante='sí' expresión='sqrt(s3*(s3-DA)*(s3-DE)*(s3-EA))' evaluar='siempre'">
+   <param name="A_28" value="id='rs' constante='sí' expresión='sqrt((S.x-R.x)^2+(S.y-R.y)^2)' evaluar='siempre'">
+   <param name="A_29" value="id='st' constante='sí' expresión='sqrt((T.x-S.x)^2+(T.y-S.y)^2)' evaluar='siempre'">
+   <param name="A_30" value="id='tr' constante='sí' expresión='sqrt((R.x-T.x)^2+(R.y-T.y)^2)' evaluar='siempre'">
+   <param name="A_31" value="id='tu' constante='sí' expresión='sqrt((T.x-U.x)^2+(T.y-U.y)^2)' evaluar='siempre'">
+   <param name="A_32" value="id='ur' constante='sí' expresión='sqrt((R.x-U.x)^2+(R.y-U.y)^2)' evaluar='siempre'">
+   <param name="A_33" value="id='uv' constante='sí' expresión='sqrt((V.x-U.x)^2+(V.y-U.y)^2)' evaluar='siempre'">
+   <param name="A_34" value="id='vr' constante='sí' expresión='sqrt((R.x-V.x)^2+(R.y-V.y)^2)' evaluar='siempre'">
+   <param name="A_35" value="id='vw' constante='sí' expresión='sqrt((W.x-V.x)^2+(W.y-V.y)^2)' evaluar='siempre'">
+   <param name="A_36" value="id='wr' constante='sí' expresión='sqrt((R.x-W.x)^2+(R.y-W.y)^2)' evaluar='siempre'">
+   <param name="A_37" value="id='s1t1' constante='sí' expresión='0.5*(rs+st+tr)' evaluar='siempre'">
+   <param name="A_38" value="id='s2t2' constante='sí' expresión='0.5*(tr+tu+ur)' evaluar='siempre'">
+   <param name="A_39" value="id='s3t3' constante='sí' expresión='0.5*(ur+uv+vr)' evaluar='siempre'">
+   <param name="A_40" value="id='s4t4' constante='sí' expresión='0.5*(vr+vw+wr)' evaluar='siempre'">
+   <param name="A_41" value="id='s1t1_tri1' constante='sí' expresión='s1t1*(s1t1-rs)*(s1t1-st)*(s1t1-tr)' evaluar='siempre'">
+   <param name="A_42" value="id='s2t2_tri2' constante='sí' expresión='s2t2*(s2t2-tr)*(s2t2-tu)*(s2t2-ur)' evaluar='siempre'">
+   <param name="A_43" value="id='s3t3_tri3' constante='sí' expresión='s3t3*(s3t3-ur)*(s3t3-uv)*(s3t3-vr)' evaluar='siempre'">
+   <param name="A_44" value="id='s4t4_tri4' constante='sí' expresión='s4t4*(s4t4-vr)*(s4t4-vw)*(s4t4-wr)' evaluar='siempre'">
+   <param name="A_45" value="id='area_t1' constante='sí' expresión='sqrt(s1t1_tri1)' evaluar='siempre'">
+   <param name="A_46" value="id='area_t2' constante='sí' expresión='sqrt(s2t2_tri2)' evaluar='siempre'">
+   <param name="A_47" value="id='area_t3' constante='sí' expresión='sqrt(s3t3_tri3)' evaluar='siempre'">
+   <param name="A_48" value="id='area_t4' constante='sí' expresión='sqrt(s4t4_tri4)' evaluar='siempre'">
+   <param name="G_01" value="espacio='E0' tipo='curva' fondo='sí' color='(E2.rojo*0.8,E2.verde*0.8,E2.azul*0.8,ff)' coord_abs='sí' expresión='(botX(rd,0,E0._w,t),botY(rd,0,E0._h,t))' t.intervalo='[0,8]' relleno='(E2.rojo,E2.verde,E2.azul,00)' info='(PLANTILLA) fondo de la zona de texto'">
+   <param name="G_02" value="espacio='E0' tipo='curva' fondo='sí' color='negro' coord_abs='sí' expresión='(botX(rd,CP(ctx,s)-5,CP(ctw,s)+10,t),botY(rd,CP(cty,s)-5,CP(cth,s)+10,t))' familia='s' s.intervalo='[0,NCT-1]' s.pasos='NCT-1' t.intervalo='[0,8]' relleno='(CP(active,s)+0.70*(!CP(active,s)),CP(active,s)+0.75*(!CP(active,s)) -(s==editing)*0.8,0.2*CP(active,s)+0.80*(!CP(active,s)),0.0)' info='(PLANTILLA) borde exterior'">
+   <param name="G_03" value="espacio='E0' tipo='curva' fondo='sí' color='negro' coord_abs='sí' expresión='(botX(rd,CP(ctx,s),CP(ctw,s),t),botY(rd,CP(cty,s),CP(cth,s),t))' familia='s' s.intervalo='[0,NCT-1]' s.pasos='NCT-1' t.intervalo='[0,8]' relleno='(CTI.rojo,CTI.verde,CTI.azul,00)' info='(PLANTILLA) borde interior'">
+   <param name="G_04" value="espacio='E0' tipo='texto' coord_abs='sí' color='(TXT.rojo,TXT.verde,TXT.azul,00)' expresión='[CT[s,ctx]+(CT[s,ctw]-_AnchoDeCadena_(Str(s),&amp;squot;SansSerif&amp;squot;,&amp;squot;PLAIN&amp;squot;,21))/2,CT[s,cty]+(CT[s,cth]-25)/2]' familia='s' s.intervalo='[0,NCT-1]' s.pasos='NCT-1' texto='[Str(s)]' font_family='SansSerif' fuente puntos='21' fijo='sí' ancho='380' info='(PLANTILLA) Contenidos de los campos de texto'">
+   <param name="G_05" value="espacio='E0' tipo='texto' coord_abs='sí' expresión='[10,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs42 Calcula el \u225 rea del pol\u237 gono P con v\u233 rtices: \par {\*\mjaformula R({\expr R.x\decimals 2\fixed0},{\expr R.y\decimals 2\fixed0}),}{\*\mjaformula S({\expr S.x\decimals 2\fixed0},{\expr S.y\decimals 2\fixed0}),}T({\*\mjaformula T({\expr T.x\decimals 2\fixed0},{\expr T.y\decimals 2\fixed0}),}{\*\mjaformula U({\expr U.x\decimals 2\fixed0},{\expr U.y\decimals 2\fixed0}),}V({\*\mjaformula V({\expr V.x\decimals 2\fixed0},{\expr V.y\decimals 2\fixed0})}y{\*\mjaformula W({\expr W.x\decimals 2\fixed0},{\expr W.y\decimals 2\fixed0}).}\par \fs16\par \fs42 Sugerencia: triangula el pol\u237 gono a partir del v\u233 rtice R, y posteriomente\par comprueba tu resultado pulsando el bot\u243 n Verificar. \par \fs16\par \fs42 Para generar m\u225 s ejercicios, primero pulsa el bot\u243 n limpiar y despu\u233 s mueve con el rat\u243 n los \par v\u233 rtices del pol\u237 gono.\f3\fs24\par }' font_family='SansSerif' fuente puntos='21' fijo='sí'">
+   <param name="G_06" value="espacio='E1' tipo='polígono' color='3366dd' expresión='(R.x,R.y)(S.x,S.y)(T.x,T.y)(U.x,U.y)(V.x,V.y)(W.x,W.y)(R.x,R.y)' relleno='85ffffd6' ancho='2'">
+   <param name="G_07" value="espacio='E1' tipo='segmento' color='00aa22' dibujar-si='oexada=1' expresión='(R.x,R.y)(T.x,T.y)' font_family='Monospaced' fuente puntos='12' fijo='sí' ancho='2'">
+   <param name="G_08" value="espacio='E1' tipo='segmento' color='00aa22' dibujar-si='oexada=1' expresión='(R.x,R.y)(U.x,U.y)' font_family='Monospaced' fuente puntos='12' fijo='sí' ancho='2'">
+   <param name="G_09" value="espacio='E1' tipo='segmento' color='00aa22' dibujar-si='oexada=1' expresión='(R.x,R.y)(V.x,V.y)' font_family='Monospaced' fuente puntos='12' fijo='sí' ancho='2'">
+   <param name="G_10" value="espacio='E2' tipo='texto' coord_abs='sí' dibujar-si='oexada=1' expresión='[20,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs42\u225 rea(P) = \u225 rea(\u8710 RST)+\u225 rea(\u8710 RTU)\par                       +\u225 rea(\u8710 RUV)+\u225 rea(\u8710 RVW)\par             ={\*\mjaformula{\radical{\index}{\radicand s1(s1-RS)(s1-ST)(s1-TR)}}} \par               +{\*\mjaformula{\radical{\index}{\radicand s2(s2-RT)(s2-TU)(s2-UR) }}}\par                +{\*\mjaformula{\radical{\index}{\radicand s3(s3-RU)(s3-UV)(s3-VR) }}} \par                 +{\*\mjaformula{\radical{\index}{\radicand s4(s4-RV)(s4-VW)(s4-WR)}}} \par \par \u225 rea(P) =  {\*\mjaformula{\radical{\index}{\radicand{\expr s1t1_tri1\decimals 2\fixed0}}}} +{\*\mjaformula{\radical{\index}{\radicand{\expr s2t2_tri2\decimals 2\fixed0}}}} \par                 +{\*\mjaformula{\radical{\index}{\radicand{\expr s3t3_tri3\decimals 2\fixed0}}}}  +{\*\mjaformula{\radical{\index}{\radicand{\expr s4t4_tri4\decimals 2\fixed0}}}} \par             \u8771   {\*\mjaformula{\expr area_t1\decimals 2\fixed0}} + {\*\mjaformula{\expr area_t2\decimals 2\fixed0}} + {\*\mjaformula{\expr area_t3\decimals 2\fixed0}}  + {\*\mjaformula{\expr area_t4\decimals 2\fixed0}} \par             =  {\*\mjaformula{\expr area_t1+area_t2+area_t3+area_t4\decimals 2\fixed0}} {\*\mjaformula u{\supix 2}}\par \par \par \par \fs34\par \par \par \par \par \par \par \par }' font_family='SansSerif' fuente puntos='21' fijo='sí'">
+   <param name="G_11" value="espacio='E1' tipo='punto' expresión='(R.x,R.y)' texto='  R' font_family='SansSerif' fuente puntos='21' fijo='sí' tamaño='0'">
+   <param name="G_12" value="espacio='E1' tipo='punto' expresión='(S.x,S.y)' texto='  S' font_family='SansSerif' fuente puntos='21' fijo='sí' tamaño='0'">
+   <param name="G_13" value="espacio='E1' tipo='punto' expresión='(T.x,T.y)' texto='  T' font_family='SansSerif' fuente puntos='21' fijo='sí' tamaño='0'">
+   <param name="G_14" value="espacio='E1' tipo='punto' expresión='(U.x,U.y)' texto='  U' font_family='SansSerif' fuente puntos='21' fijo='sí' tamaño='0'">
+   <param name="G_15" value="espacio='E1' tipo='punto' expresión='(V.x,V.y)' texto='  V' font_family='SansSerif' fuente puntos='21' fijo='sí' tamaño='0'">
+   <param name="G_16" value="espacio='E1' tipo='punto' expresión='(W.x,W.y)' texto='  W' font_family='SansSerif' fuente puntos='21' fijo='sí' tamaño='0'">
+</ajs>
+</div>
+</body>
+</html>

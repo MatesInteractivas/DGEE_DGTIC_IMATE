@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: Limites"],
+	"titulo" : "Calculo de limites de funciones",
+	"descripcion" : "Obtener el valor del límite de una función $f(x)$ cuando $x$ tiende a infinito y $f$ no presenta ninguna indeterminación.",
+	"resena" : "Límites al infinito que no presentan indeterminación",
+	"id" : "3_006"
+}

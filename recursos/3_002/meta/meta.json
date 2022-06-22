@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: Limites"],
+	"titulo" : "Concepto intuitivo de límite",
+	"descripcion" : "Identificar el valor de límites unilaterales a partir de la observación de la gráfica de una función. Obtener el valor límite de una función a partir de la observación de la gráfica.",
+	"resena" : "El límite de una función a partir de su gráfica",
+	"id" : "3_002"
+}

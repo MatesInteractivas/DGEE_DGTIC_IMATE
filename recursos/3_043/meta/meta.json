@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: La derivada"],
+	"titulo" : "Composicion de funciones y sus derivadas",
+	"descripcion" : "Obtener la derivada de la composición de funciones del tipo $f(x)=h(g(x)$, donde $h$ es función trascendente y $g$ algebraica.",
+	"resena" : "Derivada de f(x) = h(g(x)), donde h es trascendente y g algebraica",
+	"id" : "3_043"
+}

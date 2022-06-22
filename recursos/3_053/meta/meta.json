@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: La derivada"],
+	"titulo" : "Aplicaciones de la derivada",
+	"descripcion" : "Obtener el máximo relativo de una función polinomial hasta de grado tres. Obtener el mínimo relativo de una función polinomial hasta de grado tres. Determinar el intervalo donde es creciente una función polinomial hasta de grado tres. Determinar el intervalo donde es decreciente una función polinomial hasta de grado tres.",
+	"resena" : "Máximos y mínimos relativos e intervalos de crecimiento y decrecimiento",
+	"id" : "3_053"
+}

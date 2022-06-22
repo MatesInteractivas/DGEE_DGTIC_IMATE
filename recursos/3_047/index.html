@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Cálculo Diferencial e Integral: La derivada">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Gráfica de f(x) a partir de la gráfica de f'(x)</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Gráfica de la derivada</div>
+  <div id="subtitulo">Gráfica de $f(x)$ a partir de la gráfica de $f'(x)$</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<ol>
+  <li>Identificar la gráfica de $f(x)$ a partir de la gráfica de $f'(x)$, donde $f$ es una función algebraica.</li>
+  <li>Identificar la gráfica de $f(x)$ a partir de la gráfica de $f'(x)$, donde $f$ es una función trascendente.</li>
+</ol>
+
+<h1>Conceptos básicos</h1>
+
+<p>Una función algebraica es aquella que puede expresarse mediante un número finito de términos usando las operaciones básicas de adición, sustracción, multiplicación, división, potenciación y radicación. Como ejemplos de funciones algebraicas tenemos $f(x)=3x^{3}-2x^{2}+4x-2$, $f(x)=\frac{1}{x}$, $f(x)=\sqrt{x}$, etc.</p>
+
+<p>Por otra parte, las funciones trascendentes son aquellas donde aparecen funciones trigonométricas, logarítmicas y exponenciales. Algunos ejemplos de funciones trascendentes son $f(x)=e^{x}$, $f(x)=sen(x)$ y $f(x)=ln(x)$.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Como se observó en lecciones pasadas, cuando se quiere identificar la gráfica de $f'(x)$ a partir de $f(x)$ es útil encontrar los puntos en que cambia $f(x)$ de creciente a decreciente o viceversa. Esos puntos son máximos y mínimos respectivamente en $f(x)$ y corresponden a las raíces de $f'(x)$ (o puntos en que $f'(x)$ se hace cero). Dado que ahora tomamos el camino al revés (ir de $f'(x)$ a $f(x)$), al localizar raíces en $f'(x)$ encontramos los máximos o mínimos en $f(x)$. Más aún, si $f'(x)$ cruza las abscisas de forma ascendente, podemos deducir que se trata de un mínimo en $f(x)$, mientras que si lo cruza de forma descendente, se trata de un máximo en $f(x)$. Observa los siguientes interactivos. Mueve los puntos en las gráficas superiores ($f'(x)$ y $g'(x)$) y observa la gráfica inferior.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:900px; height:530px;"></iframe></div>
+
+<p>En los dos planos superiores se muestran las gráficas de las funciones derivadas y en los dos planos inferiores, se muestran respectivamente las gráficas de sus funciones originales. De acuerdo con lo anterior, podemos afirmar en resumen que:</p>
+
+<ol>
+  <li>Las raíces de las funciones derivadas, que son los valores de $x$ para los que éstas se hacen cero, corresponden a los máximos y mínimos de las funciones originales.</li>
+  
+  <li>Los valores de $x$ que corresponden a máximos locales de las funciones derivadas corresponden  a puntos en la gráfica original dónde ésta cambia de ser cóncava hacia arriba a cóncava hacia abajo. De igual forma, los valores dónde se presenta un mínimo en la gráfica de las funciones derivadas, corresponden a puntos en la gráfica original dónde ésta pasa de ser cóncava hacia abajo a cóncava hacia arriba. A estos puntos se les conoce como puntos de inflexión y, además, son puntos para los cuales la segunda derivada es cero. Esto es, si se derivara la función original dos veces y se sustituyera uno de estos puntos en ella, el resultado sería cero.</li>
+</ol>
+
+<h1>Ejemplos</h1>
+
+<p>A continuación, se muestran otros ejemplos tanto con funciones algebraicas como trascendentes.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:900px; height:480px;"></iframe></div>
+
+<p>Es importante notar que si una $f'(x)$ es periódica, $f(x)$ también lo será.</p>
+
+<p>Por otra parte, date cuenta que la $f(x)$ generada puede estar desplazada hacia arriba o abajo a la distancia que prefieras, y esto no cambiaría la forma de $f'(x)$. Ello se relaciona con que, como para obtener $f(x)$ a partir de $f'(x)$ hay que integrar. Al integrar se genera una constante de integración, que puede ser el valor que gustes para $f(x)$ y no alterará la forma de $f'(x)$. Otra forma de verlo es que al derivar $f(x)$ para obtener $f'(x)$, la derivada de esa constante de integración siempre será $0$ y, por consiguiente, $f'(x)$ siempre será la misma.</p>
+
+<h1>Ejercicios</h1>
+
+<p>Resuelve los siguientes ejercicios para obtener la forma de la función $f(x)$ a partir de la forma de $f'(x)$.</p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:900px; height:530px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>:  Alejandro Radillo Díaz</p>
+<p><b>Edición académica</b>: José Luis Abreu León y Carlos Hernández Garciadiego</p>
+<p><b>Edición técnica</b>: Octavio Fonseca Ramos</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

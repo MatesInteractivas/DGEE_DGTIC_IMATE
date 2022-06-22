@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,400i,700,700i&display=swap');
+
+/* reset style */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, interactive, page {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, interactive, page {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+br {
+  padding: 0;
+  border: 0;
+  margin-bottom: 0 0 1em 0;
+}
+/* reset style */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+body {
+  background-color: #dff9fb;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  font-size: 100%;
+}
+@media screen and (max-width: 1024px) { body { display: block; } }
+@media print { 
+  @page {
+    margin: 1cm;
+    size: 1024px 1326px;
+  }
+  body { 
+    display: block;
+    background-color: white;
+  }
+  #container {
+    box-shadow: none;
+  }
+  .interactivo{
+    page-break-after: auto;
+  }
+  #creditos {
+    display: block;
+    page-break-before: always;
+  }
+}
+
+#container {
+  font-family: 'Nunito', sans-serif;
+  position: relative;
+  width: 1024px;
+  min-width: 1024px;
+  min-height: 100vh;
+  font-size: 22px;
+  background-color: #fff;
+  box-shadow: 0 0 2px 0 rgba(0,0,0,0.75);
+}
+#pleca {
+  position: relative;
+  width: 100%;
+  background: #16a085;
+  color: #fff;
+  padding: 1.5em 2.5em;
+}
+#titulo {
+  font-weight: bold;
+  font-size: 180%;
+}
+#subtitulo {
+  margin-top: 0.75em;
+  font-size: 110%;
+  font-style: italic;
+}
+#contenido {
+  padding: 2.5em;
+  text-align: justify;
+}
+#contenido h1:first-child {
+  margin-top: 0;
+}
+h1 {
+  color: #2980b9;
+  font-size: 130%;
+  padding-bottom: 0.15em;
+  margin: 1em 0 0.5em 0;
+  font-weight: bold;
+  border-bottom: 2px solid #74b9ff;
+}
+h2 {
+  color: #3498db;
+  font-size: 100%;
+  font-weight: bold;
+  padding: 1em 0 0.5em 0;
+}
+p {
+  line-height: 1.4em;
+  padding: 1em 0 1em 0;
+}
+b {
+  font-weight: bold;
+}
+i {
+  font-style: italic;
+}
+em {
+  font-weight: bold;
+  font-style: italic;
+}
+ul, ol {
+  line-height: 1.25em;
+}
+ul {
+  list-style-type: disc;
+}
+ol {
+  list-style-type: decimal;
+}
+ul li, ol li {
+  margin-left: 3em;
+  list-style-position: outside;
+  margin-bottom: 0.75em;
+  margin-top: 0.75em;
+  list-style-type: inherit;
+}
+.btn {
+  border: 1px solid #f1c40f;
+  border-radius: 4px;
+  padding: 0 2px;
+  font-size: 90%;
+}
+.btn::before {
+  content: "“";
+}
+.btn::after {
+  content: "”";
+}
+.bloque {
+  margin: 1em 4em 1em 4em;
+  border-left: 4px solid #2980b9;
+  padding: 1em;
+  /* background: #f0f8fa; */
+  background-color: #ecf0f1;
+  line-height: 1.25em;
+}
+.interactivo {
+  text-align: center;
+  padding: 0.5em 0 0.5em 0;
+}
+.interactivo iframe {
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.35);
+}
+
+hr {
+  border: 0.5px solid #34495e;
+}
+
+#creditos {
+  padding-top: 4em;
+}
+#creditos_originales, #creditos_adaptaciones, #creditos_adaptaciones_dgtic, #creditos_actualizacion{
+  position: relative;
+  width: 908px;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: auto 50px;
+}
+
+#creditos_originales {
+  height: 4.5em;
+  background-image: url("../images/logosOriginales.png");
+}
+
+#creditos_adaptaciones {
+  height: 3em;
+  background-image: url("../images/logosAdaptaciones.png");
+}
+
+#creditos_adaptaciones_dgtic {
+  height: 3.75em;
+  background-image: url("../images/logosAdaptaciones2.png");
+}
+
+#creditos_actualizacion {
+  height: 2.5em;
+  background-image: url("../images/logosActualizacion.png");
+}
+
+#creditos p {
+  font-size: 50%;
+  padding: 0;
+}
+
+.responsables {
+  position: absolute;
+  width: 900px;
+  bottom: 0;
+}
+.responsables p {
+  margin: 0;
+}
+
+#creative_commons {
+  position: relative;
+  left: 0;
+  margin-top: 1.5em;
+  font-size: 24px;
+}
+#creative_commons p {
+  margin: 0;
+  padding: 0;
+}
+#creative_commons img {
+  float: left;
+  height: 35px;
+  margin-right: 0.5em;
+}
+
+.katex {
+  font-size: 115% !important;
+}

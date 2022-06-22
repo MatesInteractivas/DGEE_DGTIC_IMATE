@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Geometría analítica: La línea recta">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>El ángulo de inclinación de una recta a partir de su pendiente</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Ángulo de inclinación y pendiente de una recta</div>
+  <div id="subtitulo">El ángulo de inclinación de una recta a partir de su pendiente</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Obtener el ángulo de inclinación de una recta conociendo su pendiente.</p>
+
+<h1>Procedimiento</h1>
+
+<p>El ángulo de inclinación $θ$ de una recta $L$, es el que forma dicha recta con el eje $x$, medido a partir de la dirección positiva de dicho eje hacia la recta en el sentido contrario a las manecillas del reloj.</p>
+
+<p>El rango de valores de este ángulo es: $0 ≤ θ < 180^{\circ}$</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:720px; height:360px;"></iframe></div>
+
+<p>En términos de $θ$, la pendiente $m$ de $L$ se define como el valor de su tangente, considerando que $L$ es una recta no vertical. Es decir:</p>
+
+$$\tag{1} m=tan\;θ$$
+
+<p>para $0 ≤ θ < 180^{\circ}$, $θ≠90^{\circ}$. Es conveniente recordar que en una recta vertical, el ángulo de inclinación es de $90^{\circ}$, y se considera que no tiene pendiente o que ésta es infinita, $∞$, en otras palabras está indefinida. De ahí, la restricción anterior de que $θ$ sea diferente de $90^{\circ}$.</p>
+
+<p>Despejando de (1) se tiene:</p>
+
+$$\tag{2} θ=arctan(m)$$
+
+<p>Según su ángulo de inclinación, la pendiente de $L$ puede ser:</p>
+
+<ol>
+  <li>Cero, si $θ=0^{\circ}$.</li>
+  <li>Positiva, si $0^{\circ} < θ < 90^{\circ}$.</li>
+  <li>Negativa, si $90^{\circ} < θ < 180^{\circ}$.</li>
+</ol>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:720px; height:360px;"></iframe></div>
+
+<h1>Solución</h1>
+
+<p>Si la pendiente en una carretera es de $0.3$, ¿cuál es el ángulo de inclinación de la misma?</p>
+
+<p>De (1): $m=tan\;θ=0.3$</p>
+
+<p>Aplicando (2): $θ=arctan(0.3)=16.70^{\circ}$</p>
+
+<p>Por lo tanto, el ángulo de inclinación es $16.70^{\circ}$. Utiliza el pulsador de la siguiente sección para ver la gráfica de esta recta.</p>
+
+<p>Es importante resaltar que, cuando la pendiente es negativa, el valor del arco tangente que se obtiene en una calculadora convencional es un ángulo negativo, mientras que lo que se pide es obtener un ángulo entre $90^{o}$ y $180^{o}$. Para solucionar este problema basta con sumar el valor negativo obtenido a $180^{o}$.  </p>
+
+<h1>Ejemplos</h1>
+
+<p>Utilizando el pulsador, modifica el valor de la pendiente y observa los cambios en el ángulo de inclinación.  </p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:900px; height:360px;"></iframe></div>
+
+<h1>Ejercicio</h1>
+
+<div class="interactivo"><iframe src="escenas/escena04.html" style="width:900px; height:480px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autoras</b>: Zinnya del Villar Islas y Norma Patricia Apodaca Alvarez</p>
+<p><b>Edición académica</b>: Fernando René Martínez Ortíz</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez y Fernando René Martínez Ortíz </p>
+<p></p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

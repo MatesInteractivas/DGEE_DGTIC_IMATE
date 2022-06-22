@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La línea recta"],
+	"titulo" : "Ángulo de inclinación y pendiente de una recta",
+	"descripcion" : "Determinar si un punto de coordenadas $(x,y)$ pertenece a una recta.",
+	"resena" : "Identificar si un punto pertenece a una recta dada",
+	"id" : "2_205"
+}

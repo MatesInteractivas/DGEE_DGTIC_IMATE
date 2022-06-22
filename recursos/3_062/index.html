@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Cálculo Diferencial e Integral: La derivada">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Cálculo de la rapidez (velocidad) instantánea de un móvil</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Rapidez y aceleración</div>
+  <div id="subtitulo">Cálculo de la rapidez (velocidad) instantánea de un móvil</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Calcular la rapidez instantánea de un móvil a partir de su función de posición en un tiempo determinado.</p>
+
+<h1>Antecedentes</h1>
+
+<p>La velocidad promedio de un objeto que se mueve a lo largo de una línea recta es el cociente</p>
+
+$$\frac{y_{1}-y_{0}}{t_{1}-t_{0}}$$
+
+<p>donde $y_{1}$, $y_{0}$ son las posiciones en los momentos $t_{1}$, $t_{0}$, respectivamente. Observa que como el móvil puede retroceder en un lapso de tiempo $∆t=t_{1}-t_{0}$ positivo, es posible que el desplazamiento $y_{1}-y_{0}$ sea negativo y entonces la velocidad promedio también sea negativa. En ocasiones este cociente es siempre el mismo, entonces decimos que la velocidad es constante, es decir, que el cuerpo se mueve siempre a esa velocidad. Pero no siempre es así. Por ejemplo, los cuerpos que caen recorren una distancia mayor por unidad de tiempo a medida que van cayendo; un automóvil que frena va disminuyendo la distancia recorrida por unidad de tiempo y un objeto colgado de un resorte disminuye su rapidez al acercarse a su máximo desplazamiento, para cambiar de dirección cuando lo alcanza.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:720px; height:480px;"></iframe></div>
+
+<p>En la escena anterior se muestran ejemplos de gráficas de posición respecto al tiempo. En ellos se observa que la velocidad promedio entre dos momentos $t_{0}$ y $t$</p>
+
+$$\frac{y(t)-y(t_{0})}{t-t_{0}}$$
+
+<p>es la pendiente de la recta que cruza a la gráfica en los puntos $(t_{0},y(t_{0}))$ y $(t,y(t))$. En el ejemplo 1 la velocidad promedio es constante, el objeto se mueve siempre a igual velocidad. Pero en los otros depende del tramo de tiempo que estemos observando. ¿Qué velocidad lleva exactamente en el tiempo $t_{0}$?</p>
+
+<h1>Procedimiento</h1>
+
+<p>Cuando tomamos lapsos de tiempo cada vez menores, es decir, cuando hacemos que $t$ se aproxime a $t_{0}$, la velocidad promedio se aproxima a un valor límite que definimos como la velocidad instantánea que el objeto lleva en el momento $t_{0}$. Así, velocidad instantánea en $\displaystyle t_{0}=\lim_{t \to t_{0}}{\frac{y(t)-y(t_{0})}{t-t_{0}}}$.</p>
+
+<p>Pero este límite es la derivada en $t_{0}$ de la función posición $y(t)$. Por lo tanto, la velocidad instantánea es la derivada de la función posición respecto al tiempo</p>
+
+$$v(t_{0})=\frac{dy}{dt}(t_{0})$$
+
+<h1>Ejemplos</h1>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:720px; height:480px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:900px; height:530px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autora</b>:  María de Lourdes Velasco Arregui</p>
+<p><b>Editores académicos</b>: José Luis Abreu León y Carlos Hernández Garciadiego</p>
+<p><b>Editor técnico</b>: Carlos Alberto Serrato Hernández</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

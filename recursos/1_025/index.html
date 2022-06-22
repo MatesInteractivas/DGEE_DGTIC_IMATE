@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Aritmética: Los números y sus operaciones">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Operaciones básicas con signos de agrupación</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Números racionales: Operaciones básicas</div>
+  <div id="subtitulo">Operaciones básicas con signos de agrupación</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Realizar operaciones combinadas que involucren números racionales incluyendo signos de agrupación.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Cuando se realizan operaciones que contienen sumas, restas, multiplicaciones y divisiones, pero que además incluyen símbolos de agrupación como paréntesis, corchetes o llaves, siempre se realizan primero las operaciones dentro de los paréntesis o signos de agrupación más internos. Dentro de cada símbolo de agrupación, el orden en que se deben realizar las operaciones es el de siempre: primero multiplicaciones y divisiones, y luego sumas y restas, recorriendo la expresión de izquierda a derecha.</p>
+
+<p>Por ejemplo, consideremos una expresión de la forma:</p>
+
+$$\Big(\frac{a}{b} + \frac{c}{d}·\Big(\frac{e}{f} - \frac{g}{h}\Big)\Big)$$
+
+<p>donde $a$, $b$, $c$, $d$, $e$, $f$, $g$ y $h$ son enteros. Operamos primero en el paréntesis más interior, que es donde está la resta. Así quedaría:</p>
+
+<table style="margin-left:5%; width:90%">
+<tr>
+  <td>$\displaystyle \Big(\frac{a}{b} + \frac{c}{d}· {\color{#3467dd}\Big(\frac{e·h - f·g}{f·h} \Big)}\Big)$</td>
+  <td>Se realiza la resta del <span style="color:#3467dd">paréntesis interior</span>.</td>
+</tr>
+<tr>
+  <td>$\displaystyle \Big(\frac{a}{b} + \frac{{\color{#e80022}c}·(e·h - f·g)}{{\color{#e80022}d}·f·h}\Big)$</td>
+  <td>Se realiza el <span style="color:#e80022">producto</span> antes que la suma.</td>
+</tr>
+<tr>
+  <td>$\displaystyle \Big(\frac{{\color{#00b900}a·(d·f·h)+ b}·c·((e·h - f·g)}{{\color{#00b900}b}·d·f·h}^{}\Big)$</td>
+  <td>Se realiza la <span style="color:#00b900">suma</span>.</td>
+</tr>
+</table>
+
+<p>Puede haber diversas situaciones, pero siempre hay que aplicar las dos reglas:</p>
+<ul>
+<li>Operar de adentro hacia afuera y de izquierda a derecha.</li>
+<li>Respetar la prioridad de la multiplicación y la división sobre la suma y la resta  (es decir, hacer primero las multiplicaciones y divisiones, y luego las sumas y restas).</li>
+</ul>
+
+<p>Veamos un ejemplo más complicado pero con números en vez de letras:</p>
+
+$$\bigg(\bigg(\frac{3}{4} + \frac{2}{3}\bigg)·\frac{5}{7}\bigg) - \bigg(\frac{1}{2}-\bigg(\frac{2}{5} ÷ \frac{5}{3}\bigg)\bigg)$$
+
+<p>Operamos primero dentro de los paréntesis más internos que son los indicados en rojo en la siguiente reescritura de la expresión de arriba:</p>
+
+$$\bigg({\color{#dd0011}\bigg(\frac{3}{4} + \frac{2}{3}\bigg)}·\frac{5}{7}\bigg) -\bigg( \frac{1}{2}-{\color{#dd0011}\bigg(\frac{2}{5} ÷ \frac{5}{3}\bigg)}\bigg)$$
+
+<p>Como los paréntesis marcados en rojo son ajenos, podemos ejecutarlos simultáneamente. Así, obtenemos:</p>
+$$\bigg({\color{#dd0011}\frac{9+8}{12}} ·\frac{5}{7}\bigg) -\bigg( \frac{1}{2}-{\color{#dd0011}\frac{6}{25}}\bigg)$$ <p>Simplificando:</p>
+$$\bigg(\frac{17}{12} ·\frac{5}{7}\bigg) -\bigg( \frac{25-12}{50}\bigg)$$
+
+<p>Ahora realizamos las operaciones de los paréntesis restantes que son ajenos y ya no están uno dentro de otro. Al hacerlo obtenemos:</p>
+$$\frac{85}{84} - \frac{13}{50}$$
+
+<p>Finalmente, realizamos la última operación indicada entre fracciones que es la resta:</p>
+
+$$\frac{85·50-19·84}{84·50} =\frac{4250-1092}{4200}$$
+
+<p>Simplificando:</p>
+$$\frac{4250-1092}{4200}=\frac{3158}{4200}=\frac{1579}{2100}$$
+
+<h1>Solución</h1>
+
+<p>El siguiente recuadro interactivo presenta ejemplos resueltos paso a paso de expresiones con fracciones y paréntesis. Estúdialos antes de pasar a la sección de ejercicios. </p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:800px; height:480px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>Realiza la siguiente combinación de operaciones, escribe tu resultado en el campo de texto y pulsa el botón <span class="btn">Verificar</span>.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:720px; height:360px;"></iframe></div>
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>: Héctor de Jesús Argueta Villamar</p>
+<p><b>Edición académica</b>: Fernando René Martinez Ortíz</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

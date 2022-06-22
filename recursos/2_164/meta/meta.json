@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Trigonometría: Elementos de trigonometría"],
+	"titulo" : "Aplicaciones",
+	"descripcion" : "Obtener la medida del ángulo de depresión en el contexto de un problema empleando razones trigonométricas.",
+	"resena" : "Cálculo del ángulo de depresión",
+	"id" : "2_164"
+}

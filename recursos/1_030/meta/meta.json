@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Aritmética: Los números y sus operaciones"],
+	"titulo" : "Números reales: Los números irracionales",
+	"descripcion" : "Ubicar en la recta numérica un número irracional entre dos racionales.",
+	"resena" : "Ubicación de un número irracional entre dos racionales",
+	"id" : "1_030"
+}

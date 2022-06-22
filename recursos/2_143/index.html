@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Funciones y sus gráficas: Funciones algebraicas">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Simetría con los ejes y el origen de funciones racionales a partir de su regla de correspondencia.</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Funciones racionales</div>
+  <div id="subtitulo">Simetría con los ejes y el origen de las funciones racionales</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Determinar si una función $f(x)=\frac{P(x)}{Q(x)}$ es simétrica respecto al eje $X$, respecto al eje $Y$ o respecto al origen. $P(x)$ y $Q(x)$ deben ser lineales o cuadráticas.</p>
+
+<h1>Introducción</h1>
+
+<p>Simetría axial. Una figura plana tiene simetría respecto a un eje, si al reflejarse en ese eje se obtiene la misma figura.</p>
+
+<p>Simetría central. Una figura plana tiene simetría respecto a un punto $O$ si, para cada punto $P$ en la figura, existe otro punto $P'$ a la misma distancia de $O$ y alineado con $O$ y $P$, donde $P'$ también está en la figura.</p>
+
+<p>En el siguiente recuadro se observa un ejemplo de simetría axial, izquierda, y uno de simetría central, derecha. Desplaza el punto rojo para mover el punto $P$.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:480px; height:350px;"></iframe></div>
+
+<h1>Definición</h1>
+
+<p>Una función es simétrica respecto al eje $Y$, también llamada función par, si su gráfica es simétrica con respecto a dicho eje. Es decir, si para cada valor de $x$ se tiene que $f(x)=f(-x)$.</p>
+
+<p>Una función es simétrica respecto al origen $(0,0)$, si para cada valor $x$ se tiene que $f(-x)=-f(x)$.</p>
+
+<p>Notemos que una función, no idénticamente cero, jamás podrá ser simétrica respecto al eje $X$ pues, por definición, a un mismo valor de $x$ no le pueden corresponder dos valores en el eje $Y$. La función idénticamente cero es la única simétrica con respecto al eje $X$, pues el simétrico del punto $(x,0)$ sería el mismo punto.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:480px; height:480px;"></iframe></div>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:480px; height:480px;"></iframe></div>
+
+<h1>Procedimiento</h1>
+
+<p>Para determinar si $f(x)$ es o no simétrica respecto al eje $Y$ se sigue el siguiente procedimiento:</p>
+
+<ol>
+  <li>Sustituir $x$ por $-x$ en $f(x)$, lo cual resulta en la expresión algebraica: $f(-x)$.</li>
+  <li>Si $f(x)=f(-x)$ para toda $x$, entonces $f$ es simétrica respecto al eje $Y$.</li>
+  <li>Si no sucede así, entonces no es simétrica respecto al eje $Y$.</li>
+</ol>
+
+<p>Para ver si una función es simétrica con respecto al origen se sigue el siguiente procedimiento:</p>
+
+<ol>
+  <li>Sustituir $x$ por $-x$ en $f(x)$, lo cual resulta en la expresión algebraica: $f(-x)$.</li>
+  <li>Si $f(x)=-f(-x)$ para toda $x$, entonces $f$ es simétrica respecto al origen.</li>
+  <li>Si no sucede así, entonces no es simétrica respecto al origen.</li>
+</ol>
+
+<p>Utiliza el siguiente cuadro interactivo para repasar el procedimiento:</p>
+
+<div class="interactivo"><iframe src="escenas/escena04.html" style="width:900px; height:350px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>Utiliza los procedimientos descritos anteriormente para determinar si las funciones presentadas son simétricas o no respecto al eje $Y$ o al origen.</p>
+
+<div class="interactivo"><iframe src="escenas/escena05.html" style="width:820px; height:380px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autora</b>: Valentina Muñoz Porras</p>
+<p><b>Edición académica</b>: Carlos Hernández Garciadiego y Fernando René Martínez Ortiz </p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez  y Fernando René Martínez Ortiz</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Joel Espinosa Longi</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

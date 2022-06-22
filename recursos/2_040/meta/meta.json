@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La línea recta"],
+	"titulo" : "Paralelismo y perpendicularidad",
+	"descripcion" : "Identificar que dos rectas son perpendiculares cuando sus pendientes son recíprocas y de signo contrario.",
+	"resena" : "Reconocer rectas perpendiculares a partir de sus pendientes",
+	"id" : "2_040"
+}

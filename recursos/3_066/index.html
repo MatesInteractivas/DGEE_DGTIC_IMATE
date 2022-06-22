@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Cálculo Diferencial e Integral: La integral">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Primitivas o antiderivadas de funciones trascendentes</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">La integral como función primitiva o antiderivada</div>
+  <div id="subtitulo">Primitivas o antiderivadas de funciones trascendentes</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<ul>
+  <li>Obtener de forma inmediata la función primitiva o antiderivada de una función trascendente.</li>
+  <li>Obtener la integral indefinida inmediata de una función trascendente.</li>
+</ul>
+
+<h1>Conceptos básicos</h1>
+
+<p>La función primitiva, o antiderivada, de una función $f(x)$ es una función tal que al ser derivada nos generará la misma $f(x)$. Así pues, $F(x)$ será una antiderivada de $f(x)$ si $F'(x)=f(x)$. En notación de integral, $F'(x)=f(x)$ se puede expresar como $\int{f(x)dx}=F(x)$. Por otra parte, recordemos que las funciones trascendentes son aquellas donde aparecen funciones trigonométricas, logarítmicas, y exponenciales. Algunos ejemplos de funciones trascendentes son $f(x)=e^{x}$, $f(x)=ln(x)$, y $f(x)=sec^{2}(x)$.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Observa las siguientes funciones: $f(x)=3sec^{2}(2x)$ y $g(x)=\frac{3}{2}tan(2x)$. ¿Qué obtenemos de derivar $g(x)$?</p>
+
+<p>Al resolver la derivada, tenemos que $\frac{d}{dx}g(x)=\frac{3}{2}sec^{2}(2x)2=3sec^{2}(2x)=f(x)$.</p>
+
+<p>Efectivamente, al derivar $g(x)$ se obtiene $f(x)$. De tal forma que $g(x)$ satisface la definición dada en los conceptos básicos y, por lo tanto, es una antiderivada de $f(x)$.</p>
+
+<p>El proceso para obtener la antiderivada, conocido también como integración, se abordará más a fondo en la parte de ejemplos. No obstante, cabe hacer notar que la integral, al ser inversa de la derivada, comparte muchas propiedades con ésta, como por ejemplo:</p>
+
+<ol>
+  <li>
+    La integral de una suma de funciones es la suma de las integrales de cada una de ellas. Por ejemplo, 
+    $$\int{(ln(x)-8x^{2})dx}=\int{ln(x)dx}-\int{8x^{2}dx}$$
+  </li>
+  <li>
+    La integral del producto de una constante una función es igual a la constante por la integral de la función. Por ejemplo, 
+    $$\int{5sen(x)dx}=5\int{sen(x)dx}$$
+  </li>
+</ol>
+
+<p>Cabe hacer una observación importante. Una vez que se cuenta con una antiderivada o primitiva de una función original, a ésta se le puede sumar cualquier constante. Al derivar cualquier antiderivada más cualquier constante elegida, la derivada será siempre igual, esto es, la función original. Por ello, es importante notar que hay todo un conjunto de funciones que difieren entre sí por la constante, pero que todas son antiderivadas de la función original. A este conjunto se le conoce como integral indefinida. En los presentes ejemplos y ejercicios consideraremos dicha constante siempre cero.</p>
+
+<h1>Ejemplos</h1>
+
+<p>A continuación, se muestran ejemplos del proceso que se tiene que seguir para obtener, a partir de $f(x)$, su antiderivada $F(x)$, pon atención a cada paso. Presiona el botón <span class="btn">Generar ejemplo</span> para observar nuevos ejemplos.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:900px; height:500px;"></iframe></div>
+
+<p>Observa que, en muchos casos, la habilidad para poder resolver una integral consiste principalmente en ser capaz de identificar una regla de la cadena presente en el integrando de la función en cuestión. El resto es manipulación algebraica.</p>
+
+<h1>Ejercicios</h1>
+
+<p>Resuelve los ejercicios completando los campos de texto. Si se llegan a requerir decimales, procura responder con al menos 2 decimales de precisión. Después da clic en el botón <span class="btn">Verificar</span>. Recuerda que $e^{x}$ también se puede expresar como $exp(x)$.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:900px; height:530px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>: Alejandro Radillo Díaz</p>
+<p><b>Edición académica</b>: José Luis Abreu León y Carlos Hernández Garciadiego</p>
+<p><b>Edicion técnica</b>: Octavio Fonseca Ramos</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: La integral"],
+	"titulo" : "Métodos de integración",
+	"descripcion" : "Obtener la integral indefinida de una función por sustitución o cambio de variable.",
+	"resena" : "Integración de funciones algebraicas por sustitución",
+	"id" : "3_070"
+}

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: La derivada"],
+	"titulo" : "Aplicaciones de la derivada",
+	"descripcion" : "Encontrar valores que minimicen o maximicen funciones que modelen situaciones reales de áreas, volúmenes, costos o ganancias.",
+	"resena" : "Problemas de optimización como aplicación de la derivada",
+	"id" : "3_064"
+}

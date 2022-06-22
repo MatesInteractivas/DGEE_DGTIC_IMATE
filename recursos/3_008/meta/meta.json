@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: Limites"],
+	"titulo" : "Calculo de limites de funciones",
+	"descripcion" : "Obtener por racionalización el valor del límite de una función que dé lugar a una indeterminación del tipo $\frac{0}{0}$.",
+	"resena" : "Límites de funciones algebraicas con indeterminación usando racionalización",
+	"id" : "3_008"
+}

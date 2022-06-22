@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Álgebra: Productos notables y factorización">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas, Álgebra, Factorización">
+  <title>Identificar el factor común en un binomio</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Factor común</div>
+  <div id="subtitulo">Identificar el factor común en un binomio</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Identificar el máximo factor común de un polinomio.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Para encontrar el factor común de un polinomio:</p>
+
+<ol>
+  <li>Se determina el número mayor que divida exactamente a todos los coeficientes del polinomio.</li>
+  <li>Se identifican las literales comunes de menor exponente que se encuentren entre todos los términos del polinomio.</li>
+</ol>
+
+<p>El monomio formado por el máximo común divisor de los coeficientes y las literales comunes de menor exponente será el máximo factor común del polinomio.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:900px; height:600px;"></iframe></div>
+
+<h1>Solución</h1>
+
+<p>El máximo común divisor de una colección de monomios es un monomio que es factor de todos ellos; de manera que los monomios que queden una vez hecha la factorización, ya no tengan factores comunes. Análogamente, el máximo común divisor de un polinomio será el máximo común divisor de los monomios que lo componen.</p>
+
+<p>En general, el máximo común divisor de un polinomio puede encontrarse con relativa facilidad de la forma siguiente:</p>
+
+<div class="bloque">Se busca el máximo común divisor de los coeficientes de todos los términos del polinomio, el cual será el coeficiente del factor común, cuya parte literal estará formada por las literales comunes a todos los términos del polinomio afectadas con los menores exponentes.</div>
+
+<h1>Ejemplos</h1>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:900px; height:570px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>En el siguiente recuadro interactivo, escribe los datos que se te piden en los botones mostrados (recuadros en blanco) y pulsa ↵ para terminar. Si tus respuestas son correctas, se deshabilitará el botón. En caso contrario, permanecerá habilitado para que puedas hacer las correcciones pertinentes y, para la primera pregunta, se desplegará un mensaje de error. Cuando hayas respondido a todos los puntos correctamente, podrás seguir practicando al pulsar <span class="btn">Otro ejercicio</span>.</p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:900px; height:570px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autoras</b>: Eréndira Itzel García Islas y Norma Patricia Apodaca Alvarez</p>
+<p><b>Edición académica</b>: José Luis Abreu León</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

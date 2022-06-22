@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Álgebra: Ecuaciones cuadráticas">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Ecuaciones de la forma a(x + m)² = n</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Ecuaciones cuadráticas especiales</div>
+  <div id="subtitulo">Ecuaciones de la forma $a(x+m)^{2}=n$</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Resolver ecuaciones cuadráticas del tipo $a(x+m)^{2}=n$.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Para resolver ecuaciones cuadráticas de la forma $a$ basta despejar $x$ en la ecuación, llevando a cabo los siguientes pasos:</p>
+
+<ol>
+  <li>Se pasa el término constante $a$ al lado derecho de la ecuación, como divisor de $n$.</li>
+  <li>Se saca la raíz cuadrada en ambos lados de la ecuación.</li>
+  <li>Por último se pasa al lado derecho la constante $m$ restando.</li>
+</ol>
+
+<h1>Solución</h1>
+
+<p>Las soluciones son $x_{1}=+\;\sqrt{\frac{n}{a}}-m$ y $x_{2}=-\;\sqrt{\frac{n}{a}}-m$, lo cual puede abreviarse escribiendo $x_{1}=±\;\sqrt{\frac{n}{a}}-m$. Estas soluciones se obtienen al realizar los pasos antes mencionados, como se muestra a continuación:</p>
+
+$$a(x+m)^{2}=n$$
+
+<ol>
+  <li>
+    Pasar el término constante $a$ al lado derecho, como divisor de $n$.<br>
+    $(x+m)^{2}=\frac{n}{a}$
+  </li>
+  <li>
+    Extraer la raíz cuadrada a ambos lados.<br>
+    $x+m=±\sqrt{\frac{n}{a}}$
+  </li>
+  <li>
+    Pasar $m$ restando al lado derecho.<br>
+    $x=±\sqrt{\frac{n}{a}}-m$
+  </li>
+</ol>
+
+<p>Para saber el tipo de soluciones de la ecuación basta analizar el cociente $\frac{n}{a}$. Si es positivo, habrá dos soluciones reales diferentes; si es cero, habrá una solución (en realidad las dos soluciones coinciden en una sola); y si es negativo, no existirá ninguna solución real.</p>
+
+<h1>Ejemplos</h1>
+
+<p>Utiliza el recuadro interactivo que se muestra a continuación para repasar el método. Pulsa <span class="btn">Continuar</span> para desplegar el siguiente paso, y <span class="btn">Otro ejemplo</span> para ver más ecuaciones.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:720px; height:480px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>Resuelve en tu cuaderno la siguiente ecuación. Después indica en el menú del recuadro interactivo el número de soluciones que tiene, y en su caso, introduce el valor de las mismas en el campo de texto correspondiente y verifíca tu respuesta. Presiona <span class="btn">Otro ejercicio</span> para resolver más ecuaciones. Recuerda que puedes realizar operaciones para escribir los resultados.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:720px; height:420px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autoras</b>: Valentina Muñoz Porras y Norma Patricia Apodaca Alvarez</p>
+<p><b>Edición académica</b>: José Luis Abreu León</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

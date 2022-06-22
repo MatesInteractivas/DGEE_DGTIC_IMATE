@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Ceros de funciones polinomiales de grado 3 que sean factorizables.",
+	"descripcion" : "Factorizar una función del tipo:",
+	"resena" : "Factorización de funciones polinomiales de grado $3$",
+	"id" : "2_126"
+}

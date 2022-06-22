@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La línea recta"],
+	"titulo" : "Paralelismo y perpendicularidad",
+	"descripcion" : "Identificar que dos rectas son paralelas cuando sus pendientes son iguales.",
+	"resena" : "Reconocer rectas paralelas a partir de sus pendientes",
+	"id" : "2_039"
+}

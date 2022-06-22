@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Álgebra: Productos notables y factorización"],
+	"titulo" : "Sumas y diferencias de cuadrados y cubos",
+	"descripcion" : "Identificar el producto de binomios conjugados como una diferencia de cuadrados.",
+	"resena" : "Producto de binomios conjugados",
+	"id" : "1_067"
+}

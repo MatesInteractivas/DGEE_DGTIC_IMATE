@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La línea recta"],
+	"titulo" : "Diversas formas de la ecuación de la recta",
+	"descripcion" : "Determinar la ecuación de una recta de la forma $Ax+By+C=0$ cuando se conocen las coordenadas de dos de sus puntos.",
+	"resena" : "Ecuación de la recta Ax+By+C=0 conocidos dos de sus puntos",
+	"id" : "2_030"
+}

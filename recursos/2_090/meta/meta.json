@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La parábola"],
+	"titulo" : "Elementos de la parábola a partir de su ecuación",
+	"descripcion" : "Obtener cualquiera de los elementos (vértice, foco, directriz, lado recto, eje focal o concavidad) de una parábola a partir de su ecuación ordinaria.",
+	"resena" : "Elementos de la parábola a partir de su ecuación ordinaria",
+	"id" : "2_090"
+}

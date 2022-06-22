@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: La derivada"],
+	"titulo" : "Aplicaciones de la derivada",
+	"descripcion" : "Obtener la ecuación de la recta tangente a la gráfica de una función algebraica en un punto. Obtener la ecuación de la recta tangente a la gráfica de una función trascendente en un punto.",
+	"resena" : "Ecuación de la tangente a una curva en un punto",
+	"id" : "3_060"
+}

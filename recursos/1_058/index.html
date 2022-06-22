@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Álgebra: Sistemas de ecuaciones lineales de 2 x 2">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Identifiación del sistema de ecuaciones que modela un problema</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Sistemas de ecuaciones lineales de $2×2$</div>
+  <div id="subtitulo">Identifación del sistema de ecuaciones que modela un problema</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Identificar el sistema de ecuaciones lineales de $2×2$ que permite resolver un problema.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Cuando en un problema se te pide que encuentres dos incógnitas y al traducirlo obtienes un par de ecuaciones lineales, te encuentras ante un sistema de ecuaciones lineales de $2×2$.</p>
+
+<p>Como ejemplo podemos traducir al lenguaje algebraico el problema que se enuncia a continuación.</p>
+
+<p class="bloque">Una solución $A$ contiene $3\%$ de alcohol y otra solución $B$, $6\%$ de alcohol. Se desea mezclar las dos soluciones para obtener $50$ litros de una solución que contenga $4.4\%$ de alcohol. ¿Cuántos litros de cada una de las soluciones ($A$ y $B$) serán necesarios para obtener la solución pedida?</p>
+
+
+<p>En este ejemplo se tienen dos incógnitas: la cantidad de litros de la solución $A$ (incógnita a la que se le asigna la letra $x$) y la cantidad de litros de la solución $B$ (a la cual se le asigna la incógnita $y$).</p>
+
+<p>Por un lado, se sabe que el número de litros de la solución $A$ más el número de litros de la solución $B$ debe producir los $50$ litros que se necesitan. De aquí se tiene la ecuación:</p>
+
+$$x+y=50$$
+
+<p>Por otro lado, la concentración de alcohol de la solución A ($3\%$) multiplicada por el número de litros de la solución $A$ más la concentración de alcohol de la solución $B$ ($6\%$) multiplicado por el número de litros de la solución $B$ debe producir el porcentaje de alcohol deseado ($4.4\%$) multiplicado por el número de litros totales ($50$ litros). Se tiene entonces una segunda ecuación:</p>
+
+$$0.03x+0.06y=0.044(50)$$
+
+<h1>Solución</h1>
+
+<p>Una vez que el problema ha quedado expresado como un sistema de ecuaciones lineales de $2×2$, hay que aplicar alguno de los métodos de solución de este tipo de sistemas para encontrar la respuesta al problema.</p>
+
+$$\tag{1} x+y=50$$
+$$\tag{2} 0.03x+0.06y=2.2$$
+
+<p>Se puede utilizar el método de sustitución puesto que es fácil despejar cualquiera de las incógnitas de la ecuación (1). Así, el anterior sistema es equivalente al sistema:</p>
+
+$$\tag{3} y=50-x$$
+$$\tag{4} 0.03x+0.06y=2.2$$
+
+<p>Sustituyendo el valor de $y$ de la ecuación (3) en la ecuación (4) se obtiene la ecuación:</p>
+
+$$0.03 x+0.06(50-x)=2.2$$
+
+<p>Esta es una ecuación lineal que se simplifica como:</p>
+
+$$-0.03 x+3=2.2$$
+
+<p>Al resolver esta última ecuación se obtiene que $x ≈ 26.67$ litros. Valor que, al ser sustituido en la ecuación (3) produce $y ≈ 23.33$ litros.</p>
+
+<h1>Ejercicios</h1>
+
+<p>En el siguiente recuadro interactivo puedes traducir los problemas propuestos al lenguaje algebraico. </p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:900px; height:570px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>: Fernando René Martínez Ortiz</p>
+<p><b>Edición académica</b>: José Luis Abreu León</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

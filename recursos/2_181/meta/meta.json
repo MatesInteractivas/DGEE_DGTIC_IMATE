@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones trascendentes"],
+	"titulo" : "Funciones trigonométricas",
+	"descripcion" : "Identificar el periodo en la gráfica de la función seno o coseno.",
+	"resena" : "Noción de amplitud, periodo y frecuencia",
+	"id" : "2_181"
+}

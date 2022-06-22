@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Aritmética: Los números y sus operaciones">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Resolución de problemas que involucran números enteros</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Números enteros</div>
+  <div id="subtitulo">Resolución de problemas que involucran números enteros</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Resolver problemas que involucren operaciones básicas con números enteros.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Al plantear un problema se desea determinar ciertas cantidades desconocidas (incógnitas) a partir de cantidades conocidas (datos). Por ejemplo, se quieren encontrar dos números cuya suma sea de $132$ y su diferencia de $30$.</p>
+
+<p>Una primera estrategia para resolver este problema se basa en hacer "tanteos". Esta estrategia consiste en intentar adivinar los valores de las incógnitas, aunque este adivinar no debe carecer de razonamiento. Comenzar con los números $100$ y $50$ para resolver el problema anterior es un mal empleo de la estrategia de tanteo, porque estos números no suman $132$. Un mejor comienzo radica en fijar el primer número, digamos el $100$ y obligar a que el segundo número cumpla con la primera condición, es decir, debe ser $32$.</p>
+
+<p>Una vez que los números cumplen con la suma de $132$, debemos verificar que su diferencia sea $30$. Con nuestro primer tanteo la diferencia es $100-32=68$, un número demasiado grande, por lo que deben realizarse nuevos tanteos con números enteros más pequeños hasta encontrar los números correctos.</p>
+
+<p>En el siguiente recuadro interactivo puedes realizar tanteos para resolver los problemas propuestos. Una vez que hayas resuelto uno de éstos, aparecerá un botón que te permitirá observar una estrategia diferente para obtener la solución: usando la imaginación.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:720px; height:570px;"></iframe></div>
+
+<p>Otro tipo de problemas que puedes resolver con tus conocimientos sobre números enteros tiene que ver con objetos en movimiento que recorren ciertas distancias. Un ejemplo común de este tipo de problemas es el siguiente:</p>
+
+<div class="bloque">
+A las 7:00 a.m. parte un automóvil de la ciudad $A$ a una velocidad de $80km/h$ y va al encuentro de otro que sale de la ciudad $B$ a una velocidad de $60km/h$ a la misma hora. Si la distancia entre ambas ciudades es de $700 km$. ¿A qué hora se encontrarán?
+</div>
+
+<h1>Solución</h1>
+
+<p>Cada hora, entre los dos vehículos recorren $140 km = 60 km+80 km$, de manera que recorren los $700 km$ que separan a las ciudades A y B en $700÷140 = 5 hr$. Como los vehículos partieron a las 7:00 a.m. deben encontrarse a las 12:00 p.m.</p>
+
+<div class="interactivo"><iframe src="escenas/animar.html" style="width:720px; height:400px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>En el recuadro interactivo que se encuentra a continuación, pulsa el botón inicial para que se muestren diversos problemas que podrás resolver. Recuerda que los cuadros de texto también sirven para realizar operaciones directamente o acceder a la calculadora presionando dos veces con el ratón.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02B.html" style="width:720px; height:570px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>: Fernando René Martínez Ortiz</p>
+<p><b>Edición académica</b>: José Luis Abreu León</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Octavio Fonseca Ramos</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

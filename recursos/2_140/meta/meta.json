@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Rango de funciones racionales a partir de su regla de correspondencia.",
+	"descripcion" : "Determinar el rango de una función del tipo $f(x)=\frac{P(x)}{Q(x)}$ con $P(x)$ y $Q(x)$ lineales o cuadráticas.",
+	"resena" : "Rango de una función racional con numerador y denominador lineales o cuadráticos",
+	"id" : "2_140"
+}

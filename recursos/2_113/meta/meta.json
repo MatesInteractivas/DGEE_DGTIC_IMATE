@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Concepto y notación de función y gráfica de una función",
+	"descripcion" : "Identificar gráficamente un intervalo expresado en cualquier notación.",
+	"resena" : "Identificación de intervalo a partir de su representación gráfica",
+	"id" : "2_113"
+}

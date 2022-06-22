@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Concepto y notación de función y gráfica de una función",
+	"descripcion" : "Distinguir si un conjunto de parejas ordenadas corresponde a una función.",
+	"resena" : "La función como un conjunto de parejas ordenadas",
+	"id" : "2_111"
+}

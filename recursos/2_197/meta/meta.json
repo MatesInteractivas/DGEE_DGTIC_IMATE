@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones trascendentes"],
+	"titulo" : "Funciones logaritmicas",
+	"descripcion" : "Determinar el valor de logaritmos decimales y naturales con ayuda de tablas o calculadora, hasta diezmilésimos.",
+	"resena" : "Logaritmos con base 10 y logaritmos naturales (con base e)",
+	"id" : "2_197"
+}

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Álgebra: Ecuaciones cuadráticas"],
+	"titulo" : "Aplicaciones de las ecuaciones cuadráticas",
+	"descripcion" : "Resolver problemas mediante una ecuación cuadrática.",
+	"resena" : "Resolución de problemas mediante ecuaciones cuadráticas",
+	"id" : "1_079"
+}

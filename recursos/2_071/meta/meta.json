@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La parábola"],
+	"titulo" : "Propiedades de la parábola",
+	"descripcion" : "Identificar los elementos de una parábola (vértice, foco, directriz, lado recto y eje focal) en una gráfica.",
+	"resena" : "Elementos de la parábola",
+	"id" : "2_071"
+}

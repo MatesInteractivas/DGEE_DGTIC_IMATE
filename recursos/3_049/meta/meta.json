@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: La derivada"],
+	"titulo" : "Derivadas sucesivas",
+	"descripcion" : "",
+	"resena" : "Segunda y tercera derivadas de una función algebraica",
+	"id" : "3_049"
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Cálculo Diferencial e Integral: Limites">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Límites de funciones con indeterminación</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Cálculo de límites de funciones</div>
+  <div id="subtitulo">Límites de funciones con indeterminación</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Obtener el valor del límite de una función cuando $x$ tiende a infinito y presenta alguna indeterminación.</p>
+
+<h1>Conceptos básicos</h1>
+
+<p>Cuando evaluamos una función $f(x)$ en números $x$ cada vez más grandes, pueden pasar cuatro cosas como se describe en el siguiente cuadro.</p>
+
+<ul>
+  <li>
+    Los valores $f(x)$ se aproximan a un número $L$, y escribimos
+    $$\lim_{x \to  ∞} f(x)=L$$
+  </li>
+  <li>
+    Los valores $f(x)$ son cada vez mayores y crecen sin cota, y escribimos
+    $$\lim_{x \to  ∞} f(x)=∞$$
+  </li>
+  <li>
+    Los valores $f(x)$ son cada vez menores y decrecen sin cota, y escribimos
+    $$\lim_{x \to  ∞} f(x)=-∞$$
+  </li>
+  <li>Los valores $f(x)$ no muestran ninguno de los comportamientos anteriores.</li>
+</ul>
+
+<h1>Ejemplos</h1>
+
+<p>Veamos algunos ejemplos típicos. En el cuadro de texto, escribe un número grande y oprime ↵ para evaluar la función en ese número. En la escena de la derecha, puedes arrastrar el plano y hacer zoom con los pulsadores para ver el comportamiento de la gráfica.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:900px; height:480px;"></iframe></div>
+
+<h1>Procedimiento</h1>
+
+<p>Los límites, cuando $x→∞$, se pueden sumar, restar, multiplicar y dividir, siempre y cuando no se presente una indeterminación, así, por ejemplo,</p>
+
+$$\lim_{x \to ∞}{(x^{2}+e^{2}-5)}=\lim_{x \to ∞}{x^{2}}+\lim_{x \to ∞}{e^{x}}-\lim_{x \to ∞}{5}=∞+∞-5=∞$$
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:900px; height:420px;"></iframe></div></p>
+
+<p>Cuando se presenta alguna indeterminación, hay que reescribir la función para eliminar dicha indeterminación. </p>
+
+<p>A continuación veremos algunas de las técnicas para eliminar la indeterminación.</p>
+
+<div class="interactivo"><iframe src="escenas/escena04.html" style="width:900px; height:570px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>En los siguientes ejercicios, selecciona el tipo de límite que es, en caso de que el límite sea un número, saldrá un campo de texto para que escribas su valor. Escríbelo y oprime ↵.</p>
+
+<div class="interactivo"><iframe src="escenas/escena05.html" style="width:720px; height:420px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>: Carlos Hernández Garciadiego</p>
+<p><b>Edición académica</b>: Carlos Hernández Garciadiego y José Luis Abreu León</p>
+<p><b>Edición técnica</b>: Octavio Fonseca Ramos y Carlos Alberto Serrato Hernández</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

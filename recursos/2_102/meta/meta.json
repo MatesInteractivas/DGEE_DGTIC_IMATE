@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La elipse"],
+	"titulo" : "La elipse a partir de algunos de sus elementos",
+	"descripcion" : "Obtener la ecuación ordinaria de una elipse con centro en $(h,k)$, conociendo un vértice y un extremo del eje menor.",
+	"resena" : "Ecuación ordinaria de la elipse dados el centro  un vértice y un extremo del eje menor",
+	"id" : "2_102"
+}

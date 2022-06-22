@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Cálculo Diferencial e Integral: Limites">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Límites al infinito de una función a partir de su gráfica</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Concepto intuitivo de límite</div>
+  <div id="subtitulo">Límites al infinito de una función a partir de su gráfica</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Obtener el valor de límites al infinito a partir de la observación de la gráfica de una función.</p>
+
+<h1>Conceptos básicos</h1>
+
+<p>El límite de una función $f(x)$ al infinito es el número al que se acercan los valores de la función cuando la variable $x$ tiende a $+∞$ o a $-∞$. Las funciones no siempre tienen límite al infinito.</p>
+
+<p>Explora los distintos ejemplos que se dan en la escena más abajo para formarte una idea intuitiva de cuándo una función:</p>
+
+<ul>
+  <li>Tiene límite cuando $x$ tiende a $-∞$·</li>
+  <li>Tiene límite cuando $x$ tiende a $+∞$·</li>
+  <li>No tiene límite cuando $x$ tiende a $-∞$·</li>
+  <li>No tiene límite cuando $x$ tiende a $+∞$·</li>
+  <li>Tiende a $∞$ cuando $x$ tiende a $-∞$·</li>
+  <li>Tiende a $∞$ cuando $x$ tiende a $+∞$·</li>
+  <li>Tiende a $-∞$ cuando $x$ tiende a $-∞$·</li>
+  <li>Tiende a $-∞$ cuando $x$ tiende a $+∞$</li>
+</ul>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:720px; height:530px;"></iframe></div>
+
+<p>Cuando el límite de una función en $+∞$ o en $-∞$ existe y es $L$, se escribe:</p>
+
+<p style="text-align: center;">$\displaystyle \lim_{x \to ∞}{f(x)=L}$ <span style="padding-left:5em;"></span> o <span style="padding-left:5em;"></span> $\displaystyle \lim_{x \to -∞}{f(x)=L}$</p>
+
+<p>y se lee así: El límite de $f$ cuando $x$ tiende a infinito (o a menos infinito) es $L$.</p>
+
+<p>Si la función $f(x)$ tiende a más o menos infinito, cuando $x$ tiende a infinito, se dice que su límite no existe, pero se permite escribir:</p>
+
+<p style="text-align: center;">$\displaystyle \lim_{x \to ∞}{f(x)=∞}$ <span style="padding-left:5em;"></span> o <span style="padding-left:5em;"></span> $\displaystyle \lim_{x \to ∞}{f(x)=-∞}$</p>
+
+<p>Análogamente, si la función $f(x)$ tiende a más o menos infinito, cuando $x$ tiende a menos infinito, se dice que su límite no existe, pero se permite escribir:</p>
+
+<p style="text-align: center;">$\displaystyle \lim_{x \to -∞}{f(x)=∞}$ <span style="padding-left:5em;"></span> o <span style="padding-left:5em;"></span> $\displaystyle \lim_{x \to -∞}{f(x)=-∞}$</p>
+
+<h1>Ejercicios</h1>
+
+<p>Para cada función responde si tiene límite en $-∞$ o en $+∞$. Si tiene límite, escríbelo y si no, elige la opción correcta entre: tiende a $-∞$, tiende a $+∞$ o no tiende a nada.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:800px; height:480px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>:  José Luis Abreu León</p>
+<p><b>Edición académica</b>: José Luis Abreu León y Carlos Hernández Garciadiego</p>
+<p><b>Edición técnica</b>: Octavio Fonseca Ramos</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

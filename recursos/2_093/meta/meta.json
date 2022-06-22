@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La elipse"],
+	"titulo" : "Propiedades de la elipse",
+	"descripcion" : "Identificar dos elementos de una elipse (centro, vértices, focos, extremos del eje menor, eje mayor, eje menor o lado recto) en una gráfica.",
+	"resena" : "Elementos de la elipse",
+	"id" : "2_093"
+}

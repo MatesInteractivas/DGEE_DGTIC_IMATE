@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Geometría analítica: La elipse"],
+	"titulo" : "La elipse a partir de algunos de sus elementos",
+	"descripcion" : "Obtener la ecuación ordinaria de la elipse conocidos sus dos focos o sus dos vértices y algún otro dato.",
+	"resena" : "Ecuación ordinaria de la elipse conocidos sus dos focos o sus dos vértices y algún otro dato",
+	"id" : "2_106"
+}

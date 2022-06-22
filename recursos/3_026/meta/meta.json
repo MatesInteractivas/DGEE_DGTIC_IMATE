@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: La derivada"],
+	"titulo" : "Operaciones con funciones y sus derivadas",
+	"descripcion" : "Obtener, por fórmula, la derivada de sumas y/o diferencias de funciones algebraicas no compuestas. Obtener, por fórmula, la derivada de sumas y/o diferencias de funciones trascendentes no  compuestas. Obtener, por fórmula, la derivada de sumas y/o diferencias de funciones algebraicas y trascendentes no compuestas.",
+	"resena" : "Derivadas de sumas y diferencias de funciones",
+	"id" : "3_026"
+}

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "Funciones racionales",
+	"descripcion" : "Determinar el dominio de una función del tipo $f(x)=\frac{P(x)}{Q(x)}$, con $P(x)$ y $Q(x)$ lineales o cuadráticas a partir de su gráfica.",
+	"resena" : "Dominio de funciones racionales a partir de su gráfica",
+	"id" : "2_147"
+}

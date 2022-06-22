@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Álgebra: Productos notables y factorización"],
+	"titulo" : "Factorización de trinomios",
+	"descripcion" : "Expresar un trinomio cuadrado perfecto como el cuadrado de un binomio.",
+	"resena" : "Factorización de un trinomio cuadrado perfecto",
+	"id" : "1_062"
+}

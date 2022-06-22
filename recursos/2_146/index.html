@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Funciones y sus gráficas: Funciones algebraicas">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Gráfica de una función racional.</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Funciones racionales</div>
+  <div id="subtitulo">Gráfica de una función racional</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Identificar la gráfica de una función del tipo $f(x)=\frac{P(x)}{Q(x)}$, con $P(x)$ y $Q(x)$ lineales o cuadráticas.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Con el fin de identificar una gráfica, primero hay que aprender a hacer un bosquejo de ella. Para hacer un bosquejo de la gráfica de una función racional se siguen los siguientes pasos:</p>
+
+<ol>
+  <li>Simplificar: $f(x)=\frac{P(x)}{Q(x)}$ si es posible.</li>
+  <li>
+    Obtener y graficar los siguientes atributos de la gráfica de $f$:<br>
+    <ul style="padding-bottom:0;">
+      <li>Intersecciones con el eje $X$: encontrar, si existen, las intersecciones con el eje $X$. Esto se logra encontrando los valores de $x$ que hacen cero el numerador. Es decir, resolviendo la ecuación: $P(x)=0$.</li>
+      <li>Intersección con el eje $Y$: encontrar, si es que existe, el valor de $x$ donde la gráfica intersecta al eje $Y$. Para esto hay que calcular $f(0)$.</li>
+      <li>Asíntotas horizontales: decidir si la función tiene asíntota horizontal.</li>
+      <li>Asíntotas verticales: dibujar, si es que existen, las asíntotas verticales de $f$. Esto se logra encontrando los ceros del denominador. Es decir, resolviendo $Q(x)=0$.</li>
+    </ul>
+  </li>
+  <li>Evaluar y graficar más puntos. Las asíntotas verticales dividen al eje $X$ en varios intervalos. Tomar al menos un punto en cada intervalo y graficar.</li>
+  <li>Analizar los puntos graficados para terminar el bosquejo de la gráfica con curvas continuas.</li>
+</ol>
+
+<h1>Ejemplos</h1>
+
+<p>A continuación, se muestran varios ejemplos donde se obtiene un bosquejo de la gráfica de una función racional.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:960px; height:700px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>Identifica cuál de las siguientes gráficas corresponde a la función dada. Verifica tu respuesta y resuelve más ejercicios.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:960px; height:410px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autora</b>: Valentina Muñoz Porras</p>
+<p><b>Edición académica</b>: Fernando René Martínez Ortíz y Octavio Fonseca Ramos</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Joel Espinosa Longi</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Funciones y sus gráficas: Funciones algebraicas"],
+	"titulo" : "División de polinomios.",
+	"descripcion" : "Obtener el cociente de $\displaystyle \frac{P(x)}{Q(x)}$, con $P(x)$ y $Q(x)$ polinomios hasta de grado $4$.",
+	"resena" : "Cociente de dos polinomios (continuación)",
+	"id" : "2_123"
+}

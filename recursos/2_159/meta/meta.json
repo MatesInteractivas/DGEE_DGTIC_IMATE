@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Trigonometría: Elementos de trigonometría"],
+	"titulo" : "Conceptos básicos",
+	"descripcion" : "Obtener los valores de las funciones trigonométricas para los ángulos de $30^{\circ}$, $45^{\circ}$ y $60^{\circ}$ aplicando las razones trigonométricas directas referidas a un ángulo agudo.",
+	"resena" : "Razones trigonomtéricas de los ángulos de 30º  45º  60º",
+	"id" : "2_159"
+}

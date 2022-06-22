@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Cálculo Diferencial e Integral: La integral">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Área acotada por las gráficas de dos funciones</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">La integral y el cálculo de áreas</div>
+  <div id="subtitulo">Área acotada por las gráficas de dos funciones</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Calcular el área limitada entre las gráficas de dos funciones. </p>
+
+<h1>Procedimiento</h1>
+
+<p>Para calcular el área bajo la gráfica de una función $f$, se utiliza la definición de la integral definida</p>
+
+$$\int_{a}^{b}{f(x)dx=F(b)-F(a)}$$
+
+<p>donde $f$ es continua en el intervalo $[a,b]$ y $F$ es una primitiva de $f$.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:720px; height:480px;"></iframe></div>
+
+<p>En este caso, para encontrar el área entre dos curvas, calculamos primero el área debajo de la mayor y restamos el área de la menor.</p>
+
+<p>En general, dadas dos funciones $f$ y $g$ con $f(x)≥g(x)$ para todo $x$ en un intervalo $[a,b]$, el área de la región comprendida entre las gráficas de $f$ y $g$ entre las rectas $x=a$ y $x=b$ está dada por</p>
+
+$$A=\int_{a}^{b}{(f(x)-g(x))dx}$$
+
+<h1>Justificación</h1>
+
+<p>La interpretación geométrica de la integral definida es el área limitada por la gráfica de una función y el eje horizontal. En general, si $f$ es continua en $[a,b]$ y $f(x)≥0$ para todo $x$ en $[a,b]$, entonces la integral definida, $\int_{a}^{b}{f(x)dx}$, es el área limitada por la gráfica de $f$ y el eje $x$ entre $a$ y $b$.</p>
+
+<h1>Ejemplos</h1>
+
+<p>A continuación, se muestran ejemplos para el cálculo del área limitada entre las gráficas de dos funciones. Presiona el botón <span class="btn">Continuar</span> para observar paso a paso el procedimiento.</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:900px; height:570px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>Calcula el área que se pide empleando la integral definida y anota el resultado en el espacio correspondiente. Pulsa ↵ antes de oprimir el botón <span class="btn">Verificar</span>.</p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:900px; height:570px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autor</b>: Octavio Fonseca Ramos</p>
+<p><b>Editores académicos</b>: José Luis Abreu León y Carlos Hernández Garciadiego</p>
+<p><b>Editor técnico</b>: Carlos Alberto Serrato Hernández</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

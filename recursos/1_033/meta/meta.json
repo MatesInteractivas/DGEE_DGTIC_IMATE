@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Aritmética: Los números y sus operaciones"],
+	"titulo" : "Números reales: Orden y operaciones",
+	"descripcion" : "Realizar operaciones combinadas con números reales, considerando el orden de prioridad en las operaciones.",
+	"resena" : "Operaciones básicas por orden de prioridad",
+	"id" : "1_033"
+}

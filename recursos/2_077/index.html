@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Geometría analítica: La parábola">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Ecuación general de la parábola con vértice en el origen y dados el eje focal y un punto</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+
+  window.addEventListener("DOMContentLoaded", function() {
+    let iframe = document.getElementById("E3");
+    window.addEventListener("message", function(evt) {
+      if (iframe && evt.data) {
+        if (evt.data.type == "set") { iframe.contentWindow.postMessage({ type: evt.data.type, name: evt.data.name, value: evt.data.value }, "*"); }
+        if (evt.data.type == "update") { iframe.contentWindow.postMessage({ type: "update" }, "*"); }
+      }
+    });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">La parábola a partir de algunos de sus elementos</div>
+  <div id="subtitulo">Ecuación general de la parábola con vértice en el origen y dados el eje focal y un punto</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Obtener la ecuación general de una parábola con vértice en el origen, eje focal y un punto conocido.</p>
+
+<h1>Recordatorio</h1>
+
+<p>La ecuación ordinaria de una parábola horizontal con vértice en el origen es de la forma:</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:900px; height:360px;"></iframe></div>
+
+<p style="text-align:center;">$y^{2}=4px$, si abre hacia la derecha <span style="display:inline-block;width:7em;"></span> $y^{2}=-4px$, si abre hacia la izquierda $(1)$</p>
+
+<p>en donde $p$ es la distancia del vértice al foco.</p>
+
+<p>La ecuación ordinaria de una parábola vertical con vértice en el origen es de la forma:</p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:900px; height:360px;"></iframe></div>
+
+<p style="text-align:center;">$x^{2}=4py$, si abre hacia arriba <span style="display:inline-block;width:10em;"></span> $x^{2}=-4py$, si abre hacia abajo $(2)$</p>
+
+<p>en donde $p$ es la distancia del vértice al foco.</p>
+
+<p>La ecuación general de cualquier cónica es de la forma:</p>
+
+$$\tag{3} Ax^{2}+Bxy+Cy^{2}+Dx+Ey+F=0$$
+
+<p>Para pasar de la ecuación ordinaria (1) o (2) a la ecuación (3), simplemente se desplazan todos los términos al lado izquierdo de la ecuación.</p>
+
+<h1>Solución</h1>
+
+<p>Con los pulsadores que se encuentran en el recuadro interactivo que sigue, cambia el valor de las coordenadas del punto conocido y observa cómo se modifica la ecuación ordinaria y general de la parábola. Puedes mover los espacios en caso de que quieras colocar el punto $P$ lejos del origen. Siempre puedes centrar el plano en el origen y regresar a la escala original si presionas el botón <span class="btn">Centrar al origen</span> situado bajo cada plano. Los pulsadores localizados en la parte inferior derecha de cada plano te permiten acercarte o alejarte.</p>
+
+<p style="text-align:center;">Parábola horizontal <span style="display:inline-block;width:15em;"></span> Parábola vertical </p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:900px; height:520px;"></iframe></div>
+
+<p>Para encontrar el valor de $K$, se sustituyen las coordenadas del punto conocido en la ecuación.</p>
+
+<div class="interactivo"><iframe id="E3" src="escenas/escena04.html" style="width:900px; height:280px;"></iframe></div>
+
+<p>Para obtener el resto de la información sobre la parábola:</p>
+
+<ol>
+  <li>Se calcula $p$ como el valor absoluto de $K/4$.</li>
+  <li>Si la parábola es horizontal, el foco está en $(K/4, 0)$ y la directriz es $x = -K/4$.</li>
+  <li>Si la parábola es vertical, el foco está en $(0, K/4)$, y la directriz es $y = -K/4$.</li>
+</ol>
+
+<p>Para saber hacia dónde abre la parábola se considera:</p>
+
+<div class="interactivo"><iframe src="escenas/escena05.html" style="width:900px; height:420px;"></iframe></div>
+
+<h1>Ejemplos</h1>
+
+<p>En el recuadro interactivo que se muestra a continuación, observa cómo se determina la ecuación general de la parábola con vértice en el origen y que pasa por un punto conocido de la parábola. Presiona el pulsador que se sitúa en el extremo superior izquierdo del cuadro y avanza en la solución tratando de comprender cada uno de los pasos. Analiza otros ejemplos al dar clic sobre el botón que se ubica en el extremo superior derecho.</p>
+
+<div class="interactivo"><iframe src="escenas/escena06.html" style="width:900px; height:480px;"></iframe></div>
+
+<h1>Ejercicios</h1>
+
+<p>Determina lo que se te pida en cada caso. Escribe el resultado en los campos de texto del cuadro y a continuación presiona Intro. Si tu respuesta es correcta, se deshabilitará el campo de texto; en caso contrario, inténtalo de nuevo. Cuando termines aparecerá el botón para acceder a otro ejercicio. Recuerda que al dar doble clic sobre un campo de texto se desplegará la calculadora.</p>
+
+<div class="interactivo"><iframe src="escenas/escena07.html" style="width:900px; height:540px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autores</b>: Carlos Hernández Garciadiego y Eréndira Itzel García Islas</p>
+<p><b>Edición académica</b>: José Luis Abreu León, Fernando René Martínez Ortiz y Alejandro Radillo Díaz</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Juan José Rivaud Gallardo</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

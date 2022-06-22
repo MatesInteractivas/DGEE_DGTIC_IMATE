@@ -1,0 +1,11 @@
+{
+	"nivel" : [
+		"Medio superior",
+		"Bachillerato"
+	],
+	"area" : ["Cálculo Diferencial e Integral: La integral"],
+	"titulo" : "Métodos de integración",
+	"descripcion" : "Obtener la integral indefinida de una función mediante integración por partes, donde se aplique una vez dicho método.",
+	"resena" : "Integración por partes",
+	"id" : "3_072"
+}

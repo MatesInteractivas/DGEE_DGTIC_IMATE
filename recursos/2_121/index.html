@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <meta name="area" content="Funciones y sus gráficas: Funciones algebraicas">
+  <meta name="keywords" content="LITE, UNAM, DGTIC, DGEE, Matemáticas">
+  <title>Ceros de funciones polinomiales de grado 2, 3 y 4 que sean factorizables.</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/auto-render.min.js"></script>
+  <script>
+  window.addEventListener("load", function() {
+    renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ] });
+  });
+  </script>
+</head>
+
+<body lang="es">
+<div id="container">
+<div id="pleca">
+  <div id="titulo">Funciones polinomiales</div>
+  <div id="subtitulo">Ceros de funciones polinomiales factorizables</div>
+</div>
+<div id="contenido">
+
+<h1>Objetivo</h1>
+
+<p>Determinar el número de ceros de una función polinomial.</p>
+
+<h1>Procedimiento</h1>
+
+<p>Una función polinomial es una función que se puede escribir de forma general como:</p>
+
+$$f(x)=a_{n}x^{n}+a_{n-1}x^{n-1}+...+a_{2}x^{2}+a_{1}x+a_{0}$$
+
+<p>donde $a_{0}$, $a_{1}$, $a_{2}$, $...$, $a_{n-1}$ y $a_{n}$ son números reales con $a_{n}≠0$. En la expresión anterior, $n$ es la potencia mayor y a este número se le conoce como el grado del polinomio. Por ejemplo, la función polinomial $f(x)=3x^{4}+5x^{2}-1$ es de grado $4$.</p>
+
+<p>Si un polinomio es factorizable como producto de factores lineales, polinomios de grado $1$, entonces su grado nos dice el número de ceros que tiene, y este número debe coincidir con el número de factores lineales que tiene su factorización.</p>
+
+<p>En la siguiente escena puedes observar distintos polinomios con grados entre $2$ y $4$ en su forma general y factorizada. Nota que el cero de cada factor lineal es un cero de la función.</p>
+
+<div class="interactivo"><iframe src="escenas/escena01.html" style="width:720px; height:560px;"></iframe></div>
+
+<h1>Solución</h1>
+
+<p>Cuando un polinomio se puede expresar como un producto de factores lineales, el número de ceros del polinomio corresponde a su grado. Sin embargo, si dos o más factores representan rectas que intersecan al eje $X$ en el mismo punto, visualmente aparece una única raíz en ese punto que se debe contar doble, o triple, dependiendo de cuántas rectas se intersecaron en ese cero.</p>
+
+<p>Da valores para el grado del polinomio y observa la gráfica así como el número de ceros que tiene. Si en algún momento no se aprecian en la gráfica los ceros correspondientes al grado de la función, significa que ahí aparece un cero múltiple o la función polinomial no es factorizable como producto de factores que sean únicamente lineales.  </p>
+
+<div class="interactivo"><iframe src="escenas/escena02.html" style="width:960px; height:430px;"></iframe></div>
+
+<p>Cuando la función polinomial se puede expresar como un producto de factores lineales, siempre tiene el mismo número de ceros que el grado de la función. Si el máximo exponente es dos, entonces se tienen dos ceros; si el grado es tres, se tienen tres ceros y si el grado es cuatro, la función tendrá cuatro ceros. Entonces, si queremos saber el número de ceros que tiene la función, basta ver cuál de los exponentes es el mayor y ese será el número de ceros.</p>
+
+<h1>Ejercicios</h1>
+
+<p>Las siguientes funciones polinomiales son factorizables como producto de factores lineales. Calcula el número de ceros. Si has respondido correctamente, aparecerá la gráfica del polinomio. Recuerda que si no observas el número de raíces correctas, es porque puede haber raíces dobles o triples.</p>
+
+<div class="interactivo"><iframe src="escenas/escena03.html" style="width:960px; height:420px;"></iframe></div>
+
+
+
+
+
+
+
+<div id="creditos">
+
+<hr>
+
+<div id="creditos_originales">
+<p>Unidades interactivas para bachillerato desarrolladas por la Dirección General de Evaluación Educativa de la UNAM en colaboración con el Instituto de Matemáticas y el Proyecto Arquímedes.</p>
+<div class="responsables">
+<p><b>Autores</b>: Alberto Bravo García y Fernando René Martínez Ortiz</p>
+<p><b>Edición académica</b>: Fernando René Martínez Ortiz y Octavio Fonseca Ramos</p>
+<p><b>Edición técnica</b>: Norma Patricia Apodaca Alvarez</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones">
+<p>Adaptado a DescartesJS en el proyecto <a target="_blank" href="https://arquimedes.matem.unam.mx/lite/2013/">LITE 2013</a> financiado por CONACyT.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Víctor Hugo García Jarillo y Deyanira Monroy Zariñán </p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León, Oscar Escamilla González y Joel Espinosa Longi </p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_adaptaciones_dgtic">
+<p>Adaptado para dispositivos móviles por la DGTIC en colaboración con el IMATE y el LITE. Diciembre de 2014.</p>
+<div class="responsables">
+<p><b>Adaptación</b>: Joel Espinosa Longi</p>
+<p><b>Asesoría técnica</b>: José Luis Abreu León y Joel Espinosa Longi</p>
+<p><b>Coordinación</b>: Deyanira Monroy Zariñán</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creditos_actualizacion">
+<p>Actualización tecnológica y de estilo, 2019.</p>
+<div class="responsables">
+<p><b>Actualización</b>: Joel Espinosa Longi</p>
+</div>
+</div>
+
+<hr>
+
+<div id="creative_commons">
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img src="images/by-nc-sa.svg"></a>
+<p>
+Los contenidos de esta unidad didáctica interactiva están bajo una licencia <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Creative Commons</a>, si no se indica lo contrario.
+</p>
+<p>Los componentes interactivos fueron creados con <a target="_blank" href="https://descartes.matem.unam.mx/">Descartes</a> que es un producto de código abierto.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>
